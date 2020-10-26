@@ -1,0 +1,15 @@
+pip
+flake8
+coverage
+Sphinx>=2.0,<3
+twine
+pytest
+pytest-cov
+jupyter-book
+mypy
+re-ver
+twine
+pre-commit
+isort
+seed-isort-config
+black

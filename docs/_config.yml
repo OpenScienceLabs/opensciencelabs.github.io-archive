@@ -1,0 +1,24 @@
+
+# Book settings
+title                       : OpenScienceLabs Mentoring Guideline  # The title of the book. Will be placed in the left navbar.
+author                      : OpenScienceLabs Team  # The author of the book
+copyright                   : "2020"  # Copyright year to be placed in the footer
+logo                        : ""  # A path to the book logo
+exclude_patterns            : []
+
+html:
+  favicon                   : ""  # A path to a favicon image
+  extra_footer              : ""  # Will be displayed underneath the footer.
+  google_analytics_id       : ""  # A GA id that can be used to track book views.
+  use_edit_page_button      : false
+  use_issues_button         : false
+  use_repository_button     : false
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  extra_navbar              : ""
+  extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+
+repository:
+  url                       : https://github.com/opensciencelabs/mentoring-guideline # The URL to your book's repository
+  path_to_book              : ""    # A path to your book's folder, relative to the repository root.
+  branch                    : main  # Which branch of the repository should be used when creating links
