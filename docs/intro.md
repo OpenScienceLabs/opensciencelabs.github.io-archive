@@ -1,20 +1,41 @@
 # Mentoring Guideline
 
-<!-- LINKS --!>
+TDB 
 
 ## What is mentoring?
 
+TBD
+
 ## Types of mentoring
+
+
+TBD
 
 ## Skills and experience required to be a mentor
 
+TBD
+
 ## The mentoring process / stages
+
+TBD
 
 ### Setting goals and expectations
 
+TBD
+
 ## Mentoring and ethics
 
+TBD
+
 ## Mentoring Best Practices
+
+TBD
+
+## OpenScienceLabs Mentoring workflow
+
+TBD
+
+## References
 
 - https://icrs.info/cpd/mentoring/guidelines
 - https://www.mmu.ac.uk/media/mmuacuk/content/documents/human-resources/a-z/guidance-procedures-and-handbooks/Mentoring_Guidlines.pdf
