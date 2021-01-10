@@ -109,6 +109,11 @@ Mentoring involves the relationship between mentors and mentees. Good mentors ar
 
 TBD
 
+## Mentoring Code of Conduct (MCOC)
+
+As an organization we joined the [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+. However, we have decided to complement it with a section dedicated to the mentoring process. For more information on our Mentoring Code of Conduct, please review that section in our [Code of Conduct](mentoring-guideline/docs/COC.md).
+
 [umich-mentoring-guide]: https://www.rackham.umich.edu/downloads/more-mentoring-guide-for-mentors.pdf
 
 [mmu-mentoring-guidlines]: https://www.mmu.ac.uk/media/mmuacuk/content/documents/human-resources/a-z/guidance-procedures-and-handbooks/Mentoring_Guidlines.pdf
