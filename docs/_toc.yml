@@ -1,1 +1,7 @@
-file: intro
+format: jb-book
+root: intro
+parts:
+- caption: Code of Conduct
+  chapters:
+  - file: coc-en
+  - file: coc-es
