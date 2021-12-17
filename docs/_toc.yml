@@ -20,6 +20,10 @@ parts:
       - file: devops/discord-en
       - file: devops/aws-en
 
+  - caption: Marketing
+    chapters:
+      - file: mkt/opencollective-es.md
+
   - caption: Mentoring
     chapters:
       - file: mentoring/guide-en
