@@ -1,4 +1,4 @@
-# Código de conducta de las mentorías
+# [ES] Código de conducta de las mentorías
 
 Al acceder o utilizar los servicios de tutoría de OSL, y por lo tanto formar parte de esta comunidad, usted está de acuerdo en cumplir con nuestro Código de Conducta.
 
