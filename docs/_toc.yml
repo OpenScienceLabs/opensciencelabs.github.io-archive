@@ -11,6 +11,10 @@ parts:
     chapters:
       - file: articles/guide-es
 
+  - caption: Community Management
+    chapters:
+      - file: community-management/guide-pt
+
   - caption: Diversity, Equity and Inclusion
     chapters:
       - file: dei/guide-es
