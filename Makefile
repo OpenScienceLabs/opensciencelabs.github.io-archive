@@ -1,6 +1,6 @@
-book: ## generate documentation
+page: ## generate documentation
 	rm -rf docs/_build/*
 	jupyter-book build docs/
 
-open-book:
+open-page:
 	google-chrome docs/_build/html/index.html

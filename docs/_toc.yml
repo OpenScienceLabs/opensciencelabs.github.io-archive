@@ -1,7 +1,29 @@
 format: jb-book
 root: intro
 parts:
-- caption: Mentoring Code of Conduct
-  chapters:
-  - file: coc-en
-  - file: coc-es
+
+  - caption: Code of Conduct
+    chapters:
+    - file: coc/coc-en
+    - file: coc/coc-es
+
+  - caption: Articles
+    chapters:
+      - file: articles/guide-es
+
+  - caption: Diversity, Equity and Inclusion
+    chapters:
+      - file: dei/guide-es
+
+  - caption: DevOps
+    chapters:
+      - file: devops/discord-en
+      - file: devops/aws-en
+
+  - caption: Mentoring
+    chapters:
+      - file: mentoring/guide-en
+
+  - caption: Videos
+    chapters:
+      - file: videos/guide-es

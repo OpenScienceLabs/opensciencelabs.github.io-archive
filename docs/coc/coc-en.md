@@ -1,4 +1,4 @@
-# Mentoring Code of Conduct
+# [EN] Mentoring Code of Conduct
 
 By accessing or using the OSL mentoring services, and thereby becoming a part of this community, you are agreeing to abide by our Code of Conduct.  
 
@@ -44,5 +44,3 @@ As a mentee within our community, you agree to:
   * Honor your commitment to your mentor and to your learning process.
   * Complete any tasks agreed upon between your mentor and yourself.
   * Hold all sensitive information provided through your mentoring relationship in strict confidence.
-
-
