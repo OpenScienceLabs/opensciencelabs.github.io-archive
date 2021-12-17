@@ -1,9 +1,9 @@
 
 # Book settings
-title                       : OpenScienceLabs Mentoring Guideline  # The title of the book. Will be placed in the left navbar.
+title                       : Open Science Labs  # The title of the book. Will be placed in the left navbar.
 author                      : OpenScienceLabs Team  # The author of the book
 copyright                   : "2020"  # Copyright year to be placed in the footer
-logo                        : ""  # A path to the book logo
+logo                        : "images/osl.png"  # A path to the book logo
 exclude_patterns            : []
 
 html:
