@@ -168,6 +168,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Fund Raiser
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fund-raiser/guide-es.html">
+   [ES] Guía para Recaudación de Fondos
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Marketing
  </span>
 </p>
@@ -263,6 +275,51 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conventions">
+   Conventions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bots">
+   Bots
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mee6">
+     MEE6
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dyno">
+     Dyno
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#yagpdb-xyz">
+     YAGPDB.xyz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#development">
+   Development
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -273,6 +330,62 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="en-discord">
 <h1>[EN] Discord<a class="headerlink" href="#en-discord" title="Permalink to this headline">¶</a></h1>
+<p>Discord is our main comunication tool for our community. The direct link
+to our discord is <a class="reference external" href="http://discord.opensciencelabs.org">http://discord.opensciencelabs.org</a>.</p>
+<div class="section" id="conventions">
+<h2>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
+<p>Each channel has a unique name with a prefix, according to the category. For example,
+a channel inside the category Python starts with the prefix <code class="docutils literal notranslate"><span class="pre">py-</span></code>.</p>
+<p>Some category name are long and some times it is hard to find a prefix for that.
+But, it is important that the prefix has some relation to the category.</p>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="bots">
+<h2>Bots<a class="headerlink" href="#bots" title="Permalink to this headline">¶</a></h2>
+<p>We use bots to help us to maintain our server.</p>
+<div class="section" id="mee6">
+<h3>MEE6<a class="headerlink" href="#mee6" title="Permalink to this headline">¶</a></h3>
+<p>For ranking we are using <strong>MEE6</strong>. We don’t have any activity our any rewards using the
+ranking score, but maybe in the future we can use it.</p>
+</div>
+<div class="section" id="dyno">
+<h3>Dyno<a class="headerlink" href="#dyno" title="Permalink to this headline">¶</a></h3>
+<p><strong>Dyno bot</strong> is used for maintainance tasks, such as:</p>
+<ul class="simple">
+<li><p>welcome message</p></li>
+<li><p>ban users</p></li>
+<li><p>block users</p></li>
+<li><p>etc (TODO: add all the options used)</p></li>
+</ul>
+</div>
+<div class="section" id="yagpdb-xyz">
+<h3>YAGPDB.xyz<a class="headerlink" href="#yagpdb-xyz" title="Permalink to this headline">¶</a></h3>
+<p><strong>YAGPDB.xyz</strong> bot is used for categories subscription.</p>
+<p>For more information about how to use it, check the following tutorial:</p>
+<p><a class="reference external" href="https://docs.yagpdb.xyz/tools-and-utilities/self-assignable-roles">https://docs.yagpdb.xyz/tools-and-utilities/self-assignable-roles</a></p>
+<p>When you have the group and the roles configured on <strong>YAGPDB.xyz</strong>, the next
+step is to create a custom messsage on <strong>discord</strong>, in the channel you want to
+have this subscription mechanism.</p>
+<ol class="simple">
+<li><p>In the message, add a title, a general description and the emoticons and theirs
+meaning.</p></li>
+<li><p>Get the message ID (you need to activate the development mode)</p></li>
+<li><p>Run the following command <code class="docutils literal notranslate"><span class="pre">!yagpdb-rolemenu</span> <span class="pre">create</span> <span class="pre">(group</span> <span class="pre">name)</span> <span class="pre">-m</span> <span class="pre">(message</span> <span class="pre">id)</span> <span class="pre">-nodm</span></code>,
+where <code class="docutils literal notranslate"><span class="pre">(group</span> <span class="pre">name)</span></code> and <code class="docutils literal notranslate"><span class="pre">(message</span> <span class="pre">id)</span></code> are placeholders and should be replaced by
+the correct values.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="development">
+<h2>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
+<p>We have an internal channel for discussions about discord: <code class="docutils literal notranslate"><span class="pre">#collab-devops-discord</span></code>.</p>
+<p>Alos, there is a discord server for development, where we can test bots, new
+configurations or new features.</p>
+<p>If you want to join that server, you need to ask it in <code class="docutils literal notranslate"><span class="pre">#collab-devops-discord</span></code> channel.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
