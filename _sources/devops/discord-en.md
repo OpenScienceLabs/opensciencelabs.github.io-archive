@@ -47,7 +47,7 @@ step is to create a custom messsage on **discord**, in the channel you want to
 have this subscription mechanism.
 
 1. In the message, add a title, a general description and the emoticons and theirs
-meaning.
+meaning (https://unicode.org/emoji/charts/full-emoji-list.html).
 2. Get the message ID (you need to activate the development mode)
 3. Run the following command `!yagpdb-rolemenu create (group name) -m (message id) -nodm`, 
 where `(group name)` and `(message id)` are placeholders and should be replaced by 
