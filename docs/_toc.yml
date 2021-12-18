@@ -24,6 +24,10 @@ parts:
       - file: devops/discord-en
       - file: devops/aws-en
 
+  - caption: Fund Raiser
+    chapters:
+      - file: fund-raiser/guide-es
+
   - caption: Marketing
     chapters:
       - file: mkt/opencollective-es.md
