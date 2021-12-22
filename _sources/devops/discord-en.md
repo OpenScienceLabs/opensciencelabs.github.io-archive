@@ -53,6 +53,10 @@ meaning (https://unicode.org/emoji/charts/full-emoji-list.html).
 where `(group name)` and `(message id)` are placeholders and should be replaced by 
 the correct values.
 
+**Note**: An alternative to **yagpdb** would be 
+[**carl-bot**](https://top.gg/bot/235148962103951360). But for now, **yagpdb.xyz**
+seems to be working properly for our needs.
+
 ## Development
 
 We have an internal channel for discussions about discord: `#collab-devops-discord`.
