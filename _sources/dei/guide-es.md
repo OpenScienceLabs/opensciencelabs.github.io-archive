@@ -14,12 +14,12 @@ Actividades para difusión de conocimiento (blog, videos)
 
 ## OSL Declaración DEI:
 
-OSL reconoce que los **procesos pedagógicos asociados al desarrollo de nuevas habilidades y destrezas** son de largo aliento y son el resultado de la inversión de tiempo, la aceptación de la diversidad en condiciones equitativas y justas, la constancia y, sobre todo, el impacto acumulativo de decisiones enmarcadas en nuestro propósito como organización. Por ello, OSL establece sus objetivos para lograr un progreso medible en el avance de la DEI en tres áreas:
+OSL reconoce que los **procesos pedagógicos asociados al desarrollo de nuevas habilidades y destrezas** son de largo aliento y son el resultado de la inversión de tiempo, la aceptación de la diversidad en condiciones equitativas y justas, la constancia y, sobre todo, el impacto acumulativo de decisiones enmarcadas en nuestro propósito como organización. Por ello, OSL establece sus objetivos para lograr un progreso medible en el avance de la DEI en cuatro aspectos:
 
-1. Ayudaremos a la comunidad de personas con interés en dominar las tecnologías abiertas y aplicarlas en la ciencia, a desarrollar las capacidades necesarias para lograrlo generando diversidad, equidad e inclusión que sea observable en sus espacios de trabajo e interacción.
-2. Asumiremos nuestras acciones y quehacer como organización con un enfoque positivo e intencional de DEI entre quienes integran OSL en sus distintos roles de colaborador, voluntario e integrante del Board.
-3. Como resultado de desarrollar nuestras iniciativas actuales y futuras, conseguiremos una comunidad más diversa de personas interesadas por la tecnología en el ámbito de la ciencia abierta.
-4. Estableceremos un Código de Conducta (COC) para garantizar el establecimiento de prácticas positivas hacia el respeto de todas las personas y sus consideraciones en términos de honestidad intelectual, académica y personal en el desarrollo de nuestras actividades.
+1. *Capacidades*: Ayudaremos a la comunidad de personas con interés en dominar las tecnologías abiertas y aplicarlas en la ciencia, a desarrollar las capacidades necesarias para lograrlo generando diversidad, equidad e inclusión que sea observable en sus espacios de trabajo e interacción.
+2. *DEI con sentido*: Asumiremos nuestras acciones y quehacer como organización con un enfoque positivo e intencional de DEI entre quienes integran OSL en sus distintos roles de colaborador, voluntario e integrante del Board.
+3. *Ciencia Abierta diversa*: Como resultado de desarrollar nuestras iniciativas actuales y futuras, conseguiremos una comunidad más diversa de personas interesadas por la tecnología en el ámbito de la ciencia abierta.
+4. *COC y DEI en trabajo conjunto*: Estableceremos un Código de Conducta (COC) para garantizar el establecimiento de prácticas positivas hacia el respeto de todas las personas y sus consideraciones en términos de honestidad intelectual, académica y personal en el desarrollo de nuestras actividades.
 
 En función de ésto, nuestra comunidad considera los siguientes parámetros con respecto a la DEI:
 
