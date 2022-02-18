@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[ES] Breve guía de Mentoría &#8212; Open Science Labs</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Code of Conduct
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../coc/coc-en.html">
+   [EN] Mentoring Code of Conduct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../coc/coc-es.html">
+   [ES] Código de conducta de las mentorías
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Articles
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../articles/guide-es.html">
+   [ES] Guía Editorial para creación de Artículos
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Community Management
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../community-management/guide-pt.html">
+   [PT] Guia para Community Management
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Diversity, Equity and Inclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei/guide-es.html">
+   [ES] Declaración de Diversidad, Equidad e Inclusión
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  DevOps
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../devops/discord-en.html">
+   [EN] Discord
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../devops/aws-en.html">
+   [EN] AWS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Fund Raiser
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fund-raiser/guide-es.html">
+   [ES] Guía para Recaudación de Fondos
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Marketing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mkt/opencollective-es.html">
+   [ES] OpenCollective
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Mentoring
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="guide-en.html">
+   [EN] Mentoring Guideline
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Videos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../videos/guide-es.html">
+   [ES] Guía para Creación de Videos
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/mentoring/guide-ES.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-es-la-una-mentoria">
+   ¿Qué es la una mentoría?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipos-de-mentoria">
+   Tipos de mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#habilidades-y-experiencia-requeridas-para-ser-mentor-a">
+   Habilidades y experiencia requeridas para ser mentor/a
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-proceso-de-mentoria-etapas">
+   El proceso de mentoría / etapas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#establecer-metas-y-expectativas">
+   Establecer metas y expectativas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etica-y-mentoria">
+   Ética y mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mejores-practicas-de-mentoria">
+   Mejores prácticas de mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando-a-ser-mentorado-en-opensciencelabs">
+   Comenzando a ser mentorado en OpenScienceLabs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#codigo-de-conducta-de-mentores-mcoc">
+   Código de conducta de mentores (MCOC)
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>[ES] Breve guía de Mentoría</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-es-la-una-mentoria">
+   ¿Qué es la una mentoría?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipos-de-mentoria">
+   Tipos de mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#habilidades-y-experiencia-requeridas-para-ser-mentor-a">
+   Habilidades y experiencia requeridas para ser mentor/a
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-proceso-de-mentoria-etapas">
+   El proceso de mentoría / etapas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#establecer-metas-y-expectativas">
+   Establecer metas y expectativas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etica-y-mentoria">
+   Ética y mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mejores-practicas-de-mentoria">
+   Mejores prácticas de mentoría
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando-a-ser-mentorado-en-opensciencelabs">
+   Comenzando a ser mentorado en OpenScienceLabs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#codigo-de-conducta-de-mentores-mcoc">
+   Código de conducta de mentores (MCOC)
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="es-breve-guia-de-mentoria">
+<h1>[ES] Breve guía de Mentoría<a class="headerlink" href="#es-breve-guia-de-mentoria" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="que-es-la-una-mentoria">
+<h2>¿Qué es la una mentoría?<a class="headerlink" href="#que-es-la-una-mentoria" title="Permalink to this headline">¶</a></h2>
+<p>La mentoría es una técnica o proceso en el que una persona con experiencia (mentor/a) guía a otras personas (aprendices o mentorados/as) para lograr su meta y objetivos personales en un espacio de tiempo limitado. Quien ejerce la mentoría no necesariamente es quien enseña, entrena o impulsa, sino también apoya, alienta a sus aprendices y conservando apertura a preguntas y a escuchar. Se trata de ayudarse mutuamente a expandirse y crecer para que todas las personas aprendan.</p>
+<p>Además, una mentoría efectiva brinda oportunidades para compartir talentos, habilidades, experiencias y conocimientos obtenidos a través de la capacitación regular, el entrenamiento y la retroalimentación continuos, no sólo para aprendices sino también para mentores/as.</p>
+<p>Quienes ofrecen la mentoría no tienen responsabilidad directa por el desempeño laboral de los/las aprendices. Solo ofrecen consejos y motivan para potenciar el desarrollo profesional de éstos.</p>
+</div>
+<div class="section" id="tipos-de-mentoria">
+<h2>Tipos de mentoría<a class="headerlink" href="#tipos-de-mentoria" title="Permalink to this headline">¶</a></h2>
+<p><span class="xref myst">La universidad de Auckland</span> sugiere dos tipos de relaciones de mentoría:</p>
+<ol class="simple">
+<li><p>Mentoría informal, cuando alguien con más experiencia que otras personas ayuda de forma espontánea y sin pedir hacerlo de forma explícita. Los vínculos se inician entre individuos de forma directa.</p></li>
+<li><p>Mentoría formal, hay una solicitud u oferta oficial de relaciones de mentoría. Mentores/as y aprendices siguen un programa de mentoría estructurado, haciendo acuerdos sobre su naturaleza y estableciendo metas entre ellos/as.</p></li>
+</ol>
+</div>
+<div class="section" id="habilidades-y-experiencia-requeridas-para-ser-mentor-a">
+<h2>Habilidades y experiencia requeridas para ser mentor/a<a class="headerlink" href="#habilidades-y-experiencia-requeridas-para-ser-mentor-a" title="Permalink to this headline">¶</a></h2>
+<p>Según la <span class="xref myst">Universidad Metropolitana de Manchester (MMU)</span>, existen al menos diez requisitos para ser mentor/a:</p>
+<ol class="simple">
+<li><p>Autoconciencia: se relaciona con tener objetivos personales propios, carrera y conocer las propias fortalezas.</p></li>
+<li><p>Saber hacer organizacional: significa un conocimiento individual que tienen los/as mentores/as, y que proporciona una ventaja sobre otros en el mismo campo, se trata de saber cómo funcionan las cosas.</p></li>
+<li><p>Credibilidad en la determinación de objetivos y desarrollo de capacidades: es importante que los/as mentores/as tengan credibilidad personal y profesional en su área y que sean miembros de organizaciones relevantes.</p></li>
+<li><p>Accesibilidad: El éxito de la mentoría depende del tiempo dedicado a los/as aprendices. Además, los/as mentores/as deben hablar regularmente para establecer un nivel de comodidad en la relación en torno a los temas fáciles, luego, cuando surge un desafío o una inquietud, es mucho más fácil para tener una discusión útil.</p></li>
+<li><p>Las habilidades de comunicación o escucha activa (teniendo en cuenta los intereses, el lenguaje corporal, la atención y dar consejos) ayudan a determinar las motivaciones y necesidades de sus mentorados.</p></li>
+<li><p>Capacidad para empoderar: los/as mentores/as tienen la capacidad de crear un entorno de trabajo en el que los/as aprendices se tengan seguridad para contribuir de diferentes maneras.</p></li>
+<li><p>Un deseo de ayudar a otros a formarse: los/as mentores/as deben comprender cómo los/as aprendices obtienen experiencia a partir de la mentoría, ya sea de manera formal o informal.</p></li>
+<li><p>Inventiva: los/as mentores/as deben tener la mente abierta para hacer cosas nuevas y diferentes en la mentoría, para ayudar a los/as aprendices a obtener perspectivas más amplias de sus experiencias.</p></li>
+<li><p>Empatía: la capacidad de sentir las emociones de los/as aprendices, o lo que podría estar pensando o sintiendo.</p></li>
+<li><p>Comprensión: los/las mentores/as pueden observar a sus aprendices cómo aprenden y brindarles comentarios constructivos.</p></li>
+</ol>
+<p>Algunas otras habilidades adicionales son:</p>
+<p>Alentar e inspirar: los/as mentores/as tienen la capacidad de comentar sobre los logros de los/as aprendices. Creen en la capacidad de éstos para crecer personal y profesionalmente. Además, responden a sus frustraciones y desafíos. Es importante que los/as mentores/as compartan su visión personal o la de otros líderes, como sus experiencias, errores y éxitos en el logro de sus objetivos <span class="xref myst">The Center for Health Leadership &amp; Practice (CHLP)</span>.</p>
+</div>
+<div class="section" id="el-proceso-de-mentoria-etapas">
+<h2>El proceso de mentoría / etapas<a class="headerlink" href="#el-proceso-de-mentoria-etapas" title="Permalink to this headline">¶</a></h2>
+<p>El proceso de mentoría es una actividad que tiene un principio y un final. En este sentido, el <span class="xref myst">MMU</span> enumera tres etapas:</p>
+<ol class="simple">
+<li><p>Inicial; (construyendo la relación): en la cual se explican los objetivos de la mentoría. Tiempo para relacionarse (calendario para la comunicación). Se sugiere discutir antecedentes, experiencias, intereses y expectativas. Establecer las reglas (como por ejemplo, el formato de la reunión).</p></li>
+<li><p>Sesiones de mentoría; planificación de sesiones de mentoría (revisión de experiencias, cuándo y cuánto tiempo, metas, avance de avances). Quienes conducen la mentoría deben hablar sobre sí mismos/as, sus habilidades, su organización, experiencia y los desafíos que enfrentan. Además, pueden intercambiar información y ayudar a sus aprendices a establecer y reenfocar sus objetivos periódicamente. Finalmente, deben trabajar hacia las metas (parte larga y desafiante del proceso de mentoría), mediante discusiones, compartiéndoles material, probando otros contenidos de aprendizaje y actividades de desarrollo. Los/as mentores/as crean oportunidades para que los/as aprendices adquieran experiencia, es un buen momento para presentarlos a otros/as colegas.</p></li>
+<li><p>Evaluar el progreso de esta relación mentor/a-aprendices (ajustes, resultados, beneficios).</p></li>
+<li><p>Avanzar; identificar cuándo terminará la relación mentores/as-aprendices, como cuando concluyen los objetivos, los desafíos y el progreso hacia las metas. Ayude a los/as aprendices a identificar y próximos pasos, fomente la autorreflexión. Explore otros tipos de apoyo para cubrir sus necesidades. Además, es importante considerar que hay otras razones para terminar la relación de mentoría, por ejemplo, el programa puede estar llegando a su fin o la relación no está funcionando correctamente y ambas partes desean seguir de forma separada.</p></li>
+</ol>
+</div>
+<div class="section" id="establecer-metas-y-expectativas">
+<h2>Establecer metas y expectativas<a class="headerlink" href="#establecer-metas-y-expectativas" title="Permalink to this headline">¶</a></h2>
+<p>La <span class="xref myst">Harvard University</span> sugiere que tanto mentores/as como aprendices establezcan sus objetivos, expectativas y colaboren activamente para tener una mentoría efectiva. Aquí hay algunos pasos a considerar:</p>
+<ol class="simple">
+<li><p>Compromiso establecido entre aprendices y mentores/as antes de iniciar una relación de mentoría porque requiere tiempo y esfuerzo de ambos.</p></li>
+<li><p>Autoconocimiento, los/as aprendices comienzan determinando objetivos específicos y lo que es más relevante y apropiado para ellos en la relación de mentoring. Una vez que aclaren sus objetivos, ahora pueden considerar cómo esta relación podría contribuir a lograr sus objetivos.</p></li>
+<li><p>Vinculación: los/as aprendices están listos/as para considerar mentores/as potenciales para que los apoyen, en función de sus expectativas con respecto a las cualidades y atributos de los/as mentores.</p></li>
+<li><p>Establecimiento de la relación de mentoría. Los/as mentores y los/as aprendices deben definir pautas y acuerdos al principio de la mentoría.</p></li>
+<li><p>La planificación mantendrá la asociación de mentoría encaminada y enfocada en los objetivos principales. Los mentores y los/as aprendices deben trabajar en conjunto para establecer pasos de acción para cada objetivo y cómo hacerlos efectivos. Una mentoría exitosa depende de la inversión de energía en la relación y el compromiso con la experiencia.</p></li>
+<li><p>El final de una mentoría es una parte tan importante del proceso como los pasos previos. Es importante entender que no significa el final de la relación. En este proceso, puede ser una excelente oportunidad para tener una discusión similar sobre la experiencia en su conjunto o celebrar los logros. Además, los/as antiguos/as aprendices y mentores/as son excelentes recursos para incluir en la red. Al igual que con cualquier conexión de red, los/as aprendices deben asegurarse de mantenerse en contacto y participar en las comunidades derivadas de las mentorías.</p></li>
+</ol>
+</div>
+<div class="section" id="etica-y-mentoria">
+<h2>Ética y mentoría<a class="headerlink" href="#etica-y-mentoria" title="Permalink to this headline">¶</a></h2>
+<p>Los/as mentores necesitan examinar y reflexionar continuamente sobre sus valores éticos y cómo pueden influir en las decisiones en su práctica de mentoría. A continuación, se presentan algunas características profesionales que contribuyen a tener una mentoría efectiva:</p>
+<ol class="simple">
+<li><p>Los/as mentores/as y aprendices deben conocer bien el código de conducta de su institución para la mentoría. Al mismo tiempo, deben leer los códigos de ética profesional para tener una relación de mentoría saludable y aceptar eso antes de que comience la mentoría.</p></li>
+<li><p>El desarrollo de pautas normativas, entre mentores/as y aprendices, es una herramienta poderosa para reflexionar en conjunto sobre valores y límites, y para promover el pensamiento ético.</p></li>
+<li><p>En la mayoría de las profesiones, un conjunto de valores determina la conducta profesional ética y se convierte en parte de la identidad profesional.</p></li>
+<li><p>Los/as mentores/as deben asumir la responsabilidad del poder que ostentan y nunca utilizarlo de forma abusiva sobre otros más vulnerables. Debe haber una estructura de denuncia abierta y clara para cualquier abuso de poder.</p></li>
+<li><p>Los/as aprendices pueden identificarse con mentores/as que tienen valores, actitudes y experiencias que ellos tienen o aspiran a tener.</p></li>
+</ol>
+<p>Además, <span class="xref myst">The Actuaries w Without Borders</span> describe algunas características personales en la mentoría:</p>
+<ol class="simple">
+<li><p>Mentores/as; hacer preguntas abiertas y de apoyo y proporcionar comentarios constructivos.</p></li>
+<li><p>Mentores/as; mantener un tono amistoso y sea positivo.</p></li>
+<li><p>Mentores/as; fomentar las oportunidades de desarrollo para los/as aprendices.</p></li>
+<li><p>Mentores/as; ayudar a los aprendices a resolver su propio problema, en lugar de cómo hacerlo.</p></li>
+<li><p>Mentores/as; dar un refuerzo positivo.</p></li>
+<li><p>Mentores/as; ser accesibles para ayudar a los/as aprendices.</p></li>
+<li><p>Aprendices; estar preparado/a.</p></li>
+<li><p>Aprendices; asumir la responsabilidad de los errores.</p></li>
+<li><p>Aprendices; agradecer a su mentor/a.</p></li>
+<li><p>Mentores/as y aprendices; Valorar al/la socio/a mentor/a como persona</p></li>
+<li><p>Mentores/as y aprendices; Desarrollar la confianza y el respeto mutuos.</p></li>
+<li><p>Mentores/as y aprendices; Escuchar activamente tanto lo que se dice como cómo se dice.</p></li>
+</ol>
+</div>
+<div class="section" id="mejores-practicas-de-mentoria">
+<h2>Mejores prácticas de mentoría<a class="headerlink" href="#mejores-practicas-de-mentoria" title="Permalink to this headline">¶</a></h2>
+<p>La mentoría implica la relación entre mentores/as y aprendices. Los/as buenos/as mentores/as son personas entusiastas que disfrutan el papel que desempeñan para ayudar a otros a lograr sus objetivos <span class="xref myst">(CHLP)</span>. Hay algunos roles diferentes que los/as mentores/as pueden estar obligados a tomar:</p>
+<ol class="simple">
+<li><p>Trabajo en red; los/as mentores/as ayudan a los/as aprendices a encontrar personas y recursos que van más allá de su experiencia.</p></li>
+<li><p>Asesoramiento; los/as mentores/as alientan, inspiran y desafían a los/as aprendices a lograr sus objetivos. Además, actúan como confidentes, ayudando a los/as aprendices a aclarar problemas reales y viendo el panorama general.</p></li>
+<li><p>Facilitar; los/as mentores/as comparten sus experiencias, consejos, enfatizando cómo su experiencia podría ser diferente de sus experiencias.</p></li>
+<li><p>Entrenamiento; los/as mentores/as construyen la confianza de sus aprendices a través de comentarios de apoyo.</p></li>
+<li><p>Disfrutando del proceso de la mentoría; los/as mentores/as deben ser espontáneos solo para enviar una palabra de aliento o una nueva información.</p></li>
+<li><p>Evitar controlar la relación de mentoría.</p></li>
+<li><p>Se recomienda que sea el/la aprendiz quien se asegure fijar la siguiente fecha de reunión en coordinación con el/la mentor/a.</p></li>
+</ol>
+</div>
+<div class="section" id="comenzando-a-ser-mentorado-en-opensciencelabs">
+<h2>Comenzando a ser mentorado en OpenScienceLabs<a class="headerlink" href="#comenzando-a-ser-mentorado-en-opensciencelabs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Quien aspire a contar con una mentoría deberá llenar una formulario en ****. Detallando el área de mentoría, la disponibilidad de tiempo (incluir la zona horaria) y objetivos que se quiere lograr después de la terminada.</p></li>
+<li><p>Con base en el formulario, OpenScienceLabs buscará mentores/as dentro la comunidad, en un plazo no mayor a una semana se le mostrará las opciones al/la aspirante a aprendiz.</p></li>
+<li><p>Una vez se haya coordinado con el/la mentor/a y el/la aprendiz se organizará una primer encuentro que en lo posible tendrá la participación de una persona del Board de OpenScienceLabs. A partir de esa primera reunión el/la aprendiz y el/la mentora coordinarán sus siguientes sesiones para la mentoría.</p></li>
+<li><p>Una vez finalizada la mentoría ambos, mentor/a y aprendiz llenarán un formulario para indicar si la mentoría alacanzó sus objetivos, cuales fueron las dificultades y/o razones de conclusión de la mentoría.</p></li>
+</ul>
+</div>
+<div class="section" id="codigo-de-conducta-de-mentores-mcoc">
+<h2>Código de conducta de mentores (MCOC)<a class="headerlink" href="#codigo-de-conducta-de-mentores-mcoc" title="Permalink to this headline">¶</a></h2>
+<p>Como organización, nos unimos al <span class="xref myst"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" /></span>. No obstante, hemos decidido complementarlo con un apartado dedicado al proceso de mentoring. Para obtener más información sobre nuestro Código de conducta de mentores, revise esa sección en nuestro [Código de conducta] (mentoring-guideline/docs/COC.md).</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./mentoring"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
