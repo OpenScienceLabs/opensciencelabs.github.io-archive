@@ -1,0 +1,8 @@
+name: osl
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - poetry
+  - nodejs

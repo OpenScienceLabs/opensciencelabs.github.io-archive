@@ -1,0 +1,54 @@
+/*
+ * yellow: #F0C808 
+ * light blue: #0E91C3
+ */
+
+.nav-item > a {
+    color: #FFF
+} 
+.nav-item.active > a{
+    color: #F0C808;
+}
+.navbar{
+    background-color: #0E91C3;
+}
+  
+.archive {
+    margin-top: 5px;
+    float: center;
+}
+
+
+
+
+div.prompt {
+    display: none;
+}
+
+div.input  {
+    border: none;
+    background-color: none;
+}
+
+div.input * {
+    background-color: none;
+}
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.body-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 750px;
+}
+
+div.output_subarea {
+    /* Widens image-containing divs so that image is full body width */
+    max-width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
