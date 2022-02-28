@@ -1,0 +1,4 @@
+Sitemap: https://opensciencelabs.org/sitemapindex.xml
+
+User-Agent: *
+Host: opensciencelabs.org

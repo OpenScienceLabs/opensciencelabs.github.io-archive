@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias? | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0036-cienciaabiertapandemias/ciencia-abierta/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Yurely Camacho">
+<meta property="description" content="Al transcurrir los años se han presentado pandemias que han azotado y puesto en alerta al mundo. Por tal motivo, la manera como las personas, instituciones y gobiernos lo han manejado resulta de suma ">
+<link rel="prev" href="../../0037-visualizacion_python/ciencia-abierta/" title="Herramientas de visualización en Python" type="text/html">
+<link rel="next" href="../../0035-automatizaciondecitasyreferencias/ciencia-abierta/" title="Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible." type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pand">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0036-cienciaabiertapandemias/ciencia-abierta/">
+<meta property="og:description" content="Al transcurrir los años se han presentado pandemias que han azotado y puesto en alerta al mundo. Por tal motivo, la manera como las personas, instituciones y gobiernos lo han manejado resulta de suma ">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="open science">
+<meta property="article:tag" content="pandemic">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/yurely-camacho/">Yurely Camacho</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0036-cienciaabiertapandemias/cienciaabiertapandemias.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+            <li><a class="tag p-category" href="../../../categories/pandemic/" rel="tag">pandemic</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias? -->
+<!-- **Por Yurely Camacho** -->
+
+<p><img alt="header" src="header.png"></p>
+<p>Al transcurrir los años se han presentado pandemias que han azotado y puesto en alerta al mundo. Por tal motivo, la manera como las personas, instituciones y gobiernos lo han manejado resulta de suma importancia ya sea para prevenir errores cometidos, tomar medidas similares o reinventarse acciones en el tema. Justo es aquí donde entra en juego la ciencia abierta. Tal vez te preguntarás ¿Cuál es el papel de la ciencia abierta en todo esto? Pues las distintas disciplinas que abarca, como el acceso y los datos abiertos, han permitido producir conocimiento científico para combatir estas pandemias, por ejemplo, para realizar un diagnóstico temprano, en la gestión de la producción de vacunas, o para predecir niveles de propagación de las enfermedades y generar soluciones tecnológicas.</p>
+<!-- TEASER_END -->
+
+<p>En este artículo te presentamos algunas iniciativas de ciencia abierta que han permitido reducir y controlar el impacto de estas enfermedades, la COVID-19, el Zika, la gripe, el dengue, el SARS (Síndrome respiratorio agudo grave) y el MERS (Síndrome respiratorio de Oriente Medio), dejando aprendizajes y avances en este ámbito.</p>
+<h3>¿Por qué la Ciencia Abierta?</h3>
+<p>En la actual pandemia de la COVID-19 el acceso a información, la difusión de datos y el uso de código abierto, aceleraron las investigaciones haciendo posible que en pocas semanas se obtuvieran avances significativos, en comparación con aquellos que hubieran sido obtenidos si la información no estuviera abierta. El mejor ejemplo está en el proceso de secuenciación de su genoma, que se logró en solo 11 días publicándose abiertamente, permitiendo conocer sobre formas de transmisión y posibles métodos de detección. Se encuentran disponibles decenas de portales de investigación, revistas y otras herramientas de acceso abierto con información sobre el COVID-19 y su causante, el virus SARS-COV2. Te presentamos algunos en las referencias del artículo.</p>
+<p>Algunas de esas investigaciones sobre el coronavirus se publicaron de manera abierta antes de tener la revisión por pares, para acelerar los tiempos de difusión del conocimiento. Este tipo de prácticas ya había sido implementada durante las pandemias de SARS en 2003, de gripe AH1N1 en 2009 y el Zika en la década de los 50, pero la evolución de las Tecnologías de Información y Comunicación (TIC) en estos años ha permitido que se implementen con mayor fuerza.
+De igual forma, la pandemia del Zika estuvo influenciada por el acceso
+abierto, aunque en menor medida que el COVID-19. Se publicaron en
+abierto resultados de investigaciones, por ejemplo, la reseñada en
+<a href="https://www.eurekalert.org/pub_releases/2019-01/potn-anz010919.php">Proceedings of the National Academy of
+Sciences</a>,
+[este
+artículo](https://www.elsevier.es/es-revista-revista-colombiana-anestesiologia-341-articulo-zika-una-pandemia-progreso-un-S0120334716300235
+y otro <a href="https://www.elsevier.es/es-revista-revista-colombiana-anestesiologia-341-articulo-virus-zika-se-expande-su-S0120334716000216">publicado en
+Elsevier</a>.</p>
+<p>Como todavía no hay cura para la fiebre del Zika, el desarrollo de
+vacunas y la terapia contra el virus es relevante. Sin embargo, en un
+<a href="https://blogs.iadb.org/conocimiento-abierto/es/fortaleciendo-la-respuesta-ante-el-zika-mediante-la-colaboracion-abierta/">artículo del
+2016</a>
+sobre colaboración abierta en respuesta al Zika, se expone la falta de
+un sistema eficaz para compartir datos e información y hace referencia a
+una <a href="https://www.who.int/bulletin/online_first/16-170860/en/">convocatoria para
+investigadores</a>
+publicada por la Organización Mundial de la Salud (OMS) en 2015.
+Actualmente, más de 30
+<a href="https://blog.wellcome.ac.uk/2016/02/10/sharing-data-during-zika-and-other-global-health-emergencies/">organizaciones</a>
+han ratificado la declaración de consenso de la OMS para compartir datos
+del zika.</p>
+<p>Para minimizar la falta de información, El <a href="https://www.iadb.org/es">Banco Interamericano de
+Desarrollo (BID)</a>, el <a href="http://www.thegovlab.org">Governance Lab</a> y
+asociados gubernamentales de algunos países de América del Sur
+colaboraron para llevar a cabo conferencias bajo el nombre de <a href="https://zika.smartercrowdsourcing.org/">Smarter
+Crowdsourcing</a> (Colaboración
+abierta inteligente) buscando especialistas para impulsar una respuesta
+colaborativa ante la crisis del Zika. Otro recurso abierto, es <a href="https://www.who.int/bulletin/online_first/zika_open/en/">"Zika
+Open"</a> una
+sección de la revista de investigación de la OMS, en la que los expertos
+pueden compartir libremente sus datos.</p>
+<p>Los datos juegan un rol importante en el tratamiento de las pandemias, y
+su procesamiento es fundamental para mantenernos informados. El
+desarrollo de tableros de monitoreo de casos de COVID-19, mapas con
+datos en tiempo real, informes dinámicos y otras visualizaciones nos han
+permitido conocer sobre la propagación del virus. Asimismo con datos de
+buena calidad, la ciencia de datos puede ser una poderosa herramienta
+para realizar predicciones sobre la evolución de la enfermedad COVID-19
+o incluso para buscar un posible tratamiento. La <a href="https://www.heraldo.es/noticias/aragon/zaragoza/2020/02/28/la-universidad-de-zaragoza-disena-un-mapa-que-predice-los-nuevos-contagios-por-coronavirus-1361341.html">Universidad de
+Zaragoza diseña un mapa que predice los nuevos contagios por
+coronavirus</a>.
+Asimismo, la compañía de biotecnología <em>AbCellera</em> está empleando un
+<a href="https://www.abcellera.com/news/2020-03-abcellera-and-lilly-codevelopment">modelo de Machine
+learning</a>
+para desarrollar terapias basadas en anticuerpos de pacientes que se han
+recuperado de la enfermedad.</p>
+<p>Modelos predictivos de este tipo también se emplearon en la pandemia del
+Zika. Uno de ellos desarrollado por el Consejo Nacional de
+Investigaciones Científicas y Técnicas
+<a href="https://www.conicet.gov.ar/">CONICET</a> en Argentina junto con Ecuador y
+Colombia en 2019. La investigación incluyó la captura de mosquitos
+adultos y su análisis genético con la finalidad de aplicar dichos
+modelos para conocer probabilidades de brotes en áreas particulares y
+así evaluar posibles acciones preventivas. De igual forma, estos modelos
+estuvieron presentes en la pandemia de gripe AH1N1, donde un estudio de
+investigadores de la Escuela Médica de Harvard determinaron que el uso
+de la Wikipedia y así el empleo de big data, son capaces de predecir con
+precisión la llegada de los brotes de gripe en EEUU
+(http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003581).
+Puedes consultar información abierta sobre la influenza y las pandemias
+de gripe, como la gripe aviar y la AH1N1
+<a href="https://espanol.cdc.gov/flu/pandemic-resources/index.htm">aquí</a> y
+también sobre fuentes de información acerca de la gripe aviar en <a href="https://www.researchgate.net/publication/331177707_Fuentes_de_Informacion_acerca_de_la_Gripe_Aviar">este
+enlace</a>.</p>
+<p>Los datos abiertos son tomados para desarrollar metodologías que hagan
+más accesible la información a cualquier persona. De esta manera Google
+y <a href="https://www.unicef.org/es">UNICEF</a> trabajaron para desarrollar un
+panel de control abierto al público sobre el zika, para analizar grandes
+cantidades de datos, así como para visualizar y predecir brotes
+potenciales de enfermedades, puedes encontrar información en <a href="https://googleblog.blogspot.com/2016/03/providing-support-to-combat-zika-in.html">este
+enlace</a>.</p>
+<p>Los avances tecnológicos y la influencia de las TIC han cerrado la
+brecha de la desinformación, aunque en ocasiones su uso hace que se
+divulgue información poco certera. En <a href="https://www.scielo.sa.cr/scielo.php?script=sci_arttext&amp;pid=S1409-14292009000100001">este
+artículo</a>
+se presenta la influencia de las TIC durante la pandemia de la gripe.
+Donde algunas iniciativas fueron llevar a cabo cursos virtuales y
+conferencias durante la pandemia, fue una iniciativa desarrollada por la
+OPS usando el programa <em>Elluminate</em> que en la actualidad se comercializa
+bajo el nombre de <a href="https://www.blackboard.com/teaching-learning/collaboration-web-conferencing/blackboard-collaborate">Blackboard
+Collaborate</a>.
+En la actual pandemia del COVID-19 se ha hecho inevitable el amplio uso
+de estas tecnologías que permiten el teletrabajo y la investigación
+colaborativa como Git, redes sociales como Whatsapp, han ayudado a
+mantenernos comunicados y trabajando.</p>
+<p>Otro aspecto importante es la investigación colaborativa, por ejemplo,
+en proyectos de código abierto o repositorios de datos. En la pandemia
+de gripe AH1N1 en 2009 se creó un repositorio en la plataforma
+colaborativa GitHub acerca de la <a href="https://github.com/JDureau/H1N1-London-2009">gripe AH1N1 en el 2009 en
+London</a>. Otros repositorios
+en esta plataforma referentes a información y proyectos sobre pandemias
+son: <a href="https://github.com/BuzzFeedNews/zika-data#additional-resources">Repositorio de datos sobre los brotes del
+zika</a> y
+en https://github.com/cdcepi/zika, el proyecto en GitHub de la app
+Española <a href="https://github.com/open-coronavirus/open-coronavirus/blob/master/README.es.md">Open
+Coronavirus</a>,
+que busca tener cuarentenas selectivas en lugar de masivas en España.</p>
+<p>Frente al COVID-19 se han desarrollado proyectos de código abierto,por
+ejemplo, el proyecto <a href="https://www.ushahidi.com/"><em>Ushahidi</em></a>, que
+proporciona, entre otras cosas, mapas de infectados y lugares donde
+pueden suministrarse alimentos. Otro iniciativa es <a href="https://ingenia.es/actualidad/conocimiento/lanzamos-ecaller-epidemias-software-libre-para-hacer-frente-a-covid-19/">eCALLER
+EPIDEMIAS</a>
+que cuenta con un despliegue de aplicaciones para el diagnóstico y
+monitorización. Otra iniciativa han sido <em>hackatones</em> que reunen a las
+personas para usar sus habilidades y ayudar a combatir los problemas con
+la pandemia desarrollando proyectos de tecnología. Uno de ellos, el
+<a href="https://www.twitch.tv/hackquarantine">Hack Quarantine</a>, el <a href="https://lists.debian.org/debian-devel-announce/2020/03/msg00010.html">Debian
+biohackatone</a>
+y
+<a href="https://en.unesco.org/news/codethecurve-youth-innovators-hacking-their-way-surmount-covid-19-challenges">CodeTheCurve</a>.
+Algunas instituciones tecnológicas han creado fondos para financiar
+proyectos de código abierto en combate al COVID-19 como el de
+<a href="https://blog.mozilla.org/blog/2020/03/31/moss-launches-covid-19-solutions-fund/">Mozila</a>.</p>
+<p>Las pandemias del SARS en 2003 y el MERS en 2012, fueron causadas por
+tipos distintos de coronavirus. Las investigaciones realizadas en la
+pandemia del SARS influyen ahora en relación al nuevo tipo de
+coronavirus SARS COV-2 causante de la enfermedad COVID-19, puedes
+consultar <a href="https://www.intramed.net/contenidover.asp?contenidoid=95673">este
+artículo</a>
+para más información. Algunos trabajos en acceso abierto puedes
+consultarlos
+<a href="https://academica-e.unavarra.es/bitstream/handle/2454/9567/Hao%20Niu.pdf?sequence=1&amp;isAllowed=y">aquí</a>
+y en <a href="https://www.scielosp.org/article/ssm/content/raw/?resource_ssm_path=/media/assets/rpsp/v14n1/16645.pdf">este
+enlace</a>.
+Asimismo, se realizaron comparaciones de como <a href="https://gacetamedica.com/investigacion/todo-lo-que-se-sabe-del-nuevo-coronavirus-2019-ncov-fx2404160/">el coronavirus SARS-COV2
+supera los casos del SARS de 2003 para Enero
+2020</a>
+y otras investigaciones relacionadas y comparando los 3 tipos de
+coronavirus causantes de estas pandemias (SARS, MERS y COVID-19), puedes
+consultar información
+<a href="https://gacetamedica.com/investigacion/que-paso-con-los-otros-brotes-de-coronavirus/">aquí</a>.</p>
+<p>Las investigaciones iniciadas sobre los coronavirus del SARS y el MERS
+sirvieron para conocer sobre estos virus y que los científicos e
+investigadores se dieran una idea de lo que sería el nuevo coronavirus
+SARS Cov-2 causante del COVID-19. El conocimiento y los datos abiertos
+relacionados a las anteriores pandemias, permiten que se hagan
+investigaciones como la de <a href="https://www.lavanguardia.com/ciencia/20200227/473812035831/coronaviris-covid19-letal-gripe-sars-mers.html">este
+artículo</a>
+donde comparan la letalidad del COVID-19, el SARS, MERS y la gripe.</p>
+<p>El Dengue ha sido otra pandemia para la cual se han llevado a cabo
+proyectos como un <a href="https://idatosabiertos.org/wp-content/uploads/2015/10/7.Dengue-Pane-Ojeda-Valdez.pdf">Documento de trabajo sobre datos abiertos del
+dengue</a>
+por parte de la Iniciativa Latinoamericana por los Datos Abiertos y el
+Open Data que presentan mapas de riesgo y de incidencia dinámicos para
+18 países de la región de las Américas de la OMS. También está
+["DengueNet"](http://ghdx.healthdata.org/record/who-denguenet], el
+sistema central de gestión de datos de la OMS para la vigilancia
+epidemiológica y virológica mundial del dengue y la fiebre hemorrágica
+del dengue. Puedes visitar <a href="http://www.bvs.hn/php/level.php?lang=es&amp;component=59&amp;item=2">en este
+enlace</a>
+otros sitios de acceso abierto a información sobre el dengue.</p>
+<p>Cabe resaltar que la era tecnológica, los avances y los nuevos usos de
+las TIC afectan y mejoran la forma en la que las personas acceden a la
+información sobre salud. Esto ha sido fundamental para la ciencia
+abierta y podemos observarlo si comparamos las iniciativas actuales
+frente al COVID-19 con las surgidas frente a otras pandemias.</p>
+<h3>Lo que sabemos hasta ahora</h3>
+<p>De todas las iniciativas de ciencia abierta que se han desarrollado en torno a las pandemias, hemos aprendido a divulgar datos e información, mantenernos actualizados y reconocer información veraz como la proporcionada por la OMS, a trabajar de forma colaborativa con personas de distintos lugares en el mundo, tomar conciencia de nuestro papel protagónico en el cumplimiento de medidas sanitarias, a hacer uso de herramientas digitales para mantenernos informados y publicar información importante, a tomar decisiones personales y colectivas en base a datos abiertos y herramientas de acceso abierto, en fin, poner en práctica y a disposición nuestras capacidades para generar proyectos que creen soluciones y todos se beneficien de ellas, asimismo formar parte como usuarios o beneficiarios de esos proyectos y hacer que la práctica de la ciencia abierta sea cada vez más adaptada en la cotidianidad de las personas. También nos han permitido reconocer los avances tecnológicos para la investigación, eliminar las barreras entre investigadores y los ciudadanos de todo el mundo y con ayuda de los datos e información disponible, podamos comparar las acciones que se han llevado a cabo y reconocer que la ciencia abierta tiene un rol importante en el ámbito de la salud. Finalmente, debemos decir que las pandemias han hecho que los gobiernos conozcan y actúen de manera rápida y eficiente ante cualquier pandemia y esto ha sido posible, con el transcurrir de los años, gracias a las buenas prácticas de ciencia abierta.</p>
+<h4>Referencias</h4>
+<ul>
+<li>
+<p><a href="https://blogs.iadb.org/conocimiento-abierto/es/coronavirus-recursos-y-conocimiento-abierto-para-colaborar-en-la-respuesta-a-la-pandemia/">Coronavirus: Recursos y conocimiento abierto para colaborar en la
+  respuesta a la
+  pandemia</a>.</p>
+</li>
+<li>
+<p><a href="https://r3d.mx/2020/01/21/la-ciencia-abierta-ha-sido-crucial-en-la-lucha-contra-el-nuevo-coronavirus-de-wuhan/">La ciencia abierta ha sido crucial en la lucha contyra el
+  coronavirus</a>.</p>
+</li>
+<li>
+<p><a href="https://blogs.iadb.org/conocimiento-abierto/es/fortaleciendo-la-respuesta-ante-el-zika-mediante-la-colaboracion-abierta/">Fortaleciendo la respuesta ante el Zika mediante la colaboración
+  abierta</a>.</p>
+</li>
+</ul>
+<p><strong>Algunas plataformas de acceso abierto sobre el COVID-19 y el SARS-COV2:</strong></p>
+<ul>
+<li>
+<p><a href="https://search.bvsalud.org/global-literature-on-novel-coronavirus-2019-ncov/">Base de Datos sobre investigación en COVID-19 de la Organización
+  Mundial de la
+  Salud (OMS)</a></p>
+</li>
+<li>
+<p><a href="https://search.bvsalud.org/global-literature-on-novel-coronavirus-2019-ncov/">Literatura mundial sobre la enfermedad COVID-19 de la
+  OMS</a></p>
+</li>
+<li>
+<p><a href="https://www.who.int/es">Canal de noticias de la OMS</a></p>
+</li>
+<li>
+<p><a href="https://es.statista.com/temas/5901/el-coronavirus-de-wuhan/">Statista en Español</a></p>
+</li>
+<li>
+<p><a href="https://datos.bancomundial.org/">Datos del Banco Mundial</a></p>
+</li>
+<li>
+<p><a href="https://espanol.cdc.gov/flu/index.htm">Center for Control and Prevention of
+  Disease</a></p>
+</li>
+<li>
+<p><a href="https://covid-19.ebscomedical.com/research">EBSCO Medical</a></p>
+</li>
+<li>
+<p><a href="https://coronavirus.1science.com/search">Repositorio de Investigación de
+  Elsevier</a>. En particular este
+  repositorio contiene artículos sobre COVID-19, <em>SARS</em> y <em>MERS</em>, las
+  dos últimas fueron pandemias desarrolladas en la primera década del
+  siglo XXI.</p>
+</li>
+<li>
+<p><a href="https://www.elsevier.com/connect/coronavirus-information-center">Centro de Información de Coronavirus de
+  Elsevier</a></p>
+</li>
+<li>
+<p><a href="https://www.thelancet.com/coronavirus">Centro de Recursos sobre el Coronavirus de The Lancet</a></p>
+</li>
+<li>
+<p><a href="https://www.ssrn.com/index.cfm/en/coronavirus/">Página de Investigación de Coronavirus y Enfermedades Infecciosas de la SSRN</a></p>
+</li>
+<li>
+<p><a href="https://www.nature.com/collections/hajgidghjb?utm_source=sn&amp;utm_medium=referral&amp;utm_content=null&amp;utm_campaign=BSLB_1_CA01_GL_BSLB_AWA_CA01_GL_LSGR_PubH_Coronovirus_LandingPage">Nature Research</a></p>
+</li>
+<li>
+<p><a href="https://taylorandfrancis.com/coronavirus/">Taylor &amp; Francis</a></p>
+</li>
+<li>
+<p><a href="https://www.nejm.org/coronavirus">New England Journal of Medicine</a></p>
+</li>
+<li>
+<p>La Universidad de Chile ofrece una web donde guarda enlaces a sitios
+  de acceso abierto sobre información e investigaciones acerca del
+  COVID-19. Visítala en <a href="https://bibliotecas.uv.cl/recursos-acceso-abierto">este
+  enlace</a>.</p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0037-visualizacion_python/ciencia-abierta/" rel="prev" title="Herramientas de visualización en Python">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0035-automatizaciondecitasyreferencias/ciencia-abierta/" rel="next" title="Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0036-cienciaabiertapandemias/ciencia-abierta/",
+        disqus_title="\u00bfQu\u00e9 hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?",
+        disqus_identifier="cache/pages/blog/0036-cienciaabiertapandemias/cienciaabiertapandemias.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

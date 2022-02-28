@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Science Labs (Publicaciones de Anavelyz Pérez)</title><link>https://opensciencelabs.org/</link><description></description><atom:link href="https://opensciencelabs.org/authors/anavelyz-perez.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2022 &lt;a href="mailto:opensciencelabs@gmail.com"&gt;Open Science Labs Team&lt;/a&gt; </copyright><lastBuildDate>Mon, 28 Feb 2022 00:14:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Automatización de tareas vía bash</title><link>https://opensciencelabs.org/blog/0038-bash/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0038-bash/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;¿Qué es Bash?&lt;/p&gt;
+&lt;p&gt;Es un shell, o intérprete de lenguaje de comandos, para el sistema operativo
+GNU. Su nombre es un acrónimo de "&lt;em&gt;Bourne-Again SHell&lt;/em&gt;", un juego de palabras
+sobre Stephen Bourne, el autor del antepasado directo del actual shell de Unix
+sh, que apareció en la séptima edición de la versión de &lt;em&gt;Bell Labs Research&lt;/em&gt; de
+Unix.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0038-bash/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 5 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>automation</category><category>bash</category><guid>https://opensciencelabs.org/blog/0038-bash/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>Cinco cosas que no debes olvidar al trabajar con datos abiertos</title><link>https://opensciencelabs.org/blog/0024-5_datos_abiertos/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0024-5_datos_abiertos/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;Cada vez es más común leer o escuchar sobre datos abiertos pero puede que no
+sepamos del todo lo que esto significa. Por ello, vamos a revisar inicialmente
+este concepto.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0024-5_datos_abiertos/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 4 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open data</category><guid>https://opensciencelabs.org/blog/0024-5_datos_abiertos/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>Herramientas de visualización en Python</title><link>https://opensciencelabs.org/blog/0037-visualizacion_python/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0037-visualizacion_python/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;En uno de nuestros artículos, específicamente &lt;a href="http://opensciencelabs.org/2020/01/22/ocho/"&gt;10 razones para usar Python en tu proximo proyecto de investigación&lt;/a&gt;, se da un recorrido por las ventajas que brinda el lenguaje de programación Python, de allí podemos extraer algunas de sus características tales como:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0037-visualizacion_python/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>python</category><category>visualization</category><guid>https://opensciencelabs.org/blog/0037-visualizacion_python/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>Investigación Colaborativa con Git</title><link>https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;La Investigación Colaborativa surge en el momento en el cual varias entidades
+que pueden estar especializadas en diferentes áreas, se establecen un mismo
+objetivo o proyecto. La finalidad de una investigación bajo este modelo es encontrar soluciones,
+descubrir o explicar comportamientos de un fenómeno en particular. Este fenómeno
+puede ser del punto de vista económico, social, politico, científico, entre
+otros.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 4 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><guid>https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.</title><link>https://opensciencelabs.org/blog/0005-investigacion_abierta_ciencias/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0005-investigacion_abierta_ciencias/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;La investigación abierta despliega nuevos horizontes en distintos niveles,
+económicos, sociales, industriales, politicos e incluso en las ciencias puras.
+Esta investigación permite que los resultados de los estudios y de los procesos
+sean abiertos, respetando la licencia de conocimiento libre. Además se publican
+los datos, procedimientos y otras herramientas de la investigación (cuadernos de
+notas, cuadernos de campo, videos de experimentos, datos de encuestas, etc.).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0005-investigacion_abierta_ciencias/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><guid>https://opensciencelabs.org/blog/0005-investigacion_abierta_ciencias/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>La investigación abierta, el manejo de repositorios y control de versiones</title><link>https://opensciencelabs.org/blog/0022-Investigacion_abierta_rep_vers/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0022-Investigacion_abierta_rep_vers/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;Las investigaciones son esenciales en el avance tecnológico y social porque nos
+permiten encontrar respuestas a muchas dudas e hipótesis que surgen diariamente
+así como encontrar soluciones a acontecimientos que lo requieran. Por ello, cuando se menciona el término
+investigación abierta, se hace alusión a aquella investigación en particular que
+toma en cuenta los elementos de ciencia abierta.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0022-Investigacion_abierta_rep_vers/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 4 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><category>versioning</category><guid>https://opensciencelabs.org/blog/0022-Investigacion_abierta_rep_vers/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta</title><link>https://opensciencelabs.org/blog/0039-bibliotecas_visualizacion/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0039-bibliotecas_visualizacion/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;Un proyecto de ciencia abierta así como cualquier otro requiere de una
+evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse
+a cabo. En el caso de ciencia abierta, debemos tener en cuenta que por su
+alcance e impacto en la comunidad científica y sociedad en general es vital
+estudiar las herramientas que se utilizarán ya que de ellas depende la obtención
+de resultados óptimos, visualmente atractivos y lo suficientemente informátivos.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0039-bibliotecas_visualizacion/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 4 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><category>python</category><guid>https://opensciencelabs.org/blog/0039-bibliotecas_visualizacion/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>Todo lo que debes saber sobre la investigación colaborativa</title><link>https://opensciencelabs.org/blog/0003-investigacion_colaborativa/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0003-investigacion_colaborativa/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;La investigación colaborativa es un término que se le atribuye al hecho de
+realizar o llevar a cabo investigaciones y/o proyectos donde participan más de
+una persona, instituciones o empresas. La ventaja de este tipo de investigación
+es la unión de distintos conocimientos, experiencias y perspectivas que pueden
+resultar en innovaciones, aprendizajes mutuos y condiciones estables u optimas
+para enfrentar obstáculos.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0003-investigacion_colaborativa/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><guid>https://opensciencelabs.org/blog/0003-investigacion_colaborativa/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?</title><link>https://opensciencelabs.org/blog/0013-acceso_abierto/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0013-acceso_abierto/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;El acceso abierto es un término que se utiliza para definir aquellos proyectos
+que están disponibles para todo público de forma libre y gratuita, en Internet o
+cualquier otro medio. En este tipo de proyectos se permite copiar, utilizar o
+distribuir el contenido con la condición de que se le den créditos al autor.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0013-acceso_abierto/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open science</category><guid>https://opensciencelabs.org/blog/0013-acceso_abierto/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item><item><title>¿Qué es el código abierto y cómo puede ayudarte?</title><link>https://opensciencelabs.org/blog/0020-codigo_abierto/ciencia-abierta/</link><dc:creator>Anavelyz Pérez</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/blog/0020-codigo_abierto/ciencia-abierta/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;Cuando escuchamos la palabra &lt;em&gt;código&lt;/em&gt; podríamos pensar que se trata de algo
+oculto y secreto, en una contraseña o simplemente algún identificador. Sin
+embargo, en el mundo computacional, por ejemplo, cuando se habla de
+&lt;em&gt;código&lt;/em&gt; se hace referencia a una serie de palabras, números y símbolos que,
+combinadas, corresponden a un conjunto de comandos que producen una solución,
+generan el proceso de alguna tarea o forman un sistema en especifico. En
+desarrollo de software, la palabra &lt;em&gt;código&lt;/em&gt; hace referencia a uno o varios
+lenguajes de programación.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://opensciencelabs.org/blog/0020-codigo_abierto/ciencia-abierta/"&gt;Leer más…&lt;/a&gt; (quedan 4 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>open source</category><guid>https://opensciencelabs.org/blog/0020-codigo_abierto/ciencia-abierta/</guid><pubDate>Mon, 08 Apr 2019 05:00:00 GMT</pubDate></item></channel></rss>

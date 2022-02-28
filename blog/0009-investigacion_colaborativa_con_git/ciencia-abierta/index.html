@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investigación Colaborativa con Git | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Anavelyz Pérez">
+<meta property="description" content="La Investigación Colaborativa surge en el momento en el cual varias entidades
+que pueden estar especializadas en diferentes áreas, se establecen un mismo
+objetivo o proyecto. La finalidad de una inves">
+<link rel="prev" href="../../0010-manejodecienciaabierta/ciencia-abierta/" title="Aspectos clave en el manejo de equipos de ciencia abierta" type="text/html">
+<link rel="next" href="../../0008-5gestion_datos/ciencia-abierta/" title="Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Investigación Colaborativa con Git">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/">
+<meta property="og:description" content="La Investigación Colaborativa surge en el momento en el cual varias entidades
+que pueden estar especializadas en diferentes áreas, se establecen un mismo
+objetivo o proyecto. La finalidad de una inves">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="open science">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Investigación Colaborativa con Git</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/anavelyz-perez/">Anavelyz Pérez</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Investigación Colaborativa con Git -->
+<!-- **Por Anavelyz Pérez** -->
+
+<p><img alt="header" src="header.png"></p>
+<p>La Investigación Colaborativa surge en el momento en el cual varias entidades
+que pueden estar especializadas en diferentes áreas, se establecen un mismo
+objetivo o proyecto. La finalidad de una investigación bajo este modelo es encontrar soluciones,
+descubrir o explicar comportamientos de un fenómeno en particular. Este fenómeno
+puede ser del punto de vista económico, social, politico, científico, entre
+otros.</p>
+<!-- TEASER_END -->
+
+<p>La investigación colaborativa puede surgir en distintas ocasiones donde se
+requiera un ciclo colaborativo de acuerdo a las necesidades que se presenten,se
+busca brindar aportes significativos en la sociedad o entorno.</p>
+<p>A continuación se muestran algunos ejemplos en los cuales es útil este
+tipo de investigación:</p>
+<ul>
+<li>
+<p>Un departamento particular esta ayudando a otro departamento que tiene una
+  deficiencia con respecto a la optimización de sus actividades.</p>
+</li>
+<li>
+<p>Los cultivos de una localidad se están viendo afectados por una plaga. Esta
+  plaga es similar a una ocurrida años atrás. Para estudiar las consecuencias,
+  las causas y prevenir futuros episodios como este, varios biólogos expertos
+  junto con historiadores, ingenieros agrónomos y especialistas en otras areas
+  se han reunido.</p>
+</li>
+<li>
+<p>Un grupo de expertos en diversas disciplinas se ha planteado crear un
+  documento que sea pieza fundamental en la conformación del presupuesto
+  nacional del siguiente año fiscal.</p>
+</li>
+<li>
+<p>Un diseñador industrial esta proponiendo un rediseño de uno de los productos
+  de la empresa en la que trabaja. Para ello esta realizando un estudio con la
+  ayuda de sus compañeros expertos en marketing y estadística. De manera tal
+  que se obtenga una mejor perspectiva de los usuarios, sus necesidades y
+  aceptación del mercado en general.</p>
+</li>
+<li>
+<p>Una institución privada desea financiar una fundación. Para ello ha recurrido
+  a un grupo de expertos con la finalidad de evaluar y presentar un esquema
+  del presupuesto y la descripción de lo que debe invertir para obtener los
+  mejores resultados.</p>
+</li>
+</ul>
+<p>Cada una de las situaciones ejemplificadas requieren de distintos grupos
+multidisciplinarios que pueden estar formados por personas, entidades,
+institutos o grupos de trabajo que interactúen a la vez con la información. Esto
+puede ser de manera individual, en paralelo o en conjunto para conformar lo que
+sería el proyecto final. La idea es que todos los miembros del equipo que
+llevarán a cabo el proyecto cumplan con tareas especificas según sus conocimientos
+o aptitudes.</p>
+<p>Las tareas asignadas a cada miembro pueden o no depender condicionalmente la una
+de las otras. Además de que promuevan el cambio y fomenten la participación.
+Esto implica que el proyecto estará sujeto a cambios constantes por la
+integración de nuevas ideas.</p>
+<p>Es aquí cuando nos podemos plantear ¿Cómo almacenamos todos los cambios que
+ocurren durante el proceso de avance hasta que es alcanzado el objetivo
+final?,¿Qué hacer si un miembro del proyecto elimina por accidente información
+importante?.</p>
+<p>Para esto se propone el uso de los sistemas de control de versiones (VCS siglas
+en inglés) porque nos permiten almacenar todos los cambios realizados y la
+información asociada a ellos. En este caso se recomienda principalmente <strong>Git</strong>.</p>
+<h3>Git</h3>
+<p>Es un sistema de control de versiones que se diferencia de sus similares por la
+forma en la que manejan sus datos. Git maneja sus datos como una secuencia de
+copias instantáneas. Además, "todo es verificado mediante una suma
+de comprobación (<em>checksum</em> en inglés) antes de ser almacenado, y es identificado
+a partir de ese momento mediante dicha suma. Esto significa que es imposible
+cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa."</p>
+<p>La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales
+para funcionar. Estas funcionalidades nos permiten hacer investigación
+colaborativa de manera tal que la información siempre este salvaguardada.</p>
+<p>Por otro lado Git al igual que otros VCS poseen un sistema de ramificación. Que
+consiste en tomar la versión principal del proyecto para poder trabajar en ella
+individualmente pero sin alterar la versión original, se trabaja con una especie
+de copia. Hechas las modificaciones la rama puede volver a fusionarse con el
+archivo de origen.</p>
+<p>El proceso de creación de ramas se pensaría lento y tedioso por la cantidad de
+contenido o información en el proyecto. Pero en Git esto no ocurre, es rápido y
+sencillo. La ventaja de esta funcionalidad permite a cada colaborador trabajar
+de manera separada y eficiente, sin alterar el archivo principal. Así mismo se
+pueden crear subproyectos constituidos por ramas de las cuales se tengan otras
+ramas.</p>
+<p>Git nos permite obtener nuestro propio repositorio remoto o utilizar otros
+alternativos. Esto nos ayuda a sacarle el máximo provecho a la información y a
+su vez compartir conocimiento rompiendo barreras de distancia.</p>
+<p>La investigación colaborativa con Git es ideal para crear grandes movimientos y
+proyectos. Los avances y cambios llegarán en poco tiempo, los equipos de trabajo
+pueden crear ambientes amigables de trabajo y cada aporte puede ser cuestionado
+de manera positiva consultando a los involucrados oportunamente, respetando su
+autoría y tiempo de dedicación al proyecto.</p>
+<p>Referencia:
+<strong>The entire Pro Git book</strong>. Autores: Scott Chacon y Ben Straub</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0010-manejodecienciaabierta/ciencia-abierta/" rel="prev" title="Aspectos clave en el manejo de equipos de ciencia abierta">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0008-5gestion_datos/ciencia-abierta/" rel="next" title="Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0009-investigacion_colaborativa_con_git/ciencia-abierta/",
+        disqus_title="Investigaci\u00f3n Colaborativa con Git",
+        disqus_identifier="cache/pages/blog/0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones) | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0023-documentacioncodigoabierto/ciencia-abierta/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Rainer Palm">
+<meta property="description" content="Con mucha frecuencia, los proyectos de codigo abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta Open Source Survey1 (realizada por Github, involucra">
+<link rel="prev" href="../../0024-5_datos_abiertos/ciencia-abierta/" title="Cinco cosas que no debes olvidar al trabajar con datos abiertos" type="text/html">
+<link rel="next" href="../../0022-Investigacion_abierta_rep_vers/ciencia-abierta/" title="La investigación abierta, el manejo de repositorios y control de versiones" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Si ya usas código abierto, te contamos como puedes sacarle mayor prove">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0023-documentacioncodigoabierto/ciencia-abierta/">
+<meta property="og:description" content="Con mucha frecuencia, los proyectos de codigo abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta Open Source Survey1 (realizada por Github, involucra">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="documentation">
+<meta property="article:tag" content="open source">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/rainer-palm/">Rainer Palm</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0023-documentacioncodigoabierto/documentacioncodigoabierto.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/documentation/" rel="tag">documentation</a></li>
+            <li><a class="tag p-category" href="../../../categories/open-source/" rel="tag">open source</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones) -->
+<!-- **Por Rainer Palm** -->
+
+<p><img alt="header" src="header.png"></p>
+<p>Con mucha frecuencia, los proyectos de codigo abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta Open Source Survey<a href="https://opensourcesurvey.org/2017/" title="Open Source Survey">1</a> (realizada por Github, involucrando tanto académicos, como a trabajadores en la industria de computación, como colaboradores independientes) reportó que al menos 93% de los encuestados, creían que la documentación incompleta o sin actualizar era uno de los problemas mas agravantes dentro de la esfera del software libre. En la misma encuesta, 60% de los participantes admitían también contribuir a la documentación de sus proyectos con muy poca frecuencia.</p>
+<!-- TEASER_END -->
+
+<p>Independientemente del tipo de proyecto en el que participes o de su objetivo, la documentación es un factor muy importante a la hora de crear proyectos accesibles y inclusivos, en el sentido de que facilita muchísimo tanto su uso como la colaboración entre personas que no estén activamente involucradas en su desarrollo. Establecer de forma clara términos de uso del código, manuales o guías permite a tus usuarios ser autosuficientes y dar sugerencias mucho más útiles y profundas, además de que puede ser el factor clave entre que alguien se vuelva un colaborador o que termine ignorando tu proyecto. Tal como dice WriteTheDocs<a href="http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs" title="Write The Docs | Why Write Docs?">2</a>:</p>
+<ul>
+<li>Si la gente no sabe que tu proyecto existe, no lo usarán.</li>
+<li>Si la gente no sabe como instalar tu codigo, no lo usarán.</li>
+<li>Si la gente no puede entender como usar tu codigo, no lo usarán.</li>
+</ul>
+<p>Fuera de cuestiones de colaboración o facilidad de lectura, es obvio también que el código se hace progresivamente más dificíl de entender y recordar conforme el proyecto avanza y se hace más extenso, por lo que la documentación se vuelve una herramienta de supervivencia, especialmente si no pretendes trabajar en el código con frecuencia. Algo que puede ocurrirte con más frecuencia que la que esperas, es estar en la situación donde quieres continuar un proyecto de hace meses pero no entiendes absolutamente nada de lo que hace el código.</p>
+<p>Por estas razones (¡y muchas otras!) la documentación de tu trabajo es imperativa. Sin embargo, normalmente durante el proceso de documentación, utilizamos destrezas que no suelen aprenderse en trabajos relacionados con software, por lo que los lineamientos que se deben seguir para llevar a cabo una buena documentación pueden no estar muy claros. Entonces, ¿qué es lo que hace una buena documentación de codigo abierto?</p>
+<h3>Accesibilidad</h3>
+<p>A la hora de escribir tu documentación, tienes que tener en cuenta que la van a leer tanto usuarios como desarrolladores, y que por lo general van a querer acceder a la información de la forma mas rápida y completa posible. El uso de hipervínculos y tablas de contenidos ayuda bastante, permitiéndote reutilizar otras documentaciones abiertas, a la vez que puedes mantener la información ordenada y concisa, ayudando a los usuarios encontrar los términos o datos que necesitan de la forma más rápida y sencilla posible. Por esta razón también es recomendado poner ciertos datos que van a buscar la mayoría de los interesados en un primer momento, tales como: la licencia que utilices, la meta del proyecto, ejemplos de uso, lista de tareas por realzar, etc.</p>
+<h3>Comunicación con tus usuarios</h3>
+<p>Puede sonar obvio, pero la documentación al final del dia, está pensada para que la lean tus usuarios. Si está dentro de la posibilidad, es bastante beneficioso agregar canales por los cuales puedan consultar y hasta contribuir otros desarrolladores: pull requests, tus cuentas en redes sociales, acceso al rastreamiento de problemas, FAQs, entre otros. Para este fín puedes usar ciertas convenciones como el archivo CONTRIBUTING.md, el cual especifica normas de conducta, como se prefiere que se comuniquen los usuarios, y las responsibilidades de los administradores del repositorio.</p>
+<p>También podemos añadir que contribuir a la documentación de cualquier repositorio es una forma facil y relativamente sencilla de apoyar un proyecto sín involucrarse demasiado. Este es uno de los ámbitos donde cualquiera puede aportar perspectivas relevantes, sín importar demasiado su trasfondo o habilidades particulares.</p>
+<h3>Guías concisas y ejemplos sencillos</h3>
+<p>Sín importar el tipo de programa que estés desarollando, facilitará muchisimo su uso si das algunos ejemplos de cómo se utiliza en un contexto cotidiano con una guía paso a paso o una pequeña sección en su manual especificamente para principiantes, con algunos comandos y funciones relevantes para el uso mas basico de tu código. Te puede resultar útil el uso de capturas de pantallas, incluir configuración de texto inteligente (con bloques de codigo, resaltamiento de sintaxis, etcetera), acompañados de parrafos de texto concisos, escritos con lenguaje simple y sin entrar mucho en terminología especifica.</p>
+<p>Siempre recomendamos que si necesitas ayuda en cuanto a como escribir documentación, ¡sólo hace falta revisar lo que ya han escrito otros! Ya sea para aprender ciertos modos de escritura que son comunes dentro de esta practica, para aprender de los errores que cometen los demás, o simplemente para situarte en el lugar de alguien que este revisando tu código por primera vez. Leer lo que han escrito los demas con el enfoque de aprender es una buena estrategia. Prácticamente todas las distribuciones de Linux incluyen el comando <code>man</code> que te permite ver información sobre varios comandos de bash, y muchos repositorios de Github tienen por lo menos un archivo <code>README.md</code>, visto en cuanto entras a su pagina, cuyo objetivo es mostrar el principal propósito y uso del proyecto. Es solo cuestión de revisar un poco para encontrar una enorme variedad de ejemplos.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0024-5_datos_abiertos/ciencia-abierta/" rel="prev" title="Cinco cosas que no debes olvidar al trabajar con datos abiertos">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0022-Investigacion_abierta_rep_vers/ciencia-abierta/" rel="next" title="La investigación abierta, el manejo de repositorios y control de versiones">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0023-documentacioncodigoabierto/ciencia-abierta/",
+        disqus_title="Si ya usas c\u00f3digo abierto, te contamos como puedes sacarle mayor provecho a tu documentaci\u00f3n (para tus art\u00edculos y publicaciones)",
+        disqus_identifier="cache/pages/blog/0023-documentacioncodigoabierto/documentacioncodigoabierto.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
