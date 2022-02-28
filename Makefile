@@ -1,6 +1,6 @@
-page: ## generate documentation
-	rm -rf docs/_build/*
-	jupyter-book build docs/
+build:
+	rm -rf output
+	NIKOLA_DEBUG=1 nikola build
 
-open-page:
-	google-chrome docs/_build/html/index.html
+watch: build
+	NIKOLA_DEBUG=1 nikola auto

@@ -1,7 +1,0 @@
-name: osl-guide
-channels:
-- conda-forge
-- nodefaults
-dependencies:
-- jupyter-book
-- sphinx
