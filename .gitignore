@@ -131,5 +131,4 @@ dmypy.json
 # nikola
 output/
 .doit.*
-.github/workflows/main.yaml
 cache/
