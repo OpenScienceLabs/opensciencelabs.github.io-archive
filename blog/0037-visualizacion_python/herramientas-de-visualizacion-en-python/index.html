@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herramientas de visualización en Python | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0037-visualizacion_python/herramientas-de-visualizacion-en-python/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Anavelyz Pérez">
+<meta property="description" content="En uno de nuestros artículos, específicamente 10 razones para usar Python en tu proximo proyecto de investigación, se da un recorrido por las ventajas que brinda el lenguaje de programación Python, de">
+<link rel="prev" href="../../0038-bash/automatizacion-de-tareas-via-bash/" title="Automatización de tareas vía bash" type="text/html">
+<link rel="next" href="../../0036-cienciaabiertapandemias/que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias/" title="¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Herramientas de visualización en Python">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0037-visualizacion_python/herramientas-de-visualizacion-en-python/">
+<meta property="og:description" content="En uno de nuestros artículos, específicamente 10 razones para usar Python en tu proximo proyecto de investigación, se da un recorrido por las ventajas que brinda el lenguaje de programación Python, de">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="visualization">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Herramientas de visualización en Python</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/anavelyz-perez/">Anavelyz Pérez</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0037-visualizacion_python/visualizacion_python.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../../categories/visualization/" rel="tag">visualization</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Herramientas de visualización en Python -->
+<!-- **Por Anavelyz Pérez** -->
+
+<p><img alt="header" src="../../../images/blog/herramientas-de-visualizacion-en-python/header.png"></p>
+<p>En uno de nuestros artículos, específicamente <a href="http://opensciencelabs.org/2020/01/22/ocho/">10 razones para usar Python en tu proximo proyecto de investigación</a>, se da un recorrido por las ventajas que brinda el lenguaje de programación Python, de allí podemos extraer algunas de sus características tales como:</p>
+<!-- TEASER_END -->
+
+<ul>
+<li>
+<a href="http://python.org/">Python</a> es un lenguaje de alto nivel, es decir, es un lenguaje de programación muy intuitivo, diseñado de forma tal que el código escrito sea fácil de leer y entender.</li>
+<li>Con pocas líneas de código se pueden hacer diversas actividades.</li>
+<li>Es multiplataforma, indicando que se puede ejecutar en distintos sistemas operativos, como: Windows, Linux o MacOS.</li>
+<li>Existe una gran cantidad de recursos y apoyo disponibles sobre este lenguaje, a través de grupos de consulta y foros de discusión.</li>
+<li>Posee un número importante de bibliotecas que reciben mantenimiento y apoyo regular por parte de desarrolladores y usuarios. Estas bibliotecas son utilizadas en diversos campos como la estadística y la ciencia de datos.</li>
+</ul>
+<p>Tenemos entonces que Python es un lenguaje con características ideales para llevar a cabo proyectos en muchas áreas, cuenta con elementos que lo hacen potente para manipular grandes cantidades de datos y se han desarrollado herramientas que posibilitan, facilitan y hacen su uso más dinámico. En este artículo nos enfocaremos principalmente en describir algunas de las herramientas de visualización sobre este lenguaje; cuando nos referimos a visualización se alusión al hecho de ver, observar o captar a través de un gráfico lo que esta sucediendo y no vemos a simple vista en los datos.</p>
+<p>Una de las principales herramientas de visualización son las bibliotecas destinadas a ello. Las bibliotecas de visualización son estructuras de código formalmente distribuidas de manera tal que la podemos descargar y utilizar en nuestros proyectos en el que empleamos Python. Las principales ventajas de estas bibliotecas reside en el ahorro de tiempo y el uso de pocas líneas de código al momento de programar. Al ser bibliotecas de visualización nos permiten crear, mostrar y editar uno o varios gráficos a la vez. Recuerda que, en algunos textos encontraremos la palabra <strong>librería</strong> en vez de <strong>biblioteca</strong>, se pudiesen utilizar como sinónimos.</p>
+<p>Algunas de las bibliotecas más populares en Python son:</p>
+<p>*<a href="https://matplotlib.org/">matplotlib</a>: Es una biblioteca de visualización que
+permite realizar visualizaciones estáticas, animadas e interactivas en
+Python. Con ella se pueden generar gráficos de barras, histogramas,
+espectros de potencia, stemplots, scatterplots, gráficos de error, gráficos
+circulares y muchos otros. En su sitio oficial de Internet hay una serie de
+tutoriales y ejemplos de lo que podemos hacer con ella.</p>
+<p>*<a href="https://seaborn.pydata.org/">seaborn</a>: Al igual que matplotlib, es una
+biblioteca que brinda grandes opciones para realizar gráficos. De hecho,
+esta biblioteca esta basada en matplotlib. La diferencia principal esta en
+sus estilos y paletas de colores que son más estéticos y visualmente
+atractivos.</p>
+<p>*<a href="https://docs.bokeh.org">Bokeh</a>: Es una biblioteca de visualización muy
+completa porque permite realizar cualquier tipo de diagrama gráfico. Es
+ideal para presentaciones basadas en la web, proporciona la construcción de
+gráficos elegantes y versátiles de forma concisa. Una de las ventajas
+importantes de esta biblioteca con respecto a las demás es su capacidad para
+tener un alto rendimiento ante grandes cantidades de datos. Sus elementos se
+pueden clasificar en tres grupos importantes:</p>
+<pre class="code literal-block"><span></span><code>- Gráficos rápidos, son aquellos que se pueden realizar con pocas líneas de código.
+
+- Especialidades de matplotlib, gráficos que modifican y mejoran los gráficos de matplotlib.
+
+- Dirigido a desarrolladores e ingenieros de software.
+</code></pre>
+
+<p>*<a href="https://plotly.com/">Plotly</a>: Es una herramienta de visualización en línea
+que ha desarrollado bibliotecas  tanto para Python como para R. Es la opción
+más útil y fácil para crear visualizaciones altamente interactivas en la web
+(dashboard).</p>
+<p>*<a href="http://www.pygal.org/">Pygal</a>: Al igual que las bibliotecas que hemos
+descrito anteriormente Pygal permite realizar cualquier gráfico con pocas
+líneas de código, esta tiene la particularidad de estar principalmente
+orientada a la creación de gráficos en formato SVG, lo cual indica que
+cualquiera de nuestros resultados puede ser editado en un editor de imágenes
+e imprimirlos en una resolución de muy alta calidad.</p>
+<p>*<a href="http://ggplot.yhathq.com/">Ggplot</a>: Es un conjunto de métodos para graficar
+basado en GGplot2 de R y la gramática de los gráficos. Los resultados se
+generan rápidamente y con pocas líneas de código.</p>
+<p>*<a href="https://altair-viz.github.io/">Altair</a>: es una biblioteca de visualización
+estadística para Python, basada en Vega y Vega-Lite (gramáticas de
+visualización). Permite construir una amplia gama de visualizaciones
+rápidamente.</p>
+<p>Te dejamos la referencia de algunas de las herramientas de visualización de Python, ¡pero hay otras muchas y puedes conseguir más información en la web! Debes tener en cuenta que a diario podemos encontrar nuevas alternativas y actualizaciones importantes de cada una de ellas. Para hacer uso de las bibliotecas podemos recurrir a interfaces de visualización como <a href="http://jupyter.org/">Jupyter Notebook</a>, <a href="http://zeppelin.apache.org/">Zeppelin Notebook</a>, <a href="http://colab.research.google.com/">Google Colab</a>, entre otras.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0038-bash/automatizacion-de-tareas-via-bash/" rel="prev" title="Automatización de tareas vía bash">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0036-cienciaabiertapandemias/que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias/" rel="next" title="¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0037-visualizacion_python/herramientas-de-visualizacion-en-python/",
+        disqus_title="Herramientas de visualizaci\u00f3n en Python",
+        disqus_identifier="cache/pages/blog/0037-visualizacion_python/visualizacion_python.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

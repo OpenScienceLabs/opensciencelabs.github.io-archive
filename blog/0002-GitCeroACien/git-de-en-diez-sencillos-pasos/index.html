@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Git de 0 a 100 en diez sencillos pasos | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0002-GitCeroACien/git-de-en-diez-sencillos-pasos/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Por Rainer Palm">
+<meta property="description" content="¿Necesitas aprender Git para manejar con mayor eficiencia y control tus projectos y trabajos? Ya sea para desarrollo de software, creación de paginas web, investigaciones científicas, o para manejar t">
+<link rel="prev" href="../../0003-investigacion_colaborativa/todo-lo-que-debes-saber-sobre-la-investigacion-colaborativa/" title="Todo lo que debes saber sobre la investigación colaborativa" type="text/html">
+<link rel="next" href="../../0001-ciencia_abierta/que-es-la-ciencia-abierta/" title="¿Qué es la ciencia abierta?" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Git de 0 a 100 en diez sencillos pasos">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0002-GitCeroACien/git-de-en-diez-sencillos-pasos/">
+<meta property="og:description" content="¿Necesitas aprender Git para manejar con mayor eficiencia y control tus projectos y trabajos? Ya sea para desarrollo de software, creación de paginas web, investigaciones científicas, o para manejar t">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="versioning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Git de 0 a 100 en diez sencillos pasos</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/por-rainer-palm/">Por Rainer Palm</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0002-GitCeroACien/GitCeroACien.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/versioning/" rel="tag">versioning</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Git de 0 a 100 en diez sencillos pasos -->
+<!-- **Por Rainer Palm** -->
+
+<p><img alt="header" src="../../../images/blog/git-de-en-diez-sencillos-pasos/header.png"></p>
+<p>¿Necesitas aprender <a href="http://git.io">Git</a> para manejar con mayor eficiencia y control tus projectos y trabajos? Ya sea para desarrollo de software, creación de paginas web, investigaciones científicas, o para manejar tus escritos, te podría ser muy util aprovechar la seguridad que te da Git con su control de versiones, o la facilidad con la que te deja colaborar con tus colegas. Ademas, podría serte de mucha ayuda a la hora de buscar empleo en tu area de trabajo, ya que los proyectos y contribuciones que tengas subidos a Git te servirán como parte de tu curriculo.
+Sin embargo, puede parecerte algo intimidante debido a la gran diversidad de opciones que te proporciona, además del uso requerido de la línea de comandos en la aplicación Git. Pero si sigues los 10 pasos que presentamos a continuación, te darás cuenta de lo sencillo que puede resultar subir y manejar archivos en tu primer repositorio, crear varias ramas en el mismo y compartir archivos con colaboradores.</p>
+<!-- TEASER_END -->
+
+<h3>1. Creación de tu cuenta Github</h3>
+<p>Aunque es posible utilizar git a nivel local, es preferible que utilizes una plataforma que te permita alojar repositorios en la nube, tal como Github or Gitlab para difundir mas fácilmente tu trabajo. Podrás registrar una cuenta <a href="https://github.com/join">Github</a>, donde simplemente tendrás que proporcionar tus datos y seguir los pasos de creación de cuenta. Tras registrarla, podrás seleccionar un plan de pago cuando quieras, o simplemente usarlo de forma gratuita.</p>
+<h3>2. Creación de tu primer repositorio</h3>
+<p>Inmediatamente después de crear tu primera cuenta, Github te guiará hacia la creación de tu primer repositorio, a través de https://github.com/new, donde tendrás que ponerle un nombre y una descripción. Github automáticamente crea el repositorio con un archivo README.md, el cual es un simple archivo de texto que será visto al entrar en la pagina del repositorio. Este archivo tiene información importante acerca del repositorio, el propósito de los archivos que están allí y de cómo está organizado el repositorio. También puedes aprovechar de colocar allí algún enlace a la página web del proyecto (si la tienes), o un correo para contactos e información.</p>
+<h3>3. Instalar Git en tu computadora</h3>
+<p>Para poder subir archivos a tu repositorio desde tu disco duro, tendrás que instalar Git en tu computadora. Simplemente descárgalo desde https://git-scm.com/, o, si estas usando Linux, instálalo mediante el gestor de paquetes de tu distribución buscando por el paquete git. Después podrás usarlo mediante la línea de comandos. Verífica si fue correctamente instalado ejecutando
+git –-help</p>
+<h3>4. Clonando un repositorio a tu computadora</h3>
+<p>Cuando creas un repositorio Git, automáticamente se crea una carpeta oculta .git la cual contiene información respecto a los archivos y ramas de tu repositorio, los cambios a éstos y el último commit del repositorio. Tu repositorio en Github también contiene esta carpeta, asi que, para ahorrarte un dolor de cabeza, deberías clonarlo (copiarlo en tu ordenador), ya sea descárgandolo desde su página o mediante la línea de comandos escribiendo:
+git clone https://github.com/(tu usuario)/(nombre del repositorio).git. También puedes copiar la URL del repositorio desde la página.</p>
+<h3>5. Agrega archivos a tu repositorio y haz tu primer commit</h3>
+<p>Cada vez que realizas cambios en tu repositorio (ya sea modificando, agregando o borrando archivos), deberás sincronizar el conjunto de cambios con tu repositorio, haciendo lo que se conoce como un commit. Puedes utilizar los comandos:</p>
+<ul>
+<li>git add {nombre de tu archivo}</li>
+<li>git rm {nombre de tu archivo}</li>
+</ul>
+<p>para hacer cambios en la copia local de tu repositorio, ya sea añadir y modificar o quitar archivos, respectivamente. Antes de sincronizar los cambios, debes ‘empaquetarlos’ en un commit, mediante el comando
+git commit -m “{descripción de los cambios}”</p>
+<p>Después podrás sincronizar ese commit con el servidor de Github utilizando el comando git push origin master
+Con aplicaciones gráficas como Github Desktop u otra similar, podrás realizar estos cambios de una forma mucho más intuitiva.</p>
+<h3>6. Maneja distintas ramas de tu repositorio</h3>
+<p>Cuando creas tu repositorio con git, sólo cuenta con la rama principal, o “default”, la cual se denomina master. En git la rama es una especie de ‘apuntador’ el cual señala hacia una serie especifica de commits. Cuando quieras hacer cambios en tus archivos, para realizar pruebas sin afectar el funcionamiento del código que ya sabes que funciona, puedes crear otra rama. Si los resultados son de tu agrado, podrás sincronizar ambas ramas más tarde.
+Para crear otra rama, simplemente ejecuta:
+git checkout -b {nombre de tu rama}
+Esto hará que, a partir de ahora, todos los cambios que realices a tus archivos sean parte de la rama que has creado. Si deseas sincronizar tu nueva rama con el servidor de Github, ejecutas:
+git push origin {nombre de tu rama}
+Igual que para hacer cambios en master, deberás hacer un commit para sincronizar los cambios locales con el repositorio de Github.</p>
+<h3>7. Realiza un merge</h3>
+<p>El comando git checkout nos permite cambiar de rama dentro del repositorio. Puedes usarlo para volver a hacer cambios en la rama master con el siguiente comando:
+git checkout master
+Si los cambios que has hecho en la rama te resultan de tu agrado, puedes hacer un merge, lo que quiere decir que se fusionan los cambios hechos en la rama secundaria con los de la rama en la que estas ubicado actualmente (en este caso, master).
+git merge {rama con cambios}
+Git intentará hacer este proceso automáticamente, pero puede ser que hayan conflictos entre ramas con los cambios hechos. En este caso, tendrás que editar los archivos que te muestra Git, y agregarlos manualmente con
+git add {nombre de archivo}</p>
+<h3>8. Verificar cambios con tu copia local</h3>
+<p>En caso de que tu copia local del repositorio no tenga los cambios hechos hasta el último commit en la rama que estás trabajando, puedes actualizarla con el comando
+git pull
+Si quieres ver que cambios han habido entre las distintas ramas del repositorio, puedes hacerlo con el comando
+git diff {rama fuente} {rama a comparar}
+También puedes ver la historia del repositorio (los commits hechos a lo largo del tiempo) usando el comando
+git log
+Recomendamos que primero ejecutes git log –help para ver como puedes aprovechar mejor esta herramienta.</p>
+<h3>9. Proponer cambios a los repositorios de los demás</h3>
+<p>En caso de que quieras hacer un commit a un repositorio que sea de otra persona, simplemente tendras que ir a la pagina del repositorio en Github, hacer un fork (una copia personal de ese repositorio, como un puente hacia el original), y clonarlo en tu computadora.
+Luego de crear los commit deseados, y subirlos a tu fork, podras dirigirte a la pagina en la que reside tu fork y darle click a ‘New pull request’ (o solicitud de extracción). Esto te llevara a una pagina donde puedes evaluar los cambios que has hecho y crear una solicitud para que los propietarios del repositorio los fusionen con la rama master del repositorio.</p>
+<h3>10. Aceptar o negar cambios propuestos</h3>
+<p>Cuando un colaborador siga los pasos descritos anteriormente y haga una solicitud de extracción, podrás verificar los cambios que se han realizado en el commit de su fork, ademas de ver la descripción de este y las sugerencias que han dado. Podrás entonces conversar con ellos en los comentarios de la solicitud de extracción, y dependiendo de lo que consideres apropiado, aceptar o negar los commit propuestos, y fusionar su fork con la rama master.
+En caso de que quieras que un colaborador pueda contribuir al proyecto sin necesidad de aprobar sus commit, podrás invitarlos mediante la pagina de Parámetros (accesible mediante la pagina del repositorio), simplemente dandole clic a Colaboradores en la barra lateral izquierda y añadiendo su nombre de usuario.</p>
+<p>Si has seguido todos los pasos hasta ahora, felicidades, ya puedes considerarte oficialmente un usuario de git! Mantener y actualizar tus propios repositorios y colaborar con los demás usuarios de Github es mas sencillo de lo que parece. Si así lo deseas, puedes seguir buscando información acerca de como aprovechar git al maximo, ya sea a través del libro <a href="https://git-scm.com/book/es/v2/">Pro Git</a>, o documentación de <a href="https://help.github.com/en/github">Github</a>.</p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0003-investigacion_colaborativa/todo-lo-que-debes-saber-sobre-la-investigacion-colaborativa/" rel="prev" title="Todo lo que debes saber sobre la investigación colaborativa">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0001-ciencia_abierta/que-es-la-ciencia-abierta/" rel="next" title="¿Qué es la ciencia abierta?">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0002-GitCeroACien/git-de-en-diez-sencillos-pasos/",
+        disqus_title="Git de 0 a 100 en diez sencillos pasos",
+        disqus_identifier="cache/pages/blog/0002-GitCeroACien/GitCeroACien.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

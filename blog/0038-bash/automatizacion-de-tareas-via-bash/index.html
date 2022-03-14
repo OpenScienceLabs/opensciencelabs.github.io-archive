@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automatización de tareas vía bash | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0038-bash/automatizacion-de-tareas-via-bash/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Anavelyz Pérez">
+<meta property="description" content='¿Qué es Bash?
+Es un shell, o intérprete de lenguaje de comandos, para el sistema operativo
+GNU. Su nombre es un acrónimo de "Bourne-Again SHell", un juego de palabras
+sobre Stephen Bourne, el autor de'>
+<link rel="prev" href="../../0039-bibliotecas_visualizacion/te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta/" title="Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta" type="text/html">
+<link rel="next" href="../../0037-visualizacion_python/herramientas-de-visualizacion-en-python/" title="Herramientas de visualización en Python" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Automatización de tareas vía bash">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0038-bash/automatizacion-de-tareas-via-bash/">
+<meta property="og:description" content='¿Qué es Bash?
+Es un shell, o intérprete de lenguaje de comandos, para el sistema operativo
+GNU. Su nombre es un acrónimo de "Bourne-Again SHell", un juego de palabras
+sobre Stephen Bourne, el autor de'>
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="automation">
+<meta property="article:tag" content="bash">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Automatización de tareas vía bash</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/anavelyz-perez/">Anavelyz Pérez</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0038-bash/bash.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/automation/" rel="tag">automation</a></li>
+            <li><a class="tag p-category" href="../../../categories/bash/" rel="tag">bash</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Automatización de tareas vía bash -->
+<!-- **Por Anavelyz Pérez** -->
+
+<p><img alt="header" src="../../../images/blog/automatizacion-de-tareas-via-bash/header.png"></p>
+<p>¿Qué es Bash?</p>
+<p>Es un shell, o intérprete de lenguaje de comandos, para el sistema operativo
+GNU. Su nombre es un acrónimo de "<em>Bourne-Again SHell</em>", un juego de palabras
+sobre Stephen Bourne, el autor del antepasado directo del actual shell de Unix
+sh, que apareció en la séptima edición de la versión de <em>Bell Labs Research</em> de
+Unix.</p>
+<!-- TEASER_END -->
+
+<p>El shell también es conocido como <strong>terminal</strong>; una interfaz entre el usuario
+y el propio sistema operativo. Podemos acceder a él a través del menú o una
+combinación teclas. Linux proporciona por defecto seis terminales de este tipo,
+de Control+Alt+F1 a Control+Alt+F6. Si queremos volver al modo gráfico lo
+hacemos con Alt+F7 (estos atajos pueden variar según la distribución).</p>
+<p>Es importante destacar que el sistema operativo GNU proporciona otros shell sin
+embargo, Bash es el shell por defecto. Este, al igual que otros programas de GNU,
+es bastante portátil. Actualmente funciona en casi todas las versiones de Unix y
+otros sistemas operativos como Mac OS X Tiger. También se ha llevado a Microsoft
+Windows por el proyecto Cygwin.</p>
+<p>Ahora bien, cuando desde una distribución Linux abrimos o activamos un terminal se indica que estamos en
+nuestro home mediante el signo ~.Veremos en pantalla algo similar a:</p>
+<p><img alt="Terminal" src="../img/terminal1.png"></p>
+<p>El home es el sitio donde se pueden aplicar inicialmente las tareas.</p>
+<p>Un par de comandos que nos brindan ayuda o referencias en Bash son <code>man</code> e
+<code>info</code>, ideales cuando se tienen dudas acerca de uno o varios comandos.</p>
+<ul>
+<li>
+<p><code>man</code> muestra la información del manual de bash en el sistema sobre el comando
+  o página indicado.</p>
+</li>
+<li>
+<p><code>info</code> permite consultar la información que se almacena en archivos INFO
+  (archivos de formato <a href="https://es.wikipedia.org/wiki/Texinfo">Texinfo</a>) de
+  algún comando o software.</p>
+</li>
+</ul>
+<p>Para utilizar estos comandos solo es necesario escribirlos seguido de un espacio
+y la palabra de la cual tenemos duda. Por ejemplo si tecleamos <code>info bash</code> o
+<code>man bash</code>, tenemos la posibilidad de leer un texto sobre lo que es bash y sus
+características principales.</p>
+<p><img alt="Comandos man e info" src="../img/ayuda.gif"></p>
+<h3>Crear, eliminar y editar carpetas o directorios</h3>
+<p>Entre las tareas que podemos realizar con bash están  crear, eliminar y editar
+carpetas o directorios. Algunos de los comandos asociados a estas son:</p>
+<p><code>pwd</code> nos indica el directorio en el que estamos actualmente. Si probamos este
+comando en el home obtendremos algo similar a</p>
+<p><img alt="pwd en home" src="../img/pwd.gif"></p>
+<p><code>ls</code> nos permite ver la lista de los directorios, carpetas y archivos contenidos
+en el sitio o carpeta en la que estemos. <code>ls -a</code> nos muestra todos los archivos
+incluyendo los ocultos.</p>
+<p>Si queremos movernos por las carpetas el comando <code>cd</code> seguido de la dirección a
+la que se desea ir nos permitirá realizar esta tarea. De modo que <code>cd /</code> te
+llevara a la raíz, <code>cd ~</code> al home ( <code>cd</code> solo hace lo mismo), <code>cd /usr/doc</code> te
+lleva al directorio de documentación del sistema.</p>
+<p>Si quieres crear una carpeta (o varias) lo puedes hacer en tu home, usando <code>mkdir</code>
+y el nombre de la carpeta que quieres crear, luego entra en ella con cd.</p>
+<p>Para borrar una carpeta escribe <code>rmdir</code> seguido por un espacio y el nombre, pero
+la carpeta tiene que estar vacía y contar con permiso para borrarla.</p>
+<h3>Mover, renombrar y eliminar archivos o ficheros</h3>
+<p>El comando <code>mv</code>, permite dos operaciones. Cambiar un fichero de sitio, para lo
+cual es necesario que se tenga permiso de escritura sobre ese fichero y el lugar
+de destino. Se utiliza simplemente indicando mv nombre_origen ruta_destino.</p>
+<p><em>Con este comando también es posible mover directorios, o todos los ficheros de
+un directorio.</em></p>
+<p>La otra operación que se puede realizar con <code>mv</code> es el cambio de nombre, así basta con
+indicar el nombre de un fichero o directorio, y luego su nuevo nombre.</p>
+<p><em>Los comandos cat, more y less sirven para mostrar el contenido de ficheros de
+texto.</em></p>
+<p>El comando <code>rm</code> se utiliza para borrar ficheros. Es importante destacar que estos
+ficheros no se envían a una papelera así que NO SE PUEDEN RECUPERAR UNA VEZ
+BORRADOS.</p>
+<p>Otro comando útil es <code>cp</code> sirve para copiar ficheros. En el proceso de copia
+intervienen tres elementos: lo que se copia, la ruta de origen y la ruta de
+destino. La ruta de origen se especifica junto con lo que se quiere copiar.</p>
+<p>De la misma manera que se copian, se borran o se mueven ficheros, se puede hacer
+lo mismo con los directorios. Hay que tener en cuenta que un directorio puede
+contener muchos ficheros y, además, otros directorios que, a su vez, pueden
+contener más ficheros y directorios. Por tanto, si se quiere copiar un fichero
+completo, con todo lo que tiene dentro, hay que indicarlo con la opción -R. A
+esto último se suele llamar “copiar de forma recursiva”.</p>
+<p>Otro comando que puede ser util es <code>rm -rf nombre_del_directorio</code>, borra el
+directorio y todo lo que contiene (lo que se elimina no se puede recuperar).</p>
+<h3>Comodines</h3>
+<p>Recordemos que Bash es el interprete de comandos, el programa que intenta
+comprender lo que tu dices y lo ejecuta, este nos permite utilizar comodines a
+la hora de escribir un nombre de fichero o directorio. Además la tecla tab
+permite completar rutas o algún comando a la hora de escribir. Por ejemplo,
+escribe /ho y pulsa tab verás cómo aparece /home/).</p>
+<p>Los principales comodines son *, ? y los corchetes [].</p>
+<ul>
+<li>
+<p>El asterisco sustituye a cualquier grupo de letras.</p>
+</li>
+<li>
+<p>El signo de interrogación ? sólo vale para una letra.</p>
+</li>
+<li>
+<p>Los corchetes valen por un conjunto definido de letras.</p>
+</li>
+</ul>
+<p>Debes tener en cuenta que son muy importantes las mayúsculas y la minúsculas al
+momento de escribir tus comandos, porque el intérprete es sensible a ellas. Esto
+trae como consecuencia la posibilidad de tener dos ficheros que se llamen igual,
+por ejemplo proyectos y Proyectos, uno tiene mayúsculas y otro no.</p>
+<p>En resumén, tenemos que Bash nos permite realizar diversas tareas asociadas a
+directorio y ficheros. Existen distintos comandos que pueden ser bastante útiles
+y si tenemos cualquier duda podremos recurrir rápidamente a un manual o
+documento de ayuda.</p>
+<p>Puedes consultar más de los comandos en https://ss64.com/bash/index.html</p>
+<h3>Referencias</h3>
+<p>Manual Práctico de Linux con ejercicios por Luis José Sánchez González.
+Manual de Linux por Álvaro Alea Fdz.
+<a href="https://www.ecured.cu/Terminal_de_GNU/Linux">EcuRed-Terminal</a>
+<a href="https://www.ecured.cu/Bash">EcuRed-Bash</a></p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0039-bibliotecas_visualizacion/te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta/" rel="prev" title="Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0037-visualizacion_python/herramientas-de-visualizacion-en-python/" rel="next" title="Herramientas de visualización en Python">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0038-bash/automatizacion-de-tareas-via-bash/",
+        disqus_title="Automatizaci\u00f3n de tareas v\u00eda bash",
+        disqus_identifier="cache/pages/blog/0038-bash/bash.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

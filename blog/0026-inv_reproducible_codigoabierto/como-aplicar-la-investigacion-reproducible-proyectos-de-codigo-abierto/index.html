@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cómo aplicar la investigación reproducible a proyectos de código abierto? | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0026-inv_reproducible_codigoabierto/como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Yurely Camacho">
+<meta property="description" content="Los avances en la ciencia están fuertemente relacionados con la
+reproducibilidad en las investigaciones. Resulta muy importante lograr
+que otras personas puedan reproducir nuestros trabajos. ¡Imagínat">
+<link rel="prev" href="../../0027-dashboards-visualizacion-datos/te-hablamos-del-uso-de-dashboards-para-visualizacion-de-datos-de-tu-proximo-proyecto/" title="Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto" type="text/html">
+<link rel="next" href="../../0025-comopresentartucodigo/como-presentar-tu-codigo-como-un-articulo-cientifico/" title="¿Cómo presentar tu código como un artículo científico?" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="¿Cómo aplicar la investigación reproducible a proyectos de código abie">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0026-inv_reproducible_codigoabierto/como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto/">
+<meta property="og:description" content="Los avances en la ciencia están fuertemente relacionados con la
+reproducibilidad en las investigaciones. Resulta muy importante lograr
+que otras personas puedan reproducir nuestros trabajos. ¡Imagínat">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="open science">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">¿Cómo aplicar la investigación reproducible a proyectos de código abierto?</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/yurely-camacho/">Yurely Camacho</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # ¿Cómo aplicar la investigación reproducible a proyectos de código abierto? -->
+<!-- **Por Yurely Camacho** -->
+
+<p><img alt="header" src="../../../images/blog/como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto/header.png"></p>
+<p>Los avances en la ciencia están fuertemente relacionados con la
+reproducibilidad en las investigaciones. Resulta muy importante lograr
+que otras personas puedan reproducir nuestros trabajos. ¡Imagínate la aceptación que tendría una investigación si todos los intentos
+posteriores de ratificar los resultados fracasanLos avances en la ciencia están fuertemente relacionados con la reproducibilidad en las investigaciones. Resulta muy importante lograr que otras personas puedan reproducir nuestros trabajos. ¡Imagínate la aceptación que tendría una investigación si todos los intentos posteriores de ratificar los resultados fracasan!</p>
+<!-- TEASER_END -->
+
+<p>De acuerdo con estudios y encuestas online, como la realizada por la revista internacional semanal sobre ciencia Nature sobre la reproducibilidad en la investigación, más del 70% de los 1576 investigadores participantes en la encuesta, no han podido reproducir las investigaciones de otros científicos, y más del 50% han fallado en la reproducción de sus propios experimentos. De allí que el tema de la reproducibilidad sea considerado como uno de los principales retos de los científicos y de las revistas que publican dichas investigaciones, en especial para garantizar su veracidad. Otro resultado importante de dicho estudio, es que el 52% de los investigadores encuestados respondieron afirmativamente a la consideración de que, hoy día, hay una significativa crisis de reproducibilidad.</p>
+<p>De manera general, consideramos a una investigación como reproducible, si el desarrollo conceptual de la misma tiene adjunto y abierto el código informático con la documentación mínima necesaria e instrucciones que permitan repetir los cálculos realizados para obtener los resultados en el documento, es decir, que pueda ser reproducida a partir de los datos originales. Asimismo, permite auditar el procedimiento de cálculo y los métodos estadísticos empleados. Este concepto debe diferenciarse del término replicabilidad, que se refiere a la posibilidad de repetir el mismo estudio con la información proporcionada en la investigación pero con nuevos datos.</p>
+<p>Bajo el enfoque de código abierto y reproducibilidad en las investigaciones, lo que se quiere hacer es que las herramientas implementadas en la investigación y el código generado para el procesamiento de los datos (para aquellas investigaciones que lo generen), sea "abierto" para cualquiera que esté interesado en reproducir nuestra investigación. Recordemos que uno de los principios de la investigación reproducible es la metodología abierta que, básicamente, busca compartir el procedimiento llevado a cabo antes, durante y después de la investigación, lo cual da confianza a la hora de compartir los resultados y también anima a revisar los pasos de tu investigación y permite a otros verificarlo.</p>
+<p>Otro aspecto importante a tomar en cuenta si la investigación tiene código y queremos que sea reproducible, es la documentación. Como lo mencionamos en un artículo anterior sobre Documentación de código abierto, este es un factor muy importante a la hora de crear proyectos accesibles e inclusivos y también debe considerarse como un aspecto importante para hacer reproducible el proyecto de código abierto. Junto con la documentación resulta necesario listar los requerimientos para la ejecución del código, donde se incluya la especificación de las plataformas para que funcione el código, las versiones de paquetes o dependencias que se requieran para la interpretación y usabilidad del código a mediano y largo plazo, todo esto garantiza el principio de Transparencia de una investigación reproducible que contiene código.</p>
+<p>Para que un proyecto de código abierto sea reproducible, también debe estar depositado en un repositorio de acceso abierto bajo plataformas como GitLab o GitHub, las cuales permiten llevar un control de versiones sobre las actualizaciones y cambios que se realizan al cabo del tiempo en el proyecto, para que cualquiera pueda conocer el trayecto del proyecto y pueda o no, colaborar con este. Como lo mencionamos en nuestro artículo sobre codigo abierto una de las comunidades más grandes de código abierto a nivel internacional es GitHub que nos permite crear y consultar repositorios sobre investigaciones previas, pudiendo necesitar reproducir alguna de ellas o alojar nuestro proyecto para que sea reproducible y colaborativo.</p>
+<p>Bajo el mismo enfoque, la utilización de cuadernos de Jupyter, por ejemplo, es altamente recomendado porque permite en un mismo espacio, realizar el análisis y a la vez mostrar comentarios sobre los pasos del experimento. La decisión de implementar o no una herramienta, depende de la decisión del investigador, no obstante bajo el pensamiento de ciencia abierta, se debe buscar en la medida de lo posible, que dichas herramientas se encuentren bajo los estándares de esta "forma de hacer ciencia".</p>
+<p>Otro concepto que se maneja en el ámbito de código abierto e investigación reproducible es el de Software de investigación abierto o Software de investigación de Código Abierto que según el Manual de capacitación sobre ciencia abierta de la FOSTER se refiere al uso y desarrollo de software para el análisis, la simulación y la visualización cuyo código fuente completo está disponible, compartiéndose con una licencia que perita su redistribución y modificación. Mediante la implementación de este tipo de software, se garantiza la reproducibilidad en la investigación, poniendo a disposición de cualquiera los datos junto con el código generado en la investigación y permitiendo también la reutilización de este software para otras investigaciones.</p>
+<p>Si haces que tu investigación sea reproducible, poniendo en práctica los elementos que te hemos mencionado en este post, aumentará la probabilidad de aceptación de investigadores, harás que tu código pueda ser ejecutado por otras personas en tareas repetitivas, reducirás el riesgo de errores, facilitarás la colaboración de otros investigadores, la detección de errores y la revisión. Si publicas el código, facilitas la comprensión del artículo y evita malas interpretaciones, aumentarás el impacto de las publicaciones: citas, reconocimiento, reutilización, coautorías, y ahorrarás tiempo y esfuerzo al reutilizar código en otros proyectos.</p>
+<p>Garantiza que tu investigación sea reproducible, no formes parte de la crisis actual de reproducibilidad. Haz la diferencia.! De acuerdo con
+estudios y encuestas online, como la realizada por la revista
+internacional semanal sobre ciencia <a href="https://www.nature.com/">Nature</a>
+sobre la <a href="https://youtu.be/j7K3s_vi_1Y">reproducibilidad en la
+investigación</a>, más del 70% de los 1576
+investigadores participantes en la encuesta, no han podido reproducir
+las investigaciones de otros científicos, y más del 50% han fallado en
+la reproducción de sus propios experimentos. De allí que el tema de la
+reproducibilidad es considerado como uno de los principales retos de los
+científicos y de las revistas que publican dichas investigaciones (para
+garantizar la veracidad de estas). Otro resultado importante de dicho
+estudio, es que el 52% de los investigadores encuestados respondieron
+afirmativamente a la consideración de que hay una significativa <em>crisis
+de reproducibilidad</em> actual.</p>
+<p>De manera general, consideramos a una investigación como reproducible si
+el desarrollo conceptual de la misma tiene adjunto y abierto el <em>código
+informático</em> con la documentación mímina necesaria e instrucciones que
+permitan repetir los cálculos realizados para obtener los resultados en
+el documento, es decir, que pueda ser reproducida a partir de los datos
+originales. Asimismo, permite auditar el procedimiento de cálculo y los
+métodos estadísticos empleados. Este concepto debe diferenciarse del
+término replicabilidad, que se refiere a la posibilidad de repetir el
+mismo estudio con la información proporcionada en la investigación pero
+con nuevos datos.</p>
+<p>Bajo el enfoque de código abierto y reproducibilidad en las
+investigaciones, lo que se quiere hacer es que las herramientas
+implementadas en la investigación y el código generado para el
+procesamiento de los datos (para aquellas investigaciones que lo
+generen), sea "abierto" para cualquiera que esté interesado en
+reproducir nuestra investigación. Recordemos que uno de los principios
+de la [investigación reproducible](enlace a artículo
+investigacionreproducible) es la <em>Metodología abierta</em> que básicamente
+se trata de compartir el procedimiento llevado a cabo antes, durante y
+después de la investigación, lo
+cual da confianza a la hora de compartir los resultados y también anima
+a revisar los pasos de tu investigación y permite a otros verificarlo.</p>
+<p>Otro aspecto importante a tomar en cuenta si la investigación tiene
+código y queremos que sea reproducible, es la documentación. Como lo
+mencionamos en el artículo sobre [Documentación de código
+abierto](enlace a artículo documentacioncodigoabierto), este es un
+factor muy importante a la hora de crear proyectos accesibles e
+inclusivos y también debe considerarse como un aspecto importante para
+hacer reproducible el proyecto de código abierto. Junto con la
+documentación resulta necesario listar los requerimientos para la
+ejecución del código, donde se incluye la especificación de las
+plataformas para que funcione el código, las versiones de paquetes o
+dependencias que se requieran para la interpretación y usabilidad del
+código a mediano y largo plazo, todo esto garantiza el principio de
+<em>Transparencia</em> de una investigación reproducible que contiene código.</p>
+<p>Para que un proyecto de código abierto sea reproducible, también debe
+estar depositado en un repositorio de acceso abierto bajo plataformas
+como GitLab o GitHub, las cuales permiten llevar un control d versiones
+sobre las actualizaciones y cambios que se realizan al cabo del tiempo
+en el proyecto, para que cualquiera pueda conocer el trayecto del
+proyecto y poder o no, colaborar con este. Como lo mencionamos en
+nuestro artículo sobre código abierto (enlace al artículo
+codigo_abierto) una de las comunidades más grandes de código abierto a
+nivel internacional es <a href="https://github.com/">GitHub</a> que nos permite
+crear y consultar repositorios sobre investigaciones previas, pudiendo
+necesitar reproducir alguna de ellas o alojar nuestro proyecto para que
+sea reproducible y colaborativo.</p>
+<p>Bajo el mismo enfoque, la utilización de cuadernos de
+<a href="https://jupyter.org">Jupyter</a>, por ejemplo, es altamente recomendado
+porque permite en un mismo espacio, realizar el analísis y
+a la vez mostrar comentarios sobre los pasos del experimento. La
+decisión de implementar o no una herramienta, depende de la decisión del
+investigador, no obstante bajo el pensamiento de ciencia abierta, se
+debe buscar en la medida de lo posible, que dichas herramientas se
+encuentren bajo los estándares de esta "forma de hacer ciencia".</p>
+<p>Otro concepto que se maneja en el ámbito de código abierto e
+investigación reproducible es el de <em>Software de investigación abierto o
+Software de investigación de Código Abierto</em> que según el <a href="https://book.fosteropenscience.eu/es/">Manual de
+capacitación sobre ciencia abierta de la
+FOSTER</a> se refiere al uso y
+desarrollo de software para el análisis, la simulación y la
+visualización cuyo código fuente completo está disponible,
+compartiéndose con una licencia que perita su redistribución y
+modificación. Mediante,la implementación de este tipo de software, se
+garantiza la reproducibilidad en la investigación, poniendo a
+disposición de cualquiera los datos junto con el código generado en la
+investigación y permitiendo también la reutilización de este software
+para otras investigaciones.</p>
+<p>Si haces que tu investigación sea reproducible, poniendo en práctica los
+elementos que te hemos mencionado en este post, aumentará la
+probabilidad de aceptación de investigadores, harás que tu código pueda
+ser ejecutado por otras personas en tareas repetitivas, reducirás el
+riesgo de errores, facilitarás la colaboración de otros investigadores,
+la detección de errores y la revisión. Si publicas el código, facilitas
+la comprensión del artículo y evita malinterpretaciones, aumentarás el
+impacto de las publicaciones (citas, reconocimiento, reutilización,
+coautorías) y ahorras tiempo y esfuerzo al reutilizar código en otros
+proyectos.</p>
+<p>Garantiza que tu investigación sea reproducible, no formes parte de la
+crisis actual de reproducibilidad. Haz la diferencia.</p>
+<h4>Referencias</h4>
+<ul>
+<li>
+<p>[Ciencia reproducible, qué, por qué, cómo](https://www.researchgate.net/publication 306389707_Ciencia_reproducible_que_por_que_como/link/57bd44d408aedf5f75eadf0a/download)</p>
+</li>
+<li>
+<p><a href="https://book.fosteropenscience.eu/es/">Manual de capacitación sobre ciencia abierta de la FOSTER</a></p>
+</li>
+<li>
+<p><a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">Nature, reproducibilidad</a></p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0027-dashboards-visualizacion-datos/te-hablamos-del-uso-de-dashboards-para-visualizacion-de-datos-de-tu-proximo-proyecto/" rel="prev" title="Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0025-comopresentartucodigo/como-presentar-tu-codigo-como-un-articulo-cientifico/" rel="next" title="¿Cómo presentar tu código como un artículo científico?">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0026-inv_reproducible_codigoabierto/como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto/",
+        disqus_title="\u00bfC\u00f3mo aplicar la investigaci\u00f3n reproducible a proyectos de c\u00f3digo abierto?",
+        disqus_identifier="cache/pages/blog/0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>

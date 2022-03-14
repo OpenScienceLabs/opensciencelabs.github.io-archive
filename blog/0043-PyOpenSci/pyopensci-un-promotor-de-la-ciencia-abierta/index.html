@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pyOpenSci: un promotor de la ciencia abierta | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/0043-PyOpenSci/pyopensci-un-promotor-de-la-ciencia-abierta/">
+<link rel="icon" href="../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163785882-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Yurely Camacho">
+<meta property="description" content="Las distintas disciplinas que abarca la ciencia abierta trabajan de manera
+conjunta; tal es el caso del código abierto, la investigación abierta y
+reproducible y los datos abiertos. En el presente art">
+<link rel="prev" href="../../0044-dataverse/dataverse-y-su-potencial-para-proyectos-de-ciencia-abierta/" title="Dataverse y su potencial para proyectos de ciencia abierta" type="text/html">
+<link rel="next" href="../../0042-LaboratoriosCovid/los-laboratorios-sociales-y-el-manejo-del-covid-19/" title="Los laboratorios sociales y el manejo del COVID-19" type="text/html">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="pyOpenSci: un promotor de la ciencia abierta">
+<meta property="og:url" content="https://opensciencelabs.org/blog/0043-PyOpenSci/pyopensci-un-promotor-de-la-ciencia-abierta/">
+<meta property="og:description" content="Las distintas disciplinas que abarca la ciencia abierta trabajan de manera
+conjunta; tal es el caso del código abierto, la investigación abierta y
+reproducible y los datos abiertos. En el presente art">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-04-08T00:00:00-05:00">
+<meta property="article:tag" content="open science">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">pyOpenSci: un promotor de la ciencia abierta</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/yurely-camacho/">Yurely Camacho</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-04-08T00:00:00-05:00" itemprop="datePublished" title="2019-04-08">2019-04-08</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/0043-PyOpenSci/PyOpenSci.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+            <li><a class="tag p-category" href="../../../categories/python/" rel="tag">python</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # pyOpenSci: un promotor de la ciencia abierta -->
+<!-- **Por Yurely Camacho** -->
+
+<p><img alt="header" src="../../../images/blog/pyopensci-un-promotor-de-la-ciencia-abierta/header.png"></p>
+<p>Las distintas disciplinas que abarca la ciencia abierta trabajan de manera
+conjunta; tal es el caso del código abierto, la investigación abierta y
+reproducible y los datos abiertos. En el presente artículo tratamos
+sobre <strong>pyOpenSci</strong>, un proyecto al servicio de la ciencia, desarrollado bajo el enfoque de estas
+disciplinas. Si eres un programador, quieres desarrollar (o estás
+desarrollando) algún paquete científico con Python (enlace a artículo
+10razonesparausarpython) y que sea aceptado por una gran comunidad de
+<em>pythonistas</em>, entonces aquí encontrarás lo que necesitas saber para lograrlo.</p>
+<!-- TEASER_END -->
+
+<h3>¿Qué es <a href="https://www.pyopensci.org/">pyOpenSci</a>?</h3>
+<p>pyOpenSci, también conocido como pyOpenScience, es un proyecto encargado de promover la
+ciencia abierta mediante el apoyo al desarrollo, la <a href="https://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares"><em>revisión por
+pares</em></a> y la
+publicación abierta de <strong>paquetes científicos escritos en Python</strong> con
+una buena documentación (enlace a artículo
+documentación_cienciaabierta) y probados previamente; que puedan ser
+utilizados para recopilar, descargar y transformar datos científicos con
+una metodología de trabajo abierta y reproducible.</p>
+<p>El modelo de trabajo de pyOpenSci está basada en la comunidad
+<a href="https://ropensci.org/">rOpenSci</a>. pyOpenSci no trabaja sólo, tiene una
+fuerte vinculación con la <a href="https://joss.theoj.org/">Journal of Open Source Software
+(JOSS)</a>, revista que fomenta la revisión por
+pares, la aceptación y la publicación de software de código abierto.
+Por ello, estas dos comunidades pueden verse como complementarias entre sí. El
+enfoque en el proceso de revisión de pyOpenSci es más práctico que el
+del JOSS. Con pyOpenSci los autores pueden publicar sus paquetes con un
+<a href="https://www.doi.org/">DOI</a> (Digital Object Identifier) de manera que
+puedan ser citados y descubribles por los buscadores de artículos científicos.</p>
+<h3>Inicios de pyOpenSci, un relato de su fundador</h3>
+<p>El proyecto pyOpenSci surgió por el pythonista <a href="https://about.me/gawbul"><strong>Steve
+Moss</strong></a>. En el post <a href="https://ropensci.org/blog/2013/05/16/pyopensci/">Facilitating Open Science
+with Python</a> de su
+autoría, publicado en el blog de rOpenSci en mayo del 2013, manifiesta
+las razones de <em>¿Por qué Python?</em> <em>¿Por qué pyOpenSci?</em> donde
+textualmente cita: "quería, ante todo, facilitar la mejora del campo
+científico, permitiendo y promoviendo la apertura y el intercambio
+dentro y entre las comunidades científicas. Creo que sólo es posible que
+la ciencia progrese si se hace completamente transparente". De allí es
+donde se fundamentan los ideales de pyOpenSci.</p>
+<p>El proyecto pretende mejorar y facilitar la apertura de la investigación
+científica. Para ese momento Steve Moss tenía la esperanza de poder
+alentar a los investigadores a utilizar pyOpenSci para desarrollar,
+compartir y comprometerse con sus estrategias para hacer posible la
+ciencia abierta. Para esto esperaba poder ofrecer talleres, sesiones de
+formación, consultoría y apoyo para hacerlo y que pyOpenSci participara
+en actividades de divulgación dentro de las comunidades. Algo que también expresa en su artículo.</p>
+<h3>¿Cómo puedes contribuir a pyOpenSci?</h3>
+<p>Una buena forma de iniciarte en pyOpenSci, es involucrarte en este proyecto. Asi que aquí te presentamos algunas maneras de hacerlo:</p>
+<ul>
+<li>
+<p><a href="https://www.pyopensci.org/#community-meetings"><strong>Únete a una reunión de la
+  comunidad</strong></a>. Son
+  reuniones de video aproximadamente cada dos semanas.</p>
+</li>
+<li>
+<p><a href="https://pyopensci.discourse.group/"><strong>Súmate al foro comunitario</strong></a>.
+  Un espacio donde se discuten los temas de interés y se publican los
+  anuncios de nuevas reuniones.</p>
+</li>
+<li>
+<p><strong>Envía un paquete</strong>. Hazlo para apoyar a la comunidad científica Python en general y a la de pyOpenSci en específico.</p>
+</li>
+<li>
+<p><strong>Puedes ser un revisor de paquetes</strong>.</p>
+</li>
+<li>
+<p><strong>Ayuda con la infraestructura técnica</strong>. Por ejemplo, tanto el sitio
+  oficial del Proyecto como los otros sitios web necesitan mantenimiento y desarrollo.</p>
+</li>
+<li>
+<p><strong>Participa activamente en la divulgación de pyOpenSci</strong>. Comenta a
+  tus amigos y colegas, haz mención del proyecto en eventos abiertos y
+  en tus redes sociales, !Transmite la información para hacer crecer
+  esta comunidad!</p>
+</li>
+</ul>
+<h3>Colaboradores</h3>
+<p>Según el fundador de pyOpenSci, para colaborar se necesita lo siguiente:
+"Además de un amor por Python, uno debería tener un amor por ser abierto
+y transparente sobre los temas que les apasionan". Esto lo expresó en su
+post para la comunidad <strong>rOpenSci</strong> en 2013 (mencionado en apartados
+anteriores). Donde resalta que, para ese momento, solo era él en pyOpenSci
+y hasta la actualidad más de 20 personas han colaborado con el proyecto,
+conformando una comunidad diversa de personas con un fin común: ofrecer
+un lugar práctico en torno al software científico en Python y donde se
+promuevan las buenas practicas de ciencia abierta.</p>
+<p>Algunas personas que han contribuido y son miembros activos de pyOpenSci
+son: <a href="https://github.com/lwasser">Leah Wasser</a>, <a href="https://github.com/choldgraf">Chris
+Holdraf</a>, <a href="https://github.com/mbjoseph">Max
+Joseph</a>, <a href="https://github.com/xmnlab">Ivan
+Ogasawara</a> miembro del Consejo Directivo de
+nuestra plataforma OpenScienceLabs.</p>
+<h3>Paquetes pyOpenSci</h3>
+<p>La comunidad pyOpenSci es la encargada de desarrollar, presentar,
+revisar y promover los paquetes de software científico. Al ser una
+comunidad abierta, <strong>cualquiera puede enviar un paquete para su revisión</strong>. Puedes conocer los paquetes que se encuentran actualmente
+en revisión accediendo al siguiente repositorio GitHub
+[https://github.com/pyOpenSci/software-review/issues] y los aceptados en este otro enlace
+[https://www.pyopensci.org/python-packages/].</p>
+<p>Los paquetes aprobados hasta ahora por pyOpenSci se refieren a:</p>
+<ul>
+<li>
+<p>Exploración y visualización de datos espaciales
+  <a href="https://github.com/earthlab/earthpy">earthpy</a>.</p>
+</li>
+<li>
+<p>Diapositivas de Jupyter Notebooks (enlace a artículo que-es-jupyter)
+  <a href="https://github.com/py4ds/nbless">Nbless</a>.</p>
+</li>
+<li>
+<p>Validación de las estructuras de datos manejadas por
+  <a href="https://pandas.pydata.org/">pandas</a> con
+  <a href="https://github.com/pandera-dev/pandera">Pandera</a>.</p>
+</li>
+<li>
+<p>Datos geoquímicos
+  <a href="https://github.com/morganjwilliams/pyrolite">pyrolite</a>.</p>
+</li>
+</ul>
+<p>Pasemos ahora a conocer algunos de los sitios y recursos técnicos que
+mantiene el proyecto (además de las reuniones y el
+<a href="https://pyopensci.discourse.group/">foro</a>).</p>
+<h3>pyOpenSci blog</h3>
+<p>El blog de la comunidad pyOpenSci, al cual puedes acceder en [https://www.pyopensci.org/blog/] contiene información, entre otras
+cosas, sobre:</p>
+<ul>
+<li>
+<p>Eventos y actividades planificadas.</p>
+</li>
+<li>
+<p>Paquetes que han pasado por el proceso de revisión.</p>
+</li>
+<li>
+<p>Desafíos de pyOpenSci en la enorme comunidad Python.</p>
+</li>
+</ul>
+<h3>Otros recursos y sitios relacionados</h3>
+<ul>
+<li>
+<p><a href="https://github.com/pyOpenSci">Organización pyOpenSci Github</a>.
+  Contiene el <a href="https://github.com/pyOpenSci/software-review">repositorio de revisión de
+  software</a> y otros.</p>
+</li>
+<li>
+<p><a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/">pyOpenSci
+  cookiecutter</a>
+  es una plantilla que facilita el empaquetado del código Python.</p>
+</li>
+<li>
+<p><a href="https://www.pyopensci.org/contributing-guide/intro">Guía de
+  pyOpenSci</a> con
+  información para los autores y revisores de los paquetes, que incluye
+  todo el proceso. Es lo primero que debes leer si estás interesado en
+  enviar un paquete a pyOpenSci.</p>
+</li>
+<li>
+<p><a href="https://github.com/pyOpenSci/governance">Repositorio de Gobernanza de
+  pyOpenSci</a>. Donde se discuten
+  la dirección y el alcance de pyOpenSci.</p>
+</li>
+<li>
+<p><a href="https://ropensci.org/">rOpenSci</a>: la inspiración para crear
+  rOpenSci, es generar una comunidad cuyo propósito es promover las mejores
+  prácticas en el desarrollo de software para el lenguaje R (enlace a artículo LenguajeR).</p>
+</li>
+</ul>
+<p>La comunidad pyOpenSci está abierta para que envíes un paquete, te
+conviertas en revisor, ayudes a difundir sus actividades y buenas
+prácticas, para que tomen en cuenta tus dudas o inquietudes y así puedas
+contribuir a la comunidad científica de Python.</p>
+<h4>Referencias</h4>
+<ul>
+<li>
+<p><a href="https://www.pyopensci.org/">Web site del Proyecto</a></p>
+</li>
+<li>
+<p><a href="https://about.me/gawbul">Web site de Steve Moss (fundador de
+  pyOpenSci)</a></p>
+</li>
+<li>
+<p><a href="https://ropensci.org/blog/2013/05/16/pyopensci/">Facilitating Open Science with
+  Python</a></p>
+</li>
+<li>
+<p><a href="https://ui.adsabs.harvard.edu/abs/2019AGUFMNS21A..13W/abstract">pyOpenSci Promoting Open Source Python Software To Support Open
+  Reproducible
+  Science</a></p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../0044-dataverse/dataverse-y-su-potencial-para-proyectos-de-ciencia-abierta/" rel="prev" title="Dataverse y su potencial para proyectos de ciencia abierta">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next">
+                <a href="../../0042-LaboratoriosCovid/los-laboratorios-sociales-y-el-manejo-del-covid-19/" rel="next" title="Los laboratorios sociales y el manejo del COVID-19">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/0043-PyOpenSci/pyopensci-un-promotor-de-la-ciencia-abierta/",
+        disqus_title="pyOpenSci: un promotor de la ciencia abierta",
+        disqus_identifier="cache/pages/blog/0043-PyOpenSci/PyOpenSci.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
