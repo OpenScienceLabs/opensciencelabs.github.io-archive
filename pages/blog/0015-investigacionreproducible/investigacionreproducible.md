@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Cuáles son los principios de la investigación reproducible?
-.. slug: ciencia-abierta
+.. slug: cuales-son-los-principios-de-la-investigacion-reproducible
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: open science

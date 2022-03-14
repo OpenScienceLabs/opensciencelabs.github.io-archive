@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
-.. slug: ciencia-abierta
+.. slug: como-aplicar-los-principios-de-acceso-abierto-en-tus-investigaciones
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # ¿Cómo aplicar los principios de acceso abierto en tus investigaciones? -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/como-aplicar-los-principios-de-acceso-abierto-en-tus-investigaciones/header.png)
 
 Al realizar una investigación estamos sujetos a distintos panoramas en los
 cuales nuestro criterio tiene un papel muy importante porque de ello va a

@@ -1,6 +1,6 @@
 <!--
 .. title: Automatización de tareas vía bash
-.. slug: ciencia-abierta
+.. slug: automatizacion-de-tareas-via-bash
 .. date: 2019-04-08
 .. author: Anavelyz Pérez
 .. tags: bash, automation
@@ -13,7 +13,7 @@
 <!-- # Automatización de tareas vía bash -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/automatizacion-de-tareas-via-bash/header.png)
 
 ¿Qué es Bash?
 

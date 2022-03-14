@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Qué es ciencia ciudadana?
-.. slug: ciencia-abierta
+.. slug: que-es-ciencia-ciudadana
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: citizen science
@@ -13,7 +13,7 @@
 <!-- # ¿Qué es ciencia ciudadana? -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/que-es-ciencia-ciudadana/header.png)
 
 Comúnmente, existe una visión de la ciencia que la dibuja como una actividad que se realiza de forma solitaria y apartada del grupo más numeroso de la sociedad, que es desarrollada por científicos *asociales* y que realizan sus investigaciones de forma privada, casi oculta, y comparten su descubrimientos solamente entre una comunidad selecta de individuos, casi todos hombres, hablando con un vocabulario rebuscado y imposible de entender.
 

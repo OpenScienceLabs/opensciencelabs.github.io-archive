@@ -1,6 +1,6 @@
 <!--
 .. title: Primeros pasos con RStudio
-.. slug: ciencia-abierta
+.. slug: primeros-pasos-con-rstudio
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: ide, r
@@ -12,7 +12,7 @@
 
 <!-- # Primeros pasos con RStudio -->
 
-![header](header.png)
+![header](../../../images/blog/primeros-pasos-con-rstudio/header.png)
 
 RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de
 programación R, el cual puedes utilizar para realizar scripts de análisis de

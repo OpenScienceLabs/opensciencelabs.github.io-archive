@@ -1,6 +1,6 @@
 <!--
 .. title: Investigación Colaborativa con Git
-.. slug: ciencia-abierta
+.. slug: investigacion-colaborativa-con-git
 .. date: 2019-04-08
 .. author: Anavelyz Pérez
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # Investigación Colaborativa con Git -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/investigacion-colaborativa-con-git/header.png)
 
 La Investigación Colaborativa surge en el momento en el cual varias entidades
 que pueden estar especializadas en diferentes áreas, se establecen un mismo

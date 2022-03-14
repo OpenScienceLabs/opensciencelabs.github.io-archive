@@ -1,6 +1,6 @@
 <!--
 .. title: Cinco cosas que no debes olvidar al trabajar con datos abiertos
-.. slug: ciencia-abierta
+.. slug: cinco-cosas-que-no-debes-olvidar-al-trabajar-con-datos-abiertos
 .. date: 2019-04-08
 .. author: Anavelyz Pérez
 .. tags: open data
@@ -13,7 +13,7 @@
 <!-- # Cinco cosas que no debes olvidar al trabajar con datos abiertos -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/cinco-cosas-que-no-debes-olvidar-al-trabajar-con-datos-abiertos/header.png)
 
 Cada vez es más común leer o escuchar sobre datos abiertos pero puede que no
 sepamos del todo lo que esto significa. Por ello, vamos a revisar inicialmente

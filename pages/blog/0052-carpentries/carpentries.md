@@ -1,6 +1,6 @@
 <!--
 .. title: Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos
-.. slug: ciencia-abierta
+.. slug: por-que-deberias-considerar-carpentries-como-una-referencia-para-aprender-ciencia-de-datos
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: data science, learning
@@ -12,7 +12,7 @@
 
 <!-- # Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos -->
 
-![header](header.png)
+![header](../../../images/blog/por-que-deberias-considerar-carpentries-como-una-referencia-para-aprender-ciencia-de-datos/header.png)
 
 Cuando estamos por aprender y comprender al máximo sobre algo en especifico es vital que tengamos fuentes de información que nos hagan este proceso más sencillo, y que ante cualquier duda que tengamos la ayuda sea oportuna.
 

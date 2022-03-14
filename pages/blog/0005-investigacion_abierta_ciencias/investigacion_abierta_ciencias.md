@@ -1,6 +1,6 @@
 <!--
 .. title: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
-.. slug: ciencia-abierta
+.. slug: la-investigacion-abierta-podria-cambiar-el-futuro-de-la-investigacion-en-ciencias-puras-te-contamos-por-que
 .. date: 2019-04-08
 .. author: Anavelyz Pérez
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué. -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/la-investigacion-abierta-podria-cambiar-el-futuro-de-la-investigacion-en-ciencias-puras-te-contamos-por-que/header.png)
 
 La investigación abierta despliega nuevos horizontes en distintos niveles,
 económicos, sociales, industriales, politicos e incluso en las ciencias puras.

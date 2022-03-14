@@ -1,6 +1,6 @@
 <!--
 .. title: Visualiza tus datos en R con ggplot2 y gganimate
-.. slug: ciencia-abierta
+.. slug: visualiza-tus-datos-en-r-con-ggplot-y-gganimate
 .. date: 2019-04-08
 .. author: Ever Vino
 .. tags: r, visualization
@@ -13,7 +13,7 @@
 <!-- # Visualiza tus datos en R con ggplot2 y gganimate -->
 <!-- **Autor**: [Ever Vino](../../authors/ever-vino.md) -->
 
-![header](header.png)
+![header](../../../images/blog/visualiza-tus-datos-en-r-con-ggplot-y-gganimate/header.png)
 
 Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R.
 
@@ -167,7 +167,7 @@ Funciones utilizadas
 
 - `labs(x, y, color, title, subtitle)`Capa que pone los nombres a eje "x" y al eje "y", además de poner el nombre encima de las leyendas con "color", el nombre título y subtítulo con "title" y "subtitle" respectivamente.
 
-![alt text](Rplot.png)
+![alt text](../../../images/blog/visualiza-tus-datos-en-r-con-ggplot-y-gganimate/Rplot.png)
 
 ## Gráfica Animada ⚙️
 

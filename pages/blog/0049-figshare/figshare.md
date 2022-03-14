@@ -1,6 +1,6 @@
 <!--
 .. title: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
-.. slug: ciencia-abierta
+.. slug: todas-las-posibilidades-que-te-ofrece-utilizar-figshare-en-tus-proyectos
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science
@@ -12,7 +12,7 @@
 
 <!-- # Todas las posibilidades que te ofrece utilizar figshare en tus proyectos -->
 
-![header](header.png)
+![header](../../../images/blog/todas-las-posibilidades-que-te-ofrece-utilizar-figshare-en-tus-proyectos/header.png)
 
 ¿Qué es figshare?
 

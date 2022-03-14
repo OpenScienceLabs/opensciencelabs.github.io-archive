@@ -1,6 +1,6 @@
 <!--
 .. title: 10 razones para usar Python en tu proximo proyecto de investigación
-.. slug: ciencia-abierta
+.. slug: razones-para-usar-python-en-tu-proximo-proyecto-de-investigacion
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # 10 razones para usar Python en tu proximo proyecto de  investigación -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/razones-para-usar-python-en-tu-proximo-proyecto-de-investigacion/header.png)
 
 ¿Estás interesado en integrar un poco de programación en tu rutina cotidiana?, ¿Necesitas aprovechar de la versatilidad y eficiencia que te otorga manejar con fluidez codigo?, ¿O simplemente quieres aprovechar de la utilidad de poder realizar análisis computacional?. Sea cual sea la razón, te podrías estar preguntando por donde empezar. Habiendo tantos lenguajes de programación disponibles, con una cantidad prácticamente infinita de usos, puede serte difícil decidir con cuál empezar a aprender o cuál aportará más a tu trabajo.
 

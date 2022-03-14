@@ -1,6 +1,6 @@
 <!--
 .. title: Los laboratorios sociales y el manejo del COVID-19
-.. slug: ciencia-abierta
+.. slug: los-laboratorios-sociales-y-el-manejo-del-covid-19
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: social labs, covid19
@@ -13,7 +13,7 @@
 <!-- # Los laboratorios sociales y el manejo del COVID-19 -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/los-laboratorios-sociales-y-el-manejo-del-covid-19/header.png)
 
 Frente a la pandemia ocasionada por la enfermedad COVID-19 se han
 desarrollado en todo el mundo, distintas prácticas de ciencia abierta

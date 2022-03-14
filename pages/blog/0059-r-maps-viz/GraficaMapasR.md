@@ -1,6 +1,6 @@
 <!--
 .. title: Dibuja tus mapas en R usando archivos de formato Shapefile
-.. slug: ciencia-abierta
+.. slug: dibuja-tus-mapas-en-r-usando-archivos-de-formato-shapefile
 .. date: 2019-04-08
 .. author: Ever Vino
 .. tags: r, maps, visualization
@@ -13,7 +13,7 @@
 <!-- # Dibuja tus mapas en R usando archivos de formato Shapefile -->
 <!-- **Autor**: [Ever Vino](https://opensciencelabs.github.io/articles/authors/ever-vino.html) -->
 
-![header](header.png)
+![header](../../../images/blog/dibuja-tus-mapas-en-r-usando-archivos-de-formato-shapefile/header.png)
 
 Este breve tutorial te mostrará como graficar mapas en R, extaer datos de archivos de formato shapefile, resaltar puntos en tu mapa y modificar su apariencia utilizando las bibliotecas `rgdal` y `ggplot2`.
 
@@ -168,7 +168,7 @@ ggplot() +
 - **`coord_equal()`**: obliga a la gráfica que la relación de aspecto entre coordenadas sea 1:1.
 - **`lab(fill)`**: pone el título a la leyenda con `fill`.
 
-![Mapa de Bolivia: Población por departamento](grafica1.png)
+![Mapa de Bolivia: Población por departamento](../../../images/blog/dibuja-tus-mapas-en-r-usando-archivos-de-formato-shapefile/grafica1.png)
 
 ## Mejorando la presentación de nuestro mapa
 
@@ -257,7 +257,7 @@ ggplot() +
 - **`theme(plot.title, legend.title, plot.caption)`**: modifica la apariencia del título del gráfico, el título de la leyenda y el pie de gráfico respectivamente.
 - **`element_text(size, face, family, hjust)`**: extrae propiedades del texto para modificar el tamaño, la estética, el tipo y la posición en horizontal.
 
-![Mapa de Bolivia: Población por departamento](grafica2.png)
+![Mapa de Bolivia: Población por departamento](../../../images/blog/dibuja-tus-mapas-en-r-usando-archivos-de-formato-shapefile/grafica2.png)
 
 ## Añadiendo ubicaciones a nuestro mapa
 
