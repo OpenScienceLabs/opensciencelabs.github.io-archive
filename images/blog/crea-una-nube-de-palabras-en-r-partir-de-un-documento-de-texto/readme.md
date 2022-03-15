@@ -1,1 +1,0 @@
-Qui poner la imagen
