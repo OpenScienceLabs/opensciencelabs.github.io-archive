@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
-.. slug: ciencia-abierta
+.. slug: que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos? -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos/header.png)
 
 Si eres una persona con deseos de desarrollar proyectos de código abierto que puedan ser compartidos, quieres replicar y /o mejorar proyectos existentes o convertirte en un científico de datos, realizando algunas búsquedas habrás leido u oido escuchar acerca del [Lenguaje R](https://www.r-project.org/). En este post daremos un paso breve sobre sobre sus características, las posibilidades de utilizarlo en tus proyectos y las oportunidades laborales que tendrás cuando lo manejes de forma fluida.
 

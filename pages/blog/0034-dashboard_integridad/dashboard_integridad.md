@@ -1,6 +1,6 @@
 <!--
 .. title: La importancia de la integridad en los datos manejados en los dashboards
-.. slug: ciencia-abierta
+.. slug: la-importancia-de-la-integridad-en-los-datos-manejados-en-los-dashboards
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: dashboard
@@ -12,7 +12,7 @@
 
 <!-- # La importancia de la integridad en los datos manejados en los dashboards -->
 
-![header](header.png)
+![header](../../../images/blog/la-importancia-de-la-integridad-en-los-datos-manejados-en-los-dashboards/header.png)
 
 Si trabajamos en una empresa o institución pública o simplemente queremos ver el comportamiento de nuestros datos, podemos pensar en realizar uno o varios gráficos. Los gráficos son representaciones visuales de los datos que nos permiten comprenderlos, compararlos, analizarlos y describirlos de forma tal que se tenga una noción más clara de lo que ocurre con ellos.
 

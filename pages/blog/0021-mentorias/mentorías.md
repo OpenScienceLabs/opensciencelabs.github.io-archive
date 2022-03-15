@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
-.. slug: ciencia-abierta
+.. slug: que-son-las-mentorias-y-como-potencian-los-proyectos-de-ciencia-abierta
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: mentoring
@@ -13,7 +13,7 @@
 <!-- # ¿Qué son las mentorías y cómo potencian los proyectos de  ciencia abierta? -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/que-son-las-mentorias-y-como-potencian-los-proyectos-de-ciencia-abierta/header.png)
 
 La competitividad y los deseos de superación a nivel personal, profesional y
 laboral impulsan los deseos individuales por aprender continuamente para afianzar

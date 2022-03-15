@@ -1,6 +1,6 @@
 <!--
 .. title: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
-.. slug: ciencia-abierta
+.. slug: si-ya-usas-codigo-abierto-te-contamos-como-puedes-sacarle-mayor-provecho-tu-documentacion-para-tus-articulos-y-publicaciones
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: open source, documentation
@@ -13,7 +13,7 @@
 <!-- # Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones) -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/si-ya-usas-codigo-abierto-te-contamos-como-puedes-sacarle-mayor-provecho-tu-documentacion-para-tus-articulos-y-publicaciones/header.png)
 
 Con mucha frecuencia, los proyectos de codigo abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta Open Source Survey[1] (realizada por Github, involucrando tanto académicos, como a trabajadores en la industria de computación, como colaboradores independientes) reportó que al menos 93% de los encuestados, creían que la documentación incompleta o sin actualizar era uno de los problemas mas agravantes dentro de la esfera del software libre. En la misma encuesta, 60% de los participantes admitían también contribuir a la documentación de sus proyectos con muy poca frecuencia.
 

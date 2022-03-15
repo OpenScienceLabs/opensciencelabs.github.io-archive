@@ -1,6 +1,6 @@
 <!--
 .. title: Cómo instalar y comenzar a utilizar Conda
-.. slug: ciencia-abierta
+.. slug: como-instalar-y-comenzar-utilizar-conda
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: devops, packaging
@@ -13,7 +13,7 @@
 <!-- # Cómo instalar y comenzar a utilizar Conda -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/como-instalar-y-comenzar-utilizar-conda/header.png)
 
 Conda es un sistema de gestión de entornos y de paquetes que funciona en
 Windows, Linux y MacOs. Inicialmente se creó para programas Python y

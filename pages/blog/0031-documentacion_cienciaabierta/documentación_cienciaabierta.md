@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Cómo documentar tu proyecto de ciencia abierta?
-.. slug: ciencia-abierta
+.. slug: como-documentar-tu-proyecto-de-ciencia-abierta
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science, documentation
@@ -13,7 +13,7 @@
 <!-- # ¿Cómo documentar tu proyecto de ciencia abierta? -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/como-documentar-tu-proyecto-de-ciencia-abierta/header.png)
 
 Para hacer reproducible una investigación y que ésta pueda ser verificada a largo plazo, debes contar con un registro donde tomes nota de todos los pasos realizados durante este proceso, lo cual servirá, al mismo tiempo, para que tu proyecto sea comprensible por personas ajenas a él y así puedan desarrollar algún interés sobre el mismo. A todo el proceso de registro de esa información se le conoce como **Documentación**.
 

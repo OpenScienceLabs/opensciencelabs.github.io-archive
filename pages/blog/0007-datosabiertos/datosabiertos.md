@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Qué son los datos abiertos?
-.. slug: ciencia-abierta
+.. slug: que-son-los-datos-abiertos
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # Que son los datos abiertos? -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/que-son-los-datos-abiertos/header.png)
 
 El manejo de los datos es un aspecto muy importante a considerar en los proyectos de ciencia abierta. Con respecto al almacenamiento y uso de los datos, hay un número nada despreciable de movimientos e iniciativas en boga que buscan un mayor grado de transparencia y distribución de la información en todo tipo de ámbitos. Principalmente en la esfera pública (en temas referidos a políticas gubernamentales, uso del presupuesto de los ministerios, etc.), son iniciativas que buscan hacer libres las investigaciones, técnicas y datos utilizados para justificar la información y politicas dadas por estas instituciones. Movimientos tales como el Partido Pirata prometen que, cuando estos datos estén disponibles, no solamente se ejecutarán las políticas de una forma más eficiente sino que se podrá garantizar la veracidad de la investigación permitiendo generar una fuerte confianza en ésta.
 

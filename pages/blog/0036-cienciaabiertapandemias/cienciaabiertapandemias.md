@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
-.. slug: ciencia-abierta
+.. slug: que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science, pandemic
@@ -13,7 +13,7 @@
 <!-- # ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias? -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/que-hemos-aprendido-gracias-la-que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias-del-manejo-de-pandemias/header.png)
 
 Al transcurrir los años se han presentado pandemias que han azotado y puesto en alerta al mundo. Por tal motivo, la manera como las personas, instituciones y gobiernos lo han manejado resulta de suma importancia ya sea para prevenir errores cometidos, tomar medidas similares o reinventarse acciones en el tema. Justo es aquí donde entra en juego la ciencia abierta. Tal vez te preguntarás ¿Cuál es el papel de la ciencia abierta en todo esto? Pues las distintas disciplinas que abarca, como el acceso y los datos abiertos, han permitido producir conocimiento científico para combatir estas pandemias, por ejemplo, para realizar un diagnóstico temprano, en la gestión de la producción de vacunas, o para predecir niveles de propagación de las enfermedades y generar soluciones tecnológicas.
 
@@ -207,7 +207,7 @@ De todas las iniciativas de ciencia abierta que se han desarrollado en torno a l
   pandemia](https://blogs.iadb.org/conocimiento-abierto/es/coronavirus-recursos-y-conocimiento-abierto-para-colaborar-en-la-respuesta-a-la-pandemia/).
 
 - [La ciencia abierta ha sido crucial en la lucha contyra el
-  coronavirus](https://r3d.mx/2020/01/21/la-ciencia-abierta-ha-sido-crucial-en-la-lucha-contra-el-nuevo-coronavirus-de-wuhan/).
+  coronavirus](https://r3d.mx/2020/01/21/la-que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias-ha-sido-crucial-en-la-lucha-contra-el-nuevo-coronavirus-de-wuhan/).
 
 - [Fortaleciendo la respuesta ante el Zika mediante la colaboración
   abierta](https://blogs.iadb.org/conocimiento-abierto/es/fortaleciendo-la-respuesta-ante-el-zika-mediante-la-colaboracion-abierta/).

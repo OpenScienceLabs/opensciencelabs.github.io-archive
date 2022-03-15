@@ -1,6 +1,6 @@
 <!--
 .. title: Te mostramos algunos repositorios con datos sobre el COVID-19
-.. slug: ciencia-abierta
+.. slug: te-mostramos-algunos-repositorios-con-datos-sobre-el-covid-19
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science, covid19
@@ -12,7 +12,7 @@
 
 <!-- # Te mostramos algunos repositorios con datos sobre el COVID-19 -->
 
-![header](header.png)
+![header](../../../images/blog/te-mostramos-algunos-repositorios-con-datos-sobre-el-covid-19/header.png)
 
 El covid-19 es un virus que emergió en Wuhan, China a finales del año 2019, este
 virus ha generado desde entonces una gran alarma internacional. Se trata de una

@@ -1,6 +1,6 @@
 <!--
 .. title: Herramientas de visualización en R
-.. slug: ciencia-abierta
+.. slug: herramientas-de-visualizacion-en-r
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: r, visualization
@@ -13,7 +13,7 @@
 <!-- # Herramientas de visualización en R -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/herramientas-de-visualizacion-en-r/header.png)
 
 Sin duda, los datos deben considerarse como la materia prima para
 cualquier proyecto de ciencia abierta, pues todos se basan en el manejo

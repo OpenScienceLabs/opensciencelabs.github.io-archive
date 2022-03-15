@@ -1,6 +1,6 @@
 <!--
 .. title: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
-.. slug: ciencia-abierta
+.. slug: te-hablamos-de-las-licencias-mas-utilizadas-en-proyectos-de-ciencia-abierta
 .. date: 2019-04-08
 .. author: Rainer Palm
 .. tags: open science, license
@@ -13,7 +13,7 @@
 <!-- # Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/te-hablamos-de-las-licencias-mas-utilizadas-en-proyectos-de-te-hablamos-de-las-licencias-mas-utilizadas-en-proyectos-de-ciencia-abierta/header.png)
 
 ¿Cómo proteger tus proyectos, tu código y tu labor si dejas que cualquiera con acceso a Internet la acceda y utilice tal como desee? En GitHub están alojados millones de proyectos cuyo código es reutilizado de cualquier manera y en proyectos de cualquier tipo, sin que el programador pueda controlarlo. ¿Cómo podría un desarrollador promedio resguardarse de un posible abuso, para tomar medidas de seguridad, o para evitar que otro se beneficie de su labor sin saberlo? Es aquí donde, en el desarrollo de software, entran las licencias de software, y es aquí donde, por múltiples razones (transparencia, reproductibilidad, libertad de acceso, mayor eficacia durante el desarrollo, entre otras), nos interesan sobre todo aquellas licencias de código abierto, ya que hacen posible el desarrollo de muchas prácticas de la ciencia abierta.
 

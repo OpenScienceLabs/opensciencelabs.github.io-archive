@@ -1,6 +1,6 @@
 <!--
 .. title: Primeros pasos con Spyder
-.. slug: ciencia-abierta
+.. slug: primeros-pasos-con-spyder
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: ide
@@ -14,7 +14,7 @@
 
 **Por Yurely Camacho**
 
-![header](header.png)
+![header](../../../images/blog/primeros-pasos-con-spyder/header.png)
 
 Si haz elegido programar en Python, luego de haberlo instalado quizás te
 preguntarás ¿Dónde voy a programar? Para esto necesitas un editor de

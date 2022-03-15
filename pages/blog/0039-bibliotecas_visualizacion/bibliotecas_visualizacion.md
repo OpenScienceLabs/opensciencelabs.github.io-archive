@@ -1,6 +1,6 @@
 <!--
 .. title: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
-.. slug: ciencia-abierta
+.. slug: te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta
 .. date: 2019-04-08
 .. author: Anavelyz Pérez
 .. tags: open science, python
@@ -13,7 +13,7 @@
 <!-- # Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta -->
 <!-- **Por Anavelyz Pérez** -->
 
-![header](header.png)
+![header](../../../images/blog/te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta/header.png)
 
 Un proyecto de ciencia abierta así como cualquier otro requiere de una
 evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse

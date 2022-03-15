@@ -12,7 +12,17 @@
 
 <!-- # 5 proyectos de inteligencia artificial que te sorprenderan -->
 
-![header](header.png)
+<!-- ![doi](images/blog/2022/01/header.png) -->
+![header](../../../images/blog/proyectos-de-inteligencia-artificial-que-te-sorprenderan/header.png)
+
+<!-- 
+<p align="center">
+    <img
+     alt="An illustration of a curled up piece of paper with recipe contents on it. The items listed on it are the ones mentioned previously."
+     src="/images/2022/02/header.png" />
+    <br />
+    <i>Cute representation of a package recipe</i>
+</p> -->
 
 Una de las areas de investigación mas prometedoras de la ultima decada es sín duda la inteligencia artificial. No solamente reune una increible cantidad de regiones del conocimiento que, superficialmente, son demasiado dispares (tales como la filosofía de la mente, la psicología, la biología, la robotíca, la lógica pura, entre muchas otras), sino que también los resultados de sus publicaciones se vuelven relevantes de forma retroactiva para las areas de la ciencia de cuya historia se nutre. El estudio y la utilización de las redes neuronales y el aprendizaje automático (o machine learning) ha demostrado ser increiblemente utíl no solamente a la hora de realizar investigaciones regulares con estas tecnícas, sino también para crear nuevas herramientas de simulación y experimentación, tanto para uso científico como el particular o comercial.
 

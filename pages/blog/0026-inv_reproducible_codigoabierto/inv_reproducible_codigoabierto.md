@@ -1,6 +1,6 @@
 <!--
 .. title: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
-.. slug: ciencia-abierta
+.. slug: como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: open science
@@ -13,7 +13,7 @@
 <!-- # ¿Cómo aplicar la investigación reproducible a proyectos de código abierto? -->
 <!-- **Por Yurely Camacho** -->
 
-![header](header.png)
+![header](../../../images/blog/como-aplicar-la-investigacion-reproducible-proyectos-de-codigo-abierto/header.png)
 
 Los avances en la ciencia están fuertemente relacionados con la
 reproducibilidad en las investigaciones. Resulta muy importante lograr

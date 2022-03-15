@@ -1,6 +1,6 @@
 <!--
 .. title: Cómo instalar y comenzar a utilizar Tensorflow
-.. slug: ciencia-abierta
+.. slug: como-instalar-y-comenzar-utilizar-tensorflow
 .. date: 2019-04-08
 .. author: Yurely Camacho
 .. tags: machine learning
@@ -12,7 +12,7 @@
 
 <!-- # Cómo instalar y comenzar a utilizar Tensorflow -->
 
-![header](header.png)
+![header](../../../images/blog/como-instalar-y-comenzar-utilizar-tensorflow/header.png)
 
 Hablar de Tensorflow, es hablar de Machine Learning porque es una plataforma que
 permite y facilita la creación de modelos asociados a algoritmos en los que se

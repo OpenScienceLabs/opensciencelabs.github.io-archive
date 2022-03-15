@@ -1,6 +1,6 @@
 <!--
 .. title: Git de 0 a 100 en diez sencillos pasos
-.. slug: ciencia-abierta
+.. slug: git-de-en-diez-sencillos-pasos
 .. date: 2019-04-08
 .. author: Por Rainer Palm
 .. tags: versioning
@@ -13,7 +13,7 @@
 <!-- # Git de 0 a 100 en diez sencillos pasos -->
 <!-- **Por Rainer Palm** -->
 
-![header](header.png)
+![header](../../../images/blog/git-de-en-diez-sencillos-pasos/header.png)
 
 ¿Necesitas aprender [Git](http://git.io) para manejar con mayor eficiencia y control tus projectos y trabajos? Ya sea para desarrollo de software, creación de paginas web, investigaciones científicas, o para manejar tus escritos, te podría ser muy util aprovechar la seguridad que te da Git con su control de versiones, o la facilidad con la que te deja colaborar con tus colegas. Ademas, podría serte de mucha ayuda a la hora de buscar empleo en tu area de trabajo, ya que los proyectos y contribuciones que tengas subidos a Git te servirán como parte de tu curriculo.
 Sin embargo, puede parecerte algo intimidante debido a la gran diversidad de opciones que te proporciona, además del uso requerido de la línea de comandos en la aplicación Git. Pero si sigues los 10 pasos que presentamos a continuación, te darás cuenta de lo sencillo que puede resultar subir y manejar archivos en tu primer repositorio, crear varias ramas en el mismo y compartir archivos con colaboradores.
