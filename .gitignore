@@ -132,3 +132,6 @@ dmypy.json
 output/
 .doit.*
 cache/
+
+
+.DS_Store
