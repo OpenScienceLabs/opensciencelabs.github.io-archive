@@ -1,7 +1,7 @@
 <!--
 .. title: Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo
 .. slug: que-es-el-data-version-control-dvc-y-por-que-es-necesario-que-tu-equipo-sepa-como-utilizarlo
-.. date: 2019-04-08
+.. date: 2021-03-22
 .. author: Yurely Camacho
 .. tags: versioning, data
 .. category: data

@@ -1,7 +1,7 @@
 <!--
 .. title: Tres proyectos de ciencia ciudadana que te sorprenderán
 .. slug: tres-proyectos-de-ciencia-ciudadana-que-te-sorprenderan
-.. date: 2019-04-08
+.. date: 2020-02-12
 .. author: Rainer Palm
 .. tags: citizen science
 .. category: citizen science

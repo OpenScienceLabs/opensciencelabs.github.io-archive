@@ -1,8 +1,8 @@
 <!--
 .. title: 5 proyectos de inteligencia artificial que te sorprenderan
 .. slug: ciencia-abierta
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2021-02-08
+.. author: Rainer Palm
 .. tags: artificial intelligence
 .. category: artificial intelligence
 .. link: 

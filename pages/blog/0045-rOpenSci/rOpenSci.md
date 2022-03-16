@@ -1,7 +1,7 @@
 <!--
 .. title: Te contamos sobre la comunidad rOpenSci
 .. slug: te-contamos-sobre-la-comunidad-ropensci
-.. date: 2019-04-08
+.. date: 2020-08-18
 .. author: Yurely Camacho
 .. tags: r, community, open science
 .. category: open science

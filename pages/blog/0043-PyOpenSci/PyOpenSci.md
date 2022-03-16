@@ -1,7 +1,7 @@
 <!--
 .. title: pyOpenSci: un promotor de la ciencia abierta
 .. slug: pyopensci-un-promotor-de-la-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-08-06
 .. author: Yurely Camacho
 .. tags: open science, python
 .. category: open science

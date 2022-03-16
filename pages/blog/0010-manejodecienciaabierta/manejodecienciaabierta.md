@@ -1,7 +1,7 @@
 <!--
 .. title: Aspectos clave en el manejo de equipos de ciencia abierta
 .. slug: aspectos-clave-en-el-manejo-de-equipos-de-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-01-20
 .. author: Rainer Palm
 .. tags: open science
 .. category: open science

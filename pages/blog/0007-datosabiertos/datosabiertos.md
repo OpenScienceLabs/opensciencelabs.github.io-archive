@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué son los datos abiertos?
 .. slug: que-son-los-datos-abiertos
-.. date: 2019-04-08
+.. date: 2020-01-18
 .. author: Rainer Palm
 .. tags: open science
 .. category: open data

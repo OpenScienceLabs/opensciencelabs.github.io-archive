@@ -1,8 +1,8 @@
 <!--
 .. title: Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos
 .. slug: por-que-deberias-considerar-carpentries-como-una-referencia-para-aprender-ciencia-de-datos
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2021-03-08
+.. author: Anavelyz Pérez
 .. tags: data science, learning
 .. category: learning
 .. link: 

@@ -1,7 +1,7 @@
 <!--
 .. title: La investigación abierta, el manejo de repositorios y control de versiones
 .. slug: la-investigacion-abierta-el-manejo-de-repositorios-y-control-de-versiones
-.. date: 2019-04-08
+.. date: 2020-02-28
 .. author: Anavelyz Pérez
 .. tags: open science, versioning
 .. category: open science

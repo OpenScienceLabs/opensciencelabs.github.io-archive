@@ -1,8 +1,8 @@
 <!--
 .. title: Que es el Open Science Framework?
 .. slug: que-es-el-open-science-framework
-.. date: 2019-04-08
-.. author: 
+.. date: 2021-04-19
+.. author: Rainer Palm 
 .. tags: open science
 .. category: open science
 .. link: 
