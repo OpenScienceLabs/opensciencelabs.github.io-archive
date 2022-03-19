@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
 .. slug: ya-probado-los-cuadernos-de-jupyter-te-explicamos-que-son-y-como-te-ayudaran-en-tu-proxima-investigacion
-.. date: 2019-04-08
+.. date: 2020-01-13
 .. author: Rainer Palm
 .. tags: open science
 .. category: jupyter

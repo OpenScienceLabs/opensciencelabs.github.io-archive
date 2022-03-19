@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Cómo presentar tu código como un artículo científico?
 .. slug: como-presentar-tu-codigo-como-un-articulo-cientifico
-.. date: 2019-04-08
+.. date: 2020-03-04
 .. author: Rainer Palm
 .. tags: science
 .. category: science

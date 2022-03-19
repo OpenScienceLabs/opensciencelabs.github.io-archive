@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
 .. slug: que-son-los-laboratorios-sociales-y-como-pueden-ayudar-los-equipos-de-investigacion
-.. date: 2019-04-08
+.. date: 2020-02-07
 .. author: Rainer Palm
 .. tags: social labs
 .. category: social labs

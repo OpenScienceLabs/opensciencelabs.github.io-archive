@@ -1,7 +1,7 @@
 <!--
 .. title: Cómo instalar y comenzar a utilizar Conda
 .. slug: como-instalar-y-comenzar-utilizar-conda
-.. date: 2019-04-08
+.. date: 2020-12-03
 .. author: Yurely Camacho
 .. tags: devops, packaging
 .. category: packaging

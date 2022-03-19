@@ -1,7 +1,7 @@
 <!--
 .. title: Herramientas de visualización en R
 .. slug: herramientas-de-visualizacion-en-r
-.. date: 2019-04-08
+.. date: 2020-04-09
 .. author: Yurely Camacho
 .. tags: r, visualization
 .. category: r 

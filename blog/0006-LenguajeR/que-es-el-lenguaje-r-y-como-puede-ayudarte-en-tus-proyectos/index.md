@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
 .. slug: que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos
-.. date: 2019-04-08
+.. date: 2020-01-17
 .. author: Yurely Camacho
 .. tags: open science
 .. category: r

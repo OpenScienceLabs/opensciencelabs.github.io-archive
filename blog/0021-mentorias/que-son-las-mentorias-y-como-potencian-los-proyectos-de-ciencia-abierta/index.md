@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
 .. slug: que-son-las-mentorias-y-como-potencian-los-proyectos-de-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-02-14
 .. author: Yurely Camacho
 .. tags: mentoring
 .. category: mentoring

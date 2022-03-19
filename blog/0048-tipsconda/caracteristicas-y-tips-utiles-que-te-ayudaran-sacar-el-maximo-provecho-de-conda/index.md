@@ -1,7 +1,7 @@
 <!--
 .. title: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
 .. slug: caracteristicas-y-tips-utiles-que-te-ayudaran-sacar-el-maximo-provecho-de-conda
-.. date: 2019-04-08
+.. date: 2020-12-14
 .. author: Yurely Camacho
 .. tags: devops, packaging
 .. category: packaging

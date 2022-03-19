@@ -1,7 +1,7 @@
 <!--
 .. title: Automatización de tareas vía bash
 .. slug: automatizacion-de-tareas-via-bash
-.. date: 2019-04-08
+.. date: 2020-06-21
 .. author: Anavelyz Pérez
 .. tags: bash, automation
 .. category: bash
@@ -40,7 +40,7 @@ Windows por el proyecto Cygwin.
 Ahora bien, cuando desde una distribución Linux abrimos o activamos un terminal se indica que estamos en
 nuestro home mediante el signo ~.Veremos en pantalla algo similar a:
 
-![Terminal](../img/terminal1.png)
+![Terminal](../../../images/blog/automatizacion-de-tareas-via-bash/terminal1.png)
 
 El home es el sitio donde se pueden aplicar inicialmente las tareas.
 
@@ -59,7 +59,7 @@ y la palabra de la cual tenemos duda. Por ejemplo si tecleamos `info bash` o
 `man bash`, tenemos la posibilidad de leer un texto sobre lo que es bash y sus
 características principales.
 
-![Comandos man e info](../img/ayuda.gif)
+![Comandos man e info](../../../images/blog/automatizacion-de-tareas-via-bash/ayuda.gif)
 
 ## Crear, eliminar y editar carpetas o directorios
 
@@ -69,7 +69,7 @@ carpetas o directorios. Algunos de los comandos asociados a estas son:
 `pwd` nos indica el directorio en el que estamos actualmente. Si probamos este
 comando en el home obtendremos algo similar a
 
-![pwd en home](../img/pwd.gif)
+![pwd en home](../../../images/blog/automatizacion-de-tareas-via-bash/pwd.png)
 
 `ls` nos permite ver la lista de los directorios, carpetas y archivos contenidos
 en el sitio o carpeta en la que estemos. `ls -a` nos muestra todos los archivos

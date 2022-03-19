@@ -1,7 +1,7 @@
 <!--
 .. title: Algunos proyectos entretenidos de código abierto
 .. slug: algunos-proyectos-entretenidos-de-codigo-abierto
-.. date: 2019-04-08
+.. date: 2020-01-10
 .. author: Rainer Palm
 .. tags: open source
 .. category: open source

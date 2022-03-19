@@ -1,7 +1,7 @@
 <!--
 .. title: Cinco cosas que no debes olvidar al trabajar con Markdown
 .. slug: cinco-cosas-que-no-debes-olvidar-al-trabajar-con-markdown
-.. date: 2019-04-08
+.. date: 2020-01-24
 .. author: Yurely Camacho
 .. tags: open science
 .. category: markdown

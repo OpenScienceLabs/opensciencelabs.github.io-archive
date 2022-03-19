@@ -1,8 +1,8 @@
 <!--
 .. title: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
 .. slug: plataformas-que-te-ayudaran-en-la-gestion-de-tu-grupo-de-trabajo
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2021-01-23
+.. author: Mariangela Petrizzo Páez
 .. tags: communication
 .. category: communication
 .. link: 
@@ -98,7 +98,7 @@ Un aspecto interesante de Carrot cómo muestra estadísticas de los mensaes dent
 
 A diferencia de las aplicaciones que hemos reseñado hasta aquí, Threads sólo está disponible como aplicación descargable en computadoras de escritorio (ambiente Windows o Mac) y en móbiles (Apple y Android). Se centran en un caso de uso exitoso por parte de la empresa Buffer, que optó por utilizar esta herramienta para mejorar la comunicación entre su equipo de trabajo. Los números que exponen en ese caso de uso son realmente interesante, registrando hasta un 80% de mejora en la productividad de los empleados de un equipo que, como el de Buffer, está totalmente distribuido a lo largo y ancho del mundo.
 
-![53198440.png](attachments/53198440.png)
+![Windows_app](../../../images/blog/plataformas-que-te-ayudaran-en-la-gestion-de-tu-grupo-de-trabajo/1._Windows_app.png)
 
 Esta aplicación está centrada, al igual que las otras reseñadas, en la dar estructura, orden y sistematización a la conversación de los equipos, y la forma en que Buffer expone la ha utilizado, echa mano de tarjetas de conversación, hilos y espacios en los cuales se puede dar lugar a chats para distención del equipo de trabajo, pero también acceso a los distintos temas manejados por el equipo de trabajo a través de chats organizados a modo de tarjetas y un buscador que prometen hacer mucho más sencillo la localización de conversaciones específicas.
 

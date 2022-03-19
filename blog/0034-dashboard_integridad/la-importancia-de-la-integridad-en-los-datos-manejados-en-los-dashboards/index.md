@@ -1,8 +1,8 @@
 <!--
 .. title: La importancia de la integridad en los datos manejados en los dashboards
 .. slug: la-importancia-de-la-integridad-en-los-datos-manejados-en-los-dashboards
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2020-05-14
+.. author: Anavelyz Pérez
 .. tags: dashboard
 .. category: dashboard
 .. link: 
