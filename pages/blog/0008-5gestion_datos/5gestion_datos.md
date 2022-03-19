@@ -1,7 +1,7 @@
 <!--
 .. title: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
 .. slug: cinco-cosas-que-te-ayudaran-gestionar-mejor-los-datos-de-tus-proximos-proyectos
-.. date: 2019-04-08
+.. date: 2020-01-19
 .. author: Yurely Camacho
 .. tags: open science
 .. category: data

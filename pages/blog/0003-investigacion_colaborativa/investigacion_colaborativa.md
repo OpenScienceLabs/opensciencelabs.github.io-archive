@@ -1,7 +1,7 @@
 <!--
 .. title: Todo lo que debes saber sobre la investigación colaborativa
 .. slug: todo-lo-que-debes-saber-sobre-la-investigacion-colaborativa
-.. date: 2019-04-08
+.. date: 2020-01-10
 .. author: Anavelyz Pérez
 .. tags: open science
 .. category: research

@@ -1,7 +1,7 @@
 <!--
 .. title: Herramientas de visualización en Python
 .. slug: herramientas-de-visualizacion-en-python
-.. date: 2019-04-08
+.. date: 2020-05-29
 .. author: Anavelyz Pérez
 .. tags: python, visualization
 .. category: python

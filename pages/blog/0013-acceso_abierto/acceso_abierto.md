@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
 .. slug: que-es-el-acceso-abierto-y-por-que-debes-tenerlo-en-cuenta-para-tus-investigaciones
-.. date: 2019-04-08
+.. date: 2020-01-27
 .. author: Anavelyz Pérez
 .. tags: open science
 .. category: open access

@@ -1,8 +1,8 @@
 <!--
 .. title: Primeros pasos con RStudio
 .. slug: primeros-pasos-con-rstudio
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2021-04-05
+.. author: Anavelyz Pérez
 .. tags: ide, r
 .. category: ide
 .. link: 
@@ -17,13 +17,14 @@
 RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de
 programación R, el cual puedes utilizar para realizar scripts de análisis de
 datos, aplicaciones web interactivas, documentos, reportes, gráficos y mucho
-más. \[https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true\]
+más. 
+<iframe src="https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true" style="border: none;"></iframe>
 
 <!-- TEASER_END -->
 
 Para acceder o utilizar esta herramienta se tienen las siguientes opciones:
-(RStudio Desktop)\[https://rstudio.com/products/rstudio/#rstudio-desktop\] y
-(RServer)\[https://rstudio.com/products/rstudio/#rstudio-server\]. Cada uno de
+[RStudio Desktop](https://rstudio.com/products/rstudio/#rstudio-desktop) y
+[RServer](https://rstudio.com/products/rstudio/#rstudio-server). Cada uno de
 ellas tiene una en versión Open Source (código abierto) y otra Pro.
 
 **RStudio Desktop** brinda acceso local a RStudio y tiene entre sus
@@ -61,7 +62,7 @@ Ahora, **Conozcamos la Interfaz de RStudio:**
 El ambiente de RStudio es similar en todas sus versiones. Por defecto está
 dividido en cuatro cuadrantes o regiones:
 
-![RStudio](img/Rstudio.png)
+![RStudio](../../../images/blog/primeros-pasos-con-rstudio/Rstudio.png)
 
 - El cuadrante superior izquierdo contiene una ventana que permite crear y
   editar scripts y, mostrar datos. También cuenta con una serie de comandos o
@@ -70,7 +71,7 @@ dividido en cuatro cuadrantes o regiones:
   primera vez que abres RStudio este cuadrante no aparece hasta que se cree un
   nuevo script o se abra uno que ya haya sido creado previamente.
 
-![Source Panel](../img/C1.gif)
+![Source Panel](../../../images/blog/primeros-pasos-con-rstudio/C1.gif)
 
 - El cuadrante inferior izquierdo contiene una consola, que recibe directamente
   las instrucciones y las interpreta. Luego de esto muestra el resultado. Por
@@ -82,7 +83,7 @@ dividido en cuatro cuadrantes o regiones:
   locales y trabajos remotos. Puedes usarlas para ejecutar tus scripts en
   segundo plano mientras sigues usando el IDE.
 
-![Consola](../img/2consola.gif)
+![Consola](../../../images/blog/primeros-pasos-con-rstudio/2consola.gif)
 
 - En el cuadrante superior derecho podemos encontrar el Panel de Environment
   (ambiente), Historial y las Conexiones. *Environment* muestra las
@@ -95,7 +96,7 @@ dividido en cuatro cuadrantes o regiones:
   los comandos directamente a la consola, o al script. Además es posible guardar
   el historial de comandos para usarlos en otra sesión.
 
-![Environment](../img/Environment.gif)
+![Environment](../../../images/blog/primeros-pasos-con-rstudio/Environment.gif)
 
 - El cuadrante inferior derecho contiene varias pestañas:
 
@@ -131,12 +132,12 @@ de usuario, preguntas frecuentes, Acerca de R, entre otros.
 -Viewer: esta pestaña es complemento de la extensión RMarkdown, la cual permite
 tener una vista previa de los archivos .rmd.
 
-![Files, Plots, Packages, Help](../img/4.gif)
+![Files, Plots, Packages, Help](../../../images/blog/primeros-pasos-con-rstudio/4.gif)
 
 Nota: Los cuadrantes se pueden agrandar o reducir. Permitiendo ajustar la
 pantalla a tus necesidades.
 
-![RStudio](../img/cambiotam.gif)
+![RStudio](../../../images/blog/primeros-pasos-con-rstudio/cambiotam.gif)
 
 La barra de menú tiene opciones asociadas con los archivos, proyectos y
 carpetas, puedes crearlos, editarlos y/o eliminarlos (File), edición de código
@@ -158,7 +159,7 @@ escribir de forma tal que estén separados por un espacio o una coma.
 
 También puedes descargar los paquetes desde R-cran e instalarlos desde RStudio.
 
-![RStudio](../img/paq.gif)
+![RStudio](../../../images/blog/primeros-pasos-con-rstudio/paq.gif)
 
 **Buscar o ubicar Tutoriales y material de apoyo sobre R y RStudio**
 

@@ -1,7 +1,7 @@
 <!--
 .. title: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
 .. slug: te-hablamos-de-las-licencias-mas-utilizadas-en-proyectos-de-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-05-06
 .. author: Rainer Palm
 .. tags: open science, license
 .. category: open science

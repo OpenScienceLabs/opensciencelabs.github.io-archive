@@ -1,7 +1,7 @@
 <!--
 .. title: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
 .. slug: te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-06-09
 .. author: Anavelyz Pérez
 .. tags: open science, python
 .. category: open science

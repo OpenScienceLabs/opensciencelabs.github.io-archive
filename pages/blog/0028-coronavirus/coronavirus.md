@@ -1,8 +1,8 @@
 <!--
 .. title: Te mostramos algunos repositorios con datos sobre el COVID-19
 .. slug: te-mostramos-algunos-repositorios-con-datos-sobre-el-covid-19
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2020-03-23
+.. author: Anavelyz Pérez
 .. tags: open science, covid19
 .. category: open data
 .. link: 

@@ -1,8 +1,8 @@
 <!--
 .. title: Cómo instalar y comenzar a utilizar Tensorflow
 .. slug: como-instalar-y-comenzar-utilizar-tensorflow
-.. date: 2019-04-08
-.. author: Yurely Camacho
+.. date: 2020-09-10
+.. author: Anavelyz Pérez
 .. tags: machine learning
 .. category: machine learning
 .. link: 
