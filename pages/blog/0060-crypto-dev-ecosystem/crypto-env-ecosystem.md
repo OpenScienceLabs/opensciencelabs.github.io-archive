@@ -5,7 +5,7 @@
 
 .. slug: que-necesitas-para-desarrollar-en-la-web3
 
-.. date: 2022-03-
+.. date: 2022-03-22
 
 .. author: Alan Hurtarte
 
@@ -20,14 +20,9 @@
 .. type: text
 
 -->
-
-<!-- # Que necesitas para desarrollar en la web3 -->
-
-<!-- **Autor**: [Alan Hurtarte](https://opensciencelabs.github.io/articles/authors/alan-hurtarte.html) -->
-
   
 
-![header](./header.jpeg)
+![header](../../../images/blog/que-necesitas-para-desarrollar-en-la-web3/header.jpeg)
 
   
 
@@ -63,7 +58,7 @@ Así como en la web2, tienes tu desarrollo local, ya sea con docker o con instal
 
 ### Hardhat
 
-<img  alt="Hardhat logo"  src="./hardhat.png"  width="200"  align="left"  style="margin-right: 25px;"/>
+<img  alt="Hardhat logo"  src="../../../images/blog/que-necesitas-para-desarrollar-en-la-web3/hardhat.png"  width="200"  align="left"  style="margin-right: 25px;"/>
 
 Es una herramienta para correr Solidity localmente. Encuentras una manera fácil para hacer deploy de tus contratos, correr tests y debuguear código en Solidity en diferentes versiones.
 
@@ -90,7 +85,7 @@ npm install --save-dev hardhat
 
 ### Ganache (Truffle Suite)
 
-<img  alt="Ganache logo"  src="./ganache.png"  width="200"  align="left"  style="margin-right: 25px;"/>
+<img  alt="Ganache logo"  src="../../../images/blog/que-necesitas-para-desarrollar-en-la-web3/ganache.png"  width="200"  align="left"  style="margin-right: 25px;"/>
 
 Tu blockchain local en un clic. Con `Ganache` pueden lanzar rápidamente un blockchain personal para correr tus tests, e inspeccionar el estado mientras controlas como la cadena opera.
 
@@ -213,7 +208,7 @@ Al tener tu contrato desplegado ya podrás interactuar con él, usando web3.js o
 
 ### Web3 JS
 
-<img  alt="web3js logo"  src="./web3js.jpeg"  width="200"  align="left"  style="margin-right: 25px;"/>
+<img  alt="web3js logo"  src="../../../images/blog/que-necesitas-para-desarrollar-en-la-web3/web3js.jpeg"  width="200"  align="left"  style="margin-right: 25px;"/>
 
   
 
