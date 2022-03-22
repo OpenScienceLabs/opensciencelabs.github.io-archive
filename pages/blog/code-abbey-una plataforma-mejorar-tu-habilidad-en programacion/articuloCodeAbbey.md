@@ -55,11 +55,11 @@ Estos problemas pueden ayudarte a prepararte para entrevistas y/o para mejorar t
 
 Puedes ir a la sección de **Volumes** de la plataforma y darle una leida,  y si no basta puedes dale un vistazo a los siguientes recursos:
 
-[**CS50X**](https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0)  Curso gratuito, ideal para los que empiezan a programar.
-**Python Crash Course - Eric Matthes** libro para iniciantes en python.
-[**Learn X in Y**](https://learnxinyminutes.com/) Recurso web para aprender cualquier lenguaje de programación nuevo.
-**Grokking algorithms- Aditya Bhargava** libro para preparte en problemas complicados.
-**Craking  the Coding interview - Gayle Laskmann** libro para preparte en problemas complicados.
+* [**CS50X**](https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0)  Curso gratuito, ideal para los que empiezan a programar.
+* **Python Crash Course - Eric Matthes** libro para iniciantes en python.
+* [**Learn X in Y**](https://learnxinyminutes.com/) Recurso web para aprender cualquier lenguaje de programación nuevo.
+* **Grokking algorithms- Aditya Bhargava** libro para preparte en problemas complicados.
+* **Craking  the Coding interview - Gayle Laskmann** libro para preparte en problemas complicados.
 
 Libros para mejorar tus matemáticas
 * **Mathematics for Computer Science - Eric Lehman and Tom Leighton** 
