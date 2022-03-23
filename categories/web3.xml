@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Science Labs (Publicaciones sobre web3)</title><link>https://opensciencelabs.org/</link><description></description><atom:link href="https://opensciencelabs.org/categories/web3.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2022 &lt;a href="mailto:opensciencelabs@gmail.com"&gt;Open Science Labs Team&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Mar 2022 04:26:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Que necesitas para desarrollar en la web3</title><link>https://opensciencelabs.org/blog/0060-crypto-dev-ecosystem/que-necesitas-para-desarrollar-en-la-web3/</link><dc:creator>Alan Hurtarte</dc:creator><description>&lt;p&gt;&lt;img alt="header" src="https://opensciencelabs.org/images/blog/que-necesitas-para-desarrollar-en-la-web3/header.jpeg"&gt;&lt;/p&gt;
+&lt;h2&gt;Como desarrollador, ¿Que necesito para entrar en la web3?&lt;/h2&gt;
+&lt;p&gt;Si ya eres desarrollador y tienes la meta, el deseo, o simplemente la curiosidad de adentrarte en la web3, en este blog te mencionaré las tecnologías que se utilizan en el tech stack para desarrollar.&lt;/p&gt;
+&lt;p&gt;Empecemos con un esquema básico, la web3, no funciona diferente de la web normal en teoría, lo que cambia es que en vez de tener un solo lugar centralizado con nuestros datos en el backend, está disperso por los nodos, ya sea directo en los smart contracts (si fuera Ethereum) o en el uso de algún servicio &lt;a href="https://web3.storage/"&gt;IPFS&lt;/a&gt;. Mientras el frontend es lo mismo que ya usas. Html, Css, JS, React, vue o cualquier otro frontend framework.&lt;/p&gt;
+&lt;p&gt;Es importan destacar que la web3 no es excluyente de las tecnologías existentes. Puedes tener tu backend en nodejs, php, java, .net, python o el que prefieras y aun así interactuar con servicios web3.&lt;/p&gt;
+&lt;h3&gt;Desarrollo local&lt;/h3&gt;
+&lt;p&gt;Así como en la web2, tienes tu desarrollo local, ya sea con docker o con instalaciones de tu servidor en el localhost. En el web3 tenemos herramientas como &lt;a href="https://hardhat.org/"&gt;hardhat&lt;/a&gt; o &lt;a href="https://trufflesuite.com/ganache/index.html"&gt;ganache&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Backend&lt;/h3&gt;
+&lt;h4&gt;Hardhat&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="Hardhat logo" src="https://opensciencelabs.org/images/blog/que-necesitas-para-desarrollar-en-la-web3/hardhat.png" width="200" align="left" style="margin-right: 25px;"&gt;&lt;/p&gt;
+&lt;p&gt;Es una herramienta para correr Solidity localmente. Encuentras una manera fácil para hacer deploy de tus contratos, correr tests y debuguear código en Solidity en diferentes versiones.&lt;/p&gt;
+&lt;p&gt;Se corre como un paquete global de Node.js que se instala con NPM&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm install --save-dev hardhat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br clear="left"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4&gt;Ganache (Truffle Suite)&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="Ganache logo" src="https://opensciencelabs.org/images/blog/que-necesitas-para-desarrollar-en-la-web3/ganache.png" width="200" align="left" style="margin-right: 25px;"&gt;&lt;/p&gt;
+&lt;p&gt;Tu blockchain local en un clic. Con &lt;code&gt;Ganache&lt;/code&gt; pueden lanzar rápidamente un blockchain personal para correr tus tests, e inspeccionar el estado mientras controlas como la cadena opera.&lt;/p&gt;
+&lt;p&gt;Para instalarlo se debe correr un ejecutable y se instala como cualquier otra aplicación en tu sistema.&lt;/p&gt;
+&lt;p&gt;&lt;br clear="left"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4&gt;Aprende Solidity&lt;/h4&gt;
+&lt;p&gt;Uso de ejemplo Solidity, pero podrías aprender cualquier otro lenguaje como &lt;a href="https://docs.solana.com/developing/on-chain-programs/developing-rust"&gt;Rust&lt;/a&gt; para programar en el blockchain de &lt;a href="https://solana.com/"&gt;solana&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Regresando a Solidity, si ya estás familiarizado con JavaScript, notaras muy familiar la sintaxis de Solidity. Es un lenguaje de tipado estático, con llaves, diseñado para desarrollar smart contracts que corren en Ethereum.&lt;/p&gt;
+&lt;p&gt;Aquí un ejemplo de un contrato en Solidity, un sencillo Hello World&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;SPDX-License-Identifier&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;MIT&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;pragma&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;solidity&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;^&lt;/span&gt;&lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;8&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;contract&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;MyContract&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="err"&gt;function&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;helloWorld()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;pure&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;returns&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;(string&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;memory)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="err"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;"Hello,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;World!"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si ya has programado antes podrás encontrar las similitudes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Se declara la licencia del contrato. Recuerda que la mayoría, por no decir todos, los contratos son open source, así que cualquiera puede leer o interactuar con ellos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Se declara la versión del compilador (&lt;code&gt;pragma solidity ^0.8.0&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Se declara el contrato como tal. Palabra reservada &lt;code&gt;contract&lt;/code&gt; y el nombre designado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Se crea la función &lt;code&gt;helloWorld&lt;/code&gt;. Nota que después del nombre, tienen otros términos. Estos términos se llaman &lt;code&gt;modificadores de acceso&lt;/code&gt;. El &lt;code&gt;public&lt;/code&gt; se comporta como ya imaginas, el interesante y nuevo es &lt;code&gt;pure&lt;/code&gt; que indica que esta función no requiere gas para hacerla funcionar. Es solo lectura, entre otras cosas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Como todo lenguaje tiene sus partes complejas y únicas que te invito pruebes y aprendas en su &lt;a href="https://ethereum.org/en/developers/"&gt;documentación&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Perfecto, ya tengo mi blockchain y mi contrato ¿Ahora que?&lt;/h4&gt;
+&lt;p&gt;Listo, cada herramienta tiene su modo de publicar o desplegar tus contratos a tu red local.&lt;/p&gt;
+&lt;p&gt;Por ejemplo, con &lt;code&gt;Hardhat&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npx hardhat compile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Con &lt;code&gt;Ganache&lt;/code&gt;, se debe usar otra herramienta de la misma familia llamada &lt;code&gt;truffle&lt;/code&gt;, y se ejecuta de la misma manera que &lt;code&gt;hardhat&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm install truffle -g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;y luego para compilar&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;truffle compile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Al tener tu contrato desplegado ya podrás interactuar con él, usando web3.js o ether.js. En otras palabras, ya se trata del frontend.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Frontend&lt;/h3&gt;
+&lt;h4&gt;Web3 JS&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="web3js logo" src="https://opensciencelabs.org/images/blog/que-necesitas-para-desarrollar-en-la-web3/web3js.jpeg" width="200" align="left" style="margin-right: 25px;"&gt;&lt;/p&gt;
+&lt;p&gt;Web3.js es la herramienta que maneja toda la lógica para conectarnos a nuestros smart contracts. Al compilar un contrato se genera un archivo llamado &lt;a href="https://www.quicknode.com/guides/solidity/what-is-an-abi"&gt;abi.json&lt;/a&gt;. Este archivo expone todos tus métodos públicos de tu smart contract, junto con los parámetros y tipos que espera. De esa manera tu frontend se podrá comunicar de manera exitosa con tus contratos.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;La manera en que interactuamos con ellos es por pasos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Instancias una referencia a tu archivo &lt;code&gt;abi&lt;/code&gt;. Recuerda que este es el que sabe, el cómo, cuando y donde, de la comunicación con tus contratos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Al tener la referencia de tu &lt;code&gt;abi&lt;/code&gt;, puedes acceder por notación de objetos a tus métodos&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Importamos&lt;/span&gt; &lt;span class="n"&gt;el&lt;/span&gt; &lt;span class="n"&gt;abi&lt;/span&gt; &lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;contrato&lt;/span&gt;
+
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;abi&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="s2"&gt;"./utils/EtherFavoriteSongs.json"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contractABI&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;abi&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;abi&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+
+
+&lt;span class="o"&gt;...&lt;/span&gt;
+
+
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Obtenemos&lt;/span&gt; &lt;span class="n"&gt;la&lt;/span&gt; &lt;span class="n"&gt;referencia&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;la&lt;/span&gt; &lt;span class="n"&gt;billetera&lt;/span&gt; &lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;usuario&lt;/span&gt;
+
+&lt;span class="n"&gt;const&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ethers&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;providers&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Web3Provider&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ethereum&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="n"&gt;const&lt;/span&gt; &lt;span class="n"&gt;signer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getSigner&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Creamos&lt;/span&gt; &lt;span class="n"&gt;una&lt;/span&gt; &lt;span class="n"&gt;nueva&lt;/span&gt; &lt;span class="n"&gt;instancia&lt;/span&gt; &lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;contrato&lt;/span&gt;
+
+&lt;span class="n"&gt;const&lt;/span&gt; &lt;span class="n"&gt;favoriteSongsPortalContract&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ethers&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Contract&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contractAddress&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contractABI&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;signer&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;El&lt;/span&gt; &lt;span class="n"&gt;método&lt;/span&gt; &lt;span class="n"&gt;getTotalSongs&lt;/span&gt; &lt;span class="n"&gt;esta&lt;/span&gt; &lt;span class="n"&gt;definido&lt;/span&gt; &lt;span class="n"&gt;en&lt;/span&gt; &lt;span class="n"&gt;nuestro&lt;/span&gt; &lt;span class="n"&gt;contrato&lt;/span&gt; &lt;span class="n"&gt;de&lt;/span&gt; &lt;span class="n"&gt;solidity&lt;/span&gt;
+
+&lt;span class="n"&gt;let&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;await&lt;/span&gt; &lt;span class="n"&gt;favoriteSongsPortalContract&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getTotalSongs&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Así de fácil podemos conectar nuestros nuevos contratos con nuestro conocido y confiable frontend.&lt;/p&gt;
+&lt;p&gt;El código completo de este ejemplo está en este &lt;a href="https://github.com/kenny08gt/ether-favorite-songs"&gt;repositorio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Billetera (wallet)&lt;/h3&gt;
+&lt;p&gt;Otra diferencia entre web2 y web3 es que el usuario se identifica con una "billetera", este es un término que no representa realmente lo que es y puede confundir a personas nuevas o que no tienen interés financiero en el blockchain. La más popular de estas herramientas es &lt;a href="https://metamask.io/"&gt;metamask&lt;/a&gt; aunque no la &lt;a href="https://moralis.io/what-is-a-web3-wallet-web3-wallets-explained/"&gt;única&lt;/a&gt;, que te deja tener una dirección hexadecimal única, y puedes generar múltiples direcciones. Cada una de estas te sirve para identificarte con aplicaciones web3. En vez de tener que hacer login con tu correo una y otra vez, solo debes conectar tu dirección (en tu billetera) y ya puedes interactuar con la web3.&lt;/p&gt;
+&lt;p&gt;Estas billeteras son gratuitas (si son software) y se instalan en segundos. Puede ser usada como extensión en tu navegador o en aplicaciones individuales.&lt;/p&gt;
+&lt;p&gt;Esto es fundamental para el funcionamiento de la web3. Cada interacción con el blockchain queda firmado por quien hizo la petición. Así queda todo registrado en el blockchain.&lt;/p&gt;
+&lt;h3&gt;Resumen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas una blockchain local para tu desarrollo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas Aprender un lenguaje para hacer tus contratos (Solidity, por ejemplo).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas compilar tus contratos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas un frontend, con lo que ya sepas o aprender sobre frontend. Html, css, js, react o vue js.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas interactuar con web3.js en tu frontend.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Necesitas una billetera para interactuar con tus contratos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;El ecosistema sigue creciendo aceleradamente, cada vez hay más herramientas y se van completando los vacíos. Todavía hace falta mucho product design, y desarrollo para volverlo mainstream. Hay gente que se refiere al estado actual del web3 como con los 90 en la web2. Largos tiempos de espera, a veces falla, falta de feedback al usuario. Así que si te interesa esto, puedes ser parte del futuro de la web, que hoy mismo se está construyendo.&lt;/p&gt;</description><category>crypto</category><category>developer</category><category>env</category><category>roadmap</category><category>web3</category><guid>https://opensciencelabs.org/blog/0060-crypto-dev-ecosystem/que-necesitas-para-desarrollar-en-la-web3/</guid><pubDate>Tue, 22 Mar 2022 05:00:00 GMT</pubDate></item></channel></rss>
