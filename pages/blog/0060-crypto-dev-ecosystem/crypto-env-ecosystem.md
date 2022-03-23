@@ -5,7 +5,7 @@
 
 .. slug: que-necesitas-para-desarrollar-en-la-web3
 
-.. date:  2022-03-22 20:00:00 UTC
+.. date: 2022-03-22 20:00:00 UTC
 
 .. author: Alan Hurtarte
 
