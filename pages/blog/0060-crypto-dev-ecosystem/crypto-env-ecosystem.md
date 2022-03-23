@@ -1,24 +1,13 @@
-
 <!--
-
 .. title: Que necesitas para desarrollar en la web3
-
 .. slug: que-necesitas-para-desarrollar-en-la-web3
-
-.. date: 2022-03-22 20:00:00 UTC
-
+.. date: 2022-03-22
 .. author: Alan Hurtarte
-
 .. tags: crypto,roadmap,env,developer,web3
-
 .. category: open science, web3
-
 .. link:
-
 .. description:
-
 .. type: text
-
 -->
   
 
