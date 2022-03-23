@@ -1,7 +1,7 @@
 <!--
 .. title: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
 .. slug: te-ensenamos-lugares-para-aprender-los-fundamentos-de-la-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-06-22
 .. author: Rainer Palm
 .. tags: open science
 .. category: open science

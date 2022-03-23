@@ -1,7 +1,7 @@
 <!--
 .. title: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
 .. slug: te-hablamos-del-uso-de-dashboards-para-visualizacion-de-datos-de-tu-proximo-proyecto
-.. date: 2019-04-08
+.. date: 2020-03-11
 .. author: Rainer Palm
 .. tags: open science
 .. category: dashboard

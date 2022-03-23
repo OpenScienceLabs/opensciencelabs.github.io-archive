@@ -1,7 +1,7 @@
 <!--
 .. title: Investigación Colaborativa con Git
 .. slug: investigacion-colaborativa-con-git
-.. date: 2019-04-08
+.. date: 2020-01-20
 .. author: Anavelyz Pérez
 .. tags: open science
 .. category: git

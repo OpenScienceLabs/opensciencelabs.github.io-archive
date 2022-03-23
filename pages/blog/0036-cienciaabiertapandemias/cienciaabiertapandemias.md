@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
 .. slug: que-hemos-aprendido-gracias-la-ciencia-abierta-del-manejo-de-pandemias
-.. date: 2019-04-08
+.. date: 2020-05-27
 .. author: Yurely Camacho
 .. tags: open science, pandemic
 .. category: open science

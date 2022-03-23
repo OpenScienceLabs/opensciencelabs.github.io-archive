@@ -1,7 +1,7 @@
 <!--
 .. title: Git de 0 a 100 en diez sencillos pasos
 .. slug: git-de-en-diez-sencillos-pasos
-.. date: 2019-04-08
+.. date: 2020-01-08
 .. author: Por Rainer Palm
 .. tags: versioning
 .. category: git

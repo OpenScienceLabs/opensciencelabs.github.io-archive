@@ -1,7 +1,7 @@
 <!--
 .. title: ¿Cómo documentar tu proyecto de ciencia abierta?
 .. slug: como-documentar-tu-proyecto-de-ciencia-abierta
-.. date: 2019-04-08
+.. date: 2020-05-04
 .. author: Yurely Camacho
 .. tags: open science, documentation
 .. category: open science
