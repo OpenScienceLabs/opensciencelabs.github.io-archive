@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Science Labs (Publicaciones sobre programming)</title><link>https://opensciencelabs.org/</link><description></description><atom:link href="https://opensciencelabs.org/categories/cat_programming.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2022 &lt;a href="mailto:opensciencelabs@gmail.com"&gt;Open Science Labs Team&lt;/a&gt; </copyright><lastBuildDate>Wed, 23 Mar 2022 15:03:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Code Abbey una plataforma mejorar tu habilidad en programación</title><link>https://opensciencelabs.org/blog/code-abbey-una%20plataforma-mejorar-tu-habilidad-en%20programacion/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/</link><dc:creator>Ever Vino</dc:creator><description>&lt;h2&gt;Code Abbey una plataforma mejorar tu habilidad en programación&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Portada CodeAbbey" src="https://opensciencelabs.org/images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/header.png"&gt;&lt;/p&gt;
+&lt;p&gt;Alguna vez te has pregundado, ¿Cómo puedo mejorar mis habilidades de programación?. Este artículo tiene la respuesta, te mostraremos una de las mejores plataformas para que puedas practicar programación resolviendo problemas.&lt;/p&gt;
+&lt;h3&gt;¿Qué es Code Abbey ?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Creemos que hay tres cosas que nos guían al éxito: Practica, Practica y ¡Practica!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://www.codeabbey.com/"&gt;Code Abbey&lt;/a&gt; es una plataforma, impulsada y mantenida por Rodion Gorkovenko con ayuda de la comunidad de Code Abbey, contiene gran cantidad de problemas con dificultad variable, desde una simples sumas, hasta algunas donde tienes que aplicar conceptos de Inteligencia Artificial. 
+Puedes resolver los problemas en varios lenguajes: C, C++, C#, Python, Java, JavaScript e incluso con algunos menos conocidos como: Turing y Brainf**k.&lt;/p&gt;
+&lt;h3&gt;¿Cómo funciona?&lt;/h3&gt;
+&lt;p&gt;Puedes registrarte con una cuenta de gmail, facebook o de GitHub.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Portada CodeAbbey" src="https://opensciencelabs.org/images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/codeabbey.png"&gt;&lt;/p&gt;
+&lt;p&gt;Un vez hecho el &lt;strong&gt;Login&lt;/strong&gt; puedes ver los problemas haciendo click en la pestaña &lt;strong&gt;Problems&lt;/strong&gt;.
+Seleccionado el problema se te abrira la siguiente ventana:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Portada CodeAbbey problemas" src="https://opensciencelabs.org/images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/problems1.png"&gt;&lt;/p&gt;
+&lt;p&gt;La primera sección podrás ver el enunciado del problema y un ejemplo de entrada y salida de lo solicitado.
+Cuando tengas la resolución del problema (script o código), lo haces correr con los datos de entrada del test (&lt;strong&gt;Test Data&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Portada CodeAbbey problemas" src="https://opensciencelabs.org/images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/problems2.png"&gt;&lt;/p&gt;
+&lt;p&gt;La solución que arroje tu programa la copias en el espacio vacio de de &lt;strong&gt;You Answer&lt;/strong&gt;. Luego le puedes dar click a &lt;strong&gt;Submit&lt;/strong&gt;, una vez se haya comprobado que la respuesta es correcta, la resolución del problema será dada como válida.&lt;/p&gt;
+&lt;p&gt;Otra forma de verificar que tu código arroja la respuesta correcta es pegar el código a la plataforma en el espacio vacio que encuentra por encima del boton &lt;strong&gt;Submit&lt;/strong&gt;, y hacerla correr con los botones que se encuentran en la parte inferior derecha, haciendo click en el botón de tu lenguaje  de programación hará correr el script con los datos de test data y escribira la solución en la parte de &lt;strong&gt;Your Answer&lt;/strong&gt; y guardará tu código en la plataforma. Es recomendable guardar el código en la plataforma incluso si no haces correr y sólo subes la respuesta manualmente, esto permite la compobracion para lo administradores de Code Abbey de que estas resolviendo los problemas por tu cuenta.&lt;/p&gt;
+&lt;p&gt;Una vez tu solución haya sido validada se te añadiran puntos de &lt;em&gt;Enlightment&lt;/em&gt; (que están calculados en base a la cantidad de personas que resolvieron el mismo problema) y con base a los problemas resueltos se te asignará un rango dentro de la comunidad.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Zealus Coder rank&lt;/strong&gt;
+Cuando resuelvas 120 problemas de los marcados con negrita o con la etiqueta c-1,  puedes reclamar el certificado de &lt;strong&gt;CodeAbbey Zealous Coder&lt;/strong&gt;, que certificará que resolviste los problemas difíciles de la plataforma.
+Como forma de motivar a que más mujeres entren al mundo de la programación, Code Abbey da un diploma honorario a las chicas que resuelvan 85 problemas y el rango de &lt;strong&gt;Fanatic Girl-Coder&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;¿Por qué resolver problemas en Code Abbey?&lt;/h3&gt;
+&lt;p&gt;Muy aparte de la satifacción de resolver problemas, ascender rangos, pertenecer a una comunidad y/o obtener un certificado que puedas presumir en tus redes. Se tiene que tener en cuenta que la resolución de estos problemas, ayudan a afinar tus habilidades en programación, porque para la resolución de los problemas se requieren conocimientos de conceptos básicos, estadística, estructura de datos, algoritmos de busqueda, ordenación, criptografía, teoría de números, entre otros. 
+Estos problemas, pueden ayudarte a prepararte para entrevistas y/o para mejorar tu propio código, viendo cómo lo han resuelto los demás (esta opción se habilita cuando tu solución sea tomada como válida). &lt;/p&gt;
+&lt;h3&gt;¿Qué hacer cuando un problema es muy complicado?&lt;/h3&gt;
+&lt;p&gt;Puedes ir a la sección de &lt;strong&gt;Volumes&lt;/strong&gt; de la plataforma y darle una leida,  y si no basta puedes darle un vistazo a los siguientes recursos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"&gt;&lt;strong&gt;CS50X&lt;/strong&gt;&lt;/a&gt;:  Curso gratuito, ideal para los que empiezan a programar.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python Crash Course - Eric Matthes&lt;/strong&gt;: Libro para iniciantes en python.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learnxinyminutes.com/"&gt;&lt;strong&gt;Learn X in Y&lt;/strong&gt;&lt;/a&gt;. Recurso web para aprender cualquier lenguaje de programación.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grokking algorithms- Aditya Bhargava&lt;/strong&gt;: Libro para preparte en problemas complicados.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Craking  the Coding interview - Gayle Laskmann&lt;/strong&gt;: Libro para preparte en problemas complicados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Libros para mejorar tus matemáticas
+* &lt;strong&gt;Mathematics for Computer Science - Eric Lehman and Tom Leighton&lt;/strong&gt; 
+* &lt;strong&gt;Introduction to algorithms - Thomas H. Cormen&lt;/strong&gt;
+* &lt;strong&gt;Algorithm Design - Jon Kleinberg&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;¿Sitios similares?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://rosalind.info/problems/locations/"&gt;ROSALIND&lt;/a&gt; orientado a problemas de programación en Bioinformática
+&lt;a href="https://projecteuler.net/"&gt;Project Euler&lt;/a&gt; Contiene poblemas matemáticos y de programación.
+&lt;a href="https://algo.is/"&gt;algo.is&lt;/a&gt; Problemas de competición
+&lt;a href="https://exercism.org/"&gt;exercism&lt;/a&gt; Contiene problemas variados de programación.
+check&lt;/p&gt;
+&lt;h3&gt;Referencias&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.codeabbey.com/"&gt;Code Abbey&lt;/a&gt;&lt;/p&gt;</description><category>open science</category><category>programacion</category><category>recursos</category><guid>https://opensciencelabs.org/blog/code-abbey-una%20plataforma-mejorar-tu-habilidad-en%20programacion/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/</guid><pubDate>Tue, 22 Mar 2022 19:52:05 GMT</pubDate></item></channel></rss>
