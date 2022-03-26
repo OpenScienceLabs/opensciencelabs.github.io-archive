@@ -10,11 +10,13 @@
 .. type: text
 -->
 
-# Code Abbey una plataforma mejorar tu habilidad en programación
+<!-- # Code Abbey una plataforma mejorar tu habilidad en programación -->
 
-![Portada CodeAbbey](../../../images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/header.png)
+![header](../../../images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/header.png)
 
 Alguna vez te has pregundado, ¿Cómo puedo mejorar mis habilidades de programación?. Este artículo tiene la respuesta, te mostraremos una de las mejores plataformas para que puedas practicar programación resolviendo problemas.
+
+<!-- TEASER_END -->
 
 ## ¿Qué es Code Abbey ?
 
