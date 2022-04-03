@@ -39,28 +39,28 @@ To be contributing with the community you must know our [Guidelines](https://ope
 ## Contributors
 
 
-![Bolivia](/images/flags/32x32/bo.png)&nbsp;&nbsp;**Ivan Ogasawara** ([xmnlab](https://github.com/xmnlab))
+![Bolivia](/images/flags/bo.png)&nbsp;&nbsp;**Ivan Ogasawara** ([xmnlab](https://github.com/xmnlab))
 
 
-![Brasil](/images/flags/32x32/br.png)&nbsp;&nbsp;**Sandro Loch** ([esloch](https://github.com/esloch))
+![Brasil](/images/flags/br.png)&nbsp;&nbsp;**Sandro Loch** ([esloch](https://github.com/esloch))
 
 
-![Bolivia](/images/flags/32x32/bo.png)&nbsp;&nbsp;**Ever Vino** ([EverVino](https://github.com/EverVino)) - Contributor, Articles
+![Bolivia](/images/flags/bo.png)&nbsp;&nbsp;**Ever Vino** ([EverVino](https://github.com/EverVino)) - Contributor, Articles
 
 
-![Venezuela](/images/flags/32x32/ve.png)&nbsp;&nbsp;**Marí Ángela Petrizzo** ([petrizzo](https://github.com/petrizzo)) - Contributor, Articles
+![Venezuela](/images/flags/ve.png)&nbsp;&nbsp;**Marí Ángela Petrizzo** ([petrizzo](https://github.com/petrizzo)) - Contributor, Articles
 
 
-![Bolivia](/images/flags/32x32/bo.png)&nbsp;&nbsp;**Ingrid Bianka** ([ibianka](https://github.com/ibianka)) - Contributor, Articles
+![Bolivia](/images/flags/bo.png)&nbsp;&nbsp;**Ingrid Bianka** ([ibianka](https://github.com/ibianka)) - Contributor, Articles
 
 
-![Guatemala](/images/flags/32x32/gt.png)&nbsp;&nbsp;**Alan Hurtarte** ([kenny08gt](https://github.com/kenny08gt)) - Contributor, Articles
+![Guatemala](/images/flags/gt.png)&nbsp;&nbsp;**Alan Hurtarte** ([kenny08gt](https://github.com/kenny08gt)) - Contributor, Articles
 
 
-![Brasil](/images/flags/32x32/br.png)&nbsp;&nbsp;**Luã Bida Vacaro** ([luabida](https://github.com/luabida)) - Contributor
+![Brasil](/images/flags/br.png)&nbsp;&nbsp;**Luã Bida Vacaro** ([luabida](https://github.com/luabida)) - Contributor
 
 
-![Argentina](/images/flags/32x32/ar.png)&nbsp;&nbsp;**Ariel Silvio Ramos** ([asnramos](https://github.com/asnramos)) - Mentor
+![Argentina](/images/flags/ar.png)&nbsp;&nbsp;**Ariel Silvio Ramos** ([asnramos](https://github.com/asnramos)) - Mentor
 
 
 <!--
