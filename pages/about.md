@@ -1,23 +1,13 @@
 <!--
-
 .. title: About
-
 .. slug: About
-
 .. date: 
-
 .. author: 
-
 .. tags:
-
 .. category:
-
 .. link:
-
 .. description:
-
 .. type: text
-
 -->
 
 **Open Science Labs** es una iniciativa para divulgar prácticas de Ciencia Abierta a público en español.
