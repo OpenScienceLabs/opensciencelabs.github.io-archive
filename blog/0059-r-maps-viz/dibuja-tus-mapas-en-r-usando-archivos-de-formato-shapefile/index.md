@@ -307,7 +307,7 @@ ggplot() +
 - **`scale_color_manual(values)`**: nos permite usar una escala de colores manual, `values` debe ser un vector que contenga los valores de los colores de la escala.
 - \***`raibow(9)`**: devuelve un vector con 9 colores del arcoiris.
 
-![Mapa de Bolivia: Capitales de departamento](grafica3.png)
+![Mapa de Bolivia: Capitales de departamento](../../../images/blog/dibuja-tus-mapas-en-r-usando-archivos-de-formato-shapefile/grafica3.png)
 
 #### Asignando colores
 

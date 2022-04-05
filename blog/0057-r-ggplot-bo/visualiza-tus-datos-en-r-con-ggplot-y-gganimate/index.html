@@ -127,225 +127,277 @@ bg-dark
 <p>Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R.</p>
 <!-- TEASER_END -->
 
-<h3>Comenzando 🚀</h3>
+<h3>Comenzando</h3>
 <p>Usamos R por ser un lenguaje especializado para ciencia de datos y tener una gran Comunidad Open Source. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.</p>
 <p><em>Puedes descargar R y RStudio desde sus páginas web oficiales:</em></p>
 <p><a href="https://cran.r-project.org/">cran.r-project.org</a></p>
 <p><a href="https://www.rstudio.com/">rstudio.org</a></p>
-<h4>Instalación de pre-requisitos 🔧 📋</h4>
-<p>Para este ejemplo se usan las librerías de <code>rio</code>, <code>dplyr</code>, <code>ggplot2</code> y <code>gganimate</code>. Para instalarlas se ejecutan las siguientes líneas de código en R
+<h4>Instalación de pre-requisitos</h4>
+<p>Para este ejemplo usamos las bibliotecas de <code>rio</code>, <code>dplyr</code>, <code>ggplot2</code> y <code>gganimate</code>. Las instalamos con los siguientes comandos en R
 <em>(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola)</em></p>
-<pre class="code literal-block"><span></span><code><span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>        <span class="c1">#librería para importar archivos csv o xlsx</span>
-<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>      <span class="c1">#librería para filtrar datos</span>
-<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>    <span class="c1">#librería para realizar las gráficas</span>
-<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>  <span class="c1">#librería para realizar la animación</span>
+<pre class="code literal-block"><span></span><code><span class="nf">install.package</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>        <span class="c1"># Biblioteca para importar archivos csv o xlsx</span>
+<span class="nf">install.package</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>      <span class="c1"># Biblioteca para filtrar datos</span>
+<span class="nf">install.package</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>    <span class="c1"># Biblioteca para realizar las gráficas</span>
+<span class="nf">install.package</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>  <span class="c1"># Biblioteca para realizar la animación</span>
 </code></pre>
 
-<h3>Preparación de los datos para graficar ⚙️</h3>
-<p>En nuestro ejemplo usaremos la base de datos del INE "Importaciones de Productos y Artículos de Bolivia 1992-2021p"
-Abrimos nuestras librerías con:</p>
-<pre class="code literal-block"><span></span><code><span class="n">library</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+<h3>Preparación de los datos para graficar</h3>
+<p>Los datos usados pertenecen a la base de datos del INE <a href="https://www.ine.gob.bo">(Instituto Nacional de Estadística Bolivia)</a>, el archivo usado tiene el nombre de "Importaciones de Productos y Artículos de Bolivia 1992-2021p"</p>
+<p>Abrimos nuestras bibliotecas:</p>
+<pre class="code literal-block"><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 </code></pre>
 
-<p>Importamos los datos a un objeto llamado libro con:</p>
-<pre class="code literal-block"><span></span><code><span class="n">libro</span><span class="o">&lt;-</span><span class="n">import</span><span class="p">(</span><span class="s2">".my/path/DatosImportacionBolivia1992-2021.csv"</span><span class="p">)</span>
+<p>Importamos los datos a un objeto llamado <code>libro</code> con:</p>
+<pre class="code literal-block"><span></span><code><span class="n">libro</span> <span class="o">&lt;-</span> <span class="nf">import</span><span class="p">(</span><span class="s">".my/path/DatosImportacionBolivia1992-2021.csv"</span><span class="p">)</span>
 </code></pre>
 
-<p>Para ver la cabecera del libro y para ver la estructura del libro libro ejecutamos respectivamente <code>head(libro)</code> y <code>str(libro)</code></p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+<p>Para ver la cabecera del libro, y para ver la estructura del <code>libro</code> ejecutamos respectivamente <code>head(libro)</code> y <code>str(libro)</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
        <span class="n">Fecha</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>
-<span class="mi">1</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">12.686477</span>                 <span class="mf">30.38827</span>                   <span class="mf">1.738607</span>
-<span class="mi">2</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.139570</span>                 <span class="mf">32.57593</span>                   <span class="mf">1.822906</span>
-<span class="mi">3</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">6.150201</span>                 <span class="mf">21.37546</span>                   <span class="mf">2.000110</span>
-<span class="mi">4</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.225652</span>                 <span class="mf">28.34524</span>                   <span class="mf">1.455245</span>
-<span class="mi">5</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">14.503611</span>                 <span class="mf">22.06801</span>                   <span class="mf">2.168646</span>
-<span class="mi">6</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">5.875804</span>                 <span class="mf">25.43617</span>                   <span class="mf">3.084602</span>
+<span class="m">1</span> <span class="m">1992-01-01</span>           <span class="m">12.686477</span>                 <span class="m">30.38827</span>                   <span class="m">1.738607</span>
+<span class="m">2</span> <span class="m">1992-02-01</span>            <span class="m">9.139570</span>                 <span class="m">32.57593</span>                   <span class="m">1.822906</span>
+<span class="m">3</span> <span class="m">1992-03-01</span>            <span class="m">6.150201</span>                 <span class="m">21.37546</span>                   <span class="m">2.000110</span>
+<span class="m">4</span> <span class="m">1992-04-01</span>            <span class="m">9.225652</span>                 <span class="m">28.34524</span>                   <span class="m">1.455245</span>
+<span class="m">5</span> <span class="m">1992-05-01</span>           <span class="m">14.503611</span>                 <span class="m">22.06801</span>                   <span class="m">2.168646</span>
+<span class="m">6</span> <span class="m">1992-06-01</span>            <span class="m">5.875804</span>                 <span class="m">25.43617</span>                   <span class="m">3.084602</span>
   <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>
-<span class="mi">1</span>          <span class="mf">25.66374</span>                                       <span class="mf">22.20454</span>             <span class="mf">5.585219</span>
-<span class="mi">2</span>          <span class="mf">22.00027</span>                                       <span class="mf">18.68626</span>             <span class="mf">6.528652</span>
-<span class="mi">3</span>          <span class="mf">22.92478</span>                                       <span class="mf">17.40578</span>             <span class="mf">6.196415</span>
-<span class="mi">4</span>          <span class="mf">31.14429</span>                                       <span class="mf">16.77957</span>             <span class="mf">5.422824</span>
-<span class="mi">5</span>          <span class="mf">26.82719</span>                                       <span class="mf">22.79343</span>             <span class="mf">5.458318</span>
-<span class="mi">6</span>          <span class="mf">23.47011</span>                                       <span class="mf">16.00698</span>             <span class="mf">5.647866</span><span class="n">_</span>
+<span class="m">1</span>          <span class="m">25.66374</span>                                       <span class="m">22.20454</span>             <span class="m">5.585219</span>
+<span class="m">2</span>          <span class="m">22.00027</span>                                       <span class="m">18.68626</span>             <span class="m">6.528652</span>
+<span class="m">3</span>          <span class="m">22.92478</span>                                       <span class="m">17.40578</span>             <span class="m">6.196415</span>
+<span class="m">4</span>          <span class="m">31.14429</span>                                       <span class="m">16.77957</span>             <span class="m">5.422824</span>
+<span class="m">5</span>          <span class="m">26.82719</span>                                       <span class="m">22.79343</span>             <span class="m">5.458318</span>
+<span class="m">6</span>          <span class="m">23.47011</span>                                       <span class="m">16.00698</span>             <span class="m">5.647866</span>_
 </code></pre>
 
-<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
-<span class="s1">'data.frame'</span><span class="p">:</span>   <span class="mi">358</span> <span class="n">obs</span><span class="o">.</span> <span class="n">of</span>  <span class="mi">7</span> <span class="n">variables</span><span class="p">:</span>
- <span class="err">$</span> <span class="n">Fecha</span>                                         <span class="p">:</span> <span class="n">IDate</span><span class="p">,</span> <span class="nb">format</span><span class="p">:</span> <span class="s2">"1992-01-01"</span> <span class="s2">"1992-02-01"</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span>                           <span class="p">:</span> <span class="n">num</span>  <span class="mf">12.69</span> <span class="mf">9.14</span> <span class="mf">6.15</span> <span class="mf">9.23</span> <span class="mf">14.5</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span>                      <span class="p">:</span> <span class="n">num</span>  <span class="mf">30.4</span> <span class="mf">32.6</span> <span class="mf">21.4</span> <span class="mf">28.3</span> <span class="mf">22.1</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>                    <span class="p">:</span> <span class="n">num</span>  <span class="mf">1.74</span> <span class="mf">1.82</span> <span class="mi">2</span> <span class="mf">1.46</span> <span class="mf">2.17</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span>                             <span class="p">:</span> <span class="n">num</span>  <span class="mf">25.7</span> <span class="mi">22</span> <span class="mf">22.9</span> <span class="mf">31.1</span> <span class="mf">26.8</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span><span class="p">:</span> <span class="n">num</span>  <span class="mf">22.2</span> <span class="mf">18.7</span> <span class="mf">17.4</span> <span class="mf">16.8</span> <span class="mf">22.8</span> <span class="o">...</span>
- <span class="err">$</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>                          <span class="p">:</span> <span class="n">num</span>  <span class="mf">5.59</span> <span class="mf">6.53</span> <span class="mf">6.2</span> <span class="mf">5.42</span> <span class="mf">5.46</span> <span class="o">...</span>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">str</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+<span class="s">'data.frame'</span><span class="o">:</span>   <span class="m">358</span> <span class="n">obs.</span> <span class="n">of</span>  <span class="m">7</span> <span class="n">variables</span><span class="o">:</span>
+ <span class="o">$</span> <span class="n">Fecha</span>                                         <span class="o">:</span> <span class="n">IDate</span><span class="p">,</span> <span class="n">format</span><span class="o">:</span> <span class="s">"1992-01-01"</span> <span class="s">"1992-02-01"</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span>                           <span class="o">:</span> <span class="n">num</span>  <span class="m">12.69</span> <span class="m">9.14</span> <span class="m">6.15</span> <span class="m">9.23</span> <span class="m">14.5</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span>                      <span class="o">:</span> <span class="n">num</span>  <span class="m">30.4</span> <span class="m">32.6</span> <span class="m">21.4</span> <span class="m">28.3</span> <span class="m">22.1</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>                    <span class="o">:</span> <span class="n">num</span>  <span class="m">1.74</span> <span class="m">1.82</span> <span class="m">2</span> <span class="m">1.46</span> <span class="m">2.17</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span>                             <span class="o">:</span> <span class="n">num</span>  <span class="m">25.7</span> <span class="m">22</span> <span class="m">22.9</span> <span class="m">31.1</span> <span class="m">26.8</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span><span class="o">:</span> <span class="n">num</span>  <span class="m">22.2</span> <span class="m">18.7</span> <span class="m">17.4</span> <span class="m">16.8</span> <span class="m">22.8</span> <span class="kc">...</span>
+ <span class="o">$</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>                          <span class="o">:</span> <span class="n">num</span>  <span class="m">5.59</span> <span class="m">6.53</span> <span class="m">6.2</span> <span class="m">5.42</span> <span class="m">5.46</span> <span class="kc">...</span>
 </code></pre>
 
-<p>Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de IDate y los demás sean tengan formato de num.</p>
-<p>Con las siguientes lineas de código se compactamos el número de columnas de nuestro libro en un nuevo objeto llamado datos <em>(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro).</em> Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.</p>
-<pre class="code literal-block"><span></span><code><span class="c1">#Simplificando nuestra tabla para realizar las gráficas</span>
-<span class="c1">#Cuando se escribe el nombre del objeto libro$.. en RStudio el autocomplado con los nombres de la columnas del libro</span>
-<span class="n">datos</span> <span class="o">&lt;-</span> <span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">Fecha</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">libro</span><span class="err">$</span><span class="n">Fecha</span><span class="p">,</span><span class="n">libro</span><span class="err">$</span><span class="n">Fecha</span><span class="p">,</span><span class="n">libro</span><span class="err">$</span><span class="n">Fecha</span><span class="p">,</span><span class="n">libro</span><span class="err">$</span><span class="n">Fecha</span><span class="p">),</span>
-                   <span class="n">Valor</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">libro</span><span class="err">$`</span><span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span><span class="err">`</span><span class="p">,</span>
-                             <span class="n">libro</span><span class="err">$`</span><span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span><span class="err">`</span><span class="p">,</span>
-                             <span class="n">libro</span><span class="err">$`</span><span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span><span class="err">`</span><span class="p">,</span>
-                             <span class="n">libro</span><span class="err">$`</span><span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span><span class="err">`</span><span class="p">),</span>
-                    <span class="n">Clasificacion</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="n">rep</span><span class="p">(</span><span class="s2">"Alimentos y Bebidas"</span><span class="p">,</span><span class="n">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
-                               <span class="n">rep</span><span class="p">(</span><span class="s2">"Suministros Industriales"</span><span class="p">,</span><span class="n">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
-                               <span class="n">rep</span><span class="p">(</span><span class="s2">"Combustibles y Lubricantes"</span><span class="p">,</span><span class="n">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
-                               <span class="n">rep</span><span class="p">(</span><span class="s2">"Equipo de Transporte"</span><span class="p">,</span><span class="n">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">))</span>
+<p>Es importante verificar el tipo de dato, antes de graficar, en este caso nos importa que la fecha tenga formato de <code>IDate</code> y los demás sean tengan formato de <code>num</code>. En caso de que la fecha no tenga formato <code>IDate</code> puedo tranformar la columna usando la el comando <code>columna&lt;-as.Date(columna)</code>.</p>
+<p>Con las siguientes líneas de código, compactamos el número de columnas de nuestro <code>libro</code> en un nuevo objeto llamado <code>datos</code>. <em>(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro).</em> Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Simplificando nuestra tabla para realizar las gráficas</span>
+<span class="c1"># Cuando se escribe el nombre del objeto libro$.. en RStudio el autocomplado con los nombres de la columnas del libro</span>
+<span class="n">datos</span> <span class="o">&lt;-</span>
+  <span class="nf">data.frame</span><span class="p">(</span>
+    <span class="n">Fecha</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">libro</span><span class="o">$</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">libro</span><span class="o">$</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">libro</span><span class="o">$</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">libro</span><span class="o">$</span><span class="n">Fecha</span><span class="p">),</span>
+    <span class="n">Valor</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span>
+      <span class="n">libro</span><span class="o">$</span><span class="n">`ALIMENTOS Y BEBIDAS`</span><span class="p">,</span>
+      <span class="n">libro</span><span class="o">$</span><span class="n">`SUMINISTROS INDUSTRIALES`</span><span class="p">,</span>
+      <span class="n">libro</span><span class="o">$</span><span class="n">`COMBUSTIBLES Y LUBRICANTES`</span><span class="p">,</span>
+      <span class="n">libro</span><span class="o">$</span><span class="n">`EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS`</span>
+    <span class="p">),</span>
+    <span class="n">Clasificacion</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span>
+      <span class="nf">rep</span><span class="p">(</span><span class="s">"Alimentos y Bebidas"</span><span class="p">,</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
+      <span class="nf">rep</span><span class="p">(</span><span class="s">"Suministros Industriales"</span><span class="p">,</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
+      <span class="nf">rep</span><span class="p">(</span><span class="s">"Combustibles y Lubricantes"</span><span class="p">,</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)),</span>
+      <span class="nf">rep</span><span class="p">(</span><span class="s">"Equipo de Transporte"</span><span class="p">,</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+      <span class="p">)</span>
 </code></pre>
 
 <p>Funciones auxiliares usadas:</p>
 <ul>
 <li>
-<p><code>libro$columna</code> para acceder al columna del libro.</p>
+<p><strong><code>libro$columna</code></strong>: para acceder al <code>columna</code> del <code>libro</code>.</p>
 </li>
 <li>
-<p><code>data.frame(columna1, columna2 ...)</code> para crear una nuevo objeto de Datos.</p>
+<p><strong><code>data.frame(columna1, columna2 ...)</code></strong>: para crear una nuevo <code>objeto de Datos</code>.</p>
 </li>
 <li>
-<p><code>c(elemento1, elemento2, ...)</code> para juntar elementos en un vector.</p>
+<p><strong><code>c(elemento1, elemento2, ...)</code></strong>: para juntar <code>elementos</code> en un vector.</p>
 </li>
 <li>
-<p><code>rep(elemento, n_veces)</code> para generar un vector con el elemento repetido n_veces.</p>
+<p><strong><code>rep(elemento, n_veces)</code></strong>: para generar un vector con el <code>elemento</code> repetido <code>n_veces</code>.</p>
 </li>
 <li>
-<p><code>nrow(tabla)</code> para obtener el número de filas de tabla.</p>
+<p><strong><code>nrow(tabla)</code></strong>: para obtener el número de filas de tabla.</p>
 </li>
 </ul>
-<p>Veamos la cabecera de nuestro obejto datos con <code>head(datos)</code> :</p>
-<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+<p>Observemos la cabecera de <code>datos</code> para verificar, con <code>head(datos)</code> :</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
        <span class="n">Fecha</span>    <span class="n">Valor</span>       <span class="n">Clasificacion</span>
-<span class="mi">1</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.34888</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
-<span class="mi">2</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span> <span class="mf">47.42231</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
-<span class="mi">3</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span> <span class="mf">59.54501</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
-<span class="mi">4</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.08808</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
-<span class="mi">5</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span> <span class="mf">51.86330</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
-<span class="mi">6</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span> <span class="mf">43.84668</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">1</span> <span class="m">2018-01-01</span> <span class="m">56.34888</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">2</span> <span class="m">2018-02-01</span> <span class="m">47.42231</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">3</span> <span class="m">2018-03-01</span> <span class="m">59.54501</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">4</span> <span class="m">2018-04-01</span> <span class="m">56.08808</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">5</span> <span class="m">2018-05-01</span> <span class="m">51.86330</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="m">6</span> <span class="m">2018-06-01</span> <span class="m">43.84668</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
 </code></pre>
 
-<h3>Gráfica estática ⚙️</h3>
-<p>Para graficar con <code>ggplot2</code> es conveniente entender que esta librería añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.</p>
-<p>Asignamos a un objeto ggplot llamado p1 lo que vamos a graficar</p>
-<pre class="code literal-block"><span></span><code><span class="c1">#Modificando el theme</span>
-<span class="n">theme_set</span><span class="p">(</span><span class="n">theme_bw</span><span class="p">())</span>
+<h3>Gráfica estática</h3>
+<p>Para graficar con <code>ggplot2</code>, es conveniente entender que esta biblioteca añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.</p>
+<p>Asignamos a un objeto ggplot llamado p1 lo que vamos a graficar:</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Modificando el theme a uno con el fondo blanco</span>
+<span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">())</span>
 
-<span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
-  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span>
-  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">"right"</span><span class="p">)</span><span class="o">+</span>
-  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">"Fecha"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"Valor en MM Bs"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span>
-       <span class="n">title</span> <span class="o">=</span> <span class="s2">"Datos de Importación de Bolivia 1991-2021p"</span><span class="p">,</span>
-       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">"Expresado en Millones de Bolivianos"</span><span class="p">)</span>
+<span class="n">p1</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">datos</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Valor</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">theme</span><span class="p">(</span><span class="n">legend.position</span> <span class="o">=</span> <span class="s">"right"</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">"Fecha"</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">"Valor en MM Bs"</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Datos de Importación de Bolivia 1991-2021p"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"Expresado en Millones de Bolivianos"</span>
+  <span class="p">)</span>
 <span class="n">p1</span>
 </code></pre>
 
 <p>Funciones utilizadas</p>
 <ul>
 <li>
-<p><code>theme_set(theme_bw())</code>
-  Modifica el conjunto de colores usado en el tema para realizar la gráfica.</p>
+<p><strong><code>theme_set(theme_bw())</code></strong>:
+  modifica el conjunto de colores usado en el tema para realizar la gráfica.</p>
 </li>
 <li>
-<p><code>ggplot(data)</code>Esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos para que cree las dimensiones de las coordenadas.</p>
+<p><strong><code>ggplot(data)</code></strong>: esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos <code>data</code> para que cree las dimensiones de las coordenadas y esta se herede a las otras capas.</p>
 </li>
 <li>
-<p><code>geom_line(aes(x, y, color), size)</code> Capa que hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos "x" e "y" como líneas y las clasifica deacuerdo al "color" y "size" determina el grosor de sus líneas.</p>
+<p><strong><code>geom_line(aes(x, y, color), size)</code></strong>: capa que hereda los datos de <code>ggplot()</code>, se los puede usar  directamente con el nombre de sus columnas, grafica los datos <code>x</code> e <code>y</code> como líneas, las clasifica de acuerdo al <code>color</code> y <code>size</code> determina el grosor de sus líneas.</p>
 </li>
 <li>
-<p><code>theme(legend.position)</code>Capa que modifica la posición de la leyenda dentro gráfico con "legend.position", esta puede adquirir valores de "top", "left", etc.</p>
+<p><strong><code>theme(legend.position)</code></strong>: capa que modifica la posición de la leyenda dentro gráfico, con <code>legend.position</code>, esta puede adquirir valores de <code>top</code>, <code>left</code>, etc.</p>
 </li>
 <li>
-<p><code>labs(x, y, color, title, subtitle)</code>Capa que pone los nombres a eje "x" y al eje "y", además de poner el nombre encima de las leyendas con "color", el nombre título y subtítulo con "title" y "subtitle" respectivamente.</p>
+<p><strong><code>labs(x, y, color, title, subtitle)</code></strong>: capa que pone los nombres a eje <code>x</code> y al eje <code>y</code>, además de poner el nombre encima de las leyendas con <code>color</code>, el nombre título y subtítulo con <code>title</code> y <code>subtitle</code> respectivamente.</p>
 </li>
 </ul>
-<p><img alt="alt text" src="../../../images/blog/visualiza-tus-datos-en-r-con-ggplot-y-gganimate/Rplot.png"></p>
-<h3>Gráfica Animada ⚙️</h3>
-<p>Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.</p>
+<p><img alt="Importaciones de Bolivia 1991-2021" src="../../../images/blog/visualiza-tus-datos-en-r-con-ggplot-y-gganimate/Rplot.png"></p>
+<h3>Gráfica Animada</h3>
+<p>Ya teniendo nuestra nuestra gráfica estática, vamos a realizar algunas modificaciones para que se resalten los datos de nuestro interés.</p>
 <p>Filtrando datos con fecha mayor al año 2019.</p>
-<pre class="code literal-block"><span></span><code><span class="n">datos</span><span class="o">&lt;-</span><span class="nb">filter</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span><span class="n">datos</span><span class="err">$</span><span class="n">Fecha</span><span class="o">&gt;=</span><span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">"2019-01-01"</span><span class="p">))</span>
+<pre class="code literal-block"><span></span><code><span class="n">datos</span> <span class="o">&lt;-</span> <span class="nf">filter</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span> <span class="n">datos</span><span class="o">$</span><span class="n">Fecha</span> <span class="o">&gt;=</span> <span class="nf">as.Date</span><span class="p">(</span><span class="s">"2019-01-01"</span><span class="p">))</span>
 </code></pre>
 
 <ul>
 <li>
-<p><code>filter(datos, condicion)</code> evalua cada fila de datos y filtra de acuerdo a la condicion.</p>
+<p><strong><code>filter(datos, condicion)</code></strong>: evalua cada fila de <code>datos</code> y filtra de acuerdo a la <code>condicion</code>.</p>
 </li>
 <li>
-<p><code>as.Date(var)</code> convierte var a un formato de fecha Date</p>
+<p><code>as.Date(var)</code> convierte <code>var</code> a un formato de fecha <code>IDate</code></p>
 </li>
 </ul>
 <p>Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento por Covid19.</p>
-<pre class="code literal-block"><span></span><code><span class="n">periodos</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">xmin</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">"2020-03-22"</span><span class="p">),</span> <span class="n">xmax</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">"2020-08-31"</span><span class="p">),</span>
-                     <span class="n">ymin</span> <span class="o">=</span> <span class="o">-</span><span class="n">Inf</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">Inf</span><span class="p">,</span> <span class="n">Periodo</span> <span class="o">=</span> <span class="s2">"Confinamiento por COVID19"</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="n">periodos</span> <span class="o">&lt;-</span>
+  <span class="nf">data.frame</span><span class="p">(</span>
+    <span class="n">xmin</span> <span class="o">=</span> <span class="nf">as.Date</span><span class="p">(</span><span class="s">"2020-03-22"</span><span class="p">),</span>
+    <span class="n">xmax</span> <span class="o">=</span> <span class="nf">as.Date</span><span class="p">(</span><span class="s">"2020-08-31"</span><span class="p">),</span>
+    <span class="n">ymin</span> <span class="o">=</span> <span class="o">-</span><span class="kc">Inf</span><span class="p">,</span>
+    <span class="n">ymax</span> <span class="o">=</span> <span class="kc">Inf</span><span class="p">,</span>
+    <span class="n">Periodo</span> <span class="o">=</span> <span class="s">"Confinamiento por COVID19"</span>
+  <span class="p">)</span>
 </code></pre>
 
 <p>Creando un nuevo objeto <code>ggplot2</code> p2 para incluir las nuevas modificaciones.</p>
-<pre class="code literal-block"><span></span><code><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
-  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
-  <span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">periodos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
-            <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="o">=</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="o">=</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">Periodo</span><span class="p">))</span><span class="o">+</span>
-  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">"right"</span><span class="p">)</span><span class="o">+</span>
-  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">"Fecha"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"Valor en MM Bs"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">""</span> <span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span>
-       <span class="n">title</span> <span class="o">=</span> <span class="s2">"Datos de Importación Bolivia 2019-2021p"</span><span class="p">,</span>
-       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">"Expresado en Millones de Bolivianos"</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="n">p2</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">datos</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Valor</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_rect</span><span class="p">(</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">periodos</span><span class="p">,</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.2</span><span class="p">,</span>
+    <span class="nf">aes</span><span class="p">(</span>
+      <span class="n">xmin</span> <span class="o">=</span> <span class="n">xmin</span><span class="p">,</span>
+      <span class="n">xmax</span> <span class="o">=</span> <span class="n">xmax</span><span class="p">,</span>
+      <span class="n">ymin</span> <span class="o">=</span> <span class="n">ymin</span><span class="p">,</span>
+      <span class="n">ymax</span> <span class="o">=</span> <span class="n">ymax</span><span class="p">,</span>
+      <span class="n">fill</span> <span class="o">=</span> <span class="n">Periodo</span>
+    <span class="p">)</span>
+  <span class="p">)</span> <span class="o">+</span>
+  <span class="nf">theme</span><span class="p">(</span><span class="n">legend.position</span> <span class="o">=</span> <span class="s">"right"</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">"Fecha"</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">"Valor en MM Bs"</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s">""</span> <span class="p">,</span>
+    <span class="n">fill</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Datos de Importación Bolivia 2019-2021p"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"Expresado en Millones de Bolivianos"</span>
+  <span class="p">)</span>
 <span class="n">p2</span>
 </code></pre>
 
 <ul>
 <li>
-<p><code>geom_rect(data, alpha, aes(xmin, xmax, ymin, ymax, fill))</code> dibuja un rectangulo a partir de los datos en "Data",
-  modifica su opacidad de acuerdo a "alpha",
-  extrae los datos de acuerdo a "xmin, xmax, ymin, ymax",
-  y los clasifica de acuerdo a "fill".</p>
+<p><strong><code>geom_rect(data, alpha, aes(xmin, xmax, ymin, ymax, fill))</code></strong>: dibuja un rectangulo a partir de los datos en <code>Data</code>,
+  modifica su opacidad de acuerdo a <code>alpha</code>,
+  extrae los datos de acuerdo a <code>xmin, xmax, ymin, ymax</code>,
+  y los clasifica de acuerdo a <code>fill</code>.</p>
 </li>
 <li>
-<p><code>lab(fill)</code> pone el nombre encima de la leyenda de los rectángulos dibujados.</p>
+<p><strong><code>lab(fill)</code></strong>: pone el nombre encima de la leyenda de los datos clasificados con <code>fill</code>.</p>
 </li>
 </ul>
-<p>Con las modificaciones ya hechas con en p2, creamos el objeto <code>gganimate</code> anim el cuál contendrá nuestra grafico a animar.</p>
-<pre class="code literal-block"><span></span><code><span class="n">anim</span> <span class="o">&lt;-</span> <span class="n">p2</span> <span class="o">+</span> <span class="n">transition_reveal</span><span class="p">(</span><span class="n">Fecha</span><span class="p">)</span> <span class="o">+</span>
-  <span class="n">geom_label</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">"2019-06-01"</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="mi">280</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="nb">format</span><span class="p">(</span><span class="n">datos</span><span class="err">$</span><span class="n">Fecha</span><span class="p">,</span><span class="s2">"%Y"</span><span class="p">)),</span> <span class="n">col</span> <span class="o">=</span> <span class="s2">"gray"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+<p>Con las modificaciones ya hechas en p2, creamos el objeto <code>gganimate</code> llamado <code>anim</code> el cuál contendrá nuestra grafico a animar.</p>
+<pre class="code literal-block"><span></span><code><span class="n">anim</span> <span class="o">&lt;-</span> <span class="n">p2</span> <span class="o">+</span> <span class="nf">transition_reveal</span><span class="p">(</span><span class="n">Fecha</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_label</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nf">as.Date</span><span class="p">(</span><span class="s">"2019-06-01"</span><span class="p">),</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="m">280</span><span class="p">,</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="nf">format</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Fecha</span><span class="p">,</span> <span class="s">"%Y"</span><span class="p">)</span>
+  <span class="p">),</span>
+  <span class="n">col</span> <span class="o">=</span> <span class="s">"gray"</span><span class="p">,</span>
+  <span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">)</span>
 </code></pre>
 
 <ul>
 <li>
-<p><code>transition_reveal(var)</code> Añade la animacion transition_reveal() usando como referencia la variable "var".</p>
+<p><strong><code>transition_reveal(var)</code></strong>: añade la capa de animacion del tipo transición usando como referencia la variable <code>var</code>.</p>
 </li>
 <li>
-<p><code>geom_label((aes(x,y,label)) col, size)</code>
-  Añade la la etiqueta del año dentro de la gráfica
-  aes(x, y, label) "x" e "y" son las coordenadas donde se grafica la etiqueta "label", con "col" seleccionamos un color y con "size" el tamaño.</p>
+<p><strong><code>geom_label((aes(x,y,label)) col, size)</code></strong>:
+  añade la capa de etiquetas del año dentro de la gráfica, con <code>aes(x, y, label)</code>: <code>x</code> e <code>y</code> son las coordenadas donde se grafica la etiqueta <code>label</code>, con <code>col</code> seleccionamos un color y con <code>size</code> el tamaño.</p>
 </li>
 </ul>
-<p><em>Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas "x" e "y" en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual.</em></p>
-<p>Con el objeto anim creato podemos invocar la función animate de <code>gganimate</code>. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato .gif.</p>
-<pre class="code literal-block"><span></span><code><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+<p><em>Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas <code>x</code> e <code>y</code> en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual.</em></p>
+<p>Con el objeto <code>anim</code> creado podemos invocar la función <code>animate()</code> de <code>gganimate</code>. Una vez ejecutada la función se abrirá una ventana con el resultado en formato .gif.</p>
+<pre class="code literal-block"><span></span><code><span class="nf">animate</span><span class="p">(</span>
+  <span class="n">anim</span><span class="p">,</span>
+  <span class="n">fps</span> <span class="o">=</span> <span class="m">25</span><span class="p">,</span>
+  <span class="n">duration</span> <span class="o">=</span> <span class="m">15</span><span class="p">,</span>
+  <span class="n">width</span> <span class="o">=</span> <span class="m">800</span><span class="p">,</span>
+  <span class="n">height</span> <span class="o">=</span> <span class="m">500</span><span class="p">,</span>
+  <span class="n">end_pause</span> <span class="o">=</span> <span class="m">30</span>
+<span class="p">)</span>
 </code></pre>
 
 <ul>
 <li>
-<code>animate(anim, fps, duration, width, height, end_pause)</code> de la función "anim" objeto a animarse
-  "fps" cantidad de frames por segundo,
-  "duration" duración de la animación en segundos,
-  "with" "height" ancho y alto de la animación respectivamente en pixeles,
-  "end_pause" cantidad de veces a repetirse el último frame para la animación.</li>
+<strong><code>animate(anim, fps, duration, width, height, end_pause)</code></strong>: <code>animate()</code> funcion para generar la animación, <code>anim</code> objeto a animarse,
+  <code>fps</code> cantidad de frames por segundo,
+  <code>duration</code> duración de la animación en segundos,
+  <code>with</code>, <code>height</code> ancho y alto de la animación respectivamente en pixeles,
+  <code>end_pause</code> cantidad de veces a repetirse el último frame para la animación.</li>
 </ul>
 <p>Hay casos en los que extrañamente no se instalan los renders para hacer la renderización de la animación y aparece un error al tratar de ejecutar el código arriba mostrado, en ese caso puede probar con la siguiente solución: Ejecute en modo administrador RStudio e instale los renders con <code>install.packages("gifski")</code> para el render que viene por defecto con <code>gganimate</code>, tambien puede instalar el render magick con <code>install.packages("magick")</code> para tener otra opción para renderizar. Para saber que opciones tiene el render magick ejecute <code>help("magick_renderer")</code> y se le mostrara su breve manual.</p>
-<p><img alt="alt text" src="datosimportpandemia.gif"></p>
+<p><img alt="Importaciones de Bolivia durante la pandemia" src="../../../images/blog/visualiza-tus-datos-en-r-con-ggplot-y-gganimate/datosimportpandemia.gif"></p>
 <p>Despues de ver la animación podemos guardarla haciendo:</p>
-<pre class="code literal-block"><span></span><code><span class="n">archivo</span><span class="o">&lt;-</span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
-<span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">"datosimportpandemia.gif"</span><span class="p">,</span> <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s2">".my/path/save/"</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="n">archivo</span> <span class="o">&lt;-</span>
+  <span class="nf">animate</span><span class="p">(</span>
+    <span class="n">anim</span><span class="p">,</span>
+    <span class="n">fps</span> <span class="o">=</span> <span class="m">25</span><span class="p">,</span>
+    <span class="n">duration</span> <span class="o">=</span> <span class="m">15</span><span class="p">,</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="m">800</span><span class="p">,</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="m">500</span><span class="p">,</span>
+    <span class="n">end_pause</span> <span class="o">=</span> <span class="m">30</span>
+  <span class="p">)</span>
+
+<span class="nf">anim_save</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">"datosimportpandemia.gif"</span><span class="p">,</span>
+          <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span>
+          <span class="n">path</span> <span class="o">=</span> <span class="s">".my/path/save/"</span><span class="p">)</span>
 </code></pre>
 
-<p><code>anim_save(filename, animation, path)</code>
-Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".</p>
-<p><a href="https://github.com/OpenScienceLabs/articles/tree/main/articles/0057-r-ggplot-bo">Descarga los archivos de este ejemplo</a></p>
-<h3>Referencias 📄</h3>
+<p><strong><code>anim_save(filename, animation, path)</code></strong>:
+guarda el renderizado de <code>animation</code> con el nombre <code>filename</code> en la ruta <code>path</code>.</p>
+<h3>Referencias</h3>
 <ul>
 <li>
-<a href="https://www.ine.gob.bo">Instituto Nacional de Estadística Bolivia</a> 📢</li>
+<a href="https://www.ine.gob.bo">Instituto Nacional de Estadística Bolivia</a> </li>
 <li><a href="https://www.rdocumentation.org">Documentacion de R</a></li>
 </ul>
 <hr>
