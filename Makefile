@@ -1,6 +1,6 @@
 build:
 	rm -rf output
-	NIKOLA_DEBUG=1 nikola build
+	nikola build
 
-watch: build
+watch:
 	NIKOLA_DEBUG=1 nikola auto
