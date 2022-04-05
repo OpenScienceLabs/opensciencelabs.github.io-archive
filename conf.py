@@ -67,6 +67,7 @@ NAVIGATION_LINKS = {
         ("/", "Home"),
         ("/blog/", "Blog"),
         ("/guidelines/list", "Guidelines"),
+        ("/team/", "Team"),
         ("/about/", "About"),
     ),
 }
@@ -154,6 +155,7 @@ POSTS = (
 )
 PAGES = (
     ("pages/*.md", "", "page.tmpl"),
+    ("pages/*.html", "", "page.tmpl"),
     ("pages/guidelines/*.md", "", "page.tmpl"),
 )
 
@@ -806,7 +808,7 @@ CODE_COLOR_SCHEME = 'friendly'  # 'native' #'colorful'  #monokai'
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
 FAVICONS = (
-    ("icon", "/favicon.ico", "16x16"),  # not working yet
+    ("icon", "/images/favicon.ico", "16x16"),
 )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.

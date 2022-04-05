@@ -9,6 +9,7 @@
 
 <%block name="extra_head">
     ${parent.extra_head()}
+    <link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
     % if posts and (permalink == '/' or permalink == '/' + index_file):
         <link rel="prefetch" href="${posts[0].permalink()}" type="text/html">
     % endif
@@ -61,7 +62,7 @@
                 <p class="commentline">${comments.comment_link(post.permalink(), post._base_path)}
             % endif
         </div>
-            
+
         <div>
             ${tags.html_tags(post)}
         </div>
