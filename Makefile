@@ -2,5 +2,5 @@ build:
 	rm -rf output
 	nikola build
 
-watch:
+watch: build
 	NIKOLA_DEBUG=1 nikola auto
