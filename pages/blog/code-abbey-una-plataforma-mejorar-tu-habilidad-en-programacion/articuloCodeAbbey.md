@@ -1,5 +1,5 @@
 <!--
-.. title: Code Abbey una plataforma mejorar tu habilidad en programación
+.. title: Code Abbey una plataforma para mejorar tu habilidad en programación
 .. slug: code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion
 .. date: 2022-03-22 19:52:05 UTC
 .. author: Ever Vino
@@ -10,7 +10,7 @@
 .. type: text
 -->
 
-<!-- # Code Abbey una plataforma mejorar tu habilidad en programación -->
+<!-- # Code Abbey una plataforma para mejorar tu habilidad en programación -->
 
 ![header](../../../images/blog/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/header.png)
 
@@ -73,11 +73,10 @@ Libros para mejorar tus matemáticas
 
 ## ¿Sitios similares?
 
-[ROSALIND](https://rosalind.info/problems/locations/) orientado a problemas de programación en Bioinformática
-[Project Euler](https://projecteuler.net/) Contiene poblemas matemáticos y de programación.
-[algo.is](https://algo.is/) Problemas de competición
-[exercism](https://exercism.org/) Contiene problemas variados de programación.
-check
+* [ROSALIND](https://rosalind.info/problems/locations/) Orientado a problemas de programación en Bioinformática.
+* [Project Euler](https://projecteuler.net/) Contiene poblemas matemáticos y de programación.
+* [algo.is](https://algo.is/) Problemas de competición de programación.
+* [exercism](https://exercism.org/) Contiene problemas variados de programación.
 
 ## Referencias
 [Code Abbey](https://www.codeabbey.com/)
