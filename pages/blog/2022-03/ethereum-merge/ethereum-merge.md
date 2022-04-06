@@ -9,15 +9,21 @@
 .. description:
 .. type: text
 -->
-  
+<!-- # The Ethereum merge is coming. ¿Pero qué significa? -->
+
 ![header](../../../../images/blog/ethereum-merge/header.jpeg) 
 
 # The Ethereum merge is coming. ¿Pero qué significa?
+
+  
+
 
 Oh sweet summer child, Ethereum ya no será el mismo, está evolucionando, al mismo tiempo que todo el ecosistema. No es secreto que todo el ecosistema crece, y a una velocidad agigantada. La masiva adopción de Ethereum trajo consigo problemas a la red como:
 * Transacciones con gas demasiado alto (provocando transacciones de alto costo)
 * Transacciones demasiado lentas. No te puedes imaginar pagar un café o una hamburguesa con Ethereum si el proceso tarde 5 o 10 minutos en validarse.
 * Debido a las dos anteriores, demasiado consumo de electricidad.
+
+<!-- TEASER_END -->
 
 Estos problemas lo sufren las dos blockchains más grandes del momento, bitcoin y Ethereum. En el caso de bitcoin, la solución es ligthing network. Para Ethereum, es este merge.
 
@@ -26,7 +32,7 @@ Estos problemas lo sufren las dos blockchains más grandes del momento, bitcoin 
 
 Este puede ser uno de los cambios más esperado por la comunidad, trae consigo un gran cambio en el modo en que valida las transacciones, actualmente utiliza un mecanismo llamado POW (proof of work) y cambia a un mecanismo llamado POS (proof of stake). Este cambio mejorará la descentralización y el reducir bastante el consumo de energía que con eso traerá menores costos.
 
-### Proof of work VRS Proof of stake
+### Proof of work Vs. Proof of stake
 ![Eth POW vr POS](../../../../images/blog/ethereum-merge/eth-pow-pos.png)
 
 El concepto de **Proof of Work** existe desde antes de los crypto assets. La primera idea fue publicada por Cynthia Dwork y Moni Naor en un artículo publicado en 1993, sin embargo, no fue hasta 1999 que el término "Proof of work" fue creada por Markus Jakobsson.
@@ -48,7 +54,7 @@ Ethereum tiene muchos problemas, y este merge busca solucionar el blockchain tri
 * Escabilidad
 
 ### Que beneficio trae el merge
-* Descentralización y seguridad: El merge quire un minimo de nodos y haces más fácil de correr un nodo. Para correr un nodo necesitas tener 32 ETH.
+* Descentralización y seguridad: El merge requiere un mínimo de nodos y hacer más fácil de correr un nodo. Para correr un nodo necesitas tener 32 ETH.
 * Sostenibilidad: Proof of stake usa al menos 99% menos energía que proof of work.
 
 
@@ -71,7 +77,8 @@ El Consensus Layer es donde estará implementado el PoS, de esa manera se podrá
 
 ![Ethereum roadmap](../../../../images/blog/ethereum-merge/upgrade_path.png)
 ## Conclusión
-Para el usuario final no significará un cambio en billetera o en como interactúa con la red. Pero si verá los beneficios al tener transacciones más rápidas y de menor costo. Esto nos acercará a una blockchain más útil para el día a día, intercambiando valor. Es emocionante ver los cambios suceder y como se va mejorando el ecosistema. 
+Para el usuario final no significará un cambio en billetera o en como interactúa con la red. Pero si verá los beneficios al tener transacciones más rápidas y de menor costo. Esto nos acercará a una blockchain más útil para el día a día, intercambiando valor. 
+Es emocionante ver los cambios suceder y como se va mejorando el ecosistema. 
 
 ## Fuentes
 * The great renaming - https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/
