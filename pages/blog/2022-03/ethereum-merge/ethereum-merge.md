@@ -67,7 +67,7 @@ Entonces surgió la propuesta Eth1+Eth2 = Ethereum. Donde:
 * Eth1 = Execution Layer (actual red)
 * Eth2 = Consensus Layer (el merge)
 
-El Consensus Layer es donde estará implementado el PoS, de esa manera se podrá aplicar el merge, sin requerir cambios en los usuarios actuales de la red. Este cambió lo explican más a fondo aquí https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/.
+El Consensus Layer es donde estará implementado el PoS, de esa manera se podrá aplicar el merge, sin requerir cambios en los usuarios actuales de la red. Este cambió lo explican más a fondo aquí [The Great TH2 renaming](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/).
 
 ![Ethereum roadmap](../../../../images/blog/ethereum-merge/upgrade_path.png)
 ## Conclusión
