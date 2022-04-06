@@ -9,7 +9,8 @@
 .. description:
 .. type: text
 -->
-  
+
+<!-- # Como desarrollador, ¿Que necesito para entrar en la web3? -->
 
 ![header](../../../images/blog/que-necesitas-para-desarrollar-en-la-web3/header.jpeg)
 
@@ -21,6 +22,7 @@
 
 Si ya eres desarrollador y tienes la meta, el deseo, o simplemente la curiosidad de adentrarte en la web3, en este blog te mencionaré las tecnologías que se utilizan en el tech stack para desarrollar.
 
+<!-- TEASER_END -->
   
 
 Empecemos con un esquema básico, la web3, no funciona diferente de la web normal en teoría, lo que cambia es que en vez de tener un solo lugar centralizado con nuestros datos en el backend, está disperso por los nodos, ya sea directo en los smart contracts (si fuera Ethereum) o en el uso de algún servicio [IPFS](https://web3.storage/). Mientras el frontend es lo mismo que ya usas. Html, Css, JS, React, vue o cualquier otro frontend framework.
