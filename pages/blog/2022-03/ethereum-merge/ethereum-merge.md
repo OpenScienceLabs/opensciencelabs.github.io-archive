@@ -17,7 +17,7 @@
 Oh sweet summer child, Ethereum ya no será el mismo, está evolucionando, al mismo tiempo que todo el ecosistema. No es secreto que todo el ecosistema crece, y a una velocidad agigantada. La masiva adopción de Ethereum trajo consigo problemas a la red como:
 * Transacciones con gas demasiado alto (provocando transacciones de alto costo)
 * Transacciones demasiado lentas. No te puedes imaginar pagar un café o una hamburguesa con Ethereum si el proceso tarde 5 o 10 minutos en validarse.
-* Debido a las dos anteriores, demasiado consumo de electricidad.
+* Debido a las dos anteriores, demasiado consumo de energía eléctrica.
 
 Estos problemas lo sufren las dos blockchains más grandes del momento, bitcoin y Ethereum. En el caso de bitcoin, la solución es ligthing network. Para Ethereum, es este merge.
 
