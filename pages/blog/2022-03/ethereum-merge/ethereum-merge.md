@@ -21,7 +21,7 @@
 Oh sweet summer child, Ethereum ya no será el mismo, está evolucionando, al mismo tiempo que todo el ecosistema. No es secreto que todo el ecosistema crece, y a una velocidad agigantada. La masiva adopción de Ethereum trajo consigo problemas a la red como:
 * Transacciones con gas demasiado alto (provocando transacciones de alto costo)
 * Transacciones demasiado lentas. No te puedes imaginar pagar un café o una hamburguesa con Ethereum si el proceso tarde 5 o 10 minutos en validarse.
-* Debido a las dos anteriores, demasiado consumo de electricidad.
+* Debido a las dos anteriores, demasiado consumo de energía eléctrica.
 
 <!-- TEASER_END -->
 
@@ -73,7 +73,7 @@ Entonces surgió la propuesta Eth1+Eth2 = Ethereum. Donde:
 * Eth1 = Execution Layer (actual red)
 * Eth2 = Consensus Layer (el merge)
 
-El Consensus Layer es donde estará implementado el PoS, de esa manera se podrá aplicar el merge, sin requerir cambios en los usuarios actuales de la red. Este cambió lo explican más a fondo aquí https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/.
+El Consensus Layer es donde estará implementado el PoS, de esa manera se podrá aplicar el merge, sin requerir cambios en los usuarios actuales de la red. Este cambió lo explican más a fondo aquí [The Great TH2 renaming](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/).
 
 ![Ethereum roadmap](../../../../images/blog/ethereum-merge/upgrade_path.png)
 ## Conclusión
@@ -81,7 +81,7 @@ Para el usuario final no significará un cambio en billetera o en como interact�
 Es emocionante ver los cambios suceder y como se va mejorando el ecosistema. 
 
 ## Fuentes
-* The great renaming - https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/
+* [The great renaming](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/)
 * The Ethereum merge is comming thread - https://twitter.com/JackNiewold/status/1506779959242764288
 * The Ethereum merge - https://ethereum.org/en/upgrades/merge/#main-content
 * Pow and Pos explained - https://hackernoon.com/consensus-mechanisms-explained-pow-vs-pos-89951c66ae10
