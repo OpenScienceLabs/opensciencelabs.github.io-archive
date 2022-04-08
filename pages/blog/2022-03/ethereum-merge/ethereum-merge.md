@@ -82,6 +82,6 @@ Es emocionante ver los cambios suceder y como se va mejorando el ecosistema.
 
 ## Fuentes
 * [The great renaming](https://blog.ethereum.org/2022/01/24/the-great-eth2-renaming/)
-* The Ethereum merge is comming thread - https://twitter.com/JackNiewold/status/1506779959242764288
+* [The Ethereum merge is comming thread](https://twitter.com/JackNiewold/status/1506779959242764288)
 * The Ethereum merge - https://ethereum.org/en/upgrades/merge/#main-content
 * Pow and Pos explained - https://hackernoon.com/consensus-mechanisms-explained-pow-vs-pos-89951c66ae10
