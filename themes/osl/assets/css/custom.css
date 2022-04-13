@@ -1,5 +1,5 @@
 /*
- * yellow: #F0C808 
+ * yellow: #F0C808
  * light blue: #0E91C3
  */
 
@@ -51,18 +51,18 @@ header a:hover{
 }
 .navbar-dark .navbar-nav .nav-link{
   color: #FFF;
-} 
+}
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #F0C808 ;
 
-} 
+}
 .navbar-dark .navbar-nav .active .nav-link{
   color: #F0C808 ;
 }
 #logo {
-  max-height: 35px;
-  margin-top: 5px;
-}  
+  max-height: 50px;
+  margin-top: -5px;
+}
 #navbar-separator{
   background-color: #fff;
   border-bottom: 5px solid #07425a;
@@ -1230,7 +1230,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 input,
 button,
@@ -7013,12 +7013,19 @@ html, body {
 
 .body-content {
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
   max-width: 90%;
 }
 
 .postindex {
-  max-width: 80%;
+  max-width: 100%;
+}
+
+/* temporarily */
+.p-summary.entry-summary img {
+  width: 30%;
+  float: right;
+  margin: 0 10px 10px;
 }
 
 .rendered_html :visited {
