@@ -5,8 +5,8 @@
 .. author: Anavelyz Pérez
 .. tags: ide, r
 .. category: ide
-.. link: 
-.. description: 
+.. link:
+.. description:
 .. type: text
 -->
 
@@ -17,10 +17,13 @@
 RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de
 programación R, el cual puedes utilizar para realizar scripts de análisis de
 datos, aplicaciones web interactivas, documentos, reportes, gráficos y mucho
-más. 
-<iframe src="https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true" style="border: none;"></iframe>
+más.
 
 <!-- TEASER_END -->
+
+<iframe
+  src="https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true"
+  style="border: none;"></iframe>
 
 Para acceder o utilizar esta herramienta se tienen las siguientes opciones:
 [RStudio Desktop](https://rstudio.com/products/rstudio/#rstudio-desktop) y
