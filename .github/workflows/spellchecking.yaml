@@ -1,20 +1,26 @@
-name: SpellArticles
-on: [pull_request]
+name: ARTICLES
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 jobs:
-  misspell:
-    name: runner / misspell
+
+  test-pr-review:
+    if: github.event_name == 'pull_request'
+    name: runner / languagetool (github-pr-review)
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code.
-        uses: actions/checkout@v2
-      - name: misspell
-        uses: reviewdog/action-misspell@v1
+      - uses: actions/checkout@v3
+      - uses: ./
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: info
           path: |
             pages/blog/
-          pattern: |
-            *.md
-          locale: "es"
+          patterns: "**.md"
+          custom_api_endpoint: https://languagetool.org/api
+          language:
+            description: 'language of LanguageTool'
+            default: 'es-ES'
