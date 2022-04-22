@@ -17,8 +17,6 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: info
-          path: |
-            pages/blog/
           patterns: "**.md"
           custom_api_endpoint: https://languagetool.org/api
           language: 'es-ES'
