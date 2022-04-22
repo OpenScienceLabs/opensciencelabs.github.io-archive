@@ -1,4 +1,4 @@
-name: ARTICLES
+name: Articles
 on:
   push:
     branches:
@@ -21,6 +21,4 @@ jobs:
             pages/blog/
           patterns: "**.md"
           custom_api_endpoint: https://languagetool.org/api
-          language:
-            description: 'language of LanguageTool'
-            default: 'es-ES'
+          language: 'es-ES'
