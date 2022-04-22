@@ -37,9 +37,6 @@ inputs:
   custom_api_endpoint:
     description: 'Custom API endpoint of LanguageTool server. e.g. https://languagetool.org/api'
     default: ''
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
 
 # Ref: https://haya14busa.github.io/github-action-brandings/
 branding:
