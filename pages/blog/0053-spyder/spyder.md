@@ -4,15 +4,13 @@
 .. date: 2021-02-22
 .. author: Yurely Camacho
 .. tags: ide
-.. category: ide 
-.. link: 
-.. description: 
+.. category: ide
+.. link:
+.. description:
 .. type: text
 -->
 
 <!-- # Primeros pasos con Spyder -->
-
-**Por Yurely Camacho**
 
 ![header](../../../images/blog/primeros-pasos-con-spyder/header.png)
 

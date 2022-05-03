@@ -9,6 +9,7 @@
 
 <%block name="extra_head">
     ${parent.extra_head()}
+    <link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
     % if posts and (permalink == '/' or permalink == '/' + index_file):
         <link rel="prefetch" href="${posts[0].permalink()}" type="text/html">
     % endif
@@ -33,7 +34,9 @@
 % endif
 <div class="postindex">
 % for post in posts:
-    <article class="h-entry post-${post.meta('type')}" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <article
+        class="h-entry post-${post.meta('type')} card my-3 p-3 px-5"
+        itemscope="itemscope" itemtype="http://schema.org/Article">
     <header>
         <h2 class="p-name entry-title"><a href="${post.permalink()}" class="u-url">${post.title()|h}</a></h2>
         <div class="metadata">
@@ -61,7 +64,7 @@
                 <p class="commentline">${comments.comment_link(post.permalink(), post._base_path)}
             % endif
         </div>
-            
+
         <div>
             ${tags.html_tags(post)}
         </div>
