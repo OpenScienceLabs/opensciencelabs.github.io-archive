@@ -4,7 +4,7 @@ var tipuesearch = {
       "title": "About",
       "text": "Open Science Labs es una iniciativa para divulgar pr\u00e1cticas de Ciencia Abierta a p\u00fablico en espa\u00f1ol.\nBuscamos ofrecer un espacio virtual amable, \u00fatil y atractivo para el aprendizaje para las m\u00e1s \u00fatiles herramientas y las mejores pr\u00e1cticas disponibles en la Ciencia Abierta y el C\u00f3digo Abierto.\nQueremos crear oportunidades\nSabemos que se requiere de una masa cr\u00edtica de personas que colaboren en proyectos de ciencia abierta, para que \u00e9sta y sus resultados se proyecten hacia la soluci\u00f3n real de problemas.\nSabemos que los proyectos a abordar bajo un enfoque de ciencia abierta, pueden atender tanto a problemas globales o a situaciones cotidianas en el entorno inmediato de esta masa cr\u00edtica.\nLa experiencia reciente nos lo muestra as\u00ed.\nPor eso, construir de forma colaborativa contenidos y experiencias que enriquezcan y hagan m\u00e1s atractivos y \u00fatiles los procesos de aprendizaje, es la clave del presente y del futuro de la investigaci\u00f3n abierta.\nEn Open Science Labs, te ofrecemos un espacio amplio con contenidos, acompa\u00f1amiento, formaci\u00f3n y promoci\u00f3n en las herramientas, las competencias y las buenas pr\u00e1cticas que necesitas en tu proceso de autoformaci\u00f3n para la Ciencia Abierta.",
       "tags": "",
-      "url": "https://opensciencelabs.org/About/"
+      "url": "https://opensciencelabs.org/about/"
     },
     {
       "title": "Who Is Involved with Open Science Labs?",
