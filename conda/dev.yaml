@@ -6,3 +6,4 @@ dependencies:
   - python
   - poetry
   - nodejs
+  - make
