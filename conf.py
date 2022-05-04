@@ -1127,13 +1127,13 @@ SHOW_SOURCELINK = False
 # (translatable)
 EXTRA_HEAD_DATA = """
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163785882-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-163785882-1');
+  gtag('config', 'UA-213158050-1');
 </script>
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
