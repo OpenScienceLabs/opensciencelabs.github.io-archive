@@ -1,8 +1,8 @@
 <!--
 .. title: About
-.. slug: About
-.. date: 
-.. author: 
+.. slug: about
+.. date:
+.. author:
 .. tags:
 .. category:
 .. link:
@@ -32,4 +32,3 @@ Por eso, construir de forma colaborativa contenidos y experiencias que enriquezc
 
 
 En Open Science Labs, te ofrecemos un espacio amplio con contenidos, acompañamiento, formación y promoción en las herramientas, las competencias y las buenas prácticas que necesitas en tu proceso de autoformación para la Ciencia Abierta.
-
