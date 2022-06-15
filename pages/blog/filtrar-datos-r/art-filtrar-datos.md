@@ -3,8 +3,8 @@
 .. slug: filtrar-datos-r
 .. date: 2022-06-14 19:52:05 UTC
 .. author: Ever Vino
-.. tags: open-science, r, filtrar-datos, dplyr, recursos, data-science
-.. category: data-science
+.. tags: open science, r, filtrar datos, dplyr, recursos, data science
+.. category: data science
 .. link: 
 .. description: 
 .. type: text
