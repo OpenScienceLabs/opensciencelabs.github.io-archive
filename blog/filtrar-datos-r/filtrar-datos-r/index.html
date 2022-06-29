@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo filtrar datos de tu tabla con dplyr en R | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/">
+<link rel="icon" href="../../../images/favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213158050-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Ever Vino">
+<meta property="description" content="En este artículo mostraremos como usar algunas funciones importantes de la biblioteca de dplyr, específicamente veremos como usar las funciones filter(), select(), group_by(), sumarize() y mutate() de">
+<link rel="prev" href="../../code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/" title="Code Abbey una plataforma para mejorar tu habilidad en programación" type="text/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Cómo filtrar datos de tu tabla con dplyr en R">
+<meta property="og:url" content="https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/">
+<meta property="og:description" content="En este artículo mostraremos como usar algunas funciones importantes de la biblioteca de dplyr, específicamente veremos como usar las funciones filter(), select(), group_by(), sumarize() y mutate() de">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-06-14T19:52:05Z">
+<meta property="article:tag" content="data science">
+<meta property="article:tag" content="dplyr">
+<meta property="article:tag" content="filtrar datos">
+<meta property="article:tag" content="open science">
+<meta property="article:tag" content="r">
+<meta property="article:tag" content="recursos">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../team/" class="nav-link">Team</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Cómo filtrar datos de tu tabla con dplyr en R</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/ever-vino/">Ever Vino</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-06-14T19:52:05Z" itemprop="datePublished" title="2022-06-14">2022-06-14</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/filtrar-datos-r/art-filtrar-datos.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/data-science/" rel="tag">data science</a></li>
+            <li><a class="tag p-category" href="../../../categories/dplyr/" rel="tag">dplyr</a></li>
+            <li><a class="tag p-category" href="../../../categories/filtrar-datos/" rel="tag">filtrar datos</a></li>
+            <li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+            <li><a class="tag p-category" href="../../../categories/r/" rel="tag">r</a></li>
+            <li><a class="tag p-category" href="../../../categories/recursos/" rel="tag">recursos</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Cómo filtrar datos de tu tabla con dplyr en R  -->
+
+<p><img alt="hoja de datos" src="../../../images/blog/filtrar-datos-r/header.png"></p>
+<p>En este artículo mostraremos como usar algunas funciones importantes de la biblioteca de <code>dplyr</code>, específicamente veremos como usar las funciones <code>filter()</code>, <code>select()</code>, <code>group_by()</code>, <code>sumarize()</code> y <code>mutate()</code> dentro de un ejemplo práctico.</p>
+<!-- TEASER_END -->
+
+<h3>Requisitos</h3>
+<p>Por comodidad usamos la biblioteca <code>pacman</code> como gestor de paquetes.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># install.packages("pacman") Para instalar la biblioteca pacman</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">pacman</span><span class="p">)</span> <span class="c1"># Gestor de paquetes en R</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"readr"</span><span class="p">)</span> <span class="c1"># Biblioteca para importar archivos csv</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"dplyr"</span><span class="p">)</span> <span class="c1"># Biblioteca para manipular datos</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"ggplot2"</span><span class="p">)</span>   <span class="c1"># Biblioteca para graficar datos</span>
+</code></pre>
+
+<p>Recuerde, que tambien puede instalar y abrir las bibliotecas de manera tradicional, por ejemplo con: <code>install.packages("readr")</code>, luego abrir la misma biblioteca con <code>library(readr)</code>.</p>
+<h3>Importando nuestros datos</h3>
+<p>La base de datos usada ha sido descargada de <a href="https://github.com/owid/covid-19-data">Our World In Data</a>, la cual muestra los datos recolectados de la reciente pandemia. Una vez descargada nuestra base de datos en formato <code>.csv</code>, la importamos a nuestro entorno de R. Puede descargar los archivos usados en este artículo <a href="https://github.com/EverVino/Example_data_covid_r">Repositorio de este artículo aquí</a>.</p>
+<p>Importamos los el archivo <code>.csv</code> a la variable <code>covid_data</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="n">covid_data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">"owid-covid-data.csv"</span><span class="p">)</span>
+</code></pre>
+
+<p>En la consola observamos lo siguiente:</p>
+<pre class="code literal-block"><span></span><code><span class="n">Rows</span><span class="o">:</span> <span class="m">193573</span> <span class="n">Columns</span><span class="o">:</span> <span class="m">67</span>                                                                                                               
+── <span class="n">Column</span> <span class="n">specification</span> ────────────────────────────────────────────────────────────────────────────
+<span class="n">Delimiter</span><span class="o">:</span> <span class="s">","</span>
+<span class="nf">chr   </span><span class="p">(</span><span class="m">4</span><span class="p">)</span><span class="o">:</span> <span class="n">iso_code</span><span class="p">,</span> <span class="n">continent</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">tests_units</span>
+<span class="nf">dbl  </span><span class="p">(</span><span class="m">62</span><span class="p">)</span><span class="o">:</span> <span class="n">total_cases</span><span class="p">,</span> <span class="n">new_cases</span><span class="p">,</span> <span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">total_deaths</span><span class="p">,</span> <span class="n">new_deaths</span><span class="p">,</span> <span class="n">new_deaths_smoo...</span>
+<span class="nf">date  </span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="o">:</span> <span class="n">date</span>
+
+ℹ <span class="n">Use</span> <span class="n">`spec()`</span> <span class="n">to</span> <span class="n">retrieve</span> <span class="n">the</span> <span class="n">full</span> <span class="n">column</span> <span class="n">specification</span> <span class="n">for</span> <span class="n">this</span> <span class="n">data.</span>
+ℹ <span class="n">Specify</span> <span class="n">the</span> <span class="n">column</span> <span class="n">types</span> <span class="n">or</span> <span class="n">set</span> <span class="n">`show_col_types = FALSE`</span> <span class="n">to</span> <span class="n">quiet</span> <span class="n">this</span> <span class="n">message.</span>
+</code></pre>
+
+<p>Como puede ver esta tabla es muy extensa, contiene 67 columnas (variables) y  193573 filas, manejar los datos directamente de esta tabla puede ser complicado, por lo que se recomienda reducir las variables o extraer información relevante para nosotros.
+Si quiere explorar los datos manualmente puede ejecutar la función <code>(View(datos_covid))</code> en la consola.</p>
+<h3>Cómo usar la función filter() y select()</h3>
+<p>Queremos ver los datos de la región de Sudamérica (continent = "South America") y sólo las variables de país, fecha y nuevos casos que corresponderían a las columnas de location, date, new_cases respectivamente en el dataframe <code>datos_covid</code> (para graficar curvas suaves usamos la columna new_cases_smoothed en vez de new_cases).</p>
+<p>Usando la función <code>filter()</code> y tenemos:</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Filtramos los las filas que cumplan con la condición de que en su columna continent sea igual a "South America".</span>
+<span class="c1"># Almacenamos lo deseado en la variable covid_sudamerica</span>
+<span class="n">covid_sudamerica</span> <span class="o">&lt;-</span> <span class="nf">filter</span><span class="p">(</span><span class="n">covid_data</span><span class="p">,</span> <span class="n">continent</span> <span class="o">==</span> <span class="s">"South America"</span><span class="p">)</span>
+<span class="c1"># Filtramos las filas que no contengan valores en la columna de new_cases_smoothed, es decir valores iguales a NA.</span>
+<span class="n">covid_sudamerica</span> <span class="o">&lt;-</span> <span class="nf">filter</span><span class="p">(</span><span class="n">covid_sudamerica</span><span class="p">,</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">))</span>
+<span class="c1"># Seleccionamos sólo  las columnas que nos importan</span>
+<span class="n">covid_sudamerica</span> <span class="o">&lt;-</span> <span class="nf">select</span><span class="p">(</span><span class="n">covid_sudamerica</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">new_cases_smoothed</span><span class="p">)</span>
+</code></pre>
+
+<p><strong><code>filter(tabla, condicion)</code></strong></p>
+<p>Función que es usada para filtrar en filas, selecciona un subconjunto de filas que cumplan con la condicion
+- <strong><code>tabla</code></strong> : Dataframe o tabla de donde va se va a filtrar datos.
+- <strong><code>condicion</code></strong> : Prueba lógica que devuelve valores booleanos TRUE o FALSE, de esta condicion depende si la fila se incluye en la nueva tabla.</p>
+<p>Para armar la condicion, puede usar los nombres de la columna como variables y usar los siguientes operadores lógicos:</p>
+<ul>
+<li>
+<strong><code>&gt;</code></strong> : Corresponde a <strong>mayor que</strong>.</li>
+<li>
+<strong><code>==</code></strong> : Corresponde a <strong>igual que</strong>.</li>
+<li>
+<strong><code>&gt;=</code></strong> : Corresponde a <strong>mayor o igual que</strong>.</li>
+<li>
+<strong><code>&lt;=</code></strong> : Corresponde a <strong>menor o igual que</strong>.</li>
+<li>
+<strong><code>!=</code></strong> : Corresponde a <strong>diferente que</strong>.</li>
+</ul>
+<p>Puede combinarlas las condiciones con:</p>
+<ul>
+<li>
+<strong><code>&amp;</code></strong> : Operador AND.</li>
+<li>
+<strong><code>|</code></strong> : Operador OR.</li>
+<li>
+<strong><code>!</code></strong> : Operador NOT o negación.</li>
+<li>
+<strong><code>is.na(x)</code></strong> : Función que verifica si un dato es NA (Not Available/ Missing value), valor faltante o no disponible. Devuelve TRUE cuando x es NA.</li>
+<li>
+<strong><code>valor %in% vector</code></strong> : Operador que verifica si un valor existe en un vector. Devuelve TRUE cuando valor esta incluido en vector.</li>
+</ul>
+<p><strong><code>select(tabla, nombre_col, ...)</code></strong>
+Función que filtra columnas por nombre de columna para un nueva tabla.</p>
+<ul>
+<li>
+<strong><code>tabla</code></strong> : Dataframe o tabla de donde va se va a filtrar datos.</li>
+<li>
+<strong><code>nombre_col</code></strong> : Nombre de la columna o variable que va a componer la nueva tabla.</li>
+</ul>
+<h3>Operador Pipe <code>%&gt;%</code>
+</h3>
+<p>Este operador nos permite combinar muchas operaciones en una sóla línea, una simple cadena de comandos.
+Considere lo siguiente para entender el flujo de datos del operador Pipe <code>%&gt;%</code>.</p>
+<ol>
+<li>Tome <em>x</em>
+</li>
+<li>use <em>x</em> como entrada para la función <em>f(x)</em>
+</li>
+<li>use la salida de <em>f(x)</em> como entrada de la función <em>g(x)</em>
+</li>
+<li>use la salida de <em>g(x)</em> como entrada de la función <em>h(x)</em>.</li>
+</ol>
+<p>Simplificando tenemos <em>h(g(f(x)))</em> , esta es una expresión complicada para escribirla, su equivalente usando el operador Pipe (%&gt;%) es:
+<em>x %&gt;% f() %&gt;% g() %&gt;% h()</em> que es mucho más entendible y fácil de escribir.</p>
+<p>Usando el operador <code>%&gt;%</code> podemos simplificar a una línea de comando encadenada, la obtención de nuestra variable <code>covid_sudamerica</code> de la sección anterior</p>
+<pre class="code literal-block"><span></span><code><span class="n">covid_sudamerica</span> <span class="o">&lt;-</span>
+  <span class="n">covid_data</span> <span class="o">%&gt;%</span> 
+  <span class="nf">filter</span><span class="p">(</span><span class="n">continent</span> <span class="o">==</span> <span class="s">"South America"</span> <span class="o">&amp;</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="nf">select</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">new_cases_smoothed</span><span class="p">)</span>
+</code></pre>
+
+<p>Para poder graficar este ejemplo lo vamos a reducir un poco más, obteniendo una tabla que sólo contenga países de la región.</p>
+<pre class="code literal-block"><span></span><code><span class="n">paises_andinos</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">"Bolivia"</span><span class="p">,</span> <span class="s">"Peru"</span><span class="p">,</span> <span class="s">"Chile"</span><span class="p">,</span> <span class="s">"Ecuador"</span><span class="p">)</span>
+<span class="n">covid_paises_region</span> <span class="o">&lt;-</span>
+  <span class="n">covid_data</span> <span class="o">%&gt;%</span> 
+  <span class="nf">filter</span><span class="p">(</span><span class="n">location</span> <span class="o">%in%</span> <span class="n">paises_andinos</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+  <span class="nf">select</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">new_cases_smoothed</span><span class="p">)</span>
+</code></pre>
+
+<p>Para observar nuestros datos obtenidos graficamos</p>
+<pre class="code literal-block"><span></span><code><span class="nf">ggplot</span><span class="p">(</span><span class="n">covid_paises_region</span><span class="p">)</span> <span class="o">+</span> 
+<span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">date</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">location</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_color_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s">"Set1"</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span> 
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Registro de contagios diario en países de la región por COVID-19"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"(Datos suavizados)"</span><span class="p">,</span>
+    <span class="n">caption</span> <span class="o">=</span> <span class="s">"Fuente: Our World In Data"</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s">"Países"</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p><img alt="Nuevos casos covid en Bolivia, Perú, Chile y Ecuador" src="../../../images/blog/filtrar-datos-r/covid_region.png"></p>
+<h3>Cómo usar summarise() y group_by()</h3>
+<p>Si, queremos saber el total de contagiados y el total de días desde que se registraron los contagios podemos usar <code>summarize()</code></p>
+<pre class="code literal-block"><span></span><code><span class="nf">summarise</span><span class="p">(</span>
+  <span class="n">covid_paises_region</span><span class="p">,</span>
+  <span class="n">total</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">),</span>
+  <span class="n">dias</span> <span class="o">=</span> <span class="nf">n_distinct</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Ejecutanto obtenemos en la consola:</p>
+<pre class="code literal-block"><span></span><code># A tibble: 1 × 2
+     total  dias
+     &lt;dbl&gt; &lt;int&gt;
+1 9174748.   841
+</code></pre>
+
+<p><strong><code>summarise(tabla, nueva_columa = funcion_vector(columna_tabla), ...)</code></strong>
+Función que crea una nueva tabla a partir de la agrupación de columnas de una tabla anterior, los valores de la nueva columna dependen también del tipo de función vector que se use para agruparlas.</p>
+<ul>
+<li>
+<strong><code>tabla</code></strong>: Dataframe o tabla de donde sus columnas servirán para contruir la nueva tabla.</li>
+<li>
+<strong><code>nueva_columna</code></strong>: nueva columna o variable creada a partir de las anteriores columnas.</li>
+<li>
+<strong><code>funcion_vector()</code></strong>: función que devuelve un solo valor a partir de un vector.</li>
+</ul>
+<p>Algunas funciones que se pueden usar como función vector son:</p>
+<ul>
+<li>
+<strong><code>sum(vector)</code></strong> : Devuelte la suma de los componentes de <code>vector</code>.</li>
+<li>
+<strong><code>mean(vector)</code></strong> : Devuelve el valor promedio de los valores de <code>vector</code>.</li>
+<li>
+<strong><code>min(vector)</code></strong> : Devuelve el valor mínimo de los valores de <code>vector</code>.</li>
+<li>
+<strong><code>max(vector)</code></strong> : Devuelve el valor mínimo de los valores de <code>vector</code>.</li>
+<li>
+<strong><code>n_distinc(vector)</code></strong> : Devuelve el conteo de los valores diferentes dentro de <code>vector</code>.</li>
+<li>
+<strong><code>n(vector)</code></strong> : Devuelve el conteo de los valores dentro de <code>vector</code>.</li>
+<li>
+<strong><code>sd(vector)</code></strong> : Devuelve la desviación estandar de los valores de <code>vector</code>.</li>
+</ul>
+<p>Todas las funciones tienen la opción <code>ra.rm</code> para omitir o pasar por alto los valores que sean NA (No Applicable/Missing values) durante los cálculos, por ejemplo puede usar <code>mean(vector, na.rm = TRUE)</code> para calcular el promedio de <code>vector</code> descartando los datos que sean NA.</p>
+<p>La función summarise() agrupa todos los datos de una columna, y devuelve un sólo valor por columna.</p>
+<p>Para el ejemplo, si quisieramos no obtener el total sino el total por países usamos la función <code>group_by()</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="n">total_covid_paises_region</span> <span class="o">&lt;-</span>
+    <span class="n">covid_paises_region</span> <span class="o">%&gt;%</span> <span class="nf">group_by</span><span class="p">(</span><span class="n">location</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+    <span class="nf">summarise</span><span class="p">(</span><span class="n">total_contagios</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
+
+<span class="n">total_covid_paises_region</span>
+</code></pre>
+
+<p>Ejecutando, observamos en la consola:</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># A tibble: 4 × 2</span>
+  <span class="n">location</span> <span class="n">total_contagios</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>              <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Bolivia</span>          <span class="m">911503</span><span class="n">.</span>
+<span class="m">2</span> <span class="n">Chile</span>           <span class="m">3785492</span><span class="n">.</span>
+<span class="m">3</span> <span class="n">Ecuador</span>          <span class="m">889635</span><span class="n">.</span>
+<span class="m">4</span> <span class="n">Peru</span>            <span class="m">3588117</span><span class="n">.</span>
+</code></pre>
+
+<p><em>Nota: estos son resultados de datos suavizados</em></p>
+<p><strong><code>group_by(tabla, columna_1, columna_2 ...)</code></strong>
+Agrupa varias filas en una sola, las agrupa si y sólo si tienen el mismo valor en columna_1, luego las agrupa por valores en la  columna_2 y así sucesivamente. Esta función siempre va acompañada de la función <code>summarise()</code></p>
+<ul>
+<li>
+<strong><code>tabla</code></strong>: Dataframe o tabla de donde sus columnas servirán para contruir la nueva tabla.</li>
+<li>
+<strong><code>columna_n</code></strong>: nombre la columna de la cual se van a agrupar los valores con la función <code>summarise()</code>.</li>
+</ul>
+<p>Hagamos algo más interesante, queremos ver la evolución del contagios de COVID-19 por continentes.</p>
+<pre class="code literal-block"><span></span><code><span class="n">covid_continentes</span> <span class="o">&lt;-</span>
+  <span class="n">covid_data</span> <span class="o">%&gt;%</span> 
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">continent</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+  <span class="nf">summarise</span><span class="p">(</span><span class="n">total_contagios</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">continent</span><span class="p">))</span>
+</code></pre>
+
+<p>Graficando los resultados</p>
+<pre class="code literal-block"><span></span><code><span class="nf">ggplot</span><span class="p">(</span><span class="n">covid_continentes</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">date</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">total_contagios</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">continent</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_color_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s">"Set1"</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span> 
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Registro de contagios COVID-19 por Continente"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"(Datos suavizados)"</span><span class="p">,</span>
+    <span class="n">caption</span> <span class="o">=</span> <span class="s">"Fuente: Our World In Data"</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s">"Continente"</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p><img alt="Nuevos casos covid por Continente" src="../../../images/blog/filtrar-datos-r/covid_continentes.png"></p>
+<h3>Para que sirve la función mutate()</h3>
+<p>Una buen indicador, para saber si hemos mejorado el tratamiento y prevención contra la COVID-19 es hallar la relación entre el  muertes por cada 1000 contagiados (mientras menor valor tenga la variable, mejor estamos preparados para afrontar la COVID). Llamemos a esta nueva variable <code>indicador</code>, esta dependera de otras para su cálculo, la función <code>mutate()</code> no ayudará a calcularla.</p>
+<p><em>Puede que no sea excelente indicador y que no refleje muy bien lo que se quiere, pero para propositos de este ejemplo nos servirá</em></p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Obtenemos nuestros datos que nos van a ayudar a calcular el indicador</span>
+<span class="c1"># Filtramos los valores que sean iguales a 0 y los datos NA con filter()</span>
+<span class="n">covid_continentes_indicador</span> <span class="o">&lt;-</span>
+  <span class="n">covid_data</span> <span class="o">%&gt;%</span> 
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">continent</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+  <span class="nf">summarise</span><span class="p">(</span><span class="n">nuevos_casos</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">new_cases_smoothed</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">),</span> <span class="n">nuevas_muertes</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">new_deaths_smoothed</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="nf">filter</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">continent</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">nuevos_casos</span> <span class="o">!=</span> <span class="m">0</span> <span class="o">&amp;</span> <span class="n">nuevas_muertes</span> <span class="o">!=</span> <span class="m">0</span><span class="p">)</span>
+</code></pre>
+
+<p>Usamos la función mutate para obtener nuestro indicador</p>
+<pre class="code literal-block"><span></span><code><span class="n">covid_continentes_indicador</span> <span class="o">&lt;-</span> 
+  <span class="n">covid_continentes_indicador</span> <span class="o">%&gt;%</span> 
+  <span class="nf">mutate</span><span class="p">(</span><span class="n">indicador</span> <span class="o">=</span> <span class="n">nuevas_muertes</span><span class="o">/</span><span class="n">nuevos_casos</span><span class="o">*</span><span class="m">1000</span><span class="p">)</span>
+</code></pre>
+
+<p><strong><code>mutate(tabla, nueva_columna_1 = f(columna_1, columna_2...), nueva_columna_2 = f(columna_n, ...)... )</code></strong>
+Crea una nuevas columnas las modifica a partir de los datos de otras columnas.</p>
+<ul>
+<li>
+<strong><code>tabla</code></strong> : Dataframe o tabla de donde sus columnas servirán para obtener  la nueva tabla.</li>
+<li>
+<strong><code>nueva_columna_n</code></strong> : Nombre la nueva columna que se crea a partir de otras columnas.</li>
+<li>
+<strong><code>columna_n</code></strong> : Nombre la columna o variable de la <code>tabla</code>.</li>
+<li>
+<strong><code>f(columna_1, columna_2, ...)</code></strong> : Representa la combinación algebraica de las variables que van a devolver el nuevos valores de la nueva_columna_n. (Observe que usamos nombre de la columna y variable como sinónimos)</li>
+</ul>
+<p>Mostrando los resultados en una gráfica</p>
+<pre class="code literal-block"><span></span><code><span class="nf">ggplot</span><span class="p">(</span><span class="n">covid_continentes_indicador</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="nf">geom_line</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">date</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">indicador</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">continent</span><span class="p">),</span> <span class="n">size</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_color_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s">"Dark2"</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span> 
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Relación diaria de (muertes)/(1000 contagiados) COVID-19"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"(Datos suavizados)"</span><span class="p">,</span>
+    <span class="n">caption</span> <span class="o">=</span> <span class="s">"Fuente: Our World In Data"</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s">"Continente"</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p><img alt="Relación muertes diarias por 1000 contagiados por Continente" src="../../../images/blog/filtrar-datos-r/covid_continentes_indicador.png"></p>
+<h3>Conclusiones</h3>
+<p>Las funciones mostradas en el árticulo son las más usadas y permiten una mejor manipulación de datos en R. Como siempre es bueno revisar la <a href="https://www.rdocumentation.org">documentación oficial</a> de los correspondientes paquetes si se quiere aprender más.</p>
+<p>Puede descargar el <a href="https://github.com/EverVino/Example_data_covid_r">repositorio de este artículo aquí</a>.</p>
+<h3>Referencias</h3>
+<p><a href="https://github.com/owid/covid-19-data">Our World In Data</a></p>
+<p><a href="https://www.rdocumentation.org">Documentacion de R</a></p>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/code-abbey-una-plataforma-mejorar-tu-habilidad-en-programacion/" rel="prev" title="Code Abbey una plataforma para mejorar tu habilidad en programación">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next disabled">
+                <a rel="next">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/",
+        disqus_title="C\u00f3mo filtrar datos de tu tabla con dplyr en R",
+        disqus_identifier="cache/pages/blog/filtrar-datos-r/art-filtrar-datos.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
