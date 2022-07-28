@@ -68,6 +68,7 @@ NAVIGATION_LINKS = {
         ("/blog/", "Blog"),
         ("/guidelines/list", "Guidelines"),
         ("/team/", "Team"),
+        ("/partners/", "Partners"),
         ("/about/", "About"),
     ),
 }
