@@ -35,13 +35,15 @@ p_load("scales") # Biblioteca para dar formato de miles en el eje "y"
 
 ```
 
-Recuerde, que tambien puede instalar y abrir las bibliotecas de manera tradicional, por ejemplo con: `install.packages("tidyr")`, luego abrir la misma biblioteca con `library(tidyr)`.
+Recuerde, también puede instalar y abrir las bibliotecas de manera tradicional, por ejemplo con: `install.packages("tidyr")`, luego abrir la misma biblioteca con `library(tidyr)`.
 
 ## Importando nuestros datos
 
-La base de datos usada ha sido descargada de [La base de datos de Instituto de Estadística de Bolivia (INE)](https://www.ine.gob.bo/). Una vez descargada la base de datos se la modifica para que es encuentre en formato `.csv` y la importamos a nuestro entorno de R. Puede descargar los archivos usados en este artículo [Repositorio de este artículo aquí](https://github.com/EverVino/Example_data_tidyr).
+La base de datos usada, ha sido descargada de [La base de datos de Instituto de Estadística de Bolivia (INE)](https://www.ine.gob.bo/). Descargada la base de datos se la modifica para que se encuentre en formato `.csv` y la importamos a nuestro entorno de R.
 
-Importamos los el archivo `.csv` a la variable `datos_turistas`.
+Puede descargar los archivos usados en este artículo [Repositorio de este artículo aquí](https://github.com/EverVino/Example_data_tidyr).
+
+Importamos el archivo `.csv` a la variable `datos_turistas`.
 
 ```r
 
@@ -64,17 +66,17 @@ dbl (168): 31/01/08, 28/02/08, 31/03/08, 30/04/08, 31/05/08, 30/06/08, 31/07/08,
 
 ```
 
-Nuestra tabla tiene varias columnas correspondientes al acumulativo por mes. Si queremos graficar estos datos con `ggplot` estos datos no nos van a ser de mucha utilidad. Por ello vamos a usar `gather()` para convertir las fechas de las columnas en datos de una sóla columna.
+Nuestra tabla tiene varias columnas correspondientes al acumulativo por mes, si queremos graficar estos datos con `ggplot()` estos datos no nos van a ser de mucha utilidad. Por ello vamos a usar `gather()` para convertir las fechas de las columnas en datos de una sola columna.
 
 Si quiere explorar los datos manualmente puede ejecutar la función `(View(datos_turistas))` en la consola.
 
 ## Cómo usar la función gather()
 
-La función gather puede agrupar muchas los nombres de las columnas en una sola, así como se muestra en la siguiente animación
+La función `gather()` puede agrupar muchas los nombres de las columnas en una sola, así como se muestra en la siguiente animación
 
 ![Fucionamiento de gather de tidyr()](https://user-images.githubusercontent.com/209714/48026738-e9a06a80-e114-11e8-9a24-ecc8b37b8a53.gif)
 
-En nuestro caso tenemos algo similar, queremos agrupar las fechas en una columna llamada `Fecha`.
+En nuestro caso quremos hacer algo similar, agrupar las fechas en una columna llamada `Fecha`.
 
 ```r
 
@@ -91,7 +93,7 @@ En nuestro caso tenemos algo similar, queremos agrupar las fechas en una columna
 
 ```
 
-Usando la función `gather()` y tenemos:
+Usando la función `gather()` tenemos:
 
 ```r
 
@@ -126,9 +128,9 @@ Ejecutando head(datos_turistas), notamos que hemos obtenido lo deseado.
 Función que es usada para agrupar columnas en dos nuevas columnas.
 
 - **`data`** : Dataframe o tabla que se va a modificar.
-- **`key`** : Nombre de la nueva columna que va almacenar los *nombres de la columnas* que van a agruparse.
-- **`value`** : Nombre de la nueva columna que va contener los *valores de la columnas* que se agrupan.
-- **`...`** : Nombres o seleccion de columnas a agruparse, puede usar los nombres de las columnas con la función concatenate `c()`. Ejemplo `c(nombre_col1, nombre_col2...)`  ó hacer la selección del complemento con `!c()`, también puede hacer la seleccion haciendo referencia al número de columna. a una serie sucesiva Ej.: `n_col1:n_col2`.
+- **`key`** : Nombre de la nueva columna que va almacenar los *nombres de la columnas* que se van a agruparse.
+- **`value`** : Nombre de la nueva columna que va contener los *valores de la columnas* que se van a agruparse.
+- **`...`** : Nombres o selección de columnas a agruparse, puede usar los nombres de las columnas con la función concatenar `c()`. Ejemplo `c(nombre_col1, nombre_col2...)`  ó hacer la selección del complemento con `!c()`, también puede usar como referencia el número de columna. Para hacer referencia a una serie sucesiva use `:`  Ejemplo: `n_col1:n_col2`.
 
 ## Separa una columna con separate()
 
@@ -146,7 +148,7 @@ datos_turistas <-
 
 ```
 
-Podemos observar en la consola
+Podemos observar en la consola.
 
 ```r
 
@@ -169,11 +171,13 @@ Función que es usada para separar una columna en varias.
 
 - **`data`** : Dataframe o tabla que se va a modificar.
 - **`col`** : Nombre de la columna que va a separarse.
-- **`into`** : Nombres de la nuevas columnas que van a crearse a partir de `col`. Puede usar para nombrar a las columnas la función concatenate `c()`.
+- **`into`** : Nombres de la nuevas columnas que van a crearse a partir de `col`. Puede usar para nombrar a las columnas la función concatenar `c()`.
 - **`sep`** : Separador, un caracter que va a servir para identificar en donde se separa para generar las nuevas columnas. Puede usar *Regular Expresions*.
-- **`remove`** : Acepta valores booleanos `TRUE` y `FALSE`, por defecto es `TRUE`, si es igual TRUE borra la columna que se separa, en `FALSE` la mantiene.
+- **`remove`** : Acepta valores booleanos `TRUE` y `FALSE`, por defecto es `TRUE`, si es igual `TRUE` borra la columna que se separa, en `FALSE` la mantiene.
 
-Vamos a aprovechar estos nuevos datos generados para graficar el top de turistas que han visitado Bolivia en los años 2016-2021. En el código abajo usamos muchas funciones de la librería `dplyr` si quiere aprender más sobre esa librería puede leer [este artículo](https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/).
+Vamos a aprovechar los nuevos datos generados, para graficar el top de turistas que han visitado Bolivia en los años 2016-2021.
+
+En el código abajo usamos muchas funciones de la biblioteca `dplyr` si quiere aprender más sobre esa biblioteca puede leer [este artículo](https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/).
 
 ```r
 
@@ -224,7 +228,7 @@ ggplot(data = top_turistas_2016_2021) +
 
 ## Función unite()
 
-Unite es una función complementaria a `separate` y hace lo contrario, une las columnas en un sola.
+Unite es una función complementaria a `separate()` y hace lo contrario, une las columnas en un sola.
 Vamos a usarlo para juntar las columnas de `mes` y `año`.
 
 ```r
@@ -257,13 +261,13 @@ Función que une varias columnas en una.
 
 - **`data`** : Dataframe o tabla que se va a modificar.
 - **`col`** : Nombre de la nueva columna que va a unir otras columnas.
-- **`... `** : Nombres de la nuevas columnas que van a juntarse en `col`. Puede usar para nombrar las columnas la función concatenate `c()`.
+- **`... `** : Nombres de la nuevas columnas que van a juntarse en `col`. Puede usar para nombrar las columnas la función concatenar `c()`.
 - **`sep`** : Separador, un caracter que va a servir para unir los valores de las columnas que se unen.
 - **`remove`** : Acepta valores booleanos `TRUE` y `FALSE`, por defecto es `TRUE`, si es igual TRUE borra la columnas que se unen, en `FALSE` las mantiene.
 
 ## Función spread()
 
-Esta función es la que complementa a la función gather(), y hace exactamente lo contrario. esparcir una columna en varias.
+Esta función es la que complementa a la función `gather()`, y hace exactamente lo contrario. esparcir una columna en varias.
 
 Antes de utilizar `spread()` vamos a agrupar nuestro datos en trimestres.
 
@@ -297,7 +301,7 @@ En la consola podemos ver
 
 ```
 
-Ahora podemos expadir usando la función `spread()` los datos de la columna trimestre en columnas independientes.
+Ahora podemos usamos `spread()`, para expandir los datos de la columna trimestre en columnas independientes.
 
 ```r
 
@@ -310,7 +314,7 @@ datos_turistas_trimestre <-
 
 ```
 
-Ahora observamos que nuestros se han esparcido, a veces este formato es requerido para visualización de datos en otros frameworks.
+Ahora observamos que nuestros se han esparcido, este formato es útil para visualización de datos en otros frameworks.
 
 ```r
 
@@ -331,13 +335,13 @@ Ahora observamos que nuestros se han esparcido, a veces este formato es requerid
 
 **`spread(data, key, value)`**
 
-Función que es usada para esparcir los datos de una como nombres 
+Función que es usada para esparcir los datos de una como nombres de columnas.
 
 - **`data`** : Dataframe o tabla que se va a modificar.
 - **`key`** : Nombre de la columna cuyos valores se van esparcir como los *nombres de la  nuevas columnas*.
 - **`value`** : Nombre de la columna cuyos valores van a convertirse en los  *nuevos valores de las nuevas columnas*.
 
-Aprovechemos esta estos datos para graficar los top paises que han visitado Bolivia en el primer trimestre trimestre del 2019
+Aprovechemos esta estos datos para graficar los top paises que han visitado Bolivia en el primer trimestre trimestre del 2019.
 
 ```r
 
@@ -366,7 +370,7 @@ ggplot(data = top_turistas_trimestre_1_2019) +
     subtitle = "Top 10 nacionalidades",
     caption = "Fuente: INE Bolivia"
   )
-#p_unload(all) #Ejecute esta línea de comando para cerrar las librerías abiertas con "pacman"
+#p_unload(all) #Ejecute esta línea de comando para cerrar las bibliotecas abiertas con "pacman"
 
 ```
 
@@ -374,12 +378,14 @@ ggplot(data = top_turistas_trimestre_1_2019) +
 
 ## Outro
 
-Las funciones mostradas en el árticulo son las más usadas y permiten una mejor manipulación de datos en R. Como siempre es bueno revisar la [documentación oficial](https://www.rdocumentation.org) de los correspondientes paquetes si se quiere aprender más.
+Las funciones mostradas en el árticulo son las más usadas y permiten una mejor manipulación de datos en R. Como siempre es bueno revisar la [documentación oficial](https://www.rdocumentation.org) si se quiere aprender más.
 
 Puede descargar el [repositorio de este artículo aquí](https://github.com/EverVino/Example_data_tidyr).
 
 ## Referencias
 
-* [Git Hub Issues tidyr](https://github.com/tidyverse/tidyr/issues/515)
-* [Instituto de Estadística de Bolivia (INE)](https://www.ine.gob.bo/)
-* [Documentacion de R](https://www.rdocumentation.org)
+- [Git Hub Issues tidyr](https://github.com/tidyverse/tidyr/issues/515)
+
+- [Instituto de Estadística de Bolivia (INE)](https://www.ine.gob.bo/)
+
+- [Documentacion de R](https://www.rdocumentation.org)
