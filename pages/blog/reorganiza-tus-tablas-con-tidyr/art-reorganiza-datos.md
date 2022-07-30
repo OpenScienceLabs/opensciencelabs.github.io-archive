@@ -14,7 +14,7 @@
 
 ![hoja de datos](../../../images/blog/reorganiza-tus-tablas-con-tidyr/header.png)
 
-En este artículo modificaremos la forma de nuestra tabla, combinando varias columnas en una sola o viceversa, usando la biblioteca `tidyr` con sus funciones `gather()`, `spread()`, `separate()`, y `unite()` con ejemplos.
+En este artículo, modificaremos la forma de nuestra tabla, combinando varias columnas en una sola o viceversa, usando la biblioteca `tidyr` con sus funciones `gather()`, `spread()`, `separate()`, y `unite()` con ejemplos.
 
 <!-- TEASER_END -->
 
