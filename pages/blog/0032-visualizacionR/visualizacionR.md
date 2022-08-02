@@ -3,8 +3,8 @@
 .. slug: herramientas-de-visualizacion-en-r
 .. date: 2020-04-09
 .. author: Yurely Camacho
-.. tags: r, visualization
-.. category: r 
+.. tags: r, visualization, lattice, ggplot2, tidyverse, ggmap, plotly, shiny
+.. category: r
 .. link: 
 .. description: 
 .. type: text
