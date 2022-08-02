@@ -3,7 +3,7 @@
 .. slug: primeros-pasos-con-rstudio
 .. date: 2021-04-05
 .. author: Anavelyz Pérez
-.. tags: ide, r
+.. tags: ide, r, rstudio, rstudio Desktop, rstudio server, interfaz de r
 .. category: ide
 .. link:
 .. description:
