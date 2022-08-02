@@ -28,7 +28,7 @@ así, poder comunicarla de una manera asertiva.
 
 La visualización es un método de exploración de datos que muestra, de
 una mirada, algunas cosas que de otra
-forma hubiese sido muy difı́cil observar. Por tanto, se suele realizar
+forma hubiese sido muy difícil observar. Por tanto, se suele realizar
 al comienzo de cualquier análisis estadístico formal que se haga con
 ellos o para la presentación de resultados en informes descriptivos de datos. La
 visualización de datos se ve grandemente influenciada por su calidad y
@@ -60,15 +60,14 @@ En cuanto a la parte de generación de gráficos, en R existen dos
 *motores gráficos*, esto se trata de una serie de funciones que permiten
 realizar manipulaciones gráficas básicas: como: trazar líneas, dibujar
 puntos, curvas, entre otros elementos. Estas funciones no son manejadas
-directamente por los usuarios, sino utiliza funciones de alto nivel
+directamente por los usuarios, si no utiliza funciones de alto nivel
 (como la función `plot`). Estos motores son: "El motor tradicional o
 base de R" y "El motor *grid*".
 
 Las funciones básicas de R para gráficos como, `plot`, `hist`, `boxplot`
 y otras, están desarrolladas bajo el motor tradicional de R. No
 obstante, para construir otro tipo de gráficos no es suficientemente
-adecuada. Por tal motivo, \[Paul Murrell\](enlace a biografía) desarrolló
-el motor grid.
+adecuada. Por tal motivo, [Paul Murrell](https://www.stat.auckland.ac.nz/~paul/) desarrolló el motor grid.
 
 ## Algunas consideraciones sobre el motor tradicional de R
 
@@ -82,7 +81,7 @@ gráficas, la mayoría de las cuales se encuentran en el paquete
 
 - `hist()` para un histograma.
 
-- `barplot()` permite realizar un gráfico de barras.
+- `barplot()` permite hacer un gráfico de barras.
 
 - `boxplot()` para un diagrama de caja y bigotes.
 
@@ -97,7 +96,7 @@ matrices de dispersión, gráficos de independencia y de estrellas,
 realizar combinaciones de gráficos, colocar curvas a histogramas,
 efectos de sombreado. También se pueden obtener gráficos para
 representar la salida de un modelo estadístico como: regresión lineal
-simple,análisis de componentes principales, series de tiempo, cartas o
+simple, análisis de componentes principales, series de tiempo, cartas o
 diagramas de control.
 
 Esos gráficos pueden ser almacenados para su posterior reutilización en
@@ -110,7 +109,7 @@ A continuación daremos una descripción breve sobre algunos paquetes
 
 ### lattice
 
-El paquete fue escrito por \[Deepayan Sarkar\](enlace a biografía) con el
+El paquete fue escrito por \[Deepayan Sarkar\](https://www.isid.ac.in/~deepayan/) con el
 objetivo de mejorar los gráficos básicos de R, proporcionando mejores
 valores por defecto y tiene la capacidad de mostrar, de una manera
 fácil, las relaciones multivariantes. Está desarrollado bajo el motor
@@ -118,24 +117,22 @@ gráfico grid. Con este paquete puedes realizar los gráficos *trellis*,
 que describen situaciones complejas (mayormente multivariantes) como la
 relación entre variables condicionada a una o más variables,
 representándolo en un sólo gráfico organizado en paneles. Además tiene
-la funcionalidad para generar gráficos en 3D, puedes consultar la
-\[documentación de este paquete\](enlace a documentación lattice) para más
+la funcionalidad para generar gráficos en 3D, puedes consultar la [documentación de este paquete](http://cran.fhcrc.org/web/packages/lattice/) para más
 información.
 
 ### ggplot2
 
-Es un paquete apoyado en el motor grid. Fue desarrollado por \[Hardley
-Wickham\](enlace a biografía) como una implementación de la metodología
+Es un paquete apoyado en el motor grid. Fue desarrollado por [Hardley Wickham](https://hadley.nz/) como una implementación de como una implementación de la metodología
 de visualización de datos llamada *The Grammar of Graphics* cuya idea
 consiste en especificar de manera independiente las componentes del
-gráfico y luego combinarlas. Es un paquete ampliamante difundido y
+gráfico y luego combinarlas. Es un paquete ampliamente difundido y
 utilizado en la actualidad por los analistas de datos. Mantiene una
 estética elegante y profesional. Este paquete viene incluido dentro de
 [tidyverse](https://www.tidyverse.org/) que engloba un conjunto de
 paquetes para ciencia de datos. Se pueden realizar gráficos interactivos
 y animados.
 
-Básicamente los componentes del paquete son: **Estéticas** (color, forma
+Básicamente, los componentes del paquete son: **Estéticas** (color, forma
 de un punto, relleno, entre otras), **Capas** (o geoms en el paquete)
 por ejemplo, `geom_point`, `geom_line`, `geom_histogram`, `geom_bar`,
 `geom_boxplot`, **Facetas** y **Temas**, referentes a aspectos
@@ -149,12 +146,12 @@ Permite la representación de información georreferenciada, tiene la
 misma arquitectura que ggplot2. Ggmap permite añadir a los gráficos de
 ggplot2, una capa cartográfica adicional para lo cual usa recursos
 disponibles en la web a través de APIs de Google y otros. Más
-información en (enlace a documentación o sitio web de ggmap)
+información en (enlace a documentación o sitio web de ggmap).
 
 ### plotly
 
 Con plotly puedes realizar gráficos interactivos y dinámicos de calidad
-de publicación, sumamente úitiles para los resultados que se difunden a
+de publicación, sumamente útiles para los resultados que se difunden a
 través de Internet. Permite hacer gráficos de líneas, dispersión, área,
 barras, error, cajas, histogramas, mapas térmicos, subgráficos, de
 múltiples ejes y gráficos 3D. Es gratuito y de código abierto con
@@ -198,7 +195,7 @@ de los datos y la potencia de R para hacerlo.
 - *R para profesionales de los datos: una introducción*. Gil Carlos.
   Abril 2018.
 
-- *Gráficos Estadı́sticos con R*. Correa Juan y González Nelfi.
-  Universidad Nacional de Colombia, Sede Medellı́n. 2002.
+- *Gráficos Estadísticos con R*. Correa Juan y González Nelfi.
+  Universidad Nacional de Colombia, Sede Medellín. 2002.
 
-- [R Users Group Ecuador](https://rpubs.com/RUsersGroup-Ecuador/graf)
+- [R Users Group Ecuador](https://rpubs.com/RUsersGroup-Ecuador/graf).
