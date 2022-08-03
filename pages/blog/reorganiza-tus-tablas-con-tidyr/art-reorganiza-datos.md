@@ -72,7 +72,7 @@ Si quiere explorar los datos manualmente puede ejecutar la función `(View(datos
 
 ## Cómo usar la función gather()
 
-La función `gather()` puede agrupar muchas los nombres de las columnas en una sola, así como se muestra en la siguiente animación
+La función `gather()` puede agrupar muchas los nombres de las columnas en una sola, así como se muestra en la siguiente animación.
 
 ![Fucionamiento de gather de tidyr()](https://user-images.githubusercontent.com/209714/48026738-e9a06a80-e114-11e8-9a24-ecc8b37b8a53.gif)
 
