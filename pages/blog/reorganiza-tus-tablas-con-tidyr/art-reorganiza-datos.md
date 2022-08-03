@@ -301,7 +301,7 @@ En la consola podemos ver
 
 ```
 
-Ahora podemos usamos `spread()`, para expandir los datos de la columna trimestre en columnas independientes.
+Ahora podemos usar `spread()`, para expandir los datos de la columna trimestre en columnas independientes.
 
 ```r
 
