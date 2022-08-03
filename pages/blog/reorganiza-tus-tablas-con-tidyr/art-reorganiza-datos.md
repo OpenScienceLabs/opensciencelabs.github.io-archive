@@ -279,7 +279,7 @@ datos_turistas_trimestre <- datos_turistas_trimestre %>%
   group_by(Nacionalidad, trimestre) %>%
   summarise(turistas_trimestre = sum(Turistas))
 
-# También podemos utilizar la columna `Fecha` para tranformar a trimestres, con el argumento `format=%d/%m/%y`
+# También podemos utilizar la columna `Fecha` para transformar a trimestres, con el argumento `format=%d/%m/%y`
 
 ```
 
