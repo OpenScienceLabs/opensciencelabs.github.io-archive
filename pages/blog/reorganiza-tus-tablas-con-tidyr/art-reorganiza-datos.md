@@ -335,7 +335,7 @@ Ahora observamos que nuestros datos se han esparcido, este formato es útil para
 
 **`spread(data, key, value)`**
 
-Función que es usada para esparcir los datos de una como nombres de columnas.
+Función que es usada para esparcir los datos de una columna como nombres de columnas.
 
 - **`data`** : Dataframe o tabla que se va a modificar.
 - **`key`** : Nombre de la columna cuyos valores se van esparcir como los *nombres de la  nuevas columnas*.
