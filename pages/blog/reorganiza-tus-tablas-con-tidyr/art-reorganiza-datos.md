@@ -314,7 +314,7 @@ datos_turistas_trimestre <-
 
 ```
 
-Ahora observamos que nuestros se han esparcido, este formato es útil para visualización de datos en otros frameworks.
+Ahora observamos que nuestros datos se han esparcido, este formato es útil para visualización de datos en otros frameworks.
 
 ```r
 
