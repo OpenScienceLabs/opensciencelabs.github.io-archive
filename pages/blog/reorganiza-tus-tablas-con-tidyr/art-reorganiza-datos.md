@@ -388,4 +388,4 @@ Puede descargar el [repositorio de este artículo aquí](https://github.com/Ever
 
 - [Instituto de Estadística de Bolivia (INE)](https://www.ine.gob.bo/)
 
-- [Documentacion de R](https://www.rdocumentation.org)
+- [Documentación de R](https://www.rdocumentation.org)
