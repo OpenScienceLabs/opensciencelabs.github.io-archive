@@ -341,7 +341,7 @@ Función que es usada para esparcir los datos de una como nombres de columnas.
 - **`key`** : Nombre de la columna cuyos valores se van esparcir como los *nombres de la  nuevas columnas*.
 - **`value`** : Nombre de la columna cuyos valores van a convertirse en los  *nuevos valores de las nuevas columnas*.
 
-Aprovechemos esta estos datos para graficar los top paises que han visitado Bolivia en el primer trimestre trimestre del 2019.
+Aprovechemos estos datos para graficar los top países que han visitado Bolivia en el primer trimestre  del 2019.
 
 ```r
 
