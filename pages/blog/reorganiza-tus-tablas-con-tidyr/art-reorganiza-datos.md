@@ -72,7 +72,7 @@ Si quiere explorar los datos manualmente puede ejecutar la función `(View(datos
 
 ## Cómo usar la función gather()
 
-La función `gather()` puede agrupar muchas los nombres de las columnas en una sola, así como se muestra en la siguiente animación.
+La función `gather()` puede agrupar los nombres de las columnas en una sola, así como se muestra en la siguiente animación.
 
 ![Fucionamiento de gather de tidyr()](https://user-images.githubusercontent.com/209714/48026738-e9a06a80-e114-11e8-9a24-ecc8b37b8a53.gif)
 
@@ -196,7 +196,7 @@ datos_turistas_2016_2021 <-
   group_by(Nacionalidad, año) %>%
   summarise(turistas_anuales = sum(Turistas))
 
-#Extrayendo los top turistas visitantes de Bolivia
+# Extrayendo los top turistas visitantes de Bolivia
 top_turistas_2016_2021 <- 
   datos_turistas_2016_2021 %>% 
   arrange(desc(turistas_anuales)) %>%
@@ -263,7 +263,7 @@ Función que une varias columnas en una.
 - **`col`** : Nombre de la nueva columna que va a unir otras columnas.
 - **`... `** : Nombres de la nuevas columnas que van a juntarse en `col`. Puede usar para nombrar las columnas la función concatenar `c()`.
 - **`sep`** : Separador, un caracter que va a servir para unir los valores de las columnas que se unen.
-- **`remove`** : Acepta valores booleanos `TRUE` y `FALSE`, por defecto es `TRUE`, si es igual TRUE borra la columnas que se unen, en `FALSE` las mantiene.
+- **`remove`** : Acepta valores booleanos `TRUE` y `FALSE`, por defecto es `TRUE`, si es igual `TRUE` borra la columnas que se unen, en `FALSE` las mantiene.
 
 ## Función spread()
 
@@ -341,7 +341,7 @@ Función que es usada para esparcir los datos de una columna como nombres de col
 - **`key`** : Nombre de la columna cuyos valores se van esparcir como los *nombres de la  nuevas columnas*.
 - **`value`** : Nombre de la columna cuyos valores van a convertirse en los  *nuevos valores de las nuevas columnas*.
 
-Aprovechemos estos datos para graficar los top países que han visitado Bolivia en el primer trimestre  del 2019.
+Aprovechemos estos datos para graficar los top países que han visitado Bolivia en el primer trimestre del 2019.
 
 ```r
 
