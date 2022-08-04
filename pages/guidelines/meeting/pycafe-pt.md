@@ -39,7 +39,7 @@
 
  Como a sala do Gather Town possui limitação de 25 participantes. Utilizamos o [Eventbrite](https://eventbrite.com/) para coordenação dos participantes, onde um evento de divulgação é criado, com tickets grátis, para que as pessoas interessadas possam receber novidades via email e sincronizar a data do evento com seus calendários.
 
- <img src="../../../images/guidelines/pycafe/pycafe_event.png" alt="pycafe_room" width="auto"/>
+ <img src="../../../images/guidelines/pycafe/pycafe_event.png" alt="pycafe_event" width="auto"/>
  
 
 #### Dê sua Talk!
