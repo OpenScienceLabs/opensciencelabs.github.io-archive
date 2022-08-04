@@ -23,6 +23,11 @@
 </li>
 <li><a href="/guidelines/faq/es">faq</a></li>
 <li><a href="/guidelines/fund-raiser/es">fund-raiser</a></li>
+<li><strong>meeting</strong>
+  <ul>
+    <li><a href="/guidelines/meeting/pt">PyCafé+Talks Latinoamérica</a></li>
+  </ul>
+</li>
 <li><a href="/guidelines/mentoring/es">mentoring</a></li>
 <li><a href="/guidelines/mkt/opencollective">mkt</a></li>
 <li><a href="/guidelines/videos/es">videos</a></li>
