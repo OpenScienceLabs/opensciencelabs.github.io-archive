@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reorganiza tu tabla con tidyr en R | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/reorganiza-tus-tablas-con-tidyr/reorganiza-tus-tablas-con-tidyr/">
+<link rel="icon" href="../../../images/favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213158050-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Ever Vino">
+<meta property="description" content="En este artículo, modificaremos la forma de nuestra tabla, combinando varias columnas en una sola o viceversa, usando la biblioteca tidyr con sus funciones gather(), spread(), separate(), y unite() co">
+<link rel="prev" href="../../filtrar-datos-r/filtrar-datos-r/" title="Cómo filtrar datos de tu tabla con dplyr en R" type="text/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Reorganiza tu tabla con tidyr en R">
+<meta property="og:url" content="https://opensciencelabs.org/blog/reorganiza-tus-tablas-con-tidyr/reorganiza-tus-tablas-con-tidyr/">
+<meta property="og:description" content="En este artículo, modificaremos la forma de nuestra tabla, combinando varias columnas en una sola o viceversa, usando la biblioteca tidyr con sus funciones gather(), spread(), separate(), y unite() co">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-07-17T19:52:05Z">
+<meta property="article:tag" content="columnas a filas">
+<meta property="article:tag" content="data science">
+<meta property="article:tag" content="filas a columnas">
+<meta property="article:tag" content="filtrar datos">
+<meta property="article:tag" content="open science">
+<meta property="article:tag" content="r">
+<meta property="article:tag" content="tidyr">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/list" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../team/" class="nav-link">Team</a>
+                </li>
+<li class="nav-item">
+<a href="../../../partners/" class="nav-link">Partners</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Reorganiza tu tabla con tidyr en R</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/ever-vino/">Ever Vino</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-07-17T19:52:05Z" itemprop="datePublished" title="2022-07-17">2022-07-17</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/reorganiza-tus-tablas-con-tidyr/art-reorganiza-datos.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/columnas-a-filas/" rel="tag">columnas a filas</a></li>
+            <li><a class="tag p-category" href="../../../categories/data-science/" rel="tag">data science</a></li>
+            <li><a class="tag p-category" href="../../../categories/filas-a-columnas/" rel="tag">filas a columnas</a></li>
+            <li><a class="tag p-category" href="../../../categories/filtrar-datos/" rel="tag">filtrar datos</a></li>
+            <li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+            <li><a class="tag p-category" href="../../../categories/r/" rel="tag">r</a></li>
+            <li><a class="tag p-category" href="../../../categories/tidyr/" rel="tag">tidyr</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Reorganiza tu tabla con tidyr en R  -->
+
+<p><img alt="hoja de datos" src="../../../images/blog/reorganiza-tus-tablas-con-tidyr/header.png"></p>
+<p>En este artículo, modificaremos la forma de nuestra tabla, combinando varias columnas en una sola o viceversa, usando la biblioteca <code>tidyr</code> con sus funciones <code>gather()</code>, <code>spread()</code>, <code>separate()</code>, y <code>unite()</code> con ejemplos.</p>
+<!-- TEASER_END -->
+
+<h3>Requisitos</h3>
+<p>Por comodidad usamos la biblioteca <code>pacman</code> como gestor de paquetes.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># install.packages("pacman") Para instalar la biblioteca pacman</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">pacman</span><span class="p">)</span> <span class="c1"># Gestor de paquetes en R</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"readr"</span><span class="p">)</span> <span class="c1"># Biblioteca para importar archivos csv</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"tidyr"</span><span class="p">)</span> <span class="c1"># Biblioteca para manipular datos</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"ggplot2"</span><span class="p">)</span>   <span class="c1"># Biblioteca para graficar datos</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"dplyr"</span><span class="p">)</span>  <span class="c1"># Biblioteca para filtrar datos de la tabla</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"zoo"</span><span class="p">)</span> <span class="c1"># Biblioteca para transformar fechas a trimestres</span>
+<span class="nf">p_load</span><span class="p">(</span><span class="s">"scales"</span><span class="p">)</span> <span class="c1"># Biblioteca para dar formato de miles en el eje "y"</span>
+</code></pre>
+
+<p>Recuerde, también puede instalar y abrir las bibliotecas de manera tradicional, por ejemplo con: <code>install.packages("tidyr")</code>, luego abrir la misma biblioteca con <code>library(tidyr)</code>.</p>
+<h3>Importando nuestros datos</h3>
+<p>La base de datos usada, ha sido descargada de <a href="https://www.ine.gob.bo/">La base de datos de Instituto de Estadística de Bolivia (INE)</a>. Descargada la base de datos se la modifica para que se encuentre en formato <code>.csv</code> y la importamos a nuestro entorno de R.</p>
+<p>Puede descargar los archivos usados en este artículo <a href="https://github.com/EverVino/Example_data_tidyr">Repositorio de este artículo aquí</a>.</p>
+<p>Importamos el archivo <code>.csv</code> a la variable <code>datos_turistas</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="n">covid_data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">"turistas.csv"</span><span class="p">)</span>
+</code></pre>
+
+<p>En la consola observamos lo siguiente:</p>
+<pre class="code literal-block"><span></span><code><span class="n">Rows</span><span class="o">:</span> <span class="m">44</span> <span class="n">Columns</span><span class="o">:</span> <span class="m">169</span>                                                                                                     
+── <span class="n">Column</span> <span class="n">specification</span> ───────────────────────────────────────────────────────────────
+<span class="n">Delimiter</span><span class="o">:</span> <span class="s">","</span>
+<span class="nf">chr   </span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="o">:</span> <span class="n">Nacionalidad</span>
+<span class="nf">dbl </span><span class="p">(</span><span class="m">168</span><span class="p">)</span><span class="o">:</span> <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">28</span><span class="o">/</span><span class="m">02</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">31</span><span class="o">/</span><span class="m">03</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">30</span><span class="o">/</span><span class="m">04</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">31</span><span class="o">/</span><span class="m">05</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">30</span><span class="o">/</span><span class="m">06</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">31</span><span class="o">/</span><span class="m">07</span><span class="o">/</span><span class="m">08</span><span class="p">,</span> <span class="m">31</span><span class="kc">...</span>
+
+ℹ <span class="n">Use</span> <span class="n">`spec()`</span> <span class="n">to</span> <span class="n">retrieve</span> <span class="n">the</span> <span class="n">full</span> <span class="n">column</span> <span class="n">specification</span> <span class="n">for</span> <span class="n">this</span> <span class="n">data.</span>
+ℹ <span class="n">Specify</span> <span class="n">the</span> <span class="n">column</span> <span class="n">types</span> <span class="n">or</span> <span class="n">set</span> <span class="n">`show_col_types = FALSE`</span> <span class="n">to</span> <span class="n">quiet</span> <span class="n">this</span> <span class="n">message.</span>
+</code></pre>
+
+<p>Nuestra tabla tiene varias columnas correspondientes al acumulativo por mes, si queremos graficar estos datos con <code>ggplot()</code> estos datos no nos van a ser de mucha utilidad. Por ello vamos a usar <code>gather()</code> para convertir las fechas de las columnas en datos de una sola columna.</p>
+<p>Si quiere explorar los datos manualmente puede ejecutar la función <code>(View(datos_turistas))</code> en la consola.</p>
+<h3>Cómo usar la función gather()</h3>
+<p>La función <code>gather()</code> puede agrupar los nombres de las columnas en una sola, así como se muestra en la siguiente animación.</p>
+<p><img alt="Fucionamiento de gather de tidyr()" src="https://user-images.githubusercontent.com/209714/48026738-e9a06a80-e114-11e8-9a24-ecc8b37b8a53.gif"></p>
+<p>En nuestro caso quremos hacer algo similar, agrupar las fechas en una columna llamada <code>Fecha</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># A tibble: 6 × 169</span>
+  <span class="n">Nacionalidad</span>   <span class="n">`31/01/08`</span> <span class="n">`28/02/08`</span> <span class="n">`31/03/08`</span> <span class="n">`30/04/08`</span> <span class="n">`31/05/08`</span> <span class="n">`30/06/08`</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>               <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Estados</span> <span class="n">Unidos</span>       <span class="m">2795</span>       <span class="m">2365</span>       <span class="m">2055</span>       <span class="m">2258</span>       <span class="m">2058</span>       <span class="m">4141</span>
+<span class="m">2</span> <span class="n">Argentina</span>            <span class="m">2304</span>       <span class="m">1603</span>       <span class="m">1780</span>        <span class="m">869</span>       <span class="m">2534</span>       <span class="m">1293</span>
+<span class="m">3</span> <span class="n">Brasil</span>               <span class="m">2996</span>       <span class="m">3041</span>       <span class="m">1499</span>       <span class="m">3215</span>        <span class="m">964</span>       <span class="m">1128</span>
+<span class="m">4</span> <span class="n">Chile</span>                <span class="m">1323</span>       <span class="m">1195</span>       <span class="m">1021</span>       <span class="m">1115</span>        <span class="m">754</span>       <span class="m">1076</span>
+<span class="m">5</span> <span class="n">España</span>               <span class="m">1050</span>        <span class="m">875</span>        <span class="m">721</span>        <span class="m">727</span>        <span class="m">744</span>        <span class="m">670</span>
+<span class="m">6</span> <span class="n">Perú</span>                 <span class="m">1141</span>        <span class="m">909</span>        <span class="m">841</span>        <span class="m">806</span>        <span class="m">661</span>       <span class="m">1438</span>
+<span class="c1"># … with 162 more variables …</span>
+</code></pre>
+
+<p>Usando la función <code>gather()</code> tenemos:</p>
+<pre class="code literal-block"><span></span><code><span class="n">datos_turistas</span> <span class="o">&lt;-</span>
+  <span class="nf">gather</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">datos_turistas</span><span class="p">,</span>
+         <span class="n">key</span> <span class="o">=</span> <span class="n">Fecha</span><span class="p">,</span>
+         <span class="n">value</span> <span class="o">=</span> <span class="n">Turistas</span><span class="p">,</span>
+         <span class="m">2</span><span class="o">:</span><span class="nf">ncol</span><span class="p">(</span><span class="n">datos_turistas</span><span class="p">))</span>
+
+<span class="c1"># ncol(tabla) Devuelve el número de columnas de tabla</span>
+</code></pre>
+
+<p>Ejecutando head(datos_turistas), notamos que hemos obtenido lo deseado.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># A tibble: 6 × 3</span>
+  <span class="n">Nacionalidad</span>   <span class="n">Fecha</span>    <span class="n">Turistas</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>          <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>       <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Estados</span> <span class="n">Unidos</span> <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">2795</span>
+<span class="m">2</span> <span class="n">Argentina</span>      <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">2304</span>
+<span class="m">3</span> <span class="n">Brasil</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">2996</span>
+<span class="m">4</span> <span class="n">Chile</span>          <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">1323</span>
+<span class="m">5</span> <span class="n">España</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">1050</span>
+<span class="m">6</span> <span class="n">Perú</span>           <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span>     <span class="m">1141</span>
+</code></pre>
+
+<p><strong><code>gather(data, key, value, ...)</code></strong></p>
+<p>Función que es usada para agrupar columnas en dos nuevas columnas.</p>
+<ul>
+<li>
+<strong><code>data</code></strong> : Dataframe o tabla que se va a modificar.</li>
+<li>
+<strong><code>key</code></strong> : Nombre de la nueva columna que va almacenar los <em>nombres de la columnas</em> que se van a agruparse.</li>
+<li>
+<strong><code>value</code></strong> : Nombre de la nueva columna que va contener los <em>valores de la columnas</em> que se van a agruparse.</li>
+<li>
+<strong><code>...</code></strong> : Nombres o selección de columnas a agruparse, puede usar los nombres de las columnas con la función concatenar <code>c()</code>. Ejemplo <code>c(nombre_col1, nombre_col2...)</code>  ó hacer la selección del complemento con <code>!c()</code>, también puede usar como referencia el número de columna. Para hacer referencia a una serie sucesiva use <code>:</code>  Ejemplo: <code>n_col1:n_col2</code>.</li>
+</ul>
+<h3>Separa una columna con separate()</h3>
+<p>Para ejemplificar el operador <code>separate()</code> vamos a separar la columna <code>Fecha</code> en las columnas <code>día</code>, <code>mes</code> y <code>año</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="n">datos_turistas</span> <span class="o">&lt;-</span>
+  <span class="nf">separate</span><span class="p">(</span><span class="n">datos_turistas</span><span class="p">,</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">Fecha</span><span class="p">,</span>
+    <span class="n">into</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">"día"</span><span class="p">,</span> <span class="s">"mes"</span><span class="p">,</span> <span class="s">"año"</span><span class="p">),</span>
+    <span class="n">sep</span> <span class="o">=</span> <span class="s">"/"</span><span class="p">,</span>
+    <span class="n">remove</span> <span class="o">=</span> <span class="kc">FALSE</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p>Podemos observar en la consola.</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">datos_turistas</span><span class="p">)</span>
+<span class="c1"># A tibble: 6 × 6</span>
+  <span class="n">Nacionalidad</span>   <span class="n">Fecha</span>    <span class="n">día</span>   <span class="n">mes</span>   <span class="n">año</span>   <span class="n">Turistas</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>          <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>    <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>    <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Estados</span> <span class="n">Unidos</span> <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">2795</span>
+<span class="m">2</span> <span class="n">Argentina</span>      <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">2304</span>
+<span class="m">3</span> <span class="n">Brasil</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">2996</span>
+<span class="m">4</span> <span class="n">Chile</span>          <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">1323</span>
+<span class="m">5</span> <span class="n">España</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">1050</span>
+<span class="m">6</span> <span class="n">Perú</span>           <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01</span>    <span class="m">08</span>        <span class="m">1141</span>
+</code></pre>
+
+<p><strong><code>separate(data, col, into, sep, remove)</code></strong></p>
+<p>Función que es usada para separar una columna en varias.</p>
+<ul>
+<li>
+<strong><code>data</code></strong> : Dataframe o tabla que se va a modificar.</li>
+<li>
+<strong><code>col</code></strong> : Nombre de la columna que va a separarse.</li>
+<li>
+<strong><code>into</code></strong> : Nombres de la nuevas columnas que van a crearse a partir de <code>col</code>. Puede usar para nombrar a las columnas la función concatenar <code>c()</code>.</li>
+<li>
+<strong><code>sep</code></strong> : Separador, un caracter que va a servir para identificar en donde se separa para generar las nuevas columnas. Puede usar <em>Regular Expresions</em>.</li>
+<li>
+<strong><code>remove</code></strong> : Acepta valores booleanos <code>TRUE</code> y <code>FALSE</code>, por defecto es <code>TRUE</code>, si es igual <code>TRUE</code> borra la columna que se separa, en <code>FALSE</code> la mantiene.</li>
+</ul>
+<p>Vamos a aprovechar los nuevos datos generados, para graficar el top de turistas que han visitado Bolivia en los años 2016-2021.</p>
+<p>En el código abajo usamos muchas funciones de la biblioteca <code>dplyr</code> si quiere aprender más sobre esa biblioteca puede leer <a href="https://opensciencelabs.org/blog/filtrar-datos-r/filtrar-datos-r/">este artículo</a>.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Añadimos "20" al año y lo convertimos a variable entera.</span>
+<span class="n">datos_turistas</span><span class="o">$</span><span class="n">año</span> <span class="o">&lt;-</span>
+  <span class="nf">as.integer</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">"20"</span><span class="p">,</span> <span class="n">datos_turistas</span><span class="o">$</span><span class="n">año</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">""</span><span class="p">))</span>
+
+<span class="c1"># Filtramos por año</span>
+<span class="n">datos_turistas_2016_2021</span> <span class="o">&lt;-</span> 
+  <span class="n">datos_turistas</span> <span class="o">%&gt;%</span> 
+  <span class="nf">filter</span><span class="p">(</span><span class="nf">as.integer</span><span class="p">(</span><span class="n">año</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="m">2016</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="c1"># Agrupando por Nacionalidad y año</span>
+<span class="n">datos_turistas_2016_2021</span> <span class="o">&lt;-</span> 
+  <span class="n">datos_turistas_2016_2021</span> <span class="o">%&gt;%</span>
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">Nacionalidad</span><span class="p">,</span> <span class="n">año</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">summarise</span><span class="p">(</span><span class="n">turistas_anuales</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">Turistas</span><span class="p">))</span>
+
+<span class="c1"># Extrayendo los top turistas visitantes de Bolivia</span>
+<span class="n">top_turistas_2016_2021</span> <span class="o">&lt;-</span> 
+  <span class="n">datos_turistas_2016_2021</span> <span class="o">%&gt;%</span> 
+  <span class="nf">arrange</span><span class="p">(</span><span class="nf">desc</span><span class="p">(</span><span class="n">turistas_anuales</span><span class="p">))</span> <span class="o">%&gt;%</span>
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">año</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+  <span class="nf">slice</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">7</span><span class="p">)</span>
+
+<span class="c1"># Graficando con ggplot2</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">top_turistas_2016_2021</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_bar</span><span class="p">(</span>
+    <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">año</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">turistas_anuales</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">Nacionalidad</span><span class="p">),</span>
+    <span class="n">stat</span> <span class="o">=</span> <span class="s">"identity"</span><span class="p">,</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.8</span>
+  <span class="p">)</span> <span class="o">+</span>
+  <span class="nf">theme_minimal</span><span class="p">()</span> <span class="o">+</span> <span class="nf">scale_fill_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s">"Paired"</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">scale_x_continuous</span><span class="p">(</span><span class="n">breaks</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">2016</span><span class="o">:</span><span class="m">2021</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="nf">comma_format</span><span class="p">(</span><span class="n">big.mark</span> <span class="o">=</span> <span class="s">" "</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">fill</span> <span class="o">=</span> <span class="s">"Nacionalidad"</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Viajeros llegados por avión a Bolivia 2016-2021"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"Top 7 nacionalidades por año"</span><span class="p">,</span>
+    <span class="n">caption</span> <span class="o">=</span> <span class="s">"Fuente: INE Bolivia"</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p><img alt="Viajero llegados por avión a Bolivia 2016-2021" src="../../../images/blog/reorganiza-tus-tablas-con-tidyr/Viajeros_2016_2021.jpeg"></p>
+<h3>Función unite()</h3>
+<p>Unite es una función complementaria a <code>separate()</code> y hace lo contrario, une las columnas en un sola.
+Vamos a usarlo para juntar las columnas de <code>mes</code> y <code>año</code>.</p>
+<pre class="code literal-block"><span></span><code><span class="n">datos_turistas_trimestre</span> <span class="o">&lt;-</span> 
+  <span class="nf">unite</span><span class="p">(</span><span class="n">datos_turistas</span><span class="p">,</span> <span class="n">mes_año</span><span class="p">,</span> <span class="nf">c</span><span class="p">(</span><span class="s">"mes"</span><span class="p">,</span><span class="s">"año"</span><span class="p">),</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">"-"</span><span class="p">)</span>
+</code></pre>
+
+<p>Observando en la consola:</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">datos_turistas_trimestre</span><span class="p">)</span>
+<span class="c1"># A tibble: 6 × 5</span>
+  <span class="n">Nacionalidad</span>   <span class="n">Fecha</span>    <span class="n">día</span>   <span class="n">mes_año</span> <span class="n">Turistas</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>          <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>    <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>      <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Estados</span> <span class="n">Unidos</span> <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">2795</span>
+<span class="m">2</span> <span class="n">Argentina</span>      <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">2304</span>
+<span class="m">3</span> <span class="n">Brasil</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">2996</span>
+<span class="m">4</span> <span class="n">Chile</span>          <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">1323</span>
+<span class="m">5</span> <span class="n">España</span>         <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">1050</span>
+<span class="m">6</span> <span class="n">Perú</span>           <span class="m">31</span><span class="o">/</span><span class="m">01</span><span class="o">/</span><span class="m">08</span> <span class="m">31</span>    <span class="m">01-2008</span>     <span class="m">1141</span>
+</code></pre>
+
+<p><strong><code>unite(data, col, ..., sep, remove)</code></strong></p>
+<p>Función que une varias columnas en una.</p>
+<ul>
+<li>
+<strong><code>data</code></strong> : Dataframe o tabla que se va a modificar.</li>
+<li>
+<strong><code>col</code></strong> : Nombre de la nueva columna que va a unir otras columnas.</li>
+<li>
+<strong><code>...</code></strong> : Nombres de la nuevas columnas que van a juntarse en <code>col</code>. Puede usar para nombrar las columnas la función concatenar <code>c()</code>.</li>
+<li>
+<strong><code>sep</code></strong> : Separador, un caracter que va a servir para unir los valores de las columnas que se unen.</li>
+<li>
+<strong><code>remove</code></strong> : Acepta valores booleanos <code>TRUE</code> y <code>FALSE</code>, por defecto es <code>TRUE</code>, si es igual <code>TRUE</code> borra la columnas que se unen, en <code>FALSE</code> las mantiene.</li>
+</ul>
+<h3>Función spread()</h3>
+<p>Esta función es la que complementa a la función <code>gather()</code>, y hace exactamente lo contrario. esparcir una columna en varias.</p>
+<p>Antes de utilizar <code>spread()</code> vamos a agrupar nuestro datos en trimestres.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Agrupamos los datos por trimestres</span>
+<span class="n">datos_turistas_trimestre</span> <span class="o">&lt;-</span> <span class="n">datos_turistas_trimestre</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span><span class="n">trimestre</span> <span class="o">=</span> <span class="nf">as.yearqtr</span><span class="p">(</span><span class="n">mes_año</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span><span class="s">"%m-%Y"</span><span class="p">))</span> <span class="o">%&gt;%</span>
+  <span class="nf">group_by</span><span class="p">(</span><span class="n">Nacionalidad</span><span class="p">,</span> <span class="n">trimestre</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">summarise</span><span class="p">(</span><span class="n">turistas_trimestre</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">Turistas</span><span class="p">))</span>
+
+<span class="c1"># También podemos utilizar la columna `Fecha` para transformar a trimestres, con el argumento `format=%d/%m/%y`</span>
+</code></pre>
+
+<p>En la consola podemos ver</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">datos_turistas_trimestre</span><span class="p">)</span>
+<span class="c1"># A tibble: 6 × 3</span>
+<span class="c1"># Groups:   Nacionalidad [1]</span>
+  <span class="n">Nacionalidad</span> <span class="n">trimestre</span> <span class="n">turistas_trimestre</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>        <span class="o">&lt;</span><span class="n">yearqtr</span><span class="o">&gt;</span>              <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Alemania</span>     <span class="m">2008</span> <span class="n">Q1</span>                 <span class="m">3318</span>
+<span class="m">2</span> <span class="n">Alemania</span>     <span class="m">2008</span> <span class="n">Q2</span>                 <span class="m">1392</span>
+<span class="m">3</span> <span class="n">Alemania</span>     <span class="m">2008</span> <span class="n">Q3</span>                 <span class="m">1458</span>
+<span class="m">4</span> <span class="n">Alemania</span>     <span class="m">2008</span> <span class="n">Q4</span>                 <span class="m">1516</span>
+<span class="m">5</span> <span class="n">Alemania</span>     <span class="m">2009</span> <span class="n">Q1</span>                 <span class="m">4008</span>
+<span class="m">6</span> <span class="n">Alemania</span>     <span class="m">2009</span> <span class="n">Q2</span>                 <span class="m">1646</span>
+</code></pre>
+
+<p>Ahora podemos usar <code>spread()</code>, para expandir los datos de la columna trimestre en columnas independientes.</p>
+<pre class="code literal-block"><span></span><code><span class="c1"># Mostar en columnas los valores de trimestre </span>
+<span class="n">datos_turistas_trimestre</span> <span class="o">&lt;-</span>
+  <span class="nf">spread</span><span class="p">(</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">datos_turistas_trimestre</span><span class="p">,</span> 
+    <span class="n">key</span> <span class="o">=</span> <span class="n">trimestre</span><span class="p">,</span> 
+    <span class="n">value</span> <span class="o">=</span> <span class="n">turistas_trimestre</span><span class="p">)</span>
+</code></pre>
+
+<p>Ahora observamos que nuestros datos se han esparcido, este formato es útil para visualización de datos en otros frameworks.</p>
+<pre class="code literal-block"><span></span><code><span class="o">&gt;</span> <span class="nf">head</span><span class="p">(</span><span class="n">datos_turistas_trimestre</span><span class="p">)</span>
+<span class="c1"># A tibble: 6 × 57</span>
+<span class="c1"># Groups:   Nacionalidad [6]</span>
+  <span class="n">Nacionalidad</span> <span class="n">`2008 Q1`</span> <span class="n">`2008 Q2`</span> <span class="n">`2008 Q3`</span> <span class="n">`2008 Q4`</span> <span class="n">`2009 Q1`</span> <span class="n">`2009 Q2`</span> <span class="n">`2009 Q3`</span>
+  <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>            <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span> <span class="n">Alemania</span>          <span class="m">3318</span>      <span class="m">1392</span>      <span class="m">1458</span>      <span class="m">1516</span>      <span class="m">4008</span>      <span class="m">1646</span>      <span class="m">1924</span>
+<span class="m">2</span> <span class="n">Argentina</span>         <span class="m">5687</span>      <span class="m">4696</span>      <span class="m">8537</span>      <span class="m">6884</span>      <span class="m">4734</span>      <span class="m">4667</span>      <span class="m">5810</span>
+<span class="m">3</span> <span class="n">Australia</span>          <span class="m">988</span>      <span class="m">1269</span>       <span class="m">944</span>      <span class="m">1384</span>       <span class="m">980</span>       <span class="m">771</span>      <span class="m">1253</span>
+<span class="m">4</span> <span class="n">Austria</span>            <span class="m">587</span>       <span class="m">176</span>       <span class="m">221</span>       <span class="m">300</span>       <span class="m">632</span>       <span class="m">206</span>       <span class="m">293</span>
+<span class="m">5</span> <span class="n">Bélgica</span>           <span class="m">1029</span>       <span class="m">246</span>       <span class="m">784</span>       <span class="m">602</span>      <span class="m">1504</span>       <span class="m">556</span>       <span class="m">531</span>
+<span class="m">6</span> <span class="n">Brasil</span>            <span class="m">7536</span>      <span class="m">5307</span>      <span class="m">7199</span>      <span class="m">5693</span>      <span class="m">4178</span>      <span class="m">5941</span>      <span class="m">9843</span>
+<span class="c1"># … with 49 more variables …</span>
+</code></pre>
+
+<p><strong><code>spread(data, key, value)</code></strong></p>
+<p>Función que es usada para esparcir los datos de una columna como nombres de columnas.</p>
+<ul>
+<li>
+<strong><code>data</code></strong> : Dataframe o tabla que se va a modificar.</li>
+<li>
+<strong><code>key</code></strong> : Nombre de la columna cuyos valores se van esparcir como los <em>nombres de la  nuevas columnas</em>.</li>
+<li>
+<strong><code>value</code></strong> : Nombre de la columna cuyos valores van a convertirse en los  <em>nuevos valores de las nuevas columnas</em>.</li>
+</ul>
+<p>Aprovechemos estos datos para graficar los top países que han visitado Bolivia en el primer trimestre del 2019.</p>
+<pre class="code literal-block"><span></span><code><span class="n">top_turistas_trimestre_1_2019</span> <span class="o">&lt;-</span>
+  <span class="n">datos_turistas_trimestre</span> <span class="o">%&gt;%</span> 
+  <span class="nf">select</span><span class="p">(</span><span class="n">Nacionalidad</span><span class="p">,</span> <span class="n">`2019 Q1`</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">rename</span><span class="p">(</span><span class="n">trimestre1_2019</span><span class="o">=</span> <span class="n">`2019 Q1`</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">arrange</span><span class="p">(</span><span class="nf">desc</span><span class="p">(</span><span class="n">trimestre1_2019</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="nf">as.data.frame</span><span class="p">()</span> <span class="o">%&gt;%</span>
+  <span class="nf">slice_head</span><span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
+</code></pre>
+
+<p>Graficando</p>
+<pre class="code literal-block"><span></span><code><span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">top_turistas_trimestre_1_2019</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_bar</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Nacionalidad</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">trimestre1_2019</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">Nacionalidad</span><span class="p">),</span> <span class="n">stat</span><span class="o">=</span><span class="s">"identity"</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span><span class="o">+</span>
+  <span class="nf">theme_minimal</span><span class="p">()</span> <span class="o">+</span> <span class="nf">scale_fill_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s">"Paired"</span><span class="p">)</span><span class="o">+</span>
+  <span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="nf">comma_format</span><span class="p">(</span><span class="n">big.mark</span><span class="o">=</span><span class="s">" "</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="n">fill</span> <span class="o">=</span> <span class="s">"Nacionalidad"</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s">"Viajeros llegados por avión a Bolivia Primer Trimestre 2019"</span><span class="p">,</span>
+    <span class="n">subtitle</span> <span class="o">=</span> <span class="s">"Top 10 nacionalidades"</span><span class="p">,</span>
+    <span class="n">caption</span> <span class="o">=</span> <span class="s">"Fuente: INE Bolivia"</span>
+  <span class="p">)</span>
+<span class="c1">#p_unload(all) #Ejecute esta línea de comando para cerrar las bibliotecas abiertas con "pacman"</span>
+</code></pre>
+
+<p><img alt="Viajero llegados por avión a Bolivia 2016-2021" src="../../../images/blog/reorganiza-tus-tablas-con-tidyr/Viajeros_trimestre_1_2019.jpeg"></p>
+<h3>Outro</h3>
+<p>Las funciones mostradas en el árticulo son las más usadas y permiten una mejor manipulación de datos en R. Como siempre es bueno revisar la <a href="https://www.rdocumentation.org">documentación oficial</a> si se quiere aprender más.</p>
+<p>Puede descargar el <a href="https://github.com/EverVino/Example_data_tidyr">repositorio de este artículo aquí</a>.</p>
+<h3>Referencias</h3>
+<ul>
+<li>
+<p><a href="https://github.com/tidyverse/tidyr/issues/515">Git Hub Issues tidyr</a></p>
+</li>
+<li>
+<p><a href="https://www.ine.gob.bo/">Instituto de Estadística de Bolivia (INE)</a></p>
+</li>
+<li>
+<p><a href="https://www.rdocumentation.org">Documentación de R</a></p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../filtrar-datos-r/filtrar-datos-r/" rel="prev" title="Cómo filtrar datos de tu tabla con dplyr en R">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next disabled">
+                <a rel="next">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/reorganiza-tus-tablas-con-tidyr/reorganiza-tus-tablas-con-tidyr/",
+        disqus_title="Reorganiza tu tabla con tidyr en R",
+        disqus_identifier="cache/pages/blog/reorganiza-tus-tablas-con-tidyr/art-reorganiza-datos.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
