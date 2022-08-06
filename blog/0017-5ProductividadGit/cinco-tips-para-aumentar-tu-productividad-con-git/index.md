@@ -25,22 +25,22 @@ completo de su repositorio de manera local y existe una copia central.
 
 <!-- TEASER_END -->
 
-Usar Git no es una actividad solo para desarrolladores
-de software. Esta herramienta te es útil en los casos donde necesites llevar a cabo
-proyectos colaborativos: por ejemplo si
-tienes un blog puedes gestionar los artículos y almacenarlos en un
-repositorio de Git.
+No solo los desarrolladores de software utilizan Git. Esta herramienta
+es útil en los casos donde necesites llevar a cabo proyectos
+colaborativos: por ejemplo si tienes un blog, puedes gestionar los
+artículos y almacenarlos en un repositorio de Git.
 
 En este post te presentamos algunos tips para que tu trabajo en git sea
 más productivo, posiblemente, que lo que ha sido hasta ahora.
 
 1. **Maneja las ramas adecuadamente**
 
-Como te mencionamos en nuestro artículo Git de 0 a 100 (enlace a
-artículo de Rainer GitCeroACien) puedes manejar distintas ramas en tu
-repositorio. Las ramas en Git son equivalentes a los directorios en tu computador. En cada rama, Git va registrando todos los cambios desarrollados por quienes la utilicen y también se permite realizar operaciones entre las ramas como su fusión, por ejemplo. Generalmente, las ramas son utilizadas para desarrollar
-funcionalidades aisladas unas de otras. Por defecto el repositorio se
-crea con una rama que se configura por defecto, denominada "master".
+Como te mencionamos en nuestro artículo [Git de 0 a 100 en diez sencillos pasos](https://opensciencelabs.org/blog/0002-GitCeroACien/git-de-en-diez-sencillos-pasos/) puedes manejar distintas ramas en tu
+repositorio. En cada rama, se registran todos los cambios hechos por
+quienes la utilizan y también puedes realizar operaciones entre las
+ramas como su fusión, por ejemplo. Generalmente, las ramas son
+utilizadas para desarrollar funcionalidades aisladas unas de otras. Por
+defecto el repositorio se crea con una rama, denominada "master".
 
 En el manejo de ramas debes considerar, entre otras cosas, lo siguiente:
 
@@ -50,46 +50,45 @@ En el manejo de ramas debes considerar, entre otras cosas, lo siguiente:
   funciones o se corrigen fallos encontrados en master. A esta rama se
   le suele denominar *develop*.
 
-- Puedes crear todas las ramas que consideres, por ejemplo para desarrollar otras
-  funcionalidades y/o corregir detalles de la rama develop, por tanto
-  estas ramas se derivan de esta.
+- Puedes crear ramas derivadas de *develop* para desarrollar otras
+  funcionalidades y/o corregir detalles de esta rama, suelen denominarse
+  *features*.
 
-- En la rama master sólo deben estar las modificaciones definitivas del
-  proyecto, es decir, esta rama no debe "tocarse" hasta que estés seguro
+- En la rama *master* solo deben estar las modificaciones definitivas del
+  proyecto, es decir, no debes "tocarla" hasta que estés seguro
   que los cambios en el proyecto no arrojen problemas al momento de
   hacer pruebas.
 
-- Considera mantener actualizada la rama donde trabajes con la
-  rama desde donde salió.
+- Debes mantener actualizada la rama donde trabajes con la rama de donde se derivó.
 
 - Evita mezclar cambios de diferentes ramas.
 
-- Verifica en que rama te encuentras al momento de editar cualquier
-  archivo, así evitas realizar cambios y subirlos a la rama equivocada y afectar el desarrollo de todo el equipo de trabajo.
+- Verifica la rama donde te encuentras al momento de editar cualquier
+  archivo, así evitas realizar cambios y subirlos a la rama equivocada y
+  afectar el desarrollo de todo el equipo de trabajo. Esto es sumamente
+  necesario.
 
-2. **Crea alias para los comandos de git que más uses**
+2. **Crea alias para los comandos de git que más utilices**
 
-Al usar Git, a diario tienes que teclear cierta cantidad de comandos,
-por ejemplo para bajar y subir cambios, y otros comandos que pueden
-tornarse repetitivos. Para aumentar nuestra productividad, está a
-nuestra disposición el crear alias para los comandos de git que más
-usemos. El alias es un "nombre" que se le asigna a un comando de Git que
-es más corto que dicho comando, lo cual nos permite ejecutar la misma
-acción tecleando menos, es decir, nos ayuda a ahorrar tiempo.
+Con Git, a diario tecleas cierta cantidad de comandos, algunos que
+pueden tornarse repetitivos. Además esta herramienta no ofrece la
+función de autocompletado. Puedes ser más productivo, si creas *alias*
+para aquellos que más utilices. El alias es un "nombre" que, en este
+caso, le asignamos a un comando de Git para que sea más corto, esto nos
+permite ejecutar la misma acción tecleando menos, es decir, nos ayuda a
+ahorrar tiempo y son más fáciles de recordar.
 
-Si estás escribiendo algún comando, Git no provee la función de
-autocompletado. Si no deseas escribir completos algunos comandos, puedes
-fijar alias para ellos mediante `git config`. Por ejemplo:
+Para fijar alias a los comandos utiliza `git config --global`. Por ejemplo:
 
 `$ git config --global alias.br branch`
 `$ git config --global alias.st status`
 `$ git config --global alias.ci commit`
 
-De esta manera, de ahora en adelante escribes `git br` en lugar de
-`git branch` y así para los demás del ejemplo. No existe un estándar para la
-creación de alias, todo dependerá de que te sientas a gusto con ellos. A
-medida que aumentes tu trabajo con Git, utilizarás frecuentemente otros
-comandos, si te sientes a gusto no dudes crear alias para ellos.
+De ahora en adelante escribes `git br` en lugar de `git branch` y así
+para los demás del ejemplo. No existe un estándar para la creación de
+alias, todo dependerá de que te sientas a gusto con ellos. A medida que
+aumentes tu trabajo con Git, utilizarás frecuentemente otros comandos,
+si te sientes a gusto no dudes en crear alias para ellos.
 
 3. **Juntar commits en uno solo**
 
@@ -101,17 +100,18 @@ Esta alternativa requiere que tomes en cuenta algunas cosas:
 
 - No se recomienda mezclar cambios de diferentes ramas.
 
-- Evita en la medida de lo posible que los cambios sean de distinto
-  tipo, previniendo con ello inconvenientes si por algún motivo debes luego
+- Evita, en la medida de lo posible, que los cambios sean de distinto
+  tipo (por ejemplo, un cambio en un archivo de texto y otro en uno de
+  código), previniendo inconvenientes si por algún motivo debes luego
   deshacer los cambios.
 
-4. **Utiliza alguna interfaz gráfica para manejar Git**
+4. **Puedes utilizar alguna interfaz gráfica para manejar Git**
 
-Tal vez utilizar el terminal para gestionar el control de versiones
-puede resultarte al principio algo complejo, mayormente si estas iniciándote con el
-control de versiones. Por eso conviene que tengas en cuenta que, para gestionar los proyectos de una forma más
-gráfica, visual e intuitiva y acelerar tu trabajo, puedes utilizar
-algunos clientes gráficos de Git. Muchos de ellos son totalmente
+Tal vez utilizar el terminal para gestionar Git puede resultarte al
+principio algo complejo, mayormente si estás iniciándote con el control
+de versiones. Por eso puede resultarte conveniente utilizar algunos
+clientes gráficos de Git, para gestionar los proyectos de una forma
+visual e intuitiva y acelerar tu trabajo. Muchos de ellos son totalmente
 gratuitos, de código abierto y los hay para cualquier sistema operativo.
 
 En la wiki de Git puedes encontrar una lista más completa de los
@@ -120,37 +120,39 @@ En la wiki de Git puedes encontrar una lista más completa de los
 Las interfaces gráficas se adaptan a distintos flujos de trabajo, es
 decir, algunas incluyen más funcionalidades que otras. No obstante,
 ninguna puede considerarse mejor que otra, solamente que cada una se
-ajusta a las necesidades de los usuarios.
+ajusta a las necesidades de los usuarios. Vamos ¡anímate a usar alguna de ellas!
 
 5. **Más sobre los commits y otras recomendaciones**
+
+- - Al comenzar una nueva sesión de trabajo, deberías hacer un `fetch` o
+  un `pull` para traerte los últimos cambios. De esta  manera, evitas
+  conflictos en el futuro al sobrescribir el trabajo de los demás sin
+  necesidad.
 
 - Haz commit con frecuencia, no tengas miedo de hacer
   commits con cosas sin terminar y que se muestren así en el
   histórico.
 
 - Cada vez que tengas código que deseas guardar puedes hacer commit. Ten
-  presente que al hacer un commit no necesariamente debes hacer un push.
+  presente que al hacerlo no necesariamente debes hacer un push.
   Puedes hacer commits en tu repositorio local para proteger y llevar un
   control de tu trabajo.
 
-- Revisa siempre los cambios antes de subirlos y cerciórate de que sólo
-  va para el commit lo que realmente necesites.
+- Revisa siempre los cambios antes de subirlos y asegúrate de confirmar
+  en el commit lo que realmente necesites.
 
 - El mensaje de commit debe ser conciso pero al mismo tiempo
   informativo.
 
-- No subas cambios directamente a master, siempre y cuando no lo amerite.
-
-- Al empezar una nueva sesión de trabajo, deberías hacer un `fetch` o un
-  `pull` para traerte los últimos cambios. De esta  manera, evitas
-  conflictos en el futuro y evades sobrescribir el trabajo de los demás
-  sin necesidad.
+- No subas cambios directamente a la rama *master*, siempre y cuando no lo
+  amerite.
 
 Te hemos presentado algunos tips para que tengas un mejor manejo y mayor
-productividad al manejar git en tus proyectos. Tal vez muchas de ellas
-son evidentes. Sin embargo, por más minimas que sean o que nos puedan
-parecer debemos tenerlas presentes para evitar molestias en el proyecto
-y en el grupo de trabajo.
+productividad al utilizar git en tus proyectos. Tal vez muchas de ellas
+son evidentes; sin embargo, por más mínimas que nos puedan parecer
+debemos tenerlas presentes para evitar molestias en el proyecto y en el
+grupo de trabajo y aumentar así nuestra productividad en el control de
+versiones con Git.
 
 **Referencias**
 
