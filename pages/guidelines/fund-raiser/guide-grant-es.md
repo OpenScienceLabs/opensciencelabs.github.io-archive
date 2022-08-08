@@ -220,8 +220,9 @@ proposal@r-consortium.org.
 
 #### Segundo ciclo de subvenciones
 
-- 1 de septiembre de 2022 - Se abre el período de solicitud de la subvención 1 de
-octubre de 2022 - Cierre del periodo de solicitud de subvenciones, 11:59pm US ET
+- 1 de septiembre de 2022 - Se abre el período de solicitud de la subvención 1
+de octubre de 2022 - Cierre del periodo de solicitud de subvenciones, 11:59pm US
+ET
 - 1 de noviembre de 2022 - El ISC se pone en contacto con todos los proyectos
 aceptados 1 de diciembre de 2022 - Fecha límite para la aceptación de la
 subvención y el contrato. La notificación pública de los beneficiarios se
@@ -248,14 +249,15 @@ virtuales así como los eventos en persona.
 
 **Requisitos:**
 
-Para poder optar a una subvención RUGS, un grupo de usuarios
-debe:
+Para poder optar a una subvención RUGS, un grupo de usuarios debe:
 
 - Tener R como objetivo principal
-- Adherirse al [Código de Conducta](https://events.linuxfoundation.org/about/code-of-conduct/)
+- Adherirse al [Código de
+  Conducta](https://events.linuxfoundation.org/about/code-of-conduct/)
 - Estar de acuerdo en participar en el programa RUGS meetup.com Pro y utilizar
 su sitio meetup.com para anunciar y seguir las reuniones.
-- Reconocer al R Consortium como patrocinador y mostrar el logo del R Consortium en el sitio web del grupo.
+- Reconocer al R Consortium como patrocinador y mostrar el logo del R Consortium
+  en el sitio web del grupo.
 - Aceptar escribir al menos dos entradas de blog al año sobre las actividades de
 su grupo para su posible publicación en el blog del R Consortium.
 - Cumplir con las instrucciones completando un [formulario
@@ -263,8 +265,8 @@ W9](https://www.irs.gov/pub/irs-pdf/fw9.pdf) (sólo grupos con sede en Estados
 Unidos) o un formulario de transferencia bancaria (grupos con sede fuera de
 Estados Unidos)
 
- **Estructura:**
-  Las subvenciones a los grupos de usuarios de R bajo el programa RUGS 2022 vienen en dos partes: Los grupos de usuarios de R que aún no
+ **Estructura:** Las subvenciones a los grupos de usuarios de R bajo el programa
+  RUGS 2022 vienen en dos partes: Los grupos de usuarios de R que aún no
 participan en la cuenta RUGS meetup.com Pro serán inscritos en este programa. El
 R Consortium pagará las tarifas de meetup.com del grupo durante doce meses
 después de la aceptación en el programa. A partir de entonces, el R Consortium
@@ -280,14 +282,16 @@ para distribuir.
 
 *Notas*
 
-R-Ladies mantiene una cuenta Pro separada de meetup.com. Los grupos de R-Ladies deben solicitar directamente a R-Ladies la aceptación en su programa.
+R-Ladies mantiene una cuenta Pro separada de meetup.com. Los grupos de R-Ladies
+deben solicitar directamente a R-Ladies la aceptación en su programa.
 
-R Consortium mantiene el derecho de terminar el programa Pro de RUGs en cualquier momento. Además tiene el derecho de terminar
-la participación de un grupo en el programa meetup.com Pro si no cumplen con los requisitos especificados en el Código de Conducta.
+R Consortium mantiene el derecho de terminar el programa Pro de RUGs en
+cualquier momento. Además tiene el derecho de terminar la participación de un
+grupo en el programa meetup.com Pro si no cumplen con los requisitos
+especificados en el Código de Conducta.
 
-**Duración del Programa RUGS 2022**
-El programa aceptará solicitudes de subvención desde el 1 de abril de
-2022 hasta el 30 de septiembre de 2022.
+**Duración del Programa RUGS 2022** El programa aceptará solicitudes de
+subvención desde el 1 de abril de 2022 hasta el 30 de septiembre de 2022.
 
 ### Subvenciones para conferencias
 
@@ -302,32 +306,55 @@ más pequeñas se limitarán a 1.000 dólares.
 
 - La conferencia debe estar organizada en torno al Lenguaje R o demostrar que
 habrá un contenido significativo de R.
-- Debe tener una página web que proporcione información básica como: el tema o propósito de la conferencia, la hora y el lugar, las tarifas y el mecanismo de inscripción, detalles de los patrocinadores, un programa de charlas y eventos, una lista de ponentes confirmados, un código de conducta que utilice o sea compatible con el Código de Conducta del R Consortium y que proporcione
-información sobre cómo los participantes en la conferencia pueden denunciar infracciones o buscar ayuda.
+- Debe tener una página web que proporcione información básica como: el tema o
+propósito de la conferencia, la hora y el lugar, las tarifas y el mecanismo de
+inscripción, detalles de los patrocinadores, un programa de charlas y eventos,
+una lista de ponentes confirmados, un código de conducta que utilice o sea
+compatible con el Código de Conducta del R Consortium y que proporcione
+información sobre cómo los participantes en la conferencia pueden denunciar
+infracciones o buscar ayuda.
 
-- Los organizadores de la conferencia deben: reconocer al R Consortium como patrocinador y mostrar el logotipo del R Consortium en el sitio web de la conferencia, proporcionar al menos una entrada completa para un miembro del R Consortium, redactar un breve informe después de la conferencia que resuma lo sucedido, describa los aspectos más destacados y
-proporcione las métricas clave de la conferencia, incluyendo los datos demográficos de los asistentes, de manera que sea adecuado para su publicación como una entrada en el blog del R Consortium. Asimismo, deben ofrecer al R Consortium los mismos beneficios que la conferencia ofrece a otros patrocinadores con el mismo nivel de apoyo y cumplir con los protocolos locales
-de salud pública de Covid-19.
+- Los organizadores de la conferencia deben: reconocer al R Consortium como
+patrocinador y mostrar el logotipo del R Consortium en el sitio web de la
+conferencia, proporcionar al menos una entrada completa para un miembro del R
+Consortium, redactar un breve informe después de la conferencia que resuma lo
+sucedido, describa los aspectos más destacados y proporcione las métricas clave
+de la conferencia, incluyendo los datos demográficos de los asistentes, de
+manera que sea adecuado para su publicación como una entrada en el blog del R
+Consortium. Asimismo, deben ofrecer al R Consortium los mismos beneficios que la
+conferencia ofrece a otros patrocinadores con el mismo nivel de apoyo y cumplir
+con los protocolos locales de salud pública de Covid-19.
 
 *Nota*
 
-Cualquier subvención relacionada con una
-actividad específica se cancelará si (a) la actividad a la que se refiere se cancela sin reprogramación o (b) la actividad no se ha realizado en los 365 días
-siguientes a la fecha de la subvención,
+Cualquier subvención relacionada con una actividad específica se cancelará si
+(a) la actividad a la que se refiere se cancela sin reprogramación o (b) la
+actividad no se ha realizado en los 365 días siguientes a la fecha de la
+subvención,
 
 
 ### Subvenciones para sesiones de formación
 
-Están destinadas a apoyar eventos de formación de R organizados por individuos u organizaciones sin ánimo de lucro. Las subvenciones en metálico para eventos de
-formación se limitarán a un importe máximo de 1.000 dólares. Los **eventos de formación deben**: ofrecer un mínimo de cuatro horas de instrucción, utilizar un
-procedimiento de inscripción en línea de acceso público (por ejemplo, a través de meetup.com o eventbrite.com), adherirse al Código de Conducta y cumplir con los protocolos locales de salud pública sobre COVID-19. 
+Están destinadas a apoyar eventos de formación de R organizados por individuos u
+organizaciones sin ánimo de lucro. Las subvenciones en metálico para eventos de
+formación se limitarán a un importe máximo de 1.000 dólares. Los **eventos de
+formación deben**: ofrecer un mínimo de cuatro horas de instrucción, utilizar un
+procedimiento de inscripción en línea de acceso público (por ejemplo, a través
+de meetup.com o eventbrite.com), adherirse al Código de Conducta y cumplir con
+los protocolos locales de salud pública sobre COVID-19. 
 
-Los **organizadores del evento deben**: incluir una descripción detallada de cómo se utilizarán los
-fondos y el coste total estimado, proporcionar una muestra de los materiales de formación, reconocer a R Consortium como patrocinador y mostrar el logotipo del
-R Consortium en cualquier sitio web o material promocional asociado, estar de acuerdo en escribir una entrada en el blog después del evento, adecuada para su
-publicación en el Blog, que describa los aspectos más destacados, contenga algunas métricas como el número de personas que asistieron y cualquier dato demográfico relevante.
+Los **organizadores del evento deben**: incluir una descripción detallada de
+cómo se utilizarán los fondos y el coste total estimado, proporcionar una
+muestra de los materiales de formación, reconocer a R Consortium como
+patrocinador y mostrar el logotipo del R Consortium en cualquier sitio web o
+material promocional asociado, estar de acuerdo en escribir una entrada en el
+blog después del evento, adecuada para su publicación en el Blog, que describa
+los aspectos más destacados, contenga algunas métricas como el número de
+personas que asistieron y cualquier dato demográfico relevante.
 
-Hay que tener en cuenta que cualquier material de formación desarrollado con fondos del R Consortium debe estar disponible públicamente con una licencia de código abierto.
+Hay que tener en cuenta que cualquier material de formación desarrollado con
+fondos del R Consortium debe estar disponible públicamente con una licencia de
+código abierto.
 
 ### ¿Cómo solicitar una subvención para RUGS, conferencias o formación?
 
@@ -338,38 +365,88 @@ formulario](https://webportalapp.com/sp/login/r_consortium).
 
 ### Estrategia de concesión de subvenciones
 
-A la hora de seleccionar proyectos para su financiación, la Fundación busca propuestas de iniciativas originales dirigidas por personas o equipos destacados. Les interesan los proyectos que tengan un alto rendimiento esperado para la sociedad, que muestren un alto grado de rigor metodológico y para los que la financiación del sector privado, del gobierno o de otras fundaciones no esté todavía ampliamente disponible.
+A la hora de seleccionar proyectos para su financiación, la Fundación busca
+propuestas de iniciativas originales dirigidas por personas o equipos
+destacados. Les interesan los proyectos que tengan un alto rendimiento esperado
+para la sociedad, que muestren un alto grado de rigor metodológico y para los
+que la financiación del sector privado, del gobierno o de otras fundaciones no
+esté todavía ampliamente disponible.
 
 
 ### Lo que no financian
 
-- La Fundación no concede subvenciones a campañas políticas, ni apoya actividades políticas, ni ejerce presión a favor o en contra de determinadas leyes.
-La Fundación no concede subvenciones a particulares, excepto a través de su programa Books.
-- La Fundación no suele conceder subvenciones a instituciones con ánimo de lucro.
-- La Fundación no concede subvenciones en materia de religión, investigación médica o investigación en humanidades.
-- La Fundación no concede subvenciones dirigidas a estudiantes preuniversitarios, excepto a través de su iniciativa en la ciudad de Nueva York.
-- La Fundación no concede subvenciones a proyectos en el ámbito de las artes creativas o escénicas, excepto cuando dichos proyectos están relacionados con la educación del público en materia de ciencia, tecnología o economía.
-- La Fundación no concede subvenciones para dotaciones, campañas o cenas de recaudación de fondos.
-- La Fundación no concede subvenciones para la compra, construcción o renovación de edificios o laboratorios.  En algunas ocasiones, la Fundación apoyará la compra o construcción de equipamiento científico si dicho equipamiento es esencial para el éxito de un proyecto de investigación o iniciativa educativa apoyada por la Fundación.
+- La Fundación no concede subvenciones a campañas políticas, ni apoya
+actividades políticas, ni ejerce presión a favor o en contra de determinadas
+leyes. La Fundación no concede subvenciones a particulares, excepto a través de
+su programa Books.
+- La Fundación no suele conceder subvenciones a instituciones con ánimo de
+  lucro.
+- La Fundación no concede subvenciones en materia de religión, investigación
+  médica o investigación en humanidades.
+- La Fundación no concede subvenciones dirigidas a estudiantes
+  preuniversitarios, excepto a través de su iniciativa en la ciudad de Nueva
+  York.
+- La Fundación no concede subvenciones a proyectos en el ámbito de las artes
+  creativas o escénicas, excepto cuando dichos proyectos están relacionados con
+  la educación del público en materia de ciencia, tecnología o economía.
+- La Fundación no concede subvenciones para dotaciones, campañas o cenas de
+  recaudación de fondos.
+- La Fundación no concede subvenciones para la compra, construcción o renovación
+  de edificios o laboratorios.  En algunas ocasiones, la Fundación apoyará la
+  compra o construcción de equipamiento científico si dicho equipamiento es
+  esencial para el éxito de un proyecto de investigación o iniciativa educativa
+  apoyada por la Fundación.
 
 ### El proceso de solicitud de subvenciones
 
 - PASO 1: LEER EL SITIO WEB DE LA FUNDACIÓN.
 
-    La Fundación Alfred P. Sloan concede subvenciones a través de sus diversos programas de subvención. Las solicitudes de subvención se dirigen a un programa concreto.  Los solicitantes interesados deben leer detenidamente las descripciones de los programas de la Fundación en la sección Programas del sitio web.  La página de cada programa incluye una declaración de los objetivos del programa, una descripción de las estrategias empleadas, una lista de subvenciones recientes y una sección con información sobre cómo solicitarlas. Se anima a los solicitantes interesados a consultar algunas de las subvenciones concedidas en el programa para hacerse una idea del tipo de proyectos que apoya el programa.
+    La Fundación Alfred P. Sloan concede subvenciones a través de sus diversos
+    programas de subvención. Las solicitudes de subvención se dirigen a un
+    programa concreto.  Los solicitantes interesados deben leer detenidamente
+    las descripciones de los programas de la Fundación en la sección Programas
+    del sitio web.  La página de cada programa incluye una declaración de los
+    objetivos del programa, una descripción de las estrategias empleadas, una
+    lista de subvenciones recientes y una sección con información sobre cómo
+    solicitarlas. Se anima a los solicitantes interesados a consultar algunas de
+    las subvenciones concedidas en el programa para hacerse una idea del tipo de
+    proyectos que apoya el programa.
 
 - PASO 2: PRESENTAR UNA CARTA DE SOLICITUD
 
-    Una vez que se haya identificado un programa pertinente, el solicitante de la subvención debe enviar una carta de solicitud por correo electrónico al director del programa correspondiente.  Consulte nuestra sección de Cartas de Consulta para obtener más información sobre las Cartas de Consulta.  
-    NOTA: No todos los programas aceptan consultas no solicitadas.  En la sección de solicitud de la página de cada programa se especifica si ese programa acepta actualmente consultas.
+    Una vez que se haya identificado un programa pertinente, el solicitante de
+    la subvención debe enviar una carta de solicitud por correo electrónico al
+    director del programa correspondiente.  Consulte nuestra sección de Cartas
+    de Consulta para obtener más información sobre las Cartas de Consulta.  
+    NOTA: No todos los programas aceptan consultas no solicitadas.  En la
+    sección de solicitud de la página de cada programa se especifica si ese
+    programa acepta actualmente consultas.
 
-- PASO 3: PRESENTAR UNA PROPUESTA FORMAL DE SUBVENCIÓN
-    La Fundación Alfred P. Sloan no acepta ni revisa propuestas de subvención no solicitadas.
-    Los solicitantes de subvenciones que presenten cartas de solicitud prometedoras serán invitados a presentar una propuesta de subvención formal.  Visite nuestra sección de Directrices para la presentación de propuestas de subvención para obtener más información sobre cómo redactar y presentar una propuesta de subvención.
-    La sección Consejos para redactar una propuesta de subvención con éxito ofrece consejos útiles sobre cómo redactar una propuesta con éxito.
-    Una vez presentada la propuesta, la Fundación la evaluará.  El proceso de revisión y aprobación de subvenciones de la Fundación es extremadamente riguroso y está diseñado para imitar el proceso de revisión por pares de las revistas académicas de alta calidad.  Dependiendo de los fondos solicitados y de la complejidad del trabajo a realizar, la Fundación puede solicitar la revisión de la propuesta por parte de expertos independientes.  En ese caso, los solicitantes de subvenciones tienen la oportunidad de responder por escrito a los comentarios de los revisores.  No es raro que se pida al solicitante de la subvención que revise, modifique o complemente la propuesta original (a veces de forma significativa) como resultado del proceso de revisión de la propuesta.  
+- PASO 3: PRESENTAR UNA PROPUESTA FORMAL DE SUBVENCIÓN La Fundación Alfred P.
+    Sloan no acepta ni revisa propuestas de subvención no solicitadas. Los
+    solicitantes de subvenciones que presenten cartas de solicitud prometedoras
+    serán invitados a presentar una propuesta de subvención formal.  Visite
+    nuestra sección de Directrices para la presentación de propuestas de
+    subvención para obtener más información sobre cómo redactar y presentar una
+    propuesta de subvención. La sección Consejos para redactar una propuesta de
+    subvención con éxito ofrece consejos útiles sobre cómo redactar una
+    propuesta con éxito. Una vez presentada la propuesta, la Fundación la
+    evaluará.  El proceso de revisión y aprobación de subvenciones de la
+    Fundación es extremadamente riguroso y está diseñado para imitar el proceso
+    de revisión por pares de las revistas académicas de alta calidad.
+    Dependiendo de los fondos solicitados y de la complejidad del trabajo a
+    realizar, la Fundación puede solicitar la revisión de la propuesta por parte
+    de expertos independientes.  En ese caso, los solicitantes de subvenciones
+    tienen la oportunidad de responder por escrito a los comentarios de los
+    revisores.  No es raro que se pida al solicitante de la subvención que
+    revise, modifique o complemente la propuesta original (a veces de forma
+    significativa) como resultado del proceso de revisión de la propuesta.  
 
-La Fundación Alfred P. Sloan concede subvenciones durante todo el año, aunque las de mayor cuantía (>250.000 dólares) sólo se aprueban trimestralmente. Los solicitantes de subvenciones deben trabajar con el director de su programa para asegurarse de que hay tiempo suficiente para la presentación, la reelaboración, la revisión independiente y las modificaciones posteriores a la revisión.
+La Fundación Alfred P. Sloan concede subvenciones durante todo el año, aunque
+las de mayor cuantía (>250.000 dólares) sólo se aprueban trimestralmente. Los
+solicitantes de subvenciones deben trabajar con el director de su programa para
+asegurarse de que hay tiempo suficiente para la presentación, la reelaboración,
+la revisión independiente y las modificaciones posteriores a la revisión.
 
 
 ### Solicitud de subvención
@@ -382,4 +459,41 @@ La solicitud de subvención, incluye
 
 ### Directrices para las propuestas de subvención
 
-Las directrices están establecidas para tres casos particulares; proyectos de investigación, proyectos no relacionados con la investigación y propuestas de libros. Para más información consulta https://sloan.org/grants/apply#tab-grant-proposal-guidelines.
+Las directrices están establecidas para tres casos particulares; proyectos de
+investigación, proyectos no relacionados con la investigación y propuestas de
+libros. Para más información consulta
+https://sloan.org/grants/apply#tab-grant-proposal-guidelines.
+
+
+## Chan Zuckerberg Initiative
+
+Chan Zuckerberg Iniative concede subvenciones a organizaciones que trabajan en
+apoyo de sus misiones en materia de ciencia, educación y justicia y
+oportunidades, así como a donaciones dirigidas a su comunidad local. Las
+subvenciones se conceden a través de tres entidades de financiación: Chan
+Zuckerberg Initiative Foundation, una fundación privada con categoría 501(c)(3);
+Chan Zuckerberg Initiative Donor-Advised Fund (DAF) en Silicon Valley Community
+Foundation; y Chan Zuckerberg Initiative Advocacy, una organización con
+categoría 501(c)(4).
+
+Desde su lanzamiento en 2015, CZI ha concedido aproximadamente 2.900 millones de
+dólares en subvenciones. Las subvenciones divulgadas de la Chan Zuckerberg
+Foundation y el DAF de Chan Zuckerberg Initiative son retroactivas a enero de
+2018.
+
+
+En CZI se utiliza una variedad de mecanismos de financiación, incluyendo la
+concesión de subvenciones específicas, así como concursos abiertos para los
+solicitantes de subvenciones en áreas temáticas específicas, o Solicitudes de
+Subvención (Requests for Applications, RFAs). Este portal ofrece información
+sobre las últimas solicitudes de subvención publicadas para apoyar nuestro
+trabajo. Cada RFA incluye información sobre la oportunidad, los requisitos del
+proyecto, la elegibilidad y detalles sobre el proceso de solicitud.
+
+Para **solicitar** un RFA, se debe crear una cuenta de [SurveyMonkey
+Apply](https://apply.chanzuckerberg.com/acc/r/?g=51847) o iniciar sesión en su
+cuenta existente de SurveyMonkey Apply.
+
+NOTA: En la siguiente dirección web,
+https://wiki.openhatch.org/wiki/Opportunities, podemos encontrar una lista de
+oportunidades financiadas.
