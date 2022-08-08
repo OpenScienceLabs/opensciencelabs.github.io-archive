@@ -465,7 +465,7 @@ libros. Para más información consulta
 https://sloan.org/grants/apply#tab-grant-proposal-guidelines.
 
 
-## Chan Zuckerberg Initiative
+## [Chan Zuckerberg Initiative](https://chanzuckerberg.com/)
 
 Chan Zuckerberg Iniative concede subvenciones a organizaciones que trabajan en
 apoyo de sus misiones en materia de ciencia, educación y justicia y
