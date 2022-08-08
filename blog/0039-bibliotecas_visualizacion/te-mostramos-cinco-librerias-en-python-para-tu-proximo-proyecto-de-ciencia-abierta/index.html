@@ -21,18 +21,18 @@
   gtag('config', 'UA-213158050-1');
 </script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
 <meta name="author" content="Anavelyz Pérez">
-<meta property="description" content="Un proyecto de ciencia abierta así como cualquier otro requiere de una
+<meta property="description" content="Un proyecto de ciencia abierta, así como cualquier otro, requiere de una
 evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse
-a cabo. En el caso de ciencia abierta, debemos te">
+a cabo. En el caso de ciencia abierta, debemos ">
 <link rel="prev" href="../../0037-visualizacion_python/herramientas-de-visualizacion-en-python/" title="Herramientas de visualización en Python" type="text/html">
 <link rel="next" href="../../0038-bash/automatizacion-de-tareas-via-bash/" title="Automatización de tareas vía bash" type="text/html">
 <link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
 <meta property="og:site_name" content="Open Science Labs">
 <meta property="og:title" content="Te mostramos cinco librerías en Python para tu próximo proyecto de cie">
 <meta property="og:url" content="https://opensciencelabs.org/blog/0039-bibliotecas_visualizacion/te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta/">
-<meta property="og:description" content="Un proyecto de ciencia abierta así como cualquier otro requiere de una
+<meta property="og:description" content="Un proyecto de ciencia abierta, así como cualquier otro, requiere de una
 evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse
-a cabo. En el caso de ciencia abierta, debemos te">
+a cabo. En el caso de ciencia abierta, debemos ">
 <meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-06-09T00:00:00-05:00">
@@ -131,16 +131,17 @@ bg-dark
 <!-- **Por Anavelyz Pérez** -->
 
 <p><img alt="header" src="../../../images/blog/te-mostramos-cinco-librerias-en-python-para-tu-proximo-proyecto-de-ciencia-abierta/header.png"></p>
-<p>Un proyecto de ciencia abierta así como cualquier otro requiere de una
+<p>Un proyecto de ciencia abierta, así como cualquier otro, requiere de una
 evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse
 a cabo. En el caso de ciencia abierta, debemos tener en cuenta que por su
 alcance e impacto en la comunidad científica y sociedad en general es vital
-estudiar las herramientas que se utilizarán ya que de ellas depende la obtención
-de resultados óptimos, visualmente atractivos y lo suficientemente informátivos.</p>
+estudiar las herramientas que se utilizarán porque de ellas depende la obtención
+de resultados óptimos, visualmente atractivos y lo suficientemente informativos.</p>
 <!-- TEASER_END -->
 
-<p>Antes de continuar recordemos del artículo <a href=".">¿Qué es la ciencia abierta?</a> que
-la ciencia abierta es un movimiento, una manera de ver y hacer ciencia, que
+<p>Antes de continuar recordemos del artículo <a href="%5Bhttps:/opensciencelabs.org/blog/0001-ciencia_abierta/que-es-la-ciencia-abierta/">¿Qué es la ciencia
+abierta?</a>,
+que la ciencia abierta es un movimiento, una manera de ver y hacer ciencia, que
 busca crear una cultura donde la información de todo el proceso de investigación
 científica, ya sean los datos, protocolos, cuadernos de laboratorio, resultados
 obtenidos en las diferentes etapas de este proceso, sean gratuitos y de libre
@@ -148,34 +149,34 @@ acceso. De esta manera, todas las personas involucradas en el proceso de
 investigación, ya sean los propios científicos, instituciones de investigación y
 financiamiento, y público en general, pueden contribuir y colaborar con el
 esfuerzo de investigación. Con esto se garantiza que el trabajo científico sea
-abierto e inclusivo, donde el investigador se de cuenta que poner a libre
+abierto e inclusivo, donde el investigador se dé cuenta que poner a libre
 disposición sus trabajos le garantizan, entre otras cosas, el aumento del
 impacto y difusión de sus investigaciones.</p>
 <p>Allí también se menciona que la ciencia abierta es una forma de producir
-conocimiento científico promoviendo la comunicación y acceso efectivo del
+conocimiento científico, promoviendo la comunicación y acceso efectivo del
 contenido de las investigaciones científicas en todas las áreas (instrumentos de
 trabajo, resultados intermedios y finales) mediante la digitalización y las
 bondades del internet.</p>
 <p>Ahora, podemos extraer que cuando elaboramos un proyecto bajo la modalidad de
-ciencia abierta por lo general analizamos, describimos y descubrimos información
-que esta contenida en datos, lo cual se hace aplicando métodos estadísticos u
-otros similares, que se pueden complementar con una o varias visualizaciones o
-gráficos que permitirán tanto a los analistas como a los lectores tener una
-visión más general de lo que las medidas numéricas o palabras describen. Además,
-una visualización logra presentar resultados estéticamente más atractivos y
-captar la atención en puntos en los que más enfoque requieran.</p>
-<p>Para tener esto último un poco más claro representemoslo en un ejemplo.
+ciencia abierta, por lo general analizamos, describimos y descubrimos
+información que está contenida en datos, lo cual se hace aplicando métodos
+estadísticos u otros similares. Estos se pueden complementar con una o varias
+visualizaciones o gráficos que permitirán tanto a los analistas como a los
+lectores tener una visión más general de lo que las medidas numéricas o palabras
+describen. Además, una visualización logra presentar resultados estéticamente
+más atractivos y captar la atención en puntos en los que más enfoque requieran.</p>
+<p>Para tener esto último un poco más claro representémoslo en un ejemplo.
 Supongamos que estamos estudiando las enfermedades en un periodo de tiempo dado,
-en una región especifica, y tenemos la información que corresponde a la edad,
+en una región específica, y tenemos la información que corresponde a la edad,
 sexo y la enfermedad que presentan los pacientes atendidos en los centros
 hospitalarios de ese período.</p>
 <p>Entonces podemos considerar la estadística descriptiva como una de las técnicas
-ideales en este caso, se calcularían estadísticos como la media para la edad, la
+ideales, en este caso se calcularían estadísticos como la media para la edad, la
 proporción para el sexo y el tipo de enfermedad. A su vez podemos hacer cruces
 de información a través de tablas de contingencia y a partir de estas elaborar
 gráficos que complementarán esta información. Estos gráficos lograrán de forma
 sintetizada mostrar lo que los datos revelan, resultará más fácil hacer
-comparaciones además, los colores y las áreas de las figuras trazadas captarán
+comparaciones, además los colores y las áreas de las figuras trazadas captarán
 la atención de lo que requiere tener cuidado para la toma de decisiones. Todo
 ello es una clara y simple noción de lo que una visualización puede ayudar.</p>
 <p>A continuación veamos cinco bibliotecas o librerías de Python que puedes
@@ -184,12 +185,12 @@ implementar en tu proyecto de ciencia abierta:</p>
 <li>pandas: Es una biblioteca que permite realizar tareas de manipulación y
   análisis de datos de forma rápida y eficiente. Se complementa con la
   biblioteca de visualización Matplotlib. Puedes consultar más información en
-  https://pandas.pydata.org/</li>
+  https://pandas.pydata.org/.</li>
 </ul>
 <p>SciPy: La biblioteca SciPy es uno de los paquetes centrales que componen la
   pila de SciPy. Proporciona muchas rutinas numéricas eficientes y fáciles de
-  usar , como las rutinas de integración numérica, interpolación, optimización,
-  álgebra lineal y estadística. Esta descripción esta disponible en
+  usar, como las rutinas de integración numérica, interpolación, optimización,
+  álgebra lineal y estadística. Esta descripción se encuentra disponible en
   https://www.scipy.org/scipylib/index.html.</p>
 <ul>
 <li>Matplotlib: es una de las primeras y más populares bibliotecas de
@@ -201,7 +202,7 @@ implementar en tu proyecto de ciencia abierta:</p>
   de error, gráficos circulares y muchos otros.</li>
 </ul>
 <p>Es uno de los métodos más simples para las representaciones básicas, está
-  diseñada con la filosofía de que deberías crear un gráfico simple con pocas
+  diseñada con la filosofía de que deberías generar un gráfico simple con pocas
   líneas de código, o simplemente una. Además, se complementa muy bien con otras
   bibliotecas de análisis de datos, tal es el caso mencionado líneas arriba con
   <em>pandas</em>.</p>
@@ -226,8 +227,9 @@ web</a>.</p>
 web, existen foros y varios canales de información sobre ellas. No son las
 únicas que puedes incluir en tu proyecto, hay muchas opciones más, te invitamos
 a que explores y pruebes estas herramientas.</p>
-<p>En nuestro artículo <strong>Herramientas de visualización en Python</strong> puedes encontrar
-otras librerías que te pueden interesar.</p>
+<p>En nuestro artículo <a href="https://opensciencelabs.org/blog/0037-visualizacion_python/herramientas-de-visualizacion-en-python/"><strong>Herramientas de visualización en
+Python</strong></a>
+puedes encontrar otras bibliotecas o librerías que te pueden interesar.</p>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">

@@ -36,7 +36,13 @@ de datos de distintos tipos. Para entender esos datos debe rea">
 <meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-04-09T00:00:00-05:00">
+<meta property="article:tag" content="ggmap">
+<meta property="article:tag" content="ggplot2">
+<meta property="article:tag" content="lattice">
+<meta property="article:tag" content="plotly">
 <meta property="article:tag" content="r">
+<meta property="article:tag" content="shiny">
+<meta property="article:tag" content="tidyverse">
 <meta property="article:tag" content="visualization">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@opensciencelabs">
@@ -124,7 +130,13 @@ bg-dark
 </div>
         
         <ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/r/" rel="tag">r</a></li>
+<li><a class="tag p-category" href="../../../categories/ggmap/" rel="tag">ggmap</a></li>
+            <li><a class="tag p-category" href="../../../categories/ggplot2/" rel="tag">ggplot2</a></li>
+            <li><a class="tag p-category" href="../../../categories/lattice/" rel="tag">lattice</a></li>
+            <li><a class="tag p-category" href="../../../categories/plotly/" rel="tag">plotly</a></li>
+            <li><a class="tag p-category" href="../../../categories/r/" rel="tag">r</a></li>
+            <li><a class="tag p-category" href="../../../categories/shiny/" rel="tag">shiny</a></li>
+            <li><a class="tag p-category" href="../../../categories/tidyverse/" rel="tag">tidyverse</a></li>
             <li><a class="tag p-category" href="../../../categories/visualization/" rel="tag">visualization</a></li>
         </ul></header><div class="e-content entry-content" itemprop="articleBody text">
         <!-- # Herramientas de visualización en R -->
@@ -141,16 +153,15 @@ información fácilmente interpretable de lo que ellos nos quieren decir y
 así, poder comunicarla de una manera asertiva.</p>
 <!-- TEASER_END -->
 
-<p>La visualización es un método de exploración de datos que muestra, de
-una mirada, algunas cosas que de otra
-forma hubiese sido muy difı́cil observar. Por tanto, se suele realizar
-al comienzo de cualquier análisis estadístico formal que se haga con
-ellos o para la presentación de resultados en informes descriptivos de datos. La
-visualización de datos se ve grandemente influenciada por su calidad y
-capacidades de las herramientas computacionales y software estadísticos
-utilizados para ello. Es aquí donde la decisión del analista de datos por escoger entre uno u
-otro lenguaje de programación y/o paquete estadístico es sumamente
-importante.</p>
+<p>La visualización es un método de exploración de datos que muestra, de una
+mirada, algunas cosas que de otra forma hubiese sido muy difícil observar. Por
+tanto, se suele realizar al comienzo de cualquier análisis estadístico formal
+que se haga con ellos o para la presentación de resultados en informes
+descriptivos de datos. La visualización de datos se ve grandemente influenciada
+por su calidad y capacidades de las herramientas computacionales y software
+estadísticos utilizados para ello. Es aquí donde la decisión del analista de
+datos por escoger entre uno u otro lenguaje de programación y/o paquete
+estadístico es sumamente importante.</p>
 <p>En esta oportunidad, te hablamos de las capacidades para la
 visualización de datos que posee el <a href="https://www.r-project.org/">Lenguaje estadístico
 R</a>.</p>
@@ -171,14 +182,13 @@ persona puede sugerir un gráfico o informar de errores.</p>
 <em>motores gráficos</em>, esto se trata de una serie de funciones que permiten
 realizar manipulaciones gráficas básicas: como: trazar líneas, dibujar
 puntos, curvas, entre otros elementos. Estas funciones no son manejadas
-directamente por los usuarios, sino utiliza funciones de alto nivel
+directamente por los usuarios, si no utiliza funciones de alto nivel
 (como la función <code>plot</code>). Estos motores son: "El motor tradicional o
 base de R" y "El motor <em>grid</em>".</p>
-<p>Las funciones básicas de R para gráficos como, <code>plot</code>, <code>hist</code>, <code>boxplot</code>
-y otras, están desarrolladas bajo el motor tradicional de R. No
-obstante, para construir otro tipo de gráficos no es suficientemente
-adecuada. Por tal motivo, [Paul Murrell](enlace a biografía) desarrolló
-el motor grid.</p>
+<p>Las funciones básicas de R para gráficos como, <code>plot</code>, <code>hist</code>, <code>boxplot</code> y
+otras, están desarrolladas bajo el motor tradicional de R. No obstante, para
+construir otro tipo de gráficos no es suficientemente adecuada. Por tal motivo,
+<a href="https://www.stat.auckland.ac.nz/~paul/">Paul Murrell</a> desarrolló el motor grid.</p>
 <h3>Algunas consideraciones sobre el motor tradicional de R</h3>
 <p>En su paquete base R cuenta con varias funciones para la producción de
 gráficas, la mayoría de las cuales se encuentran en el paquete
@@ -193,7 +203,7 @@ gráficas, la mayoría de las cuales se encuentran en el paquete
 <p><code>hist()</code> para un histograma.</p>
 </li>
 <li>
-<p><code>barplot()</code> permite realizar un gráfico de barras.</p>
+<p><code>barplot()</code> permite hacer un gráfico de barras.</p>
 </li>
 <li>
 <p><code>boxplot()</code> para un diagrama de caja y bigotes.</p>
@@ -211,7 +221,7 @@ matrices de dispersión, gráficos de independencia y de estrellas,
 realizar combinaciones de gráficos, colocar curvas a histogramas,
 efectos de sombreado. También se pueden obtener gráficos para
 representar la salida de un modelo estadístico como: regresión lineal
-simple,análisis de componentes principales, series de tiempo, cartas o
+simple, análisis de componentes principales, series de tiempo, cartas o
 diagramas de control.</p>
 <p>Esos gráficos pueden ser almacenados para su posterior reutilización en
 cualquier tipo de documento. Para lo cual se usa el paquete base
@@ -220,29 +230,27 @@ cualquier tipo de documento. Para lo cual se usa el paquete base
 <p>A continuación daremos una descripción breve sobre algunos paquetes
 útiles para la visualización de datos en R.</p>
 <h4>lattice</h4>
-<p>El paquete fue escrito por [Deepayan Sarkar](enlace a biografía) con el
-objetivo de mejorar los gráficos básicos de R, proporcionando mejores
-valores por defecto y tiene la capacidad de mostrar, de una manera
-fácil, las relaciones multivariantes. Está desarrollado bajo el motor
-gráfico grid. Con este paquete puedes realizar los gráficos <em>trellis</em>,
-que describen situaciones complejas (mayormente multivariantes) como la
-relación entre variables condicionada a una o más variables,
-representándolo en un sólo gráfico organizado en paneles. Además tiene
-la funcionalidad para generar gráficos en 3D, puedes consultar la
-[documentación de este paquete](enlace a documentación lattice) para más
-información.</p>
+<p>El paquete fue escrito por <a href="https://www.isid.ac.in/~deepayan/">Deepayan Sarkar</a>
+con el objetivo de mejorar los gráficos básicos de R, proporcionando mejores
+valores por defecto y tiene la capacidad de mostrar, de una manera fácil, las
+relaciones multivariantes. Está desarrollado bajo el motor gráfico grid. Con
+este paquete puedes realizar los gráficos <em>trellis</em>, que describen situaciones
+complejas (mayormente multivariantes) como la relación entre variables
+condicionada a una o más variables, representándolo en un sólo gráfico
+organizado en paneles. Además tiene la funcionalidad para generar gráficos en
+3D, puedes consultar la <a href="http://cran.fhcrc.org/web/packages/lattice/">documentación de este
+paquete</a> para más información.</p>
 <h4>ggplot2</h4>
-<p>Es un paquete apoyado en el motor grid. Fue desarrollado por [Hardley
-Wickham](enlace a biografía) como una implementación de la metodología
-de visualización de datos llamada <em>The Grammar of Graphics</em> cuya idea
-consiste en especificar de manera independiente las componentes del
-gráfico y luego combinarlas. Es un paquete ampliamante difundido y
-utilizado en la actualidad por los analistas de datos. Mantiene una
-estética elegante y profesional. Este paquete viene incluido dentro de
-<a href="https://www.tidyverse.org/">tidyverse</a> que engloba un conjunto de
-paquetes para ciencia de datos. Se pueden realizar gráficos interactivos
-y animados.</p>
-<p>Básicamente los componentes del paquete son: <strong>Estéticas</strong> (color, forma
+<p>Es un paquete apoyado en el motor grid. Fue desarrollado por <a href="https://hadley.nz/">Hardley
+Wickham</a> como una implementación de como una implementación
+de la metodología de visualización de datos llamada <em>The Grammar of Graphics</em>
+cuya idea consiste en especificar de manera independiente las componentes del
+gráfico y luego combinarlas. Es un paquete ampliamente difundido y utilizado en
+la actualidad por los analistas de datos. Mantiene una estética elegante y
+profesional. Este paquete viene incluido dentro de
+<a href="https://www.tidyverse.org/">tidyverse</a> que engloba un conjunto de paquetes para
+ciencia de datos. Se pueden realizar gráficos interactivos y animados.</p>
+<p>Básicamente, los componentes del paquete son: <strong>Estéticas</strong> (color, forma
 de un punto, relleno, entre otras), <strong>Capas</strong> (o geoms en el paquete)
 por ejemplo, <code>geom_point</code>, <code>geom_line</code>, <code>geom_histogram</code>, <code>geom_bar</code>,
 <code>geom_boxplot</code>, <strong>Facetas</strong> y <strong>Temas</strong>, referentes a aspectos
@@ -250,14 +258,15 @@ estéticos, por ejemplo, ejes, etiquetas, colores de fondo, tamaño de los
 márgenes y otros. Puedes consultar más sobre este poderoso paquete en
 [http://www.ggplot2.org]</p>
 <h4>ggmap</h4>
-<p>Permite la representación de información georreferenciada, tiene la
-misma arquitectura que ggplot2. Ggmap permite añadir a los gráficos de
-ggplot2, una capa cartográfica adicional para lo cual usa recursos
-disponibles en la web a través de APIs de Google y otros. Más
-información en (enlace a documentación o sitio web de ggmap)</p>
+<p>Permite la representación de información georreferenciada, tiene la misma
+arquitectura que ggplot2. Ggmap permite añadir a los gráficos de ggplot2, una
+capa cartográfica adicional para lo cual usa recursos disponibles en la web a
+través de APIs de Google y otros. Puedes encontrar más información en la
+<a href="https://www.rdocumentation.org/packages/ggmap/versions/3.0.0">documentación de
+ggmap</a>.</p>
 <h4>plotly</h4>
 <p>Con plotly puedes realizar gráficos interactivos y dinámicos de calidad
-de publicación, sumamente úitiles para los resultados que se difunden a
+de publicación, sumamente útiles para los resultados que se difunden a
 través de Internet. Permite hacer gráficos de líneas, dispersión, área,
 barras, error, cajas, histogramas, mapas térmicos, subgráficos, de
 múltiples ejes y gráficos 3D. Es gratuito y de código abierto con
@@ -281,10 +290,10 @@ para aprender sus principios básicos. Consulta más información en
   Se pueden representar incluso formas geométricas en 3D.</p>
 </li>
 <li>
-<p>Existen librerías en R para poder conectar y explorar los datos desde
-  Google Analytics: <strong>googleAuthR</strong> y <strong>googleAnalyticsR</strong>. Para
-  vutilizarlas se necesitan en una el token Google Analytics, y en la
-  otra, habilitar Google Cloud y su API, respectivamente.</p>
+<p>Existen librerías en R para poder conectar y explorar los datos desde Google
+  Analytics: <strong>googleAuthR</strong> y <strong>googleAnalyticsR</strong>. Para utilizarlas se
+  necesitan en una el token Google Analytics, y en la otra, habilitar Google
+  Cloud y su API, respectivamente.</p>
 </li>
 <li>
 <p>Paquete <strong>ellipse</strong> y <strong>scatterplot3d</strong> poseen varias funciones para
@@ -303,11 +312,11 @@ de los datos y la potencia de R para hacerlo.</p>
   Abril 2018.</p>
 </li>
 <li>
-<p><em>Gráficos Estadı́sticos con R</em>. Correa Juan y González Nelfi.
-  Universidad Nacional de Colombia, Sede Medellı́n. 2002.</p>
+<p><em>Gráficos Estadísticos con R</em>. Correa Juan y González Nelfi.
+  Universidad Nacional de Colombia, Sede Medellín. 2002.</p>
 </li>
 <li>
-<p><a href="https://rpubs.com/RUsersGroup-Ecuador/graf">R Users Group Ecuador</a></p>
+<p><a href="https://rpubs.com/RUsersGroup-Ecuador/graf">R Users Group Ecuador</a>.</p>
 </li>
 </ul>
 </div>
