@@ -3,7 +3,7 @@
 .. slug: primeros-pasos-con-rstudio
 .. date: 2021-04-05
 .. author: Anavelyz Pérez
-.. tags: ide, r, rstudio, rstudio Desktop, rstudio server, interfaz de r
+.. tags: ide, r, rstudio, rstudio desktop, rstudio server, interfaz de r
 .. category: ide
 .. link:
 .. description:
@@ -21,9 +21,9 @@ más.
 
 <!-- TEASER_END -->
 
-<iframe
+<center><iframe
   src="https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true"
-  style="border: none;"></iframe>
+  style="border: none;"></iframe></center>
 
 Para acceder o utilizar esta herramienta se tienen las siguientes opciones:
 [RStudio Desktop](https://rstudio.com/products/rstudio/#rstudio-desktop) y
