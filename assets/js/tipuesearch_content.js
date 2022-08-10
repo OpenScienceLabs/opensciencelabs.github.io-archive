@@ -7,6 +7,42 @@ var tipuesearch = {
       "url": "https://opensciencelabs.org/about/"
     },
     {
+      "title": "Calendar OSL",
+      "text": "window.location.href = \"https://calendar.google.com/calendar/u/0/r?cid=Y2VscHE1bThnMWQzcWRlMmFnNjRsazYyZG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/calendar/"
+    },
+    {
+      "title": "Discord OSL",
+      "text": "window.location.href = \"https://discord.com/invite/mjAnW8BPck\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/discord/"
+    },
+    {
+      "title": "Facebook OSL",
+      "text": "window.location.href = \"https://www.facebook.com/opensciencelabscommunity\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/facebook/"
+    },
+    {
+      "title": "Linkedin OSL",
+      "text": "window.location.href = \"https://www.linkedin.com/company/open-science-labs/\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/linkedin/"
+    },
+    {
+      "title": "Twitter OSL",
+      "text": "window.location.href = \"https://twitter.com/opensciencelabs\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/twitter/"
+    },
+    {
+      "title": "Youtube OSL",
+      "text": "window.location.href = \"https://www.youtube.com/channel/UCk01FMOEN6fIf4JLijMO68A\";",
+      "tags": "",
+      "url": "https://opensciencelabs.org/youtube/"
+    },
+    {
       "title": "Open Science Labs Partners",
       "text": "Open Science Labs Partners\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n\n  \n    .alertadengue{\n      width: 150px;\n      height: auto;\n    }\n    .epigraphhub {\n      width: 200px;\n      height: auto;\n    }\n    .arxlang {\n      width: 100px;\n      height: 100px;\n    }\n    .pyopensci {\n      width: 120px;\n      height: auto;\n    }\n  \n\n\n\n\n\nOSL is a Open-Source community and everyone can join, check our\n\nGitHub\nto be apart of the issues.\n\nPartners\n\n\n  \n    \n    \n    \n      AlertaDengue\n      InfoDengue is an early-warning system to all states of Brazil, the system is based on the continuous analysis of hybrid data generated through the research of climate and epidemiological data and social scraping.\n      \n    \n  \n  \n    \n    \n    \n      EpiGraphHub\n      Health Data Hub & Data Analysis Ecosystem for Rapid Epidemic Outbreak Response.\n      \n    \n  \n  \n    \n    \n    \n      ArxLang\n      Arx compiler aims to provide arrow datatypes as native datatypes.\n      \n    \n  \n  \n    \n    \n    \n      pyOpenSci\n      pyOpenSci promotes open and reproducible research through peer-review of scientific Python packages.\n      \n      \n    \n  \n  \n    \n      PyDataStructs\n      A Python package for data structures and algorithms.\n      \n    \n\n\n\n  .alertadengue{\n    width: 150px;\n    height: auto;\n  }\n  .epigraphhub {\n    width: 200px;\n    height: auto;\n  }\n  .arxlang {\n    width: 100px;\n    height: 100px;\n  }\n  .pyopensci {\n    width: 120px;\n    height: auto;\n  }",
       "tags": "",
