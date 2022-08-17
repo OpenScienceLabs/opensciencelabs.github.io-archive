@@ -3,7 +3,7 @@
 .. slug: primeros-pasos-con-spyder
 .. date: 2021-02-22
 .. author: Yurely Camacho
-.. tags: ide
+.. tags: ide, interfaz, python, spyder, spyder online
 .. category: ide
 .. link:
 .. description:
