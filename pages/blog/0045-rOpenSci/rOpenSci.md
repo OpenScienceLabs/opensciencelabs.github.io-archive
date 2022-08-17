@@ -3,7 +3,7 @@
 .. slug: te-contamos-sobre-la-comunidad-ropensci
 .. date: 2020-08-18
 .. author: Yurely Camacho
-.. tags: r, community, open science
+.. tags: r, community, open science, ropensci
 .. category: open science
 .. link: 
 .. description: 
