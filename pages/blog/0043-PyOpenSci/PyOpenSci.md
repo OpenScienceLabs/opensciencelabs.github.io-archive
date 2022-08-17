@@ -131,9 +131,9 @@ La comunidad pyOpenSci es la encargada de desarrollar, presentar,
 revisar y promover los paquetes de software científico en Python. Al ser
 una comunidad abierta, **cualquiera puede enviar un paquete para su
 revisión**. Puedes conocer los paquetes que se encuentran actualmente en
-revisión accediendo al siguiente repositorio GitHub
-\[https://github.com/pyOpenSci/software-review/issues\] y los aceptados
-en este otro enlace \[https://www.pyopensci.org/python-packages/\].
+revisión accediendo a [este repositorio
+GitHub](https://github.com/pyOpenSci/software-review/issues) y los
+aceptados [aquí](https://www.pyopensci.org/python-packages/).
 
 Algunos de los paquetes aprobados hasta ahora por pyOpenSci son:
 
