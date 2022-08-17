@@ -3,7 +3,7 @@
 .. slug: te-contamos-sobre-la-comunidad-ropensci
 .. date: 2020-08-18
 .. author: Yurely Camacho
-.. tags: r, community, open science
+.. tags: r, community, open science, ropensci
 .. category: open science
 .. link: 
 .. description: 
@@ -41,23 +41,23 @@ el objeto de fomentar el uso de la ciencia abierta en las
 investigaciones.
 
 rOpenSci es un proyecto patrocinado fiscalmente por
-[NumFOCUS](https://numfocus.org) una organización que apoya y promueve
-la computación científica, innovadora y de código abierto. Consulta el
-siguiente post de su blog con la presentación del proyecto: \[Cómo
-rOpenSci utiliza Code Review para promover la ciencia reproducible\]
-(https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science).
+[NumFOCUS](https://numfocus.org) una organización que apoya y promueve la
+computación científica, innovadora y de código abierto. Consulta el siguiente
+post de su blog con la presentación del proyecto: [Cómo rOpenSci utiliza Code
+Review para promover la ciencia
+reproducible](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science).
 
 rOpenSci, gracias a su mecanismo de revisión por pares y el constante
 trabajo de los desarrolladores de la comunidad, ha logrado más de 200
 [paquetes disponibles](https://ropensci.org/packages/), alrededor de 500
-contribuyentes de código y más de 500 citas en investigaciones formando
+contribuyentes de código y más de 500 citas en investigaciones, formando
 un imponente sistema de software abierto para el desarrollo y la revisión por pares
 (https://ropensci.org/pdfs/2018-08-15_rpharma_ropensci_butland.pdf).
-Desde estos enlaces puedes conocer tanto el [Equipo principal](https://ropensci.org/about/#team), como el de becarios
+Desde estos enlaces puedes conocer tanto el [equipo principal](https://ropensci.org/about/#team), como el de becarios
 de investigación, alumnos y
 [colaboradores](https://ropensci.org/about/#collaborators) del Proyecto.
 
-La comunidad de rOpenSci acepta [Donaciones](https://ropensci.org/donate/) de
+La comunidad de rOpenSci acepta [donaciones](https://ropensci.org/donate/) de
 individuos, instituciones y corporaciones que apoyen sus actividades. Si
 deseas hacer una donación al proyecto, [accede a este
 formulario](https://numfocus.salsalabs.org/donate-to-ropensci/index.html).
@@ -68,31 +68,28 @@ Un paquete rOpenSci es una herramienta de software de R que está siendo
 o ha sido examinado cuidadosamente (mediante un proceso de revisión por
 pares), y que ha sido aportado por el personal y miembros de la comunidad.
 
-Con los paquetes de rOpenSci puedes, entre otras cosas:
-
-Recopilar y acceder a datos desde varias fuentes y de varios tipos,
-analizarlos de manera interactiva y realizar visualizaciones de estos,
-incluir una narrativa en el proceso que permita generar un documento
-para presentaciones finales en formatos como Word, Markdown, PDF o LaTeX
-que luego puedes compartir.
+Con los paquetes de rOpenSci puedes, entre otras cosas, recopilar y acceder a
+datos desde varias fuentes y de varios tipos, analizarlos de manera interactiva
+y realizar visualizaciones de estos. Además, puedes incluir una narrativa en el proceso que
+permita generar un documento para presentaciones finales, en formatos como Word,
+Markdown, PDF o LaTeX, que luego puedes compartir.
 
 #### Explora los tutoriales, videotutoriales y casos de uso de los paquetes
 
 rOpenSci ofrece una documentación diversa, incluyendo
-[Tutoriales](https://ropensci.org/tutorials/) y
-[Videotutoriales](https://vimeo.com/ropensci) que muestran un recorrido
-detallado acerca de lo que puedes hacer con sus paquetes. Asimismo,
-[Casos de Uso](https://ropensci.org/usecases/) con ejemplos de su manejo
-en situaciones reales, entre ellos: [Modelización de la distribución de
-especies](https://ropensci.org/usecases/rgbif_nichemodel/),
-[Comparaciones de biodiversidad entre
-ciudades](https://ropensci.org/usecases/rgbif_biodivcomp/), [Crear
-fácilmente un mapa interactivo en la web desde
+[tutoriales](https://ropensci.org/tutorials/) y
+[videotutoriales](https://vimeo.com/ropensci) que muestran un recorrido
+detallado acerca de lo que puedes hacer con sus paquetes. Asimismo, presenta
+[casos de Uso](https://ropensci.org/usecases/) con ejemplos de su manejo en
+situaciones reales, entre ellos: [Modelización de la distribución de
+especies](https://ropensci.org/usecases/rgbif_nichemodel/), [Comparaciones de
+biodiversidad entre ciudades](https://ropensci.org/usecases/rgbif_biodivcomp/),
+[Crear fácilmente un mapa interactivo en la web desde
 R](https://ropensci.org/usecases/spocc_gistmap/).
 
 ### Infórmate brevemente sobre la revisión por pares de software en rOpenSci
 
-#### Cómo enviar un paquete a rOpenSci y el proceso de revisión
+#### ¿Cómo enviar un paquete a rOpenSci?, y ¿cómo es el proceso de revisión?
 
 La comunidad en general puede enviar un paquete para que sea revisado y,
 los revisores de la comunidad deben garantizar el cumplimiento de
@@ -128,7 +125,7 @@ guía para los editores, autores y revisores, las políticas de la
 comunidad, las buenas prácticas para el mantenimiento de los paquetes y
 otros tópicos de interés. No puedes dejar de leerlo.
 
-**Si deseas enviar un paquete lo primero que debes hacer** es darle un
+**Si deseas enviar un paquete, lo primero que debes hacer** es darle un
 vistazo a la [Guía para
 autores](https://devguide.ropensci.org/guide-for-authors.html) antes de
 abrir un número de envío en el [repositorio de revisión de
@@ -138,7 +135,7 @@ software](https://github.com/ropensci/software-review/).
 
 Si deseas ser revisor, puedes proponerte a través de [este
 formulario](https://ropensci.org/onboarding/) con información de
-contacto y áreas de especialización, pero te recomendamos que antes leas la [Guía para
+contacto y áreas de especialización, pero te recomendamos que antes leas la [guía para
 revisores](https://devguide.ropensci.org/reviewerguide.html) donde se
 detalla el proceso a seguir.
 
@@ -158,7 +155,7 @@ un paquete, siendo editor o revisor, puedes:
   software, eventos y otros post de la comunidad.
 
 - Suscribirte a [**rOpenSci News**](https://news.ropensci.org/) el
-  Boletín informativo de rOpenSci, y recibir actualizaciones semestrales
+  *boletín informativo de rOpenSci*, y recibir actualizaciones semestrales
   de las actividades de la comunidad en tu correo.
 
 - Asistir a las llamadas de la comunidad [**rOpenSci community
@@ -184,8 +181,8 @@ un paquete, siendo editor o revisor, puedes:
 
 La comunidad rOpenSci está abierta a tu participación y a la de
 cualquier persona. Si usas el lenguaje R, unirte a ella es una buena
-oportunidad. Puedes darle un vistazo a nuestro post sobre pyOpenSci: un
-promotor de la ciencia abierta (enlace a artículo pyOpenSCi) si tu
+oportunidad. Puedes darle un vistazo a nuestro post sobre [pyOpenSci: un
+promotor de la ciencia abierta](https://opensciencelabs.org/blog/0043-PyOpenSci/pyopensci-un-promotor-de-la-ciencia-abierta/) si tu
 lenguaje de programación es Python; y tus aspiraciones son las de
 desarrollar un paquete, ser editor, revisor, o seguir a esta comunidad.
 
