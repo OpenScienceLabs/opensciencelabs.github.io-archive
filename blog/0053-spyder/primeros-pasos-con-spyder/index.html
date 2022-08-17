@@ -21,22 +21,26 @@
   gtag('config', 'UA-213158050-1');
 </script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
 <meta name="author" content="Yurely Camacho">
-<meta property="description" content="Si haz elegido programar en Python, luego de haberlo instalado quizás te
-preguntarás ¿Dónde voy a programar? Para esto necesitas un editor de
-código. Existen muchas opciones de IDE (Entorno de Desarro">
+<meta property="description" content="Si has elegido programar en Python, luego de haberlo instalado quizás te
+preguntarás; ¿dónde voy a programar? Para esto necesitas un editor de código.
+Existen muchas opciones de IDE (Entorno de Desarr">
 <link rel="prev" href="../../0051-5proyectosdeinteligenciaartificial/ciencia-abierta/" title="5 proyectos de inteligencia artificial que te sorprenderan" type="text/html">
 <link rel="next" href="../../0052-carpentries/por-que-deberias-considerar-carpentries-como-una-referencia-para-aprender-ciencia-de-datos/" title="Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos" type="text/html">
 <link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
 <meta property="og:site_name" content="Open Science Labs">
 <meta property="og:title" content="Primeros pasos con Spyder">
 <meta property="og:url" content="https://opensciencelabs.org/blog/0053-spyder/primeros-pasos-con-spyder/">
-<meta property="og:description" content="Si haz elegido programar en Python, luego de haberlo instalado quizás te
-preguntarás ¿Dónde voy a programar? Para esto necesitas un editor de
-código. Existen muchas opciones de IDE (Entorno de Desarro">
+<meta property="og:description" content="Si has elegido programar en Python, luego de haberlo instalado quizás te
+preguntarás; ¿dónde voy a programar? Para esto necesitas un editor de código.
+Existen muchas opciones de IDE (Entorno de Desarr">
 <meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2021-02-22T00:00:00-06:00">
 <meta property="article:tag" content="ide">
+<meta property="article:tag" content="interfaz">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="spyder">
+<meta property="article:tag" content="spyder online">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@opensciencelabs">
 <meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
@@ -124,42 +128,43 @@ bg-dark
         
         <ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../../categories/ide/" rel="tag">ide</a></li>
+            <li><a class="tag p-category" href="../../../categories/interfaz/" rel="tag">interfaz</a></li>
+            <li><a class="tag p-category" href="../../../categories/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../../categories/spyder/" rel="tag">spyder</a></li>
+            <li><a class="tag p-category" href="../../../categories/spyder-online/" rel="tag">spyder online</a></li>
         </ul></header><div class="e-content entry-content" itemprop="articleBody text">
         <!-- # Primeros pasos con Spyder -->
 
 <p><img alt="header" src="../../../images/blog/primeros-pasos-con-spyder/header.png"></p>
-<p>Si haz elegido programar en Python, luego de haberlo instalado quizás te
-preguntarás ¿Dónde voy a programar? Para esto necesitas un editor de
-código. Existen muchas opciones de IDE (Entorno de Desarrollo Integrado)
-que puedes usar, la elección dependerá de la herramienta que te haga
-sentir comodidad, se adapte a tus necesidades de trabajo y, muy
-importante, sea sencilla de manejar.</p>
+<p>Si has elegido programar en Python, luego de haberlo instalado quizás te
+preguntarás; ¿dónde voy a programar? Para esto necesitas un editor de código.
+Existen muchas opciones de IDE (Entorno de Desarrollo Integrado) que puedes
+usar, la elección dependerá de la herramienta que te haga sentir comodidad, se
+adapte a tus necesidades de trabajo y, muy importante, sea sencilla de manejar.</p>
 <!-- TEASER_END -->
 
-<p>En este post presentamos lo que necesitas saber para usar
-<a href="https://www.spyder-ide.org/">Spyder</a> como entorno de desarrollo para
-escribir, ejecutar, evaluar e inspeccionar el resultado de tu código
-escrito en Python.</p>
-<p>Básicamente, Spyder (acrónimo de Scientific Python Development
-Environment) anteriormente conocido como Pydee, es un entorno de
-desarrollo integrado escrito en Python y desarrollado para científicos,
-ingenieros y analistas de datos que usen este lenguaje de programación.
-Esta herramienta está liberada bajo la licencia del MIT y se financia
-gracias al generoso apoyo de <a href="https://numfocus.org/">NUMFOCUS</a> y
-<a href="https://www.quansight.com/">QUANSIGHT</a>.</p>
+<p>En este post presentamos lo que necesitas saber para utilizar
+<a href="https://www.spyder-ide.org/">Spyder</a> como entorno de desarrollo para escribir,
+ejecutar, evaluar e inspeccionar el resultado de tu código escrito en Python.</p>
+<p>Básicamente, <strong>Spyder</strong> (acrónimo de Scientific Python Development Environment)
+anteriormente conocido como Pydee, es un entorno de desarrollo integrado escrito
+en Python y, desarrollado para científicos, ingenieros y analistas de datos que
+empleen este lenguaje de programación. Esta herramienta está liberada bajo la
+licencia del MIT y se financia gracias al generoso apoyo de
+<a href="https://numfocus.org/">NUMFOCUS</a> y <a href="https://www.quansight.com/">QUANSIGHT</a>.</p>
 <h4>Características y funcionalidades de Spyder</h4>
 <ul>
 <li>
-<p>Multiplataforma y de código abierto.</p>
+<p>Es multiplataforma y de código abierto.</p>
 </li>
 <li>
-<p>Multilenguaje.</p>
+<p>Es multilenguaje.</p>
 </li>
 <li>
 <p>Cuenta con edición avanzada.</p>
 </li>
 <li>
-<p>Depuración integrada y ejecución interactiva.</p>
+<p>Tiene depuración integrada y ejecución interactiva.</p>
 </li>
 <li>
 <p>Ofrece capacidades de visualización.</p>
@@ -168,12 +173,11 @@ gracias al generoso apoyo de <a href="https://numfocus.org/">NUMFOCUS</a> y
 <p>Provee de funcionalidades para análisis de código como coloreado de sintaxis.</p>
 </li>
 <li>
-<p>Multiconsola.</p>
+<p>Es multiconsola.</p>
 </li>
 <li>
-<p>Incluye instrumentos para el control de calidad y el análisis de
-  códigos específicos de Python, como
-  <a href="https://pypi.org/project/pyflakes/">Pyflakes</a>,
+<p>Incluye instrumentos para el control de calidad y el análisis de códigos
+  específicos de Python, como <a href="https://pypi.org/project/pyflakes/">Pyflakes</a>,
   <a href="https://www.pylint.org/">Pylint</a> y
   <a href="https://github.com/python-rope/rope">Rope</a>.</p>
 </li>
@@ -182,28 +186,25 @@ gracias al generoso apoyo de <a href="https://numfocus.org/">NUMFOCUS</a> y
   explorador-editor de variables y la consola.</p>
 </li>
 <li>
-<p>Pueden extenderse sus funcionalidades a traves de plugins. Entre ellos:</p>
+<p>Permite extender sus funcionalidades a través de plugins. Entre ellos:</p>
 </li>
 <li>
-<p><a href="https://github.com/spyder-ide/spyder-notebook">Spyder Notebook
-    plugin</a>. Para usar
-    los cuadernos Jupyter dentro de Spyder.</p>
+<p><a href="https://github.com/spyder-ide/spyder-notebook">Spyder Notebook plugin</a>.
+    Para usar los cuadernos Jupyter dentro de Spyder.</p>
 </li>
 <li>
-<p><a href="https://github.com/spyder-ide/spyder-terminal">Spyder Terminal</a>.
-    Muestra una terminal virtual dentro de la ventana principal de
-    Spyder.</p>
+<p><a href="https://github.com/spyder-ide/spyder-terminal">Spyder Terminal</a>. Muestra
+    una terminal virtual dentro de la ventana principal de Spyder.</p>
 </li>
 <li>
-<p><a href="https://github.com/spyder-ide/spyder-reports">Spyder reports</a>.
-    Permite generar informes de Markdown usando
+<p><a href="https://github.com/spyder-ide/spyder-reports">Spyder reports</a>. Permite
+    generar informes de Markdown utilizando
     <a href="http://mpastell.com/pweave/">Pweave</a> como backend.</p>
 </li>
 <li>
 <p><a href="https://github.com/spyder-ide/spyder-autopep8">Spyder-autopep8</a>.
     Complemento para ejecutar <strong>autopep8</strong> (el
-    <a href="https://es.wikipedia.org/wiki/Lint">linter</a> de python) dentro de
-    Spyder.</p>
+    <a href="https://es.wikipedia.org/wiki/Lint">linter</a> de python) dentro de Spyder.</p>
 </li>
 <li>
 <p>Está en continua evolución y soporte gracias a una gran comunidad de
@@ -220,108 +221,102 @@ gracias al generoso apoyo de <a href="https://numfocus.org/">NUMFOCUS</a> y
 </li>
 </ul>
 <h3>Instalación y primeros pasos</h3>
-<p>Para trabajar con Spyder tienes algunas opciones, entre las más usadas están:</p>
+<p>Para trabajar con Spyder tienes algunas opciones, entre las más comunes están:</p>
 <ul>
 <li>
-<p>Puedes probar <strong>Spyder online</strong>, esto es posible gracias a
-  Binder[https://mybinder.org/]. Debes acceder a la <a href="https://mybinder.org/v2/gh/spyder-ide/spyder/4.x?urlpath=/desktop">página de Spyder en
-  Binder</a>
-  donde trabajarás con una copia de Spyder que se ejecuta directamente
-  en tu navegador web, es decir, no es necesaria su instalación.</p>
+<p><strong>Spyder online</strong>, permite que trabajes con una copia de Spyder que se ejecuta
+  directamente en tu navegador web, es decir, no es necesaria su instalación.
+  Esto es posible gracias a <a href="https://mybinder.org/">Binder</a>. Si deseas probarlo
+  debes acceder a la <a href="https://mybinder.org/v2/gh/spyder-ide/spyder/4.x?urlpath=/desktop">página de Spyder en
+  Binder</a>.</p>
 </li>
 <li>
-<p>Usando <a href="https://www.anaconda.com/">Anaconda</a> o
-  <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. Spyder
-  viene incluido, por defecto, en estas distribuciones. Esta es la forma
-  más fácil de instalarlo y lo recomendamos para evitar cualquier
-  inconveniente.</p>
+<p>Empleando <a href="https://www.anaconda.com/">Anaconda</a> o
+  <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>. Spyder viene
+  incluido, por defecto, en estas distribuciones. Esta es la forma más fácil de
+  instalarlo y lo recomendamos para evitar cualquier inconveniente.</p>
 </li>
 <li>
-<p>Puedes instalarlo también usando pip o conda en tu entorno local
-  (enlace a artículo conda) con los siguientes comandos <code>conda install spyder</code> o <code>pip install spyder</code>. La documentación oficial del proyecto
-  te ofrece una <a href="https://docs.spyder-ide.org/current/installation.html">Guía de
-  instalación</a>
-  que te será de gran ayuda si surgen dudas.</p>
+<p>Puedes instalarlo también usando <a href="https://pypi.org/project/spyder/"><em>pip</em></a> o
+  <a href="https://anaconda.org/anaconda/spyder"><em>conda</em></a> en tu entorno local con los
+  siguientes comandos <code>conda install -c anaconda spyder</code> o <code>pip install spyder</code>.
+  La documentación oficial del proyecto te ofrece una <a href="https://docs.spyder-ide.org/current/installation.html">guía de
+  instalación</a> que te
+  será de gran ayuda si surgen dudas.</p>
 </li>
 </ul>
 <h4>Ya tengo Spyder, ahora cómo lo uso</h4>
-<p>Para correr Spyder en Windows, dirígete al menú <em>Inicio</em> y luego busca
-la aplicación de <em>Spyder</em>. En Linux, si instalaste Spyder usando
-Anaconda o Miniconda, puedes acceder buscando su nombre en tu ícono de
-Menú. Si deseas hacerlo usando la línea de comandos, en Windows abre
-<em>Anaconda Prompt</em> y haz clic en Spyder. En las demás plataformas accede
-a una ventana del terminal y teclea <code>conda activate nombre_entorno</code> (en
-su defecto, nombre_entorno es <code>base</code> para activar tu entorno de trabajo
-local; o coloca el nombre del entorno donde instalaste spyder) y luego
-escribe <code>spyder</code>.</p>
+<p>Para correr Spyder en Windows, dirígete al menú <em>Inicio</em> y luego busca la
+aplicación de <em>Spyder</em>. En Linux, si instalaste Spyder usando Anaconda o
+Miniconda, puedes acceder buscando su nombre en tu ícono de Menú. Si deseas
+hacerlo utilizando la línea de comandos, en Windows abre <em>Anaconda Prompt</em> y haz
+clic en Spyder. En las demás plataformas accede a una ventana del terminal y
+teclea <code>conda activate nombre_entorno</code> (en su defecto, nombre_entorno es <code>base</code>
+para activar tu entorno de trabajo local; o coloca el nombre del entorno donde
+instalaste spyder) y luego escribe <code>spyder</code>.</p>
 <p>Veamos ahora lo que te ofrece esta interfaz:</p>
-<p>Viene con un <strong>Editor</strong> para escribir código, una <strong>Consola</strong> (IPython
-Console) para evaluarlo, ver sus resultados en cualquier momento y
-consultar el historial de comandos, un <strong>Explorador de Variables</strong> para
-ver qué variables se han definido durante la evaluación, que cuenta con
-botones de <strong>ayuda</strong> para cualquier comando y <strong>explorador de
-archivos</strong>.</p>
-<p><img alt="Spyder" src="img/spyder.png"></p>
-<p>Como puedes observar, del lado izquierdo tenemos el <em>Editor de código</em>.
-En la parte superior derecha se encuentran las pestañas: <em>Explorador de
-variables</em>, <em>Explorador de archivos</em>, <em>Ayuda</em>. En la parte inferior
-derecha tenemos: <em>El intérprete interactivo de Python (IPython
-Console)</em> y <em>El historial de comandos</em>.</p>
-<p>La barra de Menú se encuentra en la parte superior y debajo de ella la
-barra de herramientas. Esta última contiene botones que permiten
-realizar distintas acciones como crear un archivo, ejecutarlo, entre
-otros.</p>
-<p>Básicamente escribimos nuestros programas en el Editor y lo ejecutamos
-pulsando F5 (asimismo para ejecutar cualquier archivo en spyder), el
-resultado aparece en el Intérprete Interactivo (consola). Si se definen
-variables y objetos, estos aparecen en el Explorador de Variables. En
-caso de requerir un archivo adicional, accede al Explorador de archivos.
-Los archivos creados en Spyder se guardan, por defecto, con extensión
-<code>.py</code>.</p>
-<p>Al iniciar Spyder, puedes comenzar a trabajar en la ventana de la
-consola, si lo deseas. Estás en la potestad de cambiar los paneles de
-lugar y su  diseño según tus preferencias.</p>
-<p>A continuación te mostramos de una manera sencilla cómo hacer para
-crear, abrir y guardar un archivo en spyder y como ejecutar un script:</p>
+<p>Viene con un <strong>Editor</strong> para escribir código, una <strong>Consola</strong> (IPython Console)
+para evaluarlo, ver sus resultados en cualquier momento y consultar el historial
+de comandos, un <strong>Explorador de Variables</strong> para ver qué variables se han
+definido durante la evaluación, que cuenta con botones de <strong>ayuda</strong> para
+cualquier comando y <strong>explorador de archivos</strong>.</p>
+<p><img alt="Spyder" src="../../../images/blog/primeros-pasos-con-spyder/spyder.png"></p>
+<p>Como puedes observar, del lado izquierdo tenemos el <em>Editor de código</em>. En la
+parte superior derecha se encuentran las pestañas: <em>Explorador de variables</em>,
+<em>Explorador de archivos</em>, <em>Ayuda</em>. En la parte inferior derecha tenemos: <em>El
+intérprete interactivo de Python (IPython Console)</em> y <em>El historial de
+comandos</em>.</p>
+<p>La barra de Menú se encuentra en la parte superior y debajo de ella la barra de
+herramientas. Esta última contiene botones que permiten realizar distintas
+acciones como crear un archivo, ejecutarlo, entre otros.</p>
+<p>Básicamente, escribimos nuestros programas en el Editor y lo ejecutamos pulsando
+F5 (asimismo para ejecutar cualquier archivo en spyder), el resultado aparece en
+el Intérprete Interactivo (consola). Si se definen variables y objetos, estos
+aparecen en el Explorador de Variables. En caso de requerir un archivo
+adicional, accede al Explorador de archivos. Los archivos generados en Spyder se
+guardan, por defecto, con extensión <code>.py</code>.</p>
+<p>Al iniciar Spyder, puedes comenzar a trabajar en la ventana de la consola, si lo
+deseas. Estás en la potestad de cambiar los paneles de lugar y su  diseño según
+tus preferencias.</p>
+<p>A continuación te mostramos de una manera sencilla cómo hacer para crear, abrir
+y guardar un archivo en spyder y como ejecutar un script:</p>
 <ul>
 <li>
-<p>Para <strong>Crear un nuevo archivo</strong> elige una de las siguientes opciones:</p>
+<p>Para <strong>Crear un nuevo archivo</strong>, elige una de las siguientes opciones:</p>
 </li>
 <li>
-<p>Accede a la barra de Menú, haz clic en <em>Archivo</em> y luego en
-    <em>Nuevo</em>.</p>
+<p>Accede a la barra de Menú, haz clic en <em>Archivo</em> y luego en <em>Nuevo</em>.</p>
 </li>
 <li>Presiona las teclas Ctrl + N.</li>
 <li>
 <p>Haz clic en el botón <em>Nuevo Archivo</em> de la barra de herramientas.</p>
 </li>
 <li>
-<p>Si deseas <strong>Guardar un archivo</strong> elige entre:</p>
+<p>Si deseas <strong>Guardar un archivo</strong>, elige entre:</p>
 </li>
 <li>
 <p>Hacer clic en <em>Archivo</em> y luego en <em>Guardar</em> en la barra de Menú.</p>
 </li>
 <li>Presionar las teclas Ctrl + S.</li>
 <li>
-<p>Dar clic en el botón <em>Guardar Archivo</em> de la barra de
-    herramientas.</p>
+<p>Dar clic en el botón <em>Guardar Archivo</em> de la barra de herramientas.</p>
 </li>
 <li>
 <p>Para <strong>Abrir un archivo <code>.py</code> existente</strong> tienes varias alternativas:</p>
 </li>
 <li>
-<p>Dirígete a la barra de Menú, haz clic en <em>Archivo</em>, luego en
-    <em>Abrir</em>, después busca el archivo que desees.</p>
+<p>Dirígete a la barra de Menú, haz clic en <em>Archivo</em>, luego en <em>Abrir</em>,
+    después busca el archivo que desees.</p>
 </li>
 <li>Presiona Ctrl + O.</li>
-<li>En la barra de herramientas, haz clic en el botón <em>Abrir archivo</em>.
-    Luego se abre una ventana donde buscarás la ubicación, luego
-    selecciona el archivo deseado y haz clic en <em>Abrir</em>.
-    Posteriormente, se mostrará el archivo en el Editor de Código.</li>
+<li>En la barra de herramientas, haz clic en el botón <em>Abrir archivo</em>. Luego se
+    abre una ventana donde buscarás la ubicación, luego selecciona el archivo
+    deseado y haz clic en <em>Abrir</em>. Posteriormente, se mostrará el archivo en el
+    Editor de Código.</li>
 </ul>
-<p>Te hemos presentado lo que debes saber para iniciarte en Spyder,
-esperamos que te sea de provecho para tus proyectos. Anímate a usar este
-potente y popular Entorno de Desarrollo.</p>
+<p>Te hemos presentado lo que debes saber para iniciarte en Spyder, esperamos que
+sea de provecho para tus proyectos. Anímate a usar este potente y popular
+<em>Entorno de Desarrollo</em>.</p>
 <h4>Referencias</h4>
 <ul>
 <li>
