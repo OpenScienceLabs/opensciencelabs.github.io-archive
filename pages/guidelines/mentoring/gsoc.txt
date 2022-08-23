@@ -13,7 +13,7 @@ nueva comunidad de código abierto.
 
 ## ¿Qué es un mentor en GSoC?
 
- Los mentores son personas que han estado participado
+ Los mentores son personas que han estado participando
 en una organización de código abierto y desean ayudar a guiar a los nuevos
 colaboradores de su comunidad en el programa GSoC.
 
@@ -131,3 +131,88 @@ Organización o un Mentor de una Organización ha incumplido alguna de las
 responsabilidades establecidas en las Secciones 5.3(a) o 6.3(a), según
 corresponda, Google no está obligado a emitir ningún estipendio a la
 Organización.
+
+
+Línea de tiempo para Google Summer of Code 2022
+
+7 de febrero - 18:00 UTC
+
+    Las organizaciones de tutoría pueden empezar a presentar solicitudes a Google
+
+21 de febrero - 18:00 UTC
+
+    Plazo de solicitud de las organizaciones de tutoría
+
+21 de febrero - 6 de marzo
+
+    Los administradores del programa de Google revisan las solicitudes de las organizaciones
+
+7 de marzo - 18:00 UTC
+
+    Se publica la lista de organizaciones de tutoría aceptadas
+
+7 de marzo - 3 de abril
+
+    Los posibles colaboradores de GSoC discuten las ideas de aplicación con las organizaciones de tutoría
+
+4 de abril - 18:00 UTC
+
+    Comienza el periodo de solicitud de los colaboradores de GSoC
+
+19 de abril - 18:00 UTC
+
+    Plazo de solicitud de los colaboradores de GSoC
+
+12 de mayo - 18:00 UTC
+
+    Los administradores de las organizaciones deben solicitar una plaza de colaborador de GSoC
+
+20 de mayo - 18:00 UTC
+
+    Se anuncian los proyectos de colaboradores GSoC aceptados
+
+20 de mayo - 12 de junio
+
+    Periodo de vinculación con la comunidad | Los colaboradores de GSoC conocen a los mentores, leen la documentación y se ponen al día para empezar a trabajar en sus proyectos
+
+13 de junio
+
+    Comienza oficialmente la codificación.
+
+25 de julio - 18:00 UTC
+
+    Los mentores y los colaboradores de GSoC pueden empezar a enviar las evaluaciones de la Fase 1
+
+29 de julio - 18:00 UTC
+
+    Fecha límite para la evaluación de la Fase 1 (periodo de codificación estándar)
+
+25 de julio - 4 de septiembre
+
+    Periodo de trabajo | Los colaboradores de GSoC trabajan en su proyecto con la orientación de los Mentores
+
+5 de septiembre - 12 de septiembre - 18:00 UTC
+
+    Semana final: Los colaboradores de GSoC presentan su producto de trabajo final y la evaluación final de su mentor (periodo de codificación estándar)
+
+12 de septiembre - 19 de septiembre - 18:00 UTC
+
+    Los mentores envían las evaluaciones finales de los colaboradores de GSoC (periodo de codificación estándar)
+
+20 de septiembre
+
+    Anuncio de los resultados iniciales del Google Summer of Code 2022
+
+12 de septiembre - 13 de noviembre
+
+    Los colaboradores del GSoC con plazos ampliados continúan codificando
+
+21 de noviembre - 18:00 UTC
+
+    Fecha límite para que todos los colaboradores del GSoC presenten su producto de trabajo final
+
+28 de noviembre - 18:00 UTC
+
+    Fecha límite para que los mentores envíen las evaluaciones de los proyectos de los colaboradores de GSoC con plazos ampliados
+
+Importante: Monitorear las fechas para GSoC de 2023
