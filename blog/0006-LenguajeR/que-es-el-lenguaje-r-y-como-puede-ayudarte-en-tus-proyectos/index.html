@@ -21,18 +21,28 @@
   gtag('config', 'UA-213158050-1');
 </script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
 <meta name="author" content="Yurely Camacho">
-<meta property="description" content="Si eres una persona con deseos de desarrollar proyectos de código abierto que puedan ser compartidos, quieres replicar y /o mejorar proyectos existentes o convertirte en un científico de datos, realiz">
+<meta property="description" content="Si eres una persona con deseos de desarrollar proyectos de código
+abierto que puedan ser compartidos, quieres replicar y /o mejorar
+proyectos existentes o convertirte en un científico de datos, es muy">
 <link rel="prev" href="../../0005-investigacion_abierta_ciencias/la-investigacion-abierta-podria-cambiar-el-futuro-de-la-investigacion-en-ciencias-puras-te-contamos-por-que/" title="La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué." type="text/html">
 <link rel="next" href="../../0007-datosabiertos/que-son-los-datos-abiertos/" title="¿Qué son los datos abiertos?" type="text/html">
 <link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
 <meta property="og:site_name" content="Open Science Labs">
 <meta property="og:title" content="¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?">
 <meta property="og:url" content="https://opensciencelabs.org/blog/0006-LenguajeR/que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos/">
-<meta property="og:description" content="Si eres una persona con deseos de desarrollar proyectos de código abierto que puedan ser compartidos, quieres replicar y /o mejorar proyectos existentes o convertirte en un científico de datos, realiz">
+<meta property="og:description" content="Si eres una persona con deseos de desarrollar proyectos de código
+abierto que puedan ser compartidos, quieres replicar y /o mejorar
+proyectos existentes o convertirte en un científico de datos, es muy">
 <meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-01-17T00:00:00-06:00">
+<meta property="article:tag" content="ciencia de datos">
+<meta property="article:tag" content="data science">
 <meta property="article:tag" content="open science">
+<meta property="article:tag" content="posit">
+<meta property="article:tag" content="r">
+<meta property="article:tag" content="rmarkdown">
+<meta property="article:tag" content="rstudio">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@opensciencelabs">
 <meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
@@ -119,90 +129,230 @@ bg-dark
 </div>
         
         <ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+<li><a class="tag p-category" href="../../../categories/ciencia-de-datos/" rel="tag">ciencia de datos</a></li>
+            <li><a class="tag p-category" href="../../../categories/data-science/" rel="tag">data science</a></li>
+            <li><a class="tag p-category" href="../../../categories/open-science/" rel="tag">open science</a></li>
+            <li><a class="tag p-category" href="../../../categories/posit/" rel="tag">posit</a></li>
+            <li><a class="tag p-category" href="../../../categories/r/" rel="tag">r</a></li>
+            <li><a class="tag p-category" href="../../../categories/rmarkdown/" rel="tag">rmarkdown</a></li>
+            <li><a class="tag p-category" href="../../../categories/rstudio/" rel="tag">rstudio</a></li>
         </ul></header><div class="e-content entry-content" itemprop="articleBody text">
         <!-- # ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos? -->
 <!-- **Por Yurely Camacho** -->
 
 <p><img alt="header" src="../../../images/blog/que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos/header.png"></p>
-<p>Si eres una persona con deseos de desarrollar proyectos de código abierto que puedan ser compartidos, quieres replicar y /o mejorar proyectos existentes o convertirte en un científico de datos, realizando algunas búsquedas habrás leido u oido escuchar acerca del <a href="https://www.r-project.org/">Lenguaje R</a>. En este post daremos un paso breve sobre sobre sus características, las posibilidades de utilizarlo en tus proyectos y las oportunidades laborales que tendrás cuando lo manejes de forma fluida.</p>
+<p>Si eres una persona con deseos de desarrollar proyectos de código
+abierto que puedan ser compartidos, quieres replicar y /o mejorar
+proyectos existentes o convertirte en un científico de datos, es muy
+probable que hayas leído o escuchado sobre el <a href="https://www.r-project.org/">Lenguaje
+R</a>. En este post daremos un paso breve sobre
+sus características, las posibilidades de emplearlo en tus proyectos y
+las oportunidades laborales que tendrás cuando aprendas a utilizarlo.</p>
 <!-- TEASER_END -->
 
-<p>Primero vamos a resaltar la importancia que tiene y ha tenido la <strong>Estadística</strong> en distintos ámbitos. Como profesional en cualquier área, habrás estudiado o quizás en algún momento te mencionaron la palabra estadística. El mundo y las situaciones cotidianas están rodeadas de incertidumbre y la estadística es la disciplina que tiene mejor comportamiento con respecto a esta. Sin embargo, para implementarla y familiarizarnos con su gran potencialidad, resulta necesario manejar una herramienta que sea fácil de aprender, que cuente con la aprobación de un gran número de analistas de datos, que esté en constante actualización y que sea demandada en grandes empresas. En efecto, el lenguaje R cumple con estas y otras especificaciones.</p>
-<p>R fue desarrollado por los estadísticos (<strong>Robert Gentlemann</strong>)[https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)] y (<strong>Ross Ihaka</strong>)[https://en.wikipedia.org/wiki/Ross_Ihaka] del Departamento de Estadística de la (<strong>Universidad de Auckland</strong>)[http://www.nuevazelanda.cl/universidades/university-of-auckland.htm] en 1993, el acrónimo R se deriva de los nombres de sus desarrolladores. Actualmente es un proyecto <em>colaborativo, gratuito, de código abierto</em> y se encuentra a cargo del <strong>R Development Core Team</strong>. Esto quiere decir que detrás del proyecto existe una comunidad de usuarios y programadores que se encuentran activos en la mejora y desarrollo de nuevas funcionalidades para el lenguaje. R está pensado para que los interesados implementen funciones estadísticas desde las más básicas, como el cálculo de promedios, la generación de publicaciones con aplicaciones web, la aplicación de técnicas estadísticas avanzadas (por ejemplo, en (<em>big data</em>)[https://en.wikipedia.org/wiki/Big_data]) hasta la generación de gráficos interactivosy de alta calidad. Tienes todo lo que necesitas en un mismo lenguaje.</p>
-<p>Puedes utilizar R a través de línea de comandos, sin embargo existen varios <strong>Entornos de Desarrollo Integrado (IDE)</strong> entre los que destacan (<strong>RStudio</strong>)[https://rstudio.com/] y (<strong>Rcommander</strong>)[https://www.rcommander.com/] por su fácil empleo y las funcionalidades que ofrecen.</p>
-<p>Ahora bien, ya que sabes de qué puede serVirte R, quizás en este momento te preguntarás:</p>
+<p>Antes de conocer sobre R, vamos primero a resaltar la importancia que
+tiene y ha tenido la <strong>Estadística</strong> en distintos ámbitos, ya te darás
+cuenta por qué lo hacemos. Como profesional en cualquier área, habrás
+estudiado o al menos te mencionaron la palabra estadística. El mundo y
+las situaciones cotidianas están rodeadas de incertidumbre y la
+estadística es la disciplina que se encarga de estudiarla. Sin embargo,
+para implementarla y conocer su gran potencialidad, resulta necesario
+manejar una herramienta que sea fácil de aprender, que cuente con la
+aprobación de un gran número de analistas de datos, que esté en
+constante actualización y que sea demandada en grandes empresas. En
+efecto, el lenguaje R cumple con estos y otros requerimientos.</p>
+<p>R fue desarrollado por los estadísticos <a href="https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)"><strong>Robert
+Gentlemann</strong></a>
+y <a href="https://en.wikipedia.org/wiki/Ross_Ihaka"><strong>Ross Ihaka</strong></a> del
+Departamento de Estadística de la <a href="http://www.nuevazelanda.cl/universidades/university-of-auckland.htm"><strong>Universidad de
+Auckland</strong></a>
+en 1993. El acrónimo R se deriva de los nombres de sus desarrolladores.
+Actualmente es un proyecto de software libre para la computación
+estadística y los gráficos. Es <em>colaborativo, gratuito, de código
+abierto</em> y se encuentra a cargo del <strong>R Development Core Team</strong>. Esto
+quiere decir, que detrás del proyecto existe una comunidad de usuarios y
+programadores que buscan mejorar y desarrollar nuevas funcionalidades
+para el lenguaje. R se perfila como un lenguaje para estadísticos, sin
+embargo cualquier persona interesada puede utilizarlo. Está pensado para
+que los usuarios implementen funciones estadísticas, desde las más
+básicas como el cálculo de promedios, la generación de publicaciones con
+aplicaciones web, la aplicación de técnicas de machine learning, hasta
+la generación de gráficos interactivos y de alta calidad. Tienes todo lo
+que necesitas en un mismo lenguaje.</p>
+<p>Puedes utilizar R a través de línea de comandos, sin embargo te
+recomendamos que utilices un <strong>Entorno de Desarrollo Integrado (IDE)</strong>,
+por ejemplo <a href="https://rstudio.com/"><strong>RStudio</strong></a> (el cual desde octubre
+del 2022 se convertirá en <a href="https://posit.co/">Posit</a>) que es uno de los
+más utilizados por su fácil empleo y las amplias funcionalidades que
+ofrece.</p>
+<p>Ahora bien, ya que conoces un poco más sobre R, quizás en este momento
+te preguntarás:</p>
 <p><strong>¿De qué me puede servir aprender este lenguaje?</strong></p>
-<p>La respuesta es simple pero extensa, aquí te presentamos algunas razones para que te animes a utilizar R:</p>
+<p>La respuesta es simple pero extensa, aquí te presentamos algunas razones
+para que te animes a utilizar R:</p>
 <ul>
 <li>
-<p>Si necesitas resumir, visualizar y analizar cualquier cantidad de datos, R es una buena alternativa porque es fácil de           aprender. Solo necesitas tener a disposición un computador, tiempo y sed de conocimientos.</p>
+<p>Si necesitas resumir, visualizar y analizar cualquier cantidad de
+  datos, R es una buena alternativa porque es fácil de
+  aprender. Solo necesitas tener a disposición un computador, tiempo y
+  sed de conocimientos.</p>
 </li>
 <li>
-<p>Cualquier funcionalidad estadística, como el cálculo de medidas descriptivas, la generación de gráficos potentes, de alta        calidad (estáticos y dinámicos) pueden ser fácilmente implementados con R. Tienes todo lo que necesitas en un mismo lenguaje     y, además, es gratuito.</p>
+<p>Cualquier funcionalidad estadística, como el cálculo de medidas
+  descriptivas, la generación de gráficos potentes y de alta calidad
+  (estáticos y dinámicos) pueden ser fácilmente implementados con R.
+  Tienes todo lo que necesitas en un mismo lenguaje.</p>
 </li>
 <li>
-<p>Mediante la generación de (<strong>Scripts</strong>)[https://es.wikipedia.org/wiki/Script] puedes tener almacenado y a disposición            inmediata el código y los datos originales (por ejemplo un archivo .csv más el script de R) para resolver un problema en         particular. Esto te permite reutilizarlo y también compartirlo porque lo hace <em>reproducible y colaborativo</em>.</p>
+<p>Mediante la generación de
+  <a href="https://es.wikipedia.org/wiki/Script"><strong>Scripts</strong></a> puedes tener
+  almacenado y a disposición inmediata el código y los datos originales
+  (por ejemplo un archivo .csv más el script de R) para resolver un
+  problema en particular. Esto te permite reutilizarlo y también
+  compartirlo haciéndolo <em>reproducible y colaborativo</em>.</p>
 </li>
 <li>
-<p>Los entornos <em>Rstudio y Rcommander</em>  te facilitan el desarrollo y permiten manejar el lenguaje de una manera amigable. En una    ventana podrás ejecutar el código, en otra se mostrará la salida, tienes una ventana para ver las variables que has              guardado y, otra disponible para que guardes tu script.</p>
+<p>Los entornos de desarrollo integrado, como <em>Rstudio</em>, facilitan el
+  desarrollo y te permiten manejar el lenguaje de una manera amigable.
+  En una ventana podrás ejecutar el código, en otra se mostrará la
+  salida, también tienes una ventana para ver las variables que has
+  guardado y otra disponible para que guardes tu script, todo en un
+  mismo lugar.</p>
 </li>
 </ul>
 <p><img alt="RStudio" src="img/RStudio.png"></p>
 <ul>
 <li>
-<p>R te permite obtener resultados detallados y generar reportes profesionales con ayuda de herramientas como (<strong>Rmarkdown</strong>)[https://rmarkdown.rstudio.com/] y permite exportarlos a formatos como HTML y PDF. Tu jefe, o la persona interesada en tus reportes, quedará impresionado cuando le presentes un informe detallado utilizando R.</p>
+<p>R te permite obtener resultados detallados y generar reportes
+  profesionales con ayuda de herramientas como
+  <a href="https://rmarkdown.rstudio.com/"><strong>Rmarkdown</strong></a>. Con esta
+  funcionalidad puedes exportarlos a formatos como HTML y PDF. Tu jefe,
+  o la persona interesada en tus reportes, quedará impresionado cuando
+  le presentes un informe detallado utilizando R.</p>
 </li>
 <li>
-<p>Como mencionamos antes, es un software de gran demanda en el mundo laboral, y conocerlo puede mejorar tus posibilidades de       empleo. Actualmente las empresas buscan analizar sus datos para tomar decisiones informadas y en base a ello, obtener ventajas   competitivas. Por tal motivo, si cuentas con algunas habilidades para el procesamiento y análisis de grandes volúmenes de        datos, puedes darle valor a tu perfil profesional.</p>
+<p>Como mencionamos antes, es un software de gran demanda en el mundo
+  laboral, y conocerlo puede mejorar tus posibilidades de empleo.
+  Actualmente las empresas buscan analizar sus datos para tomar
+  decisiones informadas y en base a ello, obtener ventajas competitivas.
+  Por tal motivo, si cuentas con algunas habilidades para el
+  procesamiento y análisis de datos, puedes darle valor a tu perfil
+  profesional utilizando R.</p>
 </li>
 <li>
-<p>Si te animas, muy pronto podrás formar parte de los desarrolladores de R incorporando librerías y paquetes para funciones estadísticas.</p>
+<p>Si te animas, muy pronto podrás formar parte de los desarrolladores de
+  R incorporando librerías y paquetes para funciones estadísticas.</p>
 </li>
 <li>
-<p>Aunque no tienes que ser un estadístico ni un programador para usar R, lo que si necesitas aprender son aspectos básicos sobre   la interpretación de estadísticas y de dónde se derivan. Asimismo, tener ciertas capacidades sobre la programación. Lo más       importante es la disposición que tengas, recuerda que R es fácil de aprender. Incluso si te animas, muy pronto podrás formar     parte de los desarrolladores de R incorporando <em>librerías y paquetes</em> para funciones estadísticas.</p>
+<p>Aunque no tienes que ser un estadístico ni un programador para usar R,
+  te recomendamos que aprendas los aspectos básicos sobre la
+  interpretación de estadísticas y gráficos, y de dónde se derivan; esto
+  te será de gran ayuda a la hora de generar reportes y/o interpretar
+  resultados. Lo más importante es la disposición y el ánimo que tengas,
+  recuerda que R es fácil de aprender.</p>
 </li>
 <li>
-<p>En la web, en libros y tutoriales disponibles en la (página oficial de R)[https://www.r-project.org/] puedes documentarte        sobre el uso de este lenguaje, las funciones y paquetes a tu disposición. El acceso a la documentación de R es totalmente        gratuita, una de las características más resaltantes del lenguaje.</p>
+<p>En la web, en libros y tutoriales disponibles en la <a href="https://www.r-project.org/">página oficial de
+  R</a> encontrarás la documentación necesaria
+  para que aprendas a utilizar este lenguaje y conozcas las funciones y
+  paquetes a tu disposición. El acceso a la documentación de R es
+  totalmente gratuita, una de las características más resaltantes del
+  lenguaje.</p>
 </li>
 <li>
-<p>Puedes procesar datos de distintos formatos, ya que R permite leer datos de otros software como SPSS, SAS, Excel entre otros.</p>
+<p>Con R puedes procesar datos de distintos formatos ya que, entre otras
+  cosas, permite leer datos de diferentes software como SPSS, SAS o
+  Excel.</p>
 </li>
 <li>
-<p>El sistema operativo de tu computador tampoco es un inconveniente a la hora de trabajar con R:  es compatible con  Windows,      Linux y MacOS.</p>
+<p>El sistema operativo de tu computador tampoco es un inconveniente a la
+  hora de trabajar con R, ya que es compatible con Windows, Linux y
+  MacOS.</p>
 </li>
 <li>
-<p>Como R es de código y acceso abierto, permite hacer control de versiones usando una herramienta como (<strong>Git</strong>)[https://git-scm.com/], entre otras.</p>
+<p>Como R es de código y acceso abierto, permite hacer control de
+  versiones usando una herramienta como
+  <a href="https://git-scm.com/"><strong>Git</strong></a>, entre otras.</p>
 </li>
 <li>
-<p>Actualmente se encuentran disponibles más de 2300 librerías desarrolladas en R y puedes descargarlas a través de https://cran.r-project.org/mirrors.html. ¡Imagina todo lo que puedes hacer para procesar tus datos con estas librerías!.</p>
+<p>Actualmente se encuentran disponibles más de 2300 bibliotecas
+  desarrolladas en R y puedes descargarlas a través del <a href="https://cran.r-project.org/mirrors.html">Comprehensive R
+  Archive Network (CRAN)</a>.
+  ¡Imagina todo lo que puedes hacer para procesar tus datos con estas
+  bibliotecas!.</p>
 </li>
 </ul>
-<p>En el post (<strong>Gigantes informáticos dan su apoyo al lenguaje de programación R</strong>)[https://diarioti.com/gigantes-informaticos-dan-su-apoyo-al-lenguaje-de-programacion-r/88705] indican que (<em>Microsoft</em>)[https://www.microsoft.com/es-ve], (<em>Google</em>)[https://about.google/], (<em>HP</em>)[http://welcome.hp.com/country/us/en/c/welcome.html] y (<em>Oracle</em>)[https://www.oracle.com/index.html] se han sumado al consorcio R porque apoyan el desarrollo de este lenguaje. Si esto es así, debe ser porque tiene altas potencialidades ¿no crees? De la misma manera, grandes e influyentes empresas reconocen sus capacidades, entre ellas (<em>NASA</em>)[https://www.nasa.gov/], (<em>Banco Santander</em>)[https://www.santander.com/es/home], (<em>Samsung</em>)[https://www.samsung.com/], (<em>Western Union</em>)[https://www.westernunion.com/ve/es/home.html], (<em>eBay</em>)[https://ve.ebay.com/], (<em>Honda</em>)[https://www.honda.com/], (<em>Hyundai</em>)[https://www.hyundai.es/], (<em>Avon</em>)[https://www.avon.com/], (<em>Nestle</em>)[https://www.nestle.com/], entre otros según lo mencionado en (este post)[https://www.maximaformacion.es/blog-dat/para-quien-esta-pensado-r-software/]</p>
-<p>Quizás también te preguntarás ¿tiene inconvenientes?</p>
-<p>Pues si, aunque R es potente en el ámbito estadístico y de ciencia de datos, no es un lenguaje de programación de propósito general. Los lenguajes de propósito general, como su nombre lo indica, pueden ser utilizados con distintos fines, entre ellos la comunicación entre computadoras y dispositivos, el acceso y manejo de bases de datos, el diseño de imágenes o páginas, la creación de sistemas operativos, compiladores, entre otras cosas y, como ya mencionamos, R es utilizado principalmente como un lenguaje estadístico.
-Asimismo, en algunos casos, puede resultar lento si se compara con otros lenguajes de programación, como Python.</p>
-<p>A continuación presentamos dos estudios formales donde se refleja el lugar que ocupa R con respecto a su uso.</p>
+<p>En el post <a href="https://diarioti.com/gigantes-informaticos-dan-su-apoyo-al-lenguaje-de-programacion-r/88705"><strong>Gigantes informáticos dan su apoyo al lenguaje de
+programación
+R</strong></a>
+indican que <a href="https://www.microsoft.com/es-ve"><em>Microsoft</em></a>,
+<a href="https://about.google/"><em>Google</em></a>,
+<a href="http://welcome.hp.com/country/us/en/c/welcome.html"><em>HP</em></a> y
+<a href="https://www.oracle.com/index.html"><em>Oracle</em></a> se han sumado al consorcio
+R porque apoyan el desarrollo de este lenguaje. Si esto es así, debe ser
+porque tiene altas potencialidades ¿qué opinas?</p>
+<p>De la misma manera, grandes e influyentes empresas reconocen sus
+capacidades, entre ellas <a href="https://www.nasa.gov/"><em>NASA</em></a>, <a href="https://www.santander.com/es/home"><em>Banco
+Santander</em></a>,
+<a href="https://www.samsung.com/"><em>Samsung</em></a>, <a href="https://www.westernunion.com/ve/es/home.html"><em>Western
+Union</em></a>,
+<a href="https://ve.ebay.com/"><em>eBay</em></a>, <a href="https://www.honda.com/"><em>Honda</em></a>,
+<a href="https://www.hyundai.es/"><em>Hyundai</em></a>, <a href="https://www.avon.com/"><em>Avon</em></a>,
+<a href="https://www.nestle.com/"><em>Nestle</em></a>, entre otros según lo mencionado en
+<a href="https://www.maximaformacion.es/blog-dat/para-quien-esta-pensado-r-software/">este
+post</a>.</p>
+<p><strong>Quizás también te preguntarás ¿tiene inconvenientes?</strong></p>
+<p>Pues si, aunque R es potente en el ámbito estadístico y de ciencia de
+datos, <em>no es un lenguaje de programación de propósito general</em>. Los
+lenguajes de propósito general, como su nombre lo indica, pueden ser
+utilizados con distintos fines, entre ellos la comunicación entre
+computadoras y dispositivos, el acceso y manejo de bases de datos, el
+diseño de imágenes o páginas, la creación de sistemas operativos,
+compiladores, entre otras cosas y, como ya mencionamos, R es utilizado
+principalmente como un lenguaje estadístico. Asimismo, en algunos casos,
+puede resultar lento si se compara con otros lenguajes de programación,
+como Python.</p>
+<p>A continuación presentamos dos estudios formales donde se refleja el
+lugar que ocupa R con respecto a su uso.</p>
 <ol>
 <li>
-<p>La (<strong>20ª Encuesta Anual de KDnuggets Software Poll 2019</strong>)[https://www.kdnuggets.com/2019/05/poll-top-data-science-machine-learning-platforms.html] la cual contó con más de 1.800 participantes, donde <em>Python</em> obtuvo el primer lugar. Sin embargo, R no se queda atrás en esta encuesta y junto con otro lenguaje llamado <em>RapidMiner</em> son usados aproximadamente por el 50% de los participantes.</p>
+<p>La <a href="https://www.kdnuggets.com/2019/05/poll-top-data-science-machine-learning-platforms.html"><strong>20ª Encuesta Anual de KDnuggets Software Poll
+   2019</strong></a>
+   la cual contó con más de 1.800 participantes, donde <em>Python</em> obtuvo
+   el primer lugar. Sin embargo, R no se queda atrás en esta encuesta y
+   junto con otro lenguaje llamado <em>RapidMiner</em> son usados
+   aproximadamente por el 50% de los participantes.</p>
 </li>
 <li>
-<p>El <strong>Estudio de popularidad de lenguajes de programación</strong> (PYPL PopularitY of Programming Language)[https://adtmag.com/articles/2019/01/08/tiobe-jan-2019.aspx] basado en la cantidad de tutoriales que se buscan en google donde para este año R ocupa el séptimo lugar.</p>
+<p>En el <strong>Estudio de popularidad de lenguajes de programación</strong> <a href="https://pypl.github.io/PYPL.html">PYPL
+   PopularitY of Programming Language</a>
+   basado en la cantidad de tutoriales que se buscan en google, para
+   este año R ocupa el séptimo lugar.</p>
 </li>
 </ol>
-<p>Quizás estés aún pensando que no saber programar es una seria limitante para aprender R. Eso no debería preocuparte, porque hay una cantidad importante de tutoriales que pueden aportarte ideas para comenzar, y también puedes probar con códigos de ejemplo y datos reales que son de acceso abierto. En las referencias te dejamos algunos enlaces de tutoriales de R, libros y algunas Cheatsheets (hojas de referencia).</p>
+<p>Quizás estés pensando que no saber programar es una limitante para
+aprender R. Eso no debería preocuparte, porque hay una cantidad
+importante de tutoriales que pueden aportarte ideas para comenzar, y
+también puedes probar con códigos de ejemplo y datos reales que son de
+acceso abierto. En las referencias te dejamos algunos enlaces de
+tutoriales de R, libros y algunas Cheatsheets (hojas de referencia).</p>
 <h4>Algunos libros para que te inicies con R</h4>
-<p>(Libro R para principiantes)[https://cran.r-project.org/doc/contrib/rdebuts_es.pdf]</p>
-<p>La traducción al español de “An Introduction to R”. (Libro "Una Itroduccion a R")[https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf]</p>
+<p><a href="https://cran.r-project.org/doc/contrib/rdebuts_es.pdf">Libro R para principiantes</a></p>
+<p>La traducción al español de “An Introduction to R”. <a href="https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf">Libro "Una
+Introducción a
+R"</a></p>
 <h4>Hojas de referencia "Cheatsheets"</h4>
-<p>(Manejo de datos)[https://rstudio.com/wp-content/uploads/2015/03/data-wrangling-spanish.pdf]</p>
-<p>(Rmarkdown)[https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-spanish.pdf]</p>
+<p><a href="https://rstudio.com/wp-content/uploads/2015/03/data-wrangling-spanish.pdf">Manejo de
+datos</a></p>
+<p><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-spanish.pdf">Rmarkdown</a></p>
 <h5>Referencias</h5>
-<p>(Website de R)[https://www.r-project.org/]</p>
-<p>(R, un lenguaje y entorno de programación para análisis estadístico)[https://www.genbeta.com/desarrollo/r-un-lenguaje-y-entorno-de-programacion-para-analisis-estadistico]</p>
-<p>(QUÉ ES R SOFTWARE)[http://www.maximaformacion.es/blog-dat/que-es-r-software/]</p>
-<p>(¿PARA QUIÉN ESTÁ PENSADO R SOFTWARE?)[https://www.maximaformacion.es/blog-dat/para-quien-esta-pensado-r-software/]</p>
+<p><a href="https://www.r-project.org/">Website de R</a></p>
+<p><a href="https://www.genbeta.com/desarrollo/r-un-lenguaje-y-entorno-de-programacion-para-analisis-estadistico">R, un lenguaje y entorno de programación para análisis
+estadístico</a></p>
+<p><a href="http://www.maximaformacion.es/blog-dat/que-es-r-software/">QUÉ ES R
+SOFTWARE</a></p>
+<p><a href="https://www.maximaformacion.es/blog-dat/para-quien-esta-pensado-r-software/">¿PARA QUIÉN ESTÁ PENSADO R
+SOFTWARE?</a></p>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
