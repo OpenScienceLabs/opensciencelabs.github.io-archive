@@ -3,7 +3,7 @@
 .. slug: pyopensci-un-promotor-de-la-ciencia-abierta
 .. date: 2020-08-06
 .. author: Yurely Camacho
-.. tags: open science, python
+.. tags: open science, python, pyopensci, ciencia  abierta, open source
 .. category: open science
 .. link: 
 .. description: 
