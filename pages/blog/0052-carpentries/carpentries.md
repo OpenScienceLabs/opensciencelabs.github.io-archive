@@ -3,7 +3,7 @@
 .. slug: por-que-deberias-considerar-carpentries-como-una-referencia-para-aprender-ciencia-de-datos
 .. date: 2021-03-08
 .. author: Anavelyz Pérez
-.. tags: data science, learning
+.. tags: data science, learning, carpentries, ciencia de datos
 .. category: learning
 .. link: 
 .. description: 
