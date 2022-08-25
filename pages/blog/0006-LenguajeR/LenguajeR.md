@@ -3,7 +3,7 @@
 .. slug: que-es-el-lenguaje-r-y-como-puede-ayudarte-en-tus-proyectos
 .. date: 2020-01-17
 .. author: Yurely Camacho
-.. tags: open science
+.. tags: open science, r, rstudio, posit, data science, ciencia de datos, rmarkdown
 .. category: r
 .. link: 
 .. description: 
