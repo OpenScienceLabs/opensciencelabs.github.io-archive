@@ -40,7 +40,8 @@ Ahora, en torno a todo lo anterior, se tiene que
 
 - El contenido de sus lecciones están disponibles en la web bajo un formato que da la facilidad para reutilizar su contenido.
 
-- El acceso a los materiales desarrollados por el proyecto puede hacerse mediante websites. https://librarycarpentry.org/lessons, https://datacarpentry.org/lessons/, https://software-carpentry.org/lessons/, (https://carpentries.org/workshops-curricula/).
+- El acceso a los materiales desarrollados por el proyecto puede hacerse mediante sus websites.
+En **Library Carpentry** los encontramos en la sección [*OUR LESSONS*](https://librarycarpentry.org/lessons), en el caso de **Data Carpentry**, en [*LESSONS*](https://datacarpentry.org/lessons/); para **Software Carpentry** también existe una sección [*LESSONS*](https://software-carpentry.org/lessons/). De manera general y resumida podemos conseguir los planes de estudio de Carpentries en la sección [*LEARN/OUR CURRICULA*](https://carpentries.org/workshops-curricula/).
 
 - Las lecciones están bien estructuradas. En el caso de Data Carpentry se encuentran clasificadas según un dominio y, a pesar de esto, los conocimientos impartidos también se pueden aplicar a otras áreas. Mientras que Software Carpentry y Library Carpentry son ideales para aprender elementos de la programación haciendo uso de bibliotecas y otras herramientas vitales en el análisis de datos.
 
