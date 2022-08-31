@@ -44,7 +44,8 @@ principalmente en [Julia](https://julialang.org),
 [Python](https://www.python.org) y [R](https://www.r-project.org), de
 allí se construye su nombre. El principal propósito de Jupyter es
 “apoyar la ciencia de datos interactiva y la computación científica en
-todos los lenguajes de programación” [1]. De hecho, todos sus proyectos
+todos los lenguajes de programación”
+[(Jupyter)](https://jupyter.org/about). De hecho, todos sus proyectos
 son desarrollados de forma abierta en GitHub bajo la licencia modificada
 de [BSD](https://whatis.techtarget.com/definition/BSD-licenses). El
 proyecto promete mantener disponible tanto el software como su código,
@@ -111,10 +112,12 @@ utilizando Google Colab), Microsoft e IBM. Además de una gran cantidad
 de universidades alrededor del mundo. No es extraño, que en el propio
 GitHub se encuentren alrededor de 5 millones de cuadernos de Jupyter
 (según un análisis que utiliza también un cuaderno para mostrar sus
-resultados! [2]), y que abarquen áreas desde la ciencia de datos,
-estadística o economía, hasta las ciencias sociales o psicología.
-También existe una gran cantidad de listas curadas [3] con ejemplos de
-aplicaciones reales de Jupyter.
+resultados! [(nbestimate)](https://github.com/parente/nbestimate), y que
+abarquen áreas desde la ciencia de datos, estadística o economía, hasta
+las ciencias sociales o psicología. También existe una gran cantidad de
+listas curadas [(A gallery of interesting Jupyter
+Notebooks)](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
+con ejemplos de aplicaciones reales de Jupyter.
 
 Jupyter es, sin duda, una de las iniciativas de ciencia abierta más
 prometedoras que hay. Cuenta con una popularidad inmensa incluso fuera
@@ -122,12 +125,18 @@ de su área de enfoque, y una accesibilidad bastante impresionante que
 permite a científicos, de todo tipo de trasfondos, aprovechar de sus
 capacidades rich media en cuestión de segundos. Y para aquellos que
 deseen entrar un poco más profundo en el tema, existe una gran cantidad
-de recursos y documentación de apoyo dedicado a Jupyter [4] que hace de
-tu aprendizaje algo bastante sencillo e indoloro. Llevar tus
+de recursos y documentación de apoyo dedicado a Jupyter [(Jupyter
+Guide)](https://github.com/jupyter-guide/jupyter-guide) que hace de tu
+aprendizaje algo bastante sencillo e indoloro. Llevar tus
 investigaciones a otro nivel es cuestión de comenzar a aprender, ¡nada
 más!
 
-[1]: https://jupyter.org/about "Jupyter"
-[2]: https://github.com/parente/nbestimate "nbestimate"
-[3]: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks "A gallery of interesting Jupyter Notebooks"
-[4]: https://github.com/jupyter-guide/jupyter-guide "Jupyter Guide"
+### Referencias
+
+- [Jupyter](https://jupyter.org/about)
+
+- [nbestimate](https://github.com/parente/nbestimate)
+
+- [A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
+
+- [Jupyter Guide](https://github.com/jupyter-guide/jupyter-guide)
