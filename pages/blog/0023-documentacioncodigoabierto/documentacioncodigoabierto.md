@@ -15,11 +15,11 @@
 
 ![header](../../../images/blog/si-ya-usas-codigo-abierto-te-contamos-como-puedes-sacarle-mayor-provecho-tu-documentacion-para-tus-articulos-y-publicaciones/header.png)
 
-Con mucha frecuencia, los proyectos de código abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta [Open Source Survey](https://opensourcesurvey.org/2017/) [1] (realizada por Github, involucrando tanto académicos, como a trabajadores en la industria de computación, como colaboradores independientes) reportó que al menos 93% de los encuestados, creían que la documentación incompleta o sin actualizar era uno de los problemas más agravantes dentro de la esfera del software libre. En la misma encuesta, 60% de los participantes admitían también contribuir a la documentación de sus proyectos con muy poca frecuencia.
+Con mucha frecuencia, los proyectos de código abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta [Open Source Survey](https://opensourcesurvey.org/2017/) (realizada por Github, involucrando tanto académicos, como a trabajadores en la industria de computación, como colaboradores independientes) reportó que al menos 93% de los encuestados, creían que la documentación incompleta o sin actualizar era uno de los problemas más agravantes dentro de la esfera del software libre. En la misma encuesta, 60% de los participantes admitían también contribuir a la documentación de sus proyectos con muy poca frecuencia.
 
 <!-- TEASER_END -->
 
-Independientemente del tipo de proyecto en el que participes o de su objetivo, la documentación es un factor muy importante a la hora de crear proyectos accesibles e inclusivos, en el sentido que facilita en gran medida tanto su utilización como la colaboración entre personas que no estén activamente involucradas en su desarrollo. Establecer de forma clara términos de uso del código, manuales o guías permite a tus usuarios ser autosuficientes y dar sugerencias mucho más útiles y profundas, además de que puede ser el factor clave para que alguien se vuelva un colaborador o que termine ignorando tu proyecto. Tal como dice [Write The Docs | Why Write Docs?](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs) [2]:
+Independientemente del tipo de proyecto en el que participes o de su objetivo, la documentación es un factor muy importante a la hora de crear proyectos accesibles e inclusivos, en el sentido que facilita en gran medida tanto su utilización como la colaboración entre personas que no estén activamente involucradas en su desarrollo. Establecer de forma clara términos de uso del código, manuales o guías permite a tus usuarios ser autosuficientes y dar sugerencias mucho más útiles y profundas, además de que puede ser el factor clave para que alguien se vuelva un colaborador o que termine ignorando tu proyecto. Tal como dice [Write The Docs | Why Write Docs?](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs):
 
 - Si la gente no sabe que tu proyecto existe, no lo usarán.
 - Si la gente no sabe como instalar tu código, no lo usarán.
@@ -45,5 +45,8 @@ Sín importar el tipo de programa que estés desarrollando, facilitará  bastant
 
 Siempre recomendamos que si necesitas ayuda en cuanto a cómo escribir documentación, ¡solo hace falta revisar lo que ya han escrito otros! Ya sea para aprender ciertos modos de escritura que son comunes dentro de esta práctica, para aprender de los errores que cometen los demás, o simplemente para situarte en el lugar de alguien que esté chequeando tu código por primera vez. Leer lo que han escrito los demás con el enfoque de aprender es una buena estrategia. Prácticamente, todas las distribuciones de Linux incluyen el comando `man` que te permite ver información sobre varios comandos de bash, y muchos repositorios de Github tienen por lo menos un archivo `README.md`, visto en cuanto entras a su página, cuyo objetivo es mostrar el principal propósito y uso del proyecto. Es solo cuestión de revisar un poco para encontrar una enorme variedad de ejemplos.
 
-[1]: [Open Source Survey](https://opensourcesurvey.org/2017/)
-[2]: [Write The Docs | Why Write Docs](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs)
+## Referencias
+
+- [Open Source Survey](https://opensourcesurvey.org/2017/)
+
+- [Write The Docs | Why Write Docs](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/#why-write-docs)
