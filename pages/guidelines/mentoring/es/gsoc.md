@@ -1,4 +1,14 @@
-# Google Summer of Code
+<!--
+.. title: Google Summer of Code
+.. slug: gsoc
+.. date: 2022-07-01
+.. author: Anavelyz
+.. tags: mentoring, gsoc
+.. category: mentoring
+.. link:
+.. description:
+.. type: text
+-->
 
 Google Summer of Code es un programa global en línea centrado en atraer a nuevos
 colaboradores al desarrollo de software de código abierto. Los colaboradores de
@@ -29,7 +39,7 @@ Una persona no puede participar en GSoC como mentor y como colaborador.
 Los colaboradores pueden presentar su solicitud durante el periodo de solicitud
 de colaboradores para una instancia concreta del programa.
 
-## Organizaciones 
+## Organizaciones
 
 ### ¿Cuáles son los requisitos de elegibilidad para una organización de mentores?
 
@@ -59,21 +69,21 @@ reglas.
 **Requisitos**.
 
  Para participar en el Programa, la organización debe
- 
+
  (a) dirigir un proyecto de software de código abierto activo y viable
- 
+
  (b) haber producido y publicado software bajo una licencia aprobada por la
  Iniciativa de Código Abierto (OSI);
- 
+
  (c) no tener su sede en un país embargado por los Estados Unidos, ni estar
  prohibido por los controles de exportación y los programas de sanciones
  aplicables.
-   
+
 **Cómo solicitarlo**. Las organizaciones que deseen solicitar su aceptación en
 el Programa deben
-  
-  (a) aceptar los términos del Acuerdo de Organización, 
-  
+
+  (a) aceptar los términos del Acuerdo de Organización,
+
   (b) presentar una solicitud de organización.
 
 **Solicitud de la organización.**
@@ -96,9 +106,9 @@ el Programa deben
 
  (a) Cada Organización aceptada llevará a cabo todos los pasos adicionales
  necesarios para que la Organización participe en el Programa, incluyendo
-  
+
   (i) proporcionar una Lista de Ideas;
-  
+
   (ii) determinar los Criterios del Proyecto de la Organización, siempre que la
   Organización no pueda discriminar por motivos de edad, raza, credo, color,
   religión, género, sexo, orientación sexual, origen nacional, discapacidad,
@@ -107,17 +117,17 @@ el Programa deben
 
   (iii) asignar a dos o más personas, según el caso, para:
 
-    (A) actuar como administradores de la organización 
-    
+    (A) actuar como administradores de la organización
+
     (B) evaluar las Propuestas de Proyecto de los Colaboradores de GSoC
     presentadas a la Organización de acuerdo con la Sección 7.4 siguiente y
     decidir qué Propuestas de Proyecto aceptar;
-    
+
     (C) ayudar a los Colaboradores GSoC a integrarse en la comunidad de la
     Organización durante el Periodo de Vinculación con la Comunidad
-    
-    (D) actuar como Mentor(es); y 
-    
+
+    (D) actuar como Mentor(es); y
+
     (E) actuar como Mentores suplentes en caso de que un Mentor existente no
     pueda cumplir con sus responsabilidades.
 

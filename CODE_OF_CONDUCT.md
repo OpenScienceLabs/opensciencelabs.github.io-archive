@@ -1,4 +1,14 @@
-# Contributor Covenant Code of Conduct
+<!--
+.. title: Contributor Covenant Code of Conduct
+.. slug: coc
+.. date: 2022-09-14
+.. author: Ivan Ogasawara
+.. tags: coc
+.. category: coc
+.. link:
+.. description:
+.. type: text
+-->
 
 ## Our Pledge
 

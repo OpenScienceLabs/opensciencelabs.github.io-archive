@@ -32,3 +32,15 @@ Por eso, construir de forma colaborativa contenidos y experiencias que enriquezc
 
 
 En Open Science Labs, te ofrecemos un espacio amplio con contenidos, acompañamiento, formación y promoción en las herramientas, las competencias y las buenas prácticas que necesitas en tu proceso de autoformación para la Ciencia Abierta.
+
+
+## Roadmap
+
+Si te interesa saber más sobre los próximos pasos de Open Science Labs,
+verifica nuestro [Roadmap](/roadmap/).
+
+
+## Governancia
+
+para más informaciones sobre la governancia de Open Science Labs, por favor
+verifica [nuestro documento de governancia](/governance/).
