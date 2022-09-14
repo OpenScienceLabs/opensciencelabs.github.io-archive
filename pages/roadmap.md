@@ -1,4 +1,14 @@
-# Open Science Labs Roadmap
+<!--
+.. title: Open Science Labs Roadmap
+.. slug: roadmap
+.. date: 2022-09-14
+.. author: Ivan Ogasawara
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+-->
 
 This is an initial version of Open Science Labs Roadmap.
 

@@ -1,4 +1,14 @@
-# OSL Project Governance
+<!--
+.. title: Open Science Labs Project Governance
+.. slug: governance
+.. date: 2022-09-14
+.. author: Ivan Ogasawara
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+-->
 
 The objectives of this document include formalizing the governance of the Open Science Labs (OSL) project. In both common and uncommon situations, outlining the decision-making procedure and the interactions between the various members of our community, including the relationship between work that may be supported by for-profit or nonprofit organizations and open source collaborative development.
 
@@ -143,7 +153,7 @@ A list of current Institutional Partners is maintained at the page About Us.
 
 ## Document history
 
-https://github.com/opensciencelabs/opensciencelabs.github.io
+* [https://github.com/opensciencelabs/opensciencelabs.github.io](https://github.com/opensciencelabs/opensciencelabs.github.io)
 
 ## Acknowledgements
 
