@@ -70,6 +70,8 @@ NAVIGATION_LINKS = {
         ("/team/", "Team"),
         ("/partners/", "Partners"),
         ("/about/", "About"),
+        ("/roadmap/", "Roadmap"),
+        ("/governance/", "Governance"),
     ),
 }
 
