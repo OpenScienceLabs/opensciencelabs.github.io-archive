@@ -1,4 +1,14 @@
-# [NumFOCUS como patrocinador fiscal](https://numfocus.org/projects-overview)
+<!--
+.. title: NumFOCUS como patrocinador fiscal
+.. slug: gsoc
+.. date: 2022-07-01
+.. author: Yurely Camacho
+.. tags: sponsor-fiscal, numfocus
+.. category: fund-raiser
+.. link:
+.. description:
+.. type: text
+-->
 
 El objetivo de NumFOCUS es garantizar que la financiación y los recursos
 estén disponibles para sostener proyectos en la pila de datos
@@ -35,7 +45,7 @@ para el proyecto.
 ## Tipos de modelos de patrocinio fiscal
 
 NumFOCUS plantea dos modelos de patrocinio fiscal:
- 
+
 ### Modelo integral
 
 Los proyectos patrocinados fiscalmente según el Modelo integral pasan a
@@ -49,7 +59,7 @@ integral de patrocinio fiscal ayuda a proteger a los contribuyentes
 individuales de la responsabilidad legal y garantiza que los activos del
 proyecto son propiedad del proyecto y no de los contribuyentes
 individuales.
- 
+
 ### Modelo de donante y beneficiario
 
 Este modelo es una opción "ligera" de patrocinio fiscal, para cuando un
@@ -115,7 +125,7 @@ parte intrínseca de su desarrollo. Los proyectos abiertos suelen tener:
 
 - Foro(s) de discusión abierto(s) a la participación pública (lista de
   correo, Discourse, equipo Slack, etc.).
-    
+
 - Una licencia aprobada por la OSI [Open Source
   Initiatives](https://opensource.org/licenses).
 
@@ -210,7 +220,7 @@ proyecto, se debe llenar un [formulario de
 solicitud](https://numfocus.typeform.com/to/VUPE35?typeform-source=numfocus.org)
 el cual, específicamente, contiene el siguiente cuestionario:
 
- 
+
 - Nombre del proyecto
 
 - Una breve descripción
@@ -273,7 +283,7 @@ contrario, se selecciona el modelo donante-beneficiario.
 - Facilitar unas cuantas frases que describan las aplicaciones conocidas
   de su proyecto: Ver un ejemplo en la pestaña "Aplicaciones" al final
   de esta página https://numfocus.org/project/pandas que sirve como guía
-  
+
 - Indicar las etiquetas de Industria, Idiomas y Aplicaciones del
   proyecto: ¿En qué sectores se utiliza principalmente su proyecto? Por
   ejemplo: Gobierno, educación superior, finanzas, aplicaciones
