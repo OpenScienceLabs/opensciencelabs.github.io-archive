@@ -66,12 +66,13 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
         ("/blog/", "Blog"),
-        ("/guidelines/list", "Guidelines"),
+        ("/guidelines/toc", "Guidelines"),
         ("/team/", "Team"),
         ("/partners/", "Partners"),
         ("/about/", "About"),
         ("/roadmap/", "Roadmap"),
         ("/governance/", "Governance"),
+        ("/faq/es", "FAQ"),
     ),
 }
 

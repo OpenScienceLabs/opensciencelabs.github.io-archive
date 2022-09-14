@@ -1,4 +1,14 @@
-# Posibles instituciones para aplicar por una subvención
+<!--
+.. title: Posibles instituciones para aplicar por una subvención
+.. slug: grants-institutions
+.. date: 2022-07-01
+.. author: Anavelyz
+.. tags: grats
+.. category: fund-raiser
+.. link:
+.. description:
+.. type: text
+-->
 
 ## ¿Qué es una subvención?
 
@@ -120,7 +130,7 @@ La PSF ofrece varios métodos de pago. Para resolver dudas contactar a
 accounting@python.org.
 
    - PayPal para pagos en EE.UU. o internacionales.
-   - Zelle para cuentas bancarias nacionales de EE.UU. 
+   - Zelle para cuentas bancarias nacionales de EE.UU.
    - ACH para cuentas bancarias nacionales de EE.UU.
    - Transferencia bancaria para pagos internacionales
    - Wise para pagos internacionales
@@ -147,7 +157,7 @@ aprobados para recibir grants de la PSF:
 
 
 
-## [Programa de subvenciones del  Comité Directivo de Infraestructuras (ISC) 2022](https://www.r-consortium.org/all-projects/call-for-proposals) 
+## [Programa de subvenciones del  Comité Directivo de Infraestructuras (ISC) 2022](https://www.r-consortium.org/all-projects/call-for-proposals)
 
 Uno de los principales objetivos del R Consortium es fortalecer y mejorar la
 infraestructura de apoyo al Ecosistema R. Buscan lograr esto mediante la
@@ -278,7 +288,7 @@ no tienen que volver a solicitar la participación en la cuenta Pro de meetup.co
 si la cuenta de meetup.com del grupo sigue activa. Las subvenciones en metálico
 hasta un máximo de 500 dólares se concederán en función del uso previsto,
 indicado en la solicitud, de los fondos y de la cantidad de dinero disponible
-para distribuir. 
+para distribuir.
 
 *Notas*
 
@@ -341,7 +351,7 @@ formación se limitarán a un importe máximo de 1.000 dólares. Los **eventos d
 formación deben**: ofrecer un mínimo de cuatro horas de instrucción, utilizar un
 procedimiento de inscripción en línea de acceso público (por ejemplo, a través
 de meetup.com o eventbrite.com), adherirse al Código de Conducta y cumplir con
-los protocolos locales de salud pública sobre COVID-19. 
+los protocolos locales de salud pública sobre COVID-19.
 
 Los **organizadores del evento deben**: incluir una descripción detallada de
 cómo se utilizarán los fondos y el coste total estimado, proporcionar una
@@ -417,7 +427,7 @@ su programa Books.
     Una vez que se haya identificado un programa pertinente, el solicitante de
     la subvención debe enviar una carta de solicitud por correo electrónico al
     director del programa correspondiente.  Consulte nuestra sección de Cartas
-    de Consulta para obtener más información sobre las Cartas de Consulta.  
+    de Consulta para obtener más información sobre las Cartas de Consulta.
     NOTA: No todos los programas aceptan consultas no solicitadas.  En la
     sección de solicitud de la página de cada programa se especifica si ese
     programa acepta actualmente consultas.
@@ -440,7 +450,7 @@ su programa Books.
     tienen la oportunidad de responder por escrito a los comentarios de los
     revisores.  No es raro que se pida al solicitante de la subvención que
     revise, modifique o complemente la propuesta original (a veces de forma
-    significativa) como resultado del proceso de revisión de la propuesta.  
+    significativa) como resultado del proceso de revisión de la propuesta.
 
 La Fundación Alfred P. Sloan concede subvenciones durante todo el año, aunque
 las de mayor cuantía (>250.000 dólares) sólo se aprueban trimestralmente. Los
