@@ -104,6 +104,18 @@ other communities or for OSL in the future.
   <li><a href="/guidelines/mkt/opencollective">Open Collective</a></li>
 </ul>
 
+
+## Roadmap
+
+If you are interested in the Open Science Labs next steps,
+please check our [Roadmap](/roadmap/).
+
+
+## Governance
+
+For more information about our project governance, please
+check [governance document](/governance/).
+
 <!--
 ## Videos
 

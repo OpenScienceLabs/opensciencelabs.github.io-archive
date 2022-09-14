@@ -33,6 +33,8 @@ Join our community on <a href="http://opensciencelabs.org/discord">discord</a>.
 If you want to join us, apply to be a volunteer
 <a href="https://github.com/OpenScienceLabs/request-forms/issues/new/choose">here</a>.
 
+Also, take a look into our [Code of Conduct](./coc).
+
 We need help in areas, such as:
 
 - DevOps
@@ -45,3 +47,14 @@ We need help in areas, such as:
 - Documentation
 - Mentoring
 - Project Managements
+
+
+## Roadmap
+
+If you are interested in the Open Science Labs next steps,
+please check our [Roadmap](/roadmap/).
+
+## Governance
+
+For more information about our project governance, please
+check [governance document](/governance/).
