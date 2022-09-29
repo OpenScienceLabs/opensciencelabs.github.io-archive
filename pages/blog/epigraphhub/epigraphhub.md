@@ -73,7 +73,7 @@ EpiGraphHub al ser un proyecto de código abierto crea espacios en los que es po
 
 En resumen, EpiGraphHub es una herramienta que nos permite acceder y analizar datos a través de sus servidores, lo cual logra que trabajemos sin preocuparnos por la cantidad y el espacio que pudiesen ocupar en nuestro computador. También podemos utilizar sus funcionalidades para analizar datos almacenados en local y obtener resultados interesantes que no percibimos a simple vista en los datos. Además de esto, los gráficos y dashboards que podemos obtener a través de la plataforma son muy llamativos y podemos interactuar fácilmente con la información, recordemos que provienen de Apache Echarts.
 
-Si ya le echaste un vistazo a este proyecto puedes dejarnos tus comentarios a cerca de lo que percibiste y si te gusto.
+Si ya le echaste un vistazo a este proyecto puedes dejarnos tus comentarios a cerca de lo que percibiste y si te gustó.
 
 ## Referencias
 
