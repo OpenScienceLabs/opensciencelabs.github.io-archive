@@ -53,7 +53,7 @@ Esto se encuentra disponible para los lenguajes de programación [R](https://git
 
 ## ¿Cómo utilizar la plataforma EpiGraphHub?
 
-Este procedimiento es muy sencillo, debes acceder a su dirección web: https://epigraphhub.org/. Luego puedes crear un usuario o emplear la cuenta de invitado (usuario:guest y contraseña:guest).
+Este procedimiento es muy sencillo, debes acceder a su dirección web: https://dash.epigraphhub.org/. Luego puedes crear un usuario o emplear la cuenta de invitado (usuario:guest y contraseña:guest).
 
 Para la cuenta de invitado no tienes todas las opciones disponibles, pero con ella puedes explorar los datasets y las bases de datos en los servidores. También tienes acceso a los dashboards y gráficos que los miembros del proyecto han generado.
 
