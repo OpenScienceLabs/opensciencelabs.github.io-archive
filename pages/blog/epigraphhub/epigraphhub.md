@@ -13,7 +13,7 @@
 <!-- # EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad -->
 <!-- **Por Anavelyz Pérez** -->
 
-#![header](../../../images/blog/epigraphhub/header.png)# agregar imagen
+![header](../../../images/blog/epigraphhub/header.png)
 
 # EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad
 
