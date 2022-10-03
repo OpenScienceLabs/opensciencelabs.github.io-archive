@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: debug
+        run: |
+          pwd
+          ls -lah
       - name: Upload Episode from YouTube To Anchor.Fm
         uses: Schrodinger-Hat/youtube-to-anchorfm@v2.0.0
         env:
