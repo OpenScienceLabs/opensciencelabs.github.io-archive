@@ -2,8 +2,8 @@ name: podcast
 
 on:
   push:
-    paths: 
-      - episode.json
+    # paths: 
+    #   - episode.json
     branches: [ main ]
 
 jobs:
@@ -16,4 +16,4 @@ jobs:
         env:
           ANCHOR_EMAIL: ${{ secrets.ANCHOR_EMAIL }}
           ANCHOR_PASSWORD: ${{ secrets.ANCHOR_PASSWORD }}
-          EPISODE_PATH: /github/workspace
+          EPISODE_PATH: /home/runner/work/opensciencelabs.github.io/opensciencelabs.github.io/
