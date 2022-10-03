@@ -3,7 +3,7 @@ on:
   push:
     paths: 
       - episode.json
-    branches: [main]
+    branches: [ main ]
 jobs:
   upload_episode:
     runs-on: ubuntu-latest
