@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/">
+<link rel="icon" href="../../../images/favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213158050-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Anavelyz Pérez">
+<meta property="description" content="EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad
+¿Quieres realizar un análisis y no encuentras datos?, ¿quieres realizar visualizaciones como dashboards o gráficos?, o s">
+<link rel="prev" href="../../reorganiza-tus-tablas-con-tidyr/reorganiza-tus-tablas-con-tidyr/" title="Reorganiza tu tabla con tidyr en R" type="text/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="EpiGraphHub: un proyecto de código abierto para el análisis de datos d">
+<meta property="og:url" content="https://opensciencelabs.org/blog/epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/">
+<meta property="og:description" content="EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad
+¿Quieres realizar un análisis y no encuentras datos?, ¿quieres realizar visualizaciones como dashboards o gráficos?, o s">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-09-28T00:00:00-05:00">
+<meta property="article:tag" content="código abierto">
+<meta property="article:tag" content="datasets">
+<meta property="article:tag" content="datos">
+<meta property="article:tag" content="epigraphhun">
+<meta property="article:tag" content="visualización">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/toc" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../team/" class="nav-link">Team</a>
+                </li>
+<li class="nav-item">
+<a href="../../../partners/" class="nav-link">Partners</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+                </li>
+<li class="nav-item">
+<a href="../../../coc" class="nav-link">CoC</a>
+                </li>
+<li class="nav-item">
+<a href="../../../faq/es" class="nav-link">FAQ</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="../epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/" class="u-url">EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/anavelyz-perez/">Anavelyz Pérez</a>
+            </span></p>
+            <p class="dateline">
+            <a href="../epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/" rel="bookmark">
+            <time class="published dt-published" datetime="2022-09-28T00:00:00-05:00" itemprop="datePublished" title="2022-09-28">2022-09-28</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/#disqus_thread" data-disqus-identifier="cache/pages/blog/epigraphhub/epigraphhub.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/codigo-abierto/" rel="tag">código abierto</a></li>
+            <li><a class="tag p-category" href="../../../categories/datasets/" rel="tag">datasets</a></li>
+            <li><a class="tag p-category" href="../../../categories/datos/" rel="tag">datos</a></li>
+            <li><a class="tag p-category" href="../../../categories/epigraphhun/" rel="tag">epigraphhun</a></li>
+            <li><a class="tag p-category" href="../../../categories/visualizacion/" rel="tag">visualización</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad -->
+<!-- **Por Anavelyz Pérez** -->
+
+<p><img alt="header" src="../../../images/blog/epigraphhub/header.png"></p>
+<h2>EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad</h2>
+<p>¿Quieres realizar un análisis y no encuentras datos?, ¿quieres realizar visualizaciones como dashboards o gráficos?, o simplemente explorar, ¿cómo puedes analizar datos?
+Entonces este artículo es para ti. Vamos a describir EpiGraphHub, un proyecto de código abierto orientado al análisis de datos de calidad.</p>
+<!-- TEASER_END -->
+
+<h3>¿Qué es EpiGraphHub?</h3>
+<p>Es una plataforma de código abierto que integra y permite gestionar datos de diversas fuentes. Fue diseñada principalmente para describir datos de salud pública, pero incluye otros tópicos como socio-economía, demografía o censos. Esto es posible porque posee conectores a muchas bases de datos y conjuntos de datos abiertos.</p>
+<p>Con EpiGraphHub podemos hacer exploraciones rápidas y dashboarding (gráficos interactivos). Además, puede servir como backend de datos para apps analíticas.</p>
+<p>Sus funciones de visualización están impulsadas por <a href="https://echarts.apache.org/">Apache Echarts</a>, está compuesta por un servidor de bases de datos Postgresql integrado con un frontend web Apache Superset personalizado para el acceso y la exploración de datos.</p>
+<p>Cuenta con servidores, lo que nos permite acceder a grandes cantidades de datos sin que tengamos que preocuparnos si nuestro computador soporta o no cientos de datos.</p>
+<p>EpiGraphHub, al ser un proyecto de código abierto permite que cualquiera pueda tomarlo y trabajar con él, lo hace disponible para programadores, empresarios, analistas de datos y el público en general. Otro aspecto importante es que puede conectarse a bases de datos locales, remotas o en la nube, incluso hojas de cálculo de Google y su equipo está constantemente recopilando conjuntos de datos abiertos relevantes. Esto nos permite más opciones en la exploración de datos.</p>
+<h3>Bibliotecas de EpiGraphHub</h3>
+<p>Además de permitir hacer análisis visual, EpiGraphHub se complementa con bibliotecas, las cuales están diseñadas para proporcionar a los usuarios externos toda la funcionalidad analítica utilizada para potenciar la plataforma y sus aplicaciones.</p>
+<p>Las bibliotecas permiten realizar o aplicar:</p>
+<ul>
+<li>Estadística Bayesiana</li>
+<li>Análisis epidemiológico</li>
+<li>Modelado matemático</li>
+<li>Análisis de Costo-efectividad</li>
+<li>Pronósticos</li>
+<li>Aprendizaje automático</li>
+<li>Minería de textos</li>
+<li>Análisis Geoespacial</li>
+</ul>
+<p>Esto se encuentra disponible para los lenguajes de programación <a href="https://github.com/thegraphnetwork/r-epigraphhub/blob/main/epigraphhub.Rproj">R</a> y <a href="https://github.com/thegraphnetwork/epigraphhub_py">Python</a>.</p>
+<h3>¿Cómo utilizar la plataforma EpiGraphHub?</h3>
+<p>Este procedimiento es muy sencillo, debes acceder a su dirección web: https://dash.epigraphhub.org/. Luego puedes crear un usuario o emplear la cuenta de invitado (usuario:guest y contraseña:guest).</p>
+<p>Para la cuenta de invitado no tienes todas las opciones disponibles, pero con ella puedes explorar los datasets y las bases de datos en los servidores. También tienes acceso a los dashboards y gráficos que los miembros del proyecto han generado.</p>
+<p><img alt="egh" src="../../../images/blog/epigraphhub/egh.png"></p>
+<p>Si creas una cuenta tendrás una opción adicional en la que puedes realizar consultas a través de SQL y personalizar los datos de acuerdo a lo que necesites.</p>
+<p>En caso de que deseas ver un tutorial de cómo funciona EpiGraphHub puedes dar clic <a href="https://youtu.be/JOxbiovCtdE">aquí</a>.</p>
+<h3>¿Cómo unirse a la comunidad de EpiGraphHub?</h3>
+<p>Si quieres formar parte de la comunidad de EpiGraphHub, puedes unirte a su servidor en <a href="https://discord.gg/56thARPrnJ">Discord</a>. Allí tienes un espacio para expresar tus preguntas, sugerencias o estar atento a los próximos eventos organizados en la comunidad.</p>
+<h3>¿Cómo contribuir en EpiGraphHub?</h3>
+<p>EpiGraphHub al ser un proyecto de código abierto crea espacios en los que es posible contribuir, su repositorio principal se encuentra en <a href="https://github.com/thegraphnetwork/EpiGraphHub#contributing">GitHub</a> por lo que los issues y la forma en que podemos brindar nuestro granito de arena se encuentra expresado allí. Igualmente, si tienes dudas puedes acudir a Discord.</p>
+<p>En resumen, EpiGraphHub es una herramienta que nos permite acceder y analizar datos a través de sus servidores, lo cual logra que trabajemos sin preocuparnos por la cantidad y el espacio que pudiesen ocupar en nuestro computador. También podemos utilizar sus funcionalidades para analizar datos almacenados en local y obtener resultados interesantes que no percibimos a simple vista en los datos. Además de esto, los gráficos y dashboards que podemos obtener a través de la plataforma son muy llamativos y podemos interactuar fácilmente con la información, recordemos que provienen de Apache Echarts.</p>
+<p>Si ya le echaste un vistazo a este proyecto puedes dejarnos tus comentarios a cerca de lo que percibiste y si te gustó.</p>
+<h3>Referencias</h3>
+<ul>
+<li>
+<p>GRAPH Network. (2022, 1 junio). EpiGraphHub: a data integration platform for health | Flavio Coelho [Vídeo]. YouTube. Recuperado 28 de septiembre de 2022, de https://www.youtube.com/watch?v=8Mz52O_VzVc&amp;feature=youtu.be</p>
+</li>
+<li>
+<p>Welcome to EpigraphHub libraries documentation! — EpigraphHub Library 2022-01-01 documentation. (s. f.). Recuperado 28 de septiembre de 2022, de https://epigraphhub-libraries.readthedocs.io/en/latest/</p>
+</li>
+<li>
+<p>EpiGraphHub. (s. f.). Recuperado 28 de septiembre de 2022, de https://epigraphhub.org/superset/welcome/</p>
+</li>
+<li>
+<p>Epidemias, D. M. A. (2022, 4 abril). Introduction to EpigraphHub. YouTube. Recuperado 28 de septiembre de 2022, de https://www.youtube.com/watch?v=JOxbiovCtdEf&amp;feature=youtu.be</p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../reorganiza-tus-tablas-con-tidyr/reorganiza-tus-tablas-con-tidyr/" rel="prev" title="Reorganiza tu tabla con tidyr en R">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next disabled">
+                <a rel="next">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/",
+        disqus_title="EpiGraphHub: un proyecto de c\u00f3digo abierto para el an\u00e1lisis de datos de calidad",
+        disqus_identifier="cache/pages/blog/epigraphhub/epigraphhub.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
