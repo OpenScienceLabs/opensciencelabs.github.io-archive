@@ -51,4 +51,4 @@ Todo lo que compartimos está bajo la [Licencia CC BY-SA 4.0](https://creativeco
 
 
 ## ¿Cuál es su motivación para aportar a la comunidad Open Source?
-Creemos que la educación y la tecnología deberían ser lo más accesible posible para todos. Y para lograrlo ¡juntar esfuerzos OpenScienceLabs es un buen lugar!
+Creemos que la educación y la tecnología deberían ser lo más accesible posible para todos. Y para lograrlo ¡OpenScienceLabs es un buen lugar!
