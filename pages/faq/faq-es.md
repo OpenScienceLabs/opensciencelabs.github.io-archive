@@ -22,7 +22,7 @@ Creamos y contribuimos a la comunidad OpenSource enfocada en Ciencia Abierta, cr
 En la comunidad están varias personas curiosas con diferentes profesiones y que realizan diversas actividades y que colaboran de forma voluntaria. Algunas de las profesiones de quienes conforman Open Science Labs son: destrezas técnicas en electricidad, ingeniería ambiental, fullStack developers, ciencias políticas e ingeniería informática ubicadas todas en diferentes partes de Latinoamérica.
 
 ## ¿Cómo puedo aportar a la comunidad?
-* Puedes llenar el formulario para que nosotros te podamos contactar y coordinar una videollamada para establecer actividades.  [click aquí](https://github.com/OpenScienceLabs/request-forms/issues/new/choose?fbclid=IwAR3pDhR5soLQJrgKTUzmT9I1ty8rEyMTtn8LarkDzdDqkUadQc_ugwX5IsE)
+* Puedes llenar el formulario para que nosotros te podamos contactar y coordinar una videollamada para establecer actividades, [click aquí](https://github.com/OpenScienceLabs/request-forms/issues/new/choose?fbclid=IwAR3pDhR5soLQJrgKTUzmT9I1ty8rEyMTtn8LarkDzdDqkUadQc_ugwX5IsE)
 * O también puedes solicitar que tu aporte como artículo o código fuente se comparta en las redes sociales de la comunidad o el repositorio, a través de Discord. Una vez que tu aporte sea incorporado este será de Código Abierto con licencia tipo [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) y se agregará tu nombre a la lista de quienes contribuyen con Open Science Labs.
 
 ## ¿Ofrecen mentorías?
@@ -51,4 +51,4 @@ Todo lo que compartimos está bajo la [Licencia CC BY-SA 4.0](https://creativeco
 
 
 ## ¿Cuál es su motivación para aportar a la comunidad Open Source?
-Creemos que la educación y la tecnología deberían ser lo más accesible posible para todos. Y para lograrlo ¡OpenScienceLabs es un buen lugar!
+Creemos que la educación y la tecnología deberían ser lo más accesible posible para todos. Y para lograrlo ¡juntar esfuerzos OpenScienceLabs es un buen lugar!
