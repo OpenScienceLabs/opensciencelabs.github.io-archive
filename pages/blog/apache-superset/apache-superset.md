@@ -1,5 +1,5 @@
 <!--
-.. title: Apache Superset: una plataforma eficiente desarrollada para el manejo, exploración y visualización de datos
+.. title: Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset
 .. author: Yurely Camacho
 .. tags: Visualización, dashboard, Superset, BI, SQL
 .. category: open science
@@ -8,7 +8,7 @@
 .. type: text
 -->
 
-<!-- # Apache Superset: una plataforma eficiente desarrollada para el manejo, exploración y visualización de datos-->
+<!-- # Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset-->
 <!-- **Por Yurely Camacho** -->
 
 #![header](../../../images/blog/apache-superset/header.png)
@@ -118,8 +118,9 @@ continuación te mostramos un dashboard en el Superset de EpiGraphHub.
 ![Superset](../../../images/blog/apache-superset/Superset.jpg)
 Fuente:[EpigraphHub Superset](https://dash.epigraphhub.org/superset/welcome/)
 
-Puedes conocer más sobre EpiGrapHub en nuestro artículo: Enlace a artículo de
-Anavelyz sobre EpiGraphHub.
+Puedes conocer más sobre EpiGrapHub en nuestro artículo: [EpiGraphHub:
+un proyecto de código abierto para el análisis de datos de
+calidad](https://opensciencelabs.org/blog/epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/)
 
 ## Cómo inciar con Superset
 
