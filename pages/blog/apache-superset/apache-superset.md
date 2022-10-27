@@ -3,7 +3,7 @@
 .. slug: apache-superset
 .. date: 2022-10-26
 .. author: Yurely Camacho
-.. tags: Visualización, dashboard, Superset, BI, SQL
+.. tags: visualizacion, dashboard, superset, bi, sql
 .. category: open science
 .. link: 
 .. description: 
