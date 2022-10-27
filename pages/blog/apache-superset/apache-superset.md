@@ -1,5 +1,7 @@
 <!--
 .. title: Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset
+.. slug: apache-superset
+.. date: .. date: 2022-10-26
 .. author: Yurely Camacho
 .. tags: Visualización, dashboard, Superset, BI, SQL
 .. category: open science
