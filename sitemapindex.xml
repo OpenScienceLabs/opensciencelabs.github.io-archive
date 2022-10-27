@@ -7,474 +7,482 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://opensciencelabs.org/authors/alan-hurtarte.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/anavelyz-perez.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/ever-vino.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/lua-bida-vacaro.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/mariangela-petrizzo-paez.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/por-rainer-palm.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/rainer-palm.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/authors/yurely-camacho.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/artificial-intelligence.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/automation.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/base-de-dados.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/bash.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://opensciencelabs.org/categories/bi.xml</loc>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/blockchain.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/carpentries.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_artificial-intelligence.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_bash.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_citation.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_citizen-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_codigo-abierto.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_communication.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_dashboard.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_data-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_data.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_documentation.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_git.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_ide.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_jupyter.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_learning.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_machine-learning.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_markdown.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_mentoring.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_nft.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-access.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-data.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-science-web3-ethereum.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-science-web3.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_open-source.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_packaging.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_programming.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_python.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_r.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_research.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/cat_social-labs.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ciencia-abierta.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ciencia-de-datos.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/citation.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/citizen-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/codigo-abierto.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/columnas-a-filas.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/communication.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/community.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/covid19.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/crypto.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/dashboard.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/data-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/data.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/datasets.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/datos.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/developer.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/devops.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/documentation.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/dplyr.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/env.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/epigraphhun.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ethereum.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/filas-a-columnas.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/filtrar-datos.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ggmap.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ggplot2.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ibis.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ide.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/interfaz-de-r.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/interfaz.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/lattice.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/learning.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/license.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/machine-learning.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/maps.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/mentoring.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/merge.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/mineria-de-texto.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/nft.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/nube-de-palabras.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/open-data.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/open-science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/open-source.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/packaging.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/pandemic.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/plotly.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/posit.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/programacion.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/pyopensci.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/python.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/r.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/recursos.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/rmarkdown.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/roadmap.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/ropensci.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/rstudio-desktop.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/rstudio-server.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/rstudio.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/science.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/shiny.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/social-labs.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/spyder-online.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/spyder.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/sql.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://opensciencelabs.org/categories/superset.xml</loc>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/tidyr.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/tidyverse.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/versioning.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/visualizacion.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/visualization.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/web3.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/categories/wordcloud.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/rss.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://opensciencelabs.org/sitemap.xml</loc>
-  <lastmod>2022-10-10T21:05:00Z</lastmod>
+  <lastmod>2022-10-27T02:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>

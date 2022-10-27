@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset | Open Science Labs</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
+<link rel="canonical" href="https://opensciencelabs.org/blog/apache-superset/apache-superset/">
+<link rel="icon" href="../../../images/favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-213158050-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213158050-1');
+</script><link rel="stylesheet" type="text/css" href="../../../assets/css/tipuesearch.css">
+<meta name="author" content="Yurely Camacho">
+<meta property="description" content="Fuente:Apache Superset
+Si eres analista o científico de datos, investigador, trabajas en un
+equipo de inteligencia de negocios o simplemente estás buscando una
+plataforma atractiva que te permita expl">
+<link rel="prev" href="../../epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/" title="EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad" type="text/html">
+<link rel="stylesheet" href="https://use.fontawesome.com/aa402b3835.css">
+<meta property="og:site_name" content="Open Science Labs">
+<meta property="og:title" content="Crea una aplicación web eficiente y atractiva para el manejo, explorac">
+<meta property="og:url" content="https://opensciencelabs.org/blog/apache-superset/apache-superset/">
+<meta property="og:description" content="Fuente:Apache Superset
+Si eres analista o científico de datos, investigador, trabajas en un
+equipo de inteligencia de negocios o simplemente estás buscando una
+plataforma atractiva que te permita expl">
+<meta property="og:image" content="https://opensciencelabs.org/images/logo.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-10-26T00:00:00-05:00">
+<meta property="article:tag" content="bi">
+<meta property="article:tag" content="dashboard">
+<meta property="article:tag" content="sql">
+<meta property="article:tag" content="superset">
+<meta property="article:tag" content="visualización">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@opensciencelabs">
+<meta property="twitter:image" content="https://opensciencelabs.org/images/logo.jpg">
+<link rel="stylesheet" href="../../../assets/css/osl.css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../../">
+            <img src="../../../images/logo.png" alt="Open Science Labs" id="logo" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../../" class="nav-link">Home</a>
+                </li>
+<li class="nav-item">
+<a href="../../" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a href="../../../guidelines/toc" class="nav-link">Guidelines</a>
+                </li>
+<li class="nav-item">
+<a href="../../../team/" class="nav-link">Team</a>
+                </li>
+<li class="nav-item">
+<a href="../../../partners/" class="nav-link">Partners</a>
+                </li>
+<li class="nav-item">
+<a href="../../../about/" class="nav-link">About</a>
+                </li>
+<li class="nav-item">
+<a href="../../../coc" class="nav-link">CoC</a>
+                </li>
+<li class="nav-item">
+<a href="../../../faq/es" class="nav-link">FAQ</a>
+
+                
+            </li>
+</ul>
+<form class="navbar-form navbar-left" action="../../../search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search…" autocomplete="off">
+</div>
+    <input type="submit" value="Local Search" style="visibility: hidden;"><!-- button type="submit" class="btn btn-default">Submit</button -->
+</form>
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">
+                <a href="." class="u-url">Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset</a>
+            </h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                         <a class="u-url" href="../../../authors/yurely-camacho/">Yurely Camacho</a>
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2022-10-26T00:00:00-05:00" itemprop="datePublished" title="2022-10-26">2022-10-26</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="#disqus_thread" data-disqus-identifier="cache/pages/blog/apache-superset/apache-superset.html">Comentarios</a>
+
+
+            
+
+        </p>
+</div>
+        
+        <ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../categories/bi/" rel="tag">bi</a></li>
+            <li><a class="tag p-category" href="../../../categories/dashboard/" rel="tag">dashboard</a></li>
+            <li><a class="tag p-category" href="../../../categories/sql/" rel="tag">sql</a></li>
+            <li><a class="tag p-category" href="../../../categories/superset/" rel="tag">superset</a></li>
+            <li><a class="tag p-category" href="../../../categories/visualizacion/" rel="tag">visualización</a></li>
+        </ul></header><div class="e-content entry-content" itemprop="articleBody text">
+        <!-- # Crea una aplicación web eficiente y atractiva para el manejo, exploración y visualización de datos con Apache Superset-->
+<!-- **Por Yurely Camacho** -->
+
+<h2><img alt="header" src="../../../images/blog/apache-superset/header.png"></h2>
+<p>Fuente:<a href="https://superset.apache.org/">Apache Superset</a></p>
+<p>Si eres analista o científico de datos, investigador, trabajas en un
+equipo de inteligencia de negocios o simplemente estás buscando una
+plataforma atractiva que te permita explorar y visualizar tus datos de
+manera rápida y eficiente a gran escala; aquí te presentamos Apache
+Superset. Conoce con nosotros sus características más importantes, las
+funcionalidades que ofrece, algunas empresas que lo utilizan y cómo
+hacer tu primer gráfico y dashboard.</p>
+<!-- TEASER_END -->
+
+<h3>¿Qué es Apache Superset?</h3>
+<p>Es una plataforma moderna muy utilizada en equipos de inteligencia de
+negocios. Una aplicación web de código abierto implementada en Python
+que está en período de incubación en <a href="https://www.apache.org/">The Apache Software Foundation
+(ASF)</a> y es patrocinada por <a href="https://incubator.apache.org/">Apache
+Incubator</a>. Cuenta con una interfaz
+simple y permite al usuario crear y compartir dashboards, explorar,
+filtrar y organizar datos a gran escala, esto significa que puedes
+modificar la aplicación según tus necesidades.</p>
+<p>Esta iniciativa comenzó en Airbnb en 2015 como un proyecto de hackathon
+y se unió al programa Apache Incubator en 2017. Para 2021, la Apache
+Software Foundation anunció que Superset era un proyecto de alto nivel.
+Puedes encontrar el proyecto alojado en
+<a href="https://github.com/apache/superset">GitHub</a>.</p>
+<h3>Características y funcionalidades</h3>
+<ul>
+<li>
+<p>Es intuitivo y rápido.</p>
+</li>
+<li>
+<p>Brinda una amplia variedad de opciones de gráficos y consultas que
+  facilitan la exploración y visualización de datos. Así como la
+  creación de reportes basados en datos.</p>
+</li>
+<li>
+<p>Es utilizado por usuarios de todo tipo de conocimientos. No necesitas
+  ser experto en programación o SQL para usarlo.</p>
+</li>
+<li>
+<p>Permite la creación de dashboards interactivos y gráficos sin escribir código.</p>
+</li>
+<li>
+<p>Es compatible con la mayoría de fuentes de datos basadas en SQL a
+  través de SQLAlchemy, entre ellas: <a href="https://aws.amazon.com/es/redshift/">Amazon
+  Redshift</a>,
+  <a href="https://druid.apache.org/">druid</a>,
+  <a href="https://clickhouse.com/">ClickHouse</a>,
+  <a href="https://www.databricks.com/">databricks</a>,
+  <a href="https://www.mysql.com/">MySQL</a>,
+  <a href="https://www.microsoft.com/en-us/sql-server">SQLServer</a>,
+  <a href="https://www.sqlite.org/index.html">SQLite</a>,
+  <a href="https://www.postgresql.org/">PostgreSQL</a>, entre otras. Puedes
+  consultar esta <a href="https://superset.apache.org/docs/databases/installing-database-drivers/">lista con todas las fuentes de datos que soporta
+  Superset</a>.</p>
+</li>
+<li>
+<p>Ofrece un entorno llamado <strong>SQL Lab</strong> que permite hacer consultas SQL
+  para la exploración de los datos antes de la representación gráfica.</p>
+</li>
+<li>
+<p>Proporciona un sencillo e intuitivo constructor de vizualizaciones sin
+  código que te permite personalizar tus gráficos.</p>
+</li>
+<li>
+<p>Tiene una arquitectura nativa de la nube. Permite escalar a grandes
+  entornos distribuidos y funciona bien dentro de contenedores. Es
+  flexible y permite elegir el servidor web, motor de base de datos,
+  cola de mensajes, backend de resultados y capa de almacenamiento en
+  caché.</p>
+</li>
+<li>
+<p>Su instalación y configuración es rápida.</p>
+</li>
+<li>
+<p>Permite trabajar con grandes configuraciones de <em>data lake</em> y <em>data warehouse</em>.</p>
+</li>
+<li>
+<p>Brinda un modelo de seguridad con reglas complejas que pueden
+  configurarse de acuerdo a quién puede acceder y a qué características.</p>
+</li>
+<li>
+<p>Tiene la posibilidad de añadir plugins de visualizaciones personalizados.</p>
+</li>
+</ul>
+<p>Hemos visto una gran cantidad de ventajas y funcionalidades que ofrece
+Superset. Debido a esto, exste una gran variedad de industrias y
+empresas que utilizan Superset en sus tareas, entre ellas se encuentran:
+<a href="https://es.airbnb.org/">Airbnb</a>, <a href="https://www.americanexpress.com/">American
+Express</a>,
+<a href="https://www.netflix.com/ve/">Netflix</a>, <a href="https://www.udemy.com/">Udemy</a>,
+<a href="https://twitter.com/">Twitter</a>. Puedes consultar una lista más amplia
+<a href="https://github.com/apache/superset/blob/master/RESOURCES/INTHEWILD.md">aquí</a></p>
+<h3>EpiGraphHub: un ejemplo de Superset</h3>
+<p><a href="https://dash.epigraphhub.org/superset/welcome/">EpiGraphHub</a> es una
+aplicación web para el manejo y visualización de datos de salud pública.</p>
+<p><img alt="EpiGraphHub" src="../../../images/blog/apache-superset/EpiGraphHub.jpg">
+Fuente:<a href="https://dash.epigraphhub.org/superset/welcome/">EpigraphHub Superset</a></p>
+<p>Allí puedes crear una cuenta o ingresar con la cuenta de invitado para
+la cual el usuario y la contraseña es <em>guest</em>. EpiGrapHub Superset te
+ofrece una variedad de dashboards referentes, entre otras cosas, a datos
+de COVID en distintos países y continentes donde se visualizan
+características importantes en cada caso (sexo, fecha, grupos de edad,
+número de casos positivos, división política, estado de salud, entre
+otras). Podemos explorar estos datos a través de sus servidores. A
+continuación te mostramos un dashboard en el Superset de EpiGraphHub.</p>
+<p><img alt="Superset" src="../../../images/blog/apache-superset/Superset.jpg">
+Fuente:<a href="https://dash.epigraphhub.org/superset/welcome/">EpigraphHub Superset</a></p>
+<p>Puedes conocer más sobre EpiGrapHub en nuestro artículo: <a href="https://opensciencelabs.org/blog/epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/">EpiGraphHub:
+un proyecto de código abierto para el análisis de datos de
+calidad</a></p>
+<h3>Cómo inciar con Superset</h3>
+<p>A continuación te presentamos algunas formas diferentes de empezar con Superset:</p>
+<ul>
+<li>
+<p>Descarga el <a href="https://dist.apache.org/repos/dist/release/superset/">código fuente del sitio web de The Apache
+  Foundation</a></p>
+</li>
+<li>
+<p>Descarga la <a href="https://pypi.org/project/apache-superset/">última versión de Superset desde
+  Pypi</a></p>
+</li>
+<li>
+<p>Configura Superset localmente con un comando usando <a href="https://superset.apache.org/docs/installation/installing-superset-using-docker-compose/"><em>Docker
+  Compose</em></a></p>
+</li>
+<li>
+<p>Descarga el <em>Docker image</em> desde
+  <a href="https://hub.docker.com/r/apache/superset">Dockerhub</a></p>
+</li>
+<li>
+<p>Instala la <a href="https://github.com/apache/superset/tree/latest">última versión de Superset desde
+  GitHub</a></p>
+</li>
+</ul>
+<p>Puedes consultar sobre la instalación y configuración de Superset
+<a href="https://superset.apache.org/docs/installation/installing-superset-using-docker-compose">aquí</a>.</p>
+<h3>Una introducción a cómo crear tu primer dashboard</h3>
+<p>Si vas a utilizar Superset para tu flujo de trabajo de análisis y
+exploración de datos, a continuación te mostramos algunos pasos
+necesarios que te permitirán crear un gráfico y guardarlo en un
+dashboard en esta aplicación. Puedes consultar un paso a paso más
+detallado sobre esto en la <a href="https://superset.apache.org/docs/creating-charts-dashboards/creating-your-first-dashboard/">documentación oficial de
+Superset</a>.</p>
+<ul>
+<li>
+<strong>Conectar Superset a una nueva base de datos</strong>. Como Superset no
+  puede guardar los datos, debe conectarse a nuestra base de datos
+  existente que soporte SQL. Inicialmente debemos añadir las
+  credenciales de conexión a esa base de datos para poder consultar y
+  visualizar los datos.</li>
+</ul>
+<p>Este paso puede obviarse si se utiliza Superset localmente a través de
+  Docker compose. Esto se debe a que está incluida y preconfigurada una
+  base de datos Postgres, llamada <em>examples</em> a nuestra disposición.</p>
+<p>Para hacer la conexión, seleccionamos la opción <em>Databases</em> del menú
+  <em>Data</em> y seguimos los pasos para crear y probar la conexión.</p>
+<ul>
+<li>
+<p><strong>Registrar una tabla en la base de datos</strong>. Ahora seleccionamos las
+  tablas específicas (denominadas <em>datasets</em> en Superset) que deseemos
+  explorar en Superset. Esto lo hacemos seleccionando la opción <em>Data</em>,
+  luego <em>Datasets</em> y nuevo dataset (en la esquina superior derecha).
+  Seleccionamos la base de datos, el esquema, la tabla y añadimos estos
+  cambios.</p>
+</li>
+<li>
+<p><strong>Personalizar las propiedades de las columnas</strong>. Se configuran las
+  propiedades de las columnas como: tipo de dato, si la columna es
+  temporal, si debe ser filtrada, si es dimensional, cómo debe tratarla
+  Superset si es una columna de fecha-hora, entre otras. Esto se hace
+  para saber cómo deben tratarse las columnas del <em>dataset</em> al momento
+  de la exploración.</p>
+</li>
+<li>
+<p><strong>Capa semántica de Superset</strong>. Esta capa nos ofrece mejoras como
+  analistas, puede almacenar 2 tipos de datos calculados:</p>
+</li>
+<li>
+<p><em>Métricas virtuales</em>: podemos escribir consultas SQL con funciones
+    de agregación para varias columnas y colocar los resultados como
+    nuevas columnas disponibles para la visualización.</p>
+</li>
+<li>
+<p><em>Columnas calculadas virtuales</em>: también podemos hacer consultas
+     SQL que involucren cambios en la apariencia o el comportamiento de
+     una columna específica, por ejemplo, cambiar el tipo de dato que
+     almacena. No debemos usar funciones de agregación, como SUM, en las
+     columnas calculadas.</p>
+</li>
+<li>
+<p><strong>Crear gráficos en la vista de exploración</strong>. En Superset podemos
+  explorar los datos utilizando dos interfaces:</p>
+</li>
+<li>
+<p><em>Explore</em>: es un constructor de vizualizaciones sin código. Es tan
+     simple como seleccionar el <em>dataset</em>, el tipo de gráfico que
+     corresponda, lo personalizamos y lo publicamos.</p>
+</li>
+<li>
+<p><em>SQL Lab</em>: es un IDE (Entorno de Desarrollo Integrado) que nos
+     permite preparar y unir los datos que son tomados en el flujo de
+     trabajo de <em>Explore</em>.</p>
+</li>
+</ul>
+<p>Para crear un gráfico, si estamos en la pestaña <em>Datasets</em> hacemos
+  clic en el nombre del dataset y así inicamos el flujo de trabajo de la
+  vista <em>Explore</em>. Aquí se muestra <em>una vista del dataset</em> con una lista
+  de las columnas y las métricas (en el lado izquierdo). También se
+  observa una <em>vista previa de los datos</em> en la parte inferior. Esta
+  vista contiene las pestañas <em>Data</em> y <em>Customize</em> (datos y
+  personalizar, respectivamente), a partir de allí podemos interactuar
+  cambiando el tipo de visualización, seleccionando distintas métricas
+  para mostrar los datos y personalizando la estética del gráfico. Cabe
+  resaltar que cada vez que hacemos un cambio, debemos ejecutarlo
+  haciendo clic en el botón <em>RUN</em> de la parte superior.</p>
+<ul>
+<li>
+<strong>Guardar un gráfico en un dashboard</strong>. Luego de crear el gráfico lo
+  guardamos haciendo clic en el botón <em>Save</em> en la parte superior de la
+  vista. Podemos guardarlo y añadirlo a un dashboard existente o a uno
+  nuevo. Para publicarlo, hacemos clic en <em>Save and goto Dashboard</em>.
+  Podemos cambiar el tamaño del gráfico, haciendo clic en el botón del
+  lápiz en la esquina superior derecha. </li>
+</ul>
+<p>Y !Esto es todo! hemos creado un gráfico y lo añadimos a un dashboard en
+Superset. Existen muchas opciones de configuración y visualización de
+datasets, es cuestión de que comiences a probar y explorar y te
+sorprenderás de lo que puedes lograr con esta plataforma.</p>
+<h4>Otros recursos</h4>
+<ul>
+<li>
+<p><a href="https://superset.apache.org/docs/intro/">Documentación de Superset</a>.</p>
+</li>
+<li>
+<p>Consulta el
+  <a href="https://github.com/apache/superset/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>
+  del proyecto si estás interesado en contribuir que contiene también
+  una guía detallada sobre cómo configurar un entorno de desarrollo.  </p>
+</li>
+</ul>
+<h4>Referencias</h4>
+<ul>
+<li>
+<p><a href="https://superset.apache.org/">Website de Apache Superset</a></p>
+</li>
+<li>
+<p><a href="https://superset.apache.org/docs/intro/">Documentación oficial de Apache
+  Superset</a></p>
+</li>
+</ul>
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../epigraphhub/epigraphhub-un-proyecto-de-c%C3%B3digo-abierto-para-el-analisis-de-datos-de-calidad/" rel="prev" title="EpiGraphHub: un proyecto de código abierto para el análisis de datos de calidad">Publicación anterior</a>
+            </li>
+
+            <li class="archive">
+                <a href="../../../archive.html" rel="archive" title="Archive ">Archivo</a>
+            </li>
+
+            <li class="next disabled">
+                <a rel="next">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="https://opensciencelabs.org/blog/apache-superset/apache-superset/",
+        disqus_title="Crea una aplicaci\u00f3n web eficiente y atractiva para el manejo, exploraci\u00f3n y visualizaci\u00f3n de datos con Apache Superset",
+        disqus_identifier="cache/pages/blog/apache-superset/apache-superset.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="nikolademo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer">
+            Contents © 2022         <a href="../../../team">Open Science Labs Team</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script>
+</body>
+</html>
