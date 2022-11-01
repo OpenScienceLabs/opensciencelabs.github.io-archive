@@ -55,7 +55,7 @@ clasificación, pero tal vez en el futuro podamos utilizarla.
 
 ### YAGPDB.xyz
 
-El bot **YAGPDB.xyz** se utiliza para la subscripción en categorías.
+El bot **YAGPDB.xyz** se utiliza para la suscripción en categorías.
 
 Para más información de cómo utilizarlo, consulte el siguiente tutorial: 
 
@@ -86,8 +86,8 @@ necesidades.
 Tenemos un canal interno para discusiones sobre discord:
 `#collab-devops-discord`.
 
-Además, hay un servidor de discord para desarrollo, donde podemos probar
+Además, hay un servidor de discord para desarrollo donde podemos probar
 bots, nuevas configuraciones o nuevas características.
 
-Si quieres unirte a ese sergvidor, necesitas pedirlo en el canal
+Si quieres unirte a ese servidor, necesitas pedirlo en el canal
 `#collab-devops-discord`.
