@@ -1,8 +1,8 @@
 <!--
 .. title: Discord
 .. slug: discord/es
-.. date: 
-.. author:
+.. date: 2019-04-08
+.. author: Ivan Ogasawara
 .. tags: devops, discord
 .. category: devops
 .. link: 
