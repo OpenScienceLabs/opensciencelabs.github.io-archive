@@ -108,7 +108,7 @@ grupos de trabajo para expandir nuestra red y experiencias.
 Además, es un buen enfoque para ayudar a los proyectos a tener más
 visibilidad y contribuciones de la comunidad.
 
-En la asociación, necesitamos a alguien del lado de los socios que
+En la asociación, necesitamos a alguien del lado de los asociados que
 asesore a los pasantes que contribuirán a sus proyectos.
 
 El escenario deseado para el programa de asociación es que el pasante
@@ -118,5 +118,5 @@ requisito.
 **Planes:**
 
 El programa de asociación necesita conectarse a más proyectos y, para
-esta fase, sería genial aumentar el número de socios a 20 (actualmente
+esta fase, sería genial aumentar el número de asociados a 20 (actualmente
 son 5).
