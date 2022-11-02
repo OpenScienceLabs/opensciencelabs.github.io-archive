@@ -77,7 +77,7 @@ La pasantía es una gran oportunidad para involucrar a más personas en el
 proyecto, así como para ofrecer oportunidades a la comunidad de
 practicar y aprender de personas experimentadas de todo el mundo.
 
-Los pasantes contribuyen principalmente a los proyectos afiliados (Open
+Los pasantes contribuyen principalmente a los proyectos asociados (Open
 Science Labs Partnership), por lo que trabajarán en proyectos de código
 abierto y recibirán la tutoría de otros colaboradores experimentados.
 
@@ -111,7 +111,7 @@ visibilidad y contribuciones de la comunidad.
 En la asociación, necesitamos a alguien del lado de los socios que
 asesore a los pasantes que contribuirán a sus proyectos.
 
-El escenario deseado para el programa de asociación es que el becario
+El escenario deseado para el programa de asociación es que el pasante
 que contribuye a un proyecto sea contratado por ellos, pero no es un
 requisito.
 
