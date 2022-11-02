@@ -44,7 +44,7 @@ No, la comunidad se mantiene gracias al voluntariado que aporta su tiempo libre 
 Puedes hacerlo a través de Discord. Casi siempre está un administrador que puede responderte. [Discord Group](http://discord.opensciencelabs.org/)
 
 ## ¿Quiénes dirigen OSL?
-Tenemos un Consejo de dirección (Steering Council), el cual se reúne semanalmente para fijar actividades y metas para la comunidad.
+Tenemos una Junta directiva(Steering Council), la cual se reúne semanalmente para fijar actividades y metas para la comunidad.
 
 ## ¿Qué tipo de licencia tiene Open Science Labs?
 Todo lo que compartimos está bajo la [Licencia CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), es decir que puedes compartir, redistribuir o transformar el material siempre que: se dé el crédito apropiado al autor y que si los transformas se debe distribuir bajo la misma licencia. Para más detalles sobre la licencia puedes visitar la página web de Creative Commons [Attribution-ShareAlike 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/).
