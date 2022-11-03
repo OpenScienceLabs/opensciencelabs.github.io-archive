@@ -1,6 +1,6 @@
 <!--
 .. title: Declaración de Diversidad, Equidad e Inclusión
-.. slug: en
+.. slug: dei-guide-en
 .. date: 2019-04-08
 .. author: Mariangela Petrizzo
 .. tags: open science
