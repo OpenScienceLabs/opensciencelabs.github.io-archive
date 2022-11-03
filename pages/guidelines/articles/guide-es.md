@@ -1,6 +1,6 @@
 <!--
 .. title: Guía Editorial para creación de Artículos
-.. slug: es
+.. slug: guide-es
 .. date: 2019-04-08
 .. author: Mariangela Petrizzo
 .. tags: open science
